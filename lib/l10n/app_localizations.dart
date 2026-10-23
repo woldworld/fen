@@ -8213,55 +8213,55 @@ abstract class AppLocalizations {
   /// No description provided for @romStepsXiaomi.
   ///
   /// In en, this message translates to:
-  /// **'On Xiaomi/Redmi (MIUI/HyperOS): 1) Settings → Apps → Manage apps → Dahuang AI → enable Autostart; 2) Security app → Battery → Dahuang AI → No restrictions. Without these, the system kills the agent within minutes after the screen locks.'**
+  /// **'On Xiaomi/Redmi (MIUI/HyperOS): 1) Settings → Apps → Manage apps → 大荒AI → enable Autostart; 2) Security app → Battery → 大荒AI → No restrictions. Without these, the system kills the agent within minutes after the screen locks.'**
   String get romStepsXiaomi;
 
   /// No description provided for @romStepsHuawei.
   ///
   /// In en, this message translates to:
-  /// **'On Huawei (EMUI/HarmonyOS): Settings → Apps → App launch management → Dahuang AI → turn off Manage automatically, then enable all three: Auto-launch, Secondary launch, Run in background.'**
+  /// **'On Huawei (EMUI/HarmonyOS): Settings → Apps → App launch management → 大荒AI → turn off Manage automatically, then enable all three: Auto-launch, Secondary launch, Run in background.'**
   String get romStepsHuawei;
 
   /// No description provided for @romStepsHonor.
   ///
   /// In en, this message translates to:
-  /// **'On Honor (MagicOS): Settings → Apps → App launch management → Dahuang AI → turn off Manage automatically, then enable Auto-launch, Secondary launch and Run in background.'**
+  /// **'On Honor (MagicOS): Settings → Apps → App launch management → 大荒AI → turn off Manage automatically, then enable Auto-launch, Secondary launch and Run in background.'**
   String get romStepsHonor;
 
   /// No description provided for @romStepsOppo.
   ///
   /// In en, this message translates to:
-  /// **'On OPPO/realme (ColorOS): Settings → Apps → App management → Dahuang AI → allow Autostart; Settings → Battery → More settings → allow full background behaviour for Dahuang AI.'**
+  /// **'On OPPO/realme (ColorOS): Settings → Apps → App management → 大荒AI → allow Autostart; Settings → Battery → More settings → allow full background behaviour for 大荒AI.'**
   String get romStepsOppo;
 
   /// No description provided for @romStepsOneplus.
   ///
   /// In en, this message translates to:
-  /// **'On OnePlus: Settings → Apps → Auto-launch → allow Dahuang AI; Battery → optimize the battery usage of Dahuang AI to Don\'t optimize.'**
+  /// **'On OnePlus: Settings → Apps → Auto-launch → allow 大荒AI; Battery → optimize the battery usage of 大荒AI to Don\'t optimize.'**
   String get romStepsOneplus;
 
   /// No description provided for @romStepsVivo.
   ///
   /// In en, this message translates to:
-  /// **'On vivo/iQOO (OriginOS): Settings → Apps → Permission management → Autostart, allow Dahuang AI; Settings → Battery → Background power consumption → allow high background drain for Dahuang AI.'**
+  /// **'On vivo/iQOO (OriginOS): Settings → Apps → Permission management → Autostart, allow 大荒AI; Settings → Battery → Background power consumption → allow high background drain for 大荒AI.'**
   String get romStepsVivo;
 
   /// No description provided for @romStepsMeizu.
   ///
   /// In en, this message translates to:
-  /// **'On Meizu (Flyme): Phone Manager → App permissions → Background management → allow Dahuang AI to keep running.'**
+  /// **'On Meizu (Flyme): Phone Manager → App permissions → Background management → allow 大荒AI to keep running.'**
   String get romStepsMeizu;
 
   /// No description provided for @romStepsSamsung.
   ///
   /// In en, this message translates to:
-  /// **'On Samsung (One UI): Settings → Battery → Background usage limits → remove Dahuang AI from Deep sleeping apps.'**
+  /// **'On Samsung (One UI): Settings → Battery → Background usage limits → remove 大荒AI from Deep sleeping apps.'**
   String get romStepsSamsung;
 
   /// No description provided for @romStepsGeneric.
   ///
   /// In en, this message translates to:
-  /// **'If your system aggressively stops background apps, allow Dahuang AI to autostart and exclude it from battery optimization in system settings.'**
+  /// **'If your system aggressively stops background apps, allow 大荒AI to autostart and exclude it from battery optimization in system settings.'**
   String get romStepsGeneric;
 
   /// No description provided for @helpDotTooltip.

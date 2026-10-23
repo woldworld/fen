@@ -331,14 +331,25 @@ void main() {
   // 为什么单列：本项目**英文为模板**。若某个 key 的 en 值里混进中文
   //（复制 zh 时忘改 / 新增 key 只填了中文），英文用户就会看到中文。
   // 编译、key 集合校验、占位符校验**都发现不了**这种串。
+  // ★★ 唯一豁免：产品专名「大荒AI」。它**按设计在英文里也是中文** ——
+  //   android 桌面名 `@string/app_name` 定值为「大荒AI」且**按语言不变**（
+  //   `values/strings.xml` 明写：市场名与桌面名必须一致）；而 ROM 引导要让用户去
+  //   系统设置里找那个图标 ⇒ 英文引导里**必须**写屏幕上真实显示的那个名字。
+  //   ⇒ 判据该查的是「有没有**漏翻的中文句子**」，不是「有没有中文字符」
+  //   （R34：判据查错对象，比没判据更危险）。剔掉专名后再查，漏翻的句子一个都跑不掉。
+  const brandName = '大荒AI';
   final cjk = RegExp('[一-鿿]');
   final enWithCjk = enK.where((k) {
     final v = en[k];
-    return v is String && cjk.hasMatch(v);
+    if (v is! String) return false;
+    return cjk.hasMatch(v.replaceAll(brandName, ''));
   }).toList()
     ..sort();
   check(enWithCjk.isEmpty,
-      '英文值零中文${enWithCjk.isEmpty ? '' : ' → $enWithCjk'}');
+      '英文值零中文（产品专名「$brandName」豁免）${enWithCjk.isEmpty ? '' : ' → $enWithCjk'}');
+  // ★ 正控：豁免只针对专名，真正漏翻的中文句子必须仍然被抓到
+  check(cjk.hasMatch('开启自启动后再试'.replaceAll(brandName, '')),
+      '★ 正控：漏翻的中文句子必须被「零中文」判据抓到');
 
   print('--- 周易：刻意不翻译（用户决策 #4）---');
   // 卦名 / 卦辞 / 爻辞是**专有名词与古文**，翻译成外文即失其义；

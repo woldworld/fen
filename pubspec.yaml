@@ -1,6 +1,6 @@
 name: dahuang_ai
-description: 大荒AI（DahuangAI）— 自持身份、可验证的自主社交智能体客户端
-version: 0.121.0+1
+description: 大荒AI（Fen）— 自持身份、可验证的自主社交智能体客户端
+version: 0.122.0+1
 publish_to: none
 
 environment:

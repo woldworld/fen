@@ -1,3 +1,83 @@
+## [0.122.0+1] — 2026-10-23
+
+> **本轮由公开推送现场触发**，不是计划内轮次：2026-10-23 源码整树已公开发布
+> （`https://github.com/woldworld/fen`），而 `llms.txt` 第 3 行仍写着
+> `Source: not publicly published yet (publication pending)` —— 对每一个读它的 Agent
+> 说了假话。ADR-003 硬规则 5 本来就写死「发布后同步回写第 3 行，并把 `Source:` 行纳入守卫」，
+> 本轮执行；顺手清退役品牌时**抓到一个真缺陷**（见 Fixed）。
+>
+> 改了 `lib/**/*.dart` + ARB ⇒ 按 ADR-001 链序 **MINOR+1 + 重出 APK + 部署包重打**。
+
+### Fixed
+
+- **英文 / 越南文引导让用户在系统设置里找一个不存在的应用名**（真缺陷，不是品牌洁癖）。
+  `romStepsXiaomi / Huawei / Honor / Oppo / Oneplus / Vivo / Meizu / Samsung / Generic`
+  九条在 **en / vi** 里写的是 `Settings → Apps → Dahuang AI → enable Autostart`，
+  而 Android 桌面名是 `@string/app_name` = **大荒AI**，且 `values/strings.xml` 明确写了
+  「市场名与桌面名必须一致，专名取定值、按语言不变」⇒ 用户在 MIUI/EMUI 里**找不到 `Dahuang AI`**。
+  已统一为 `大荒AI`，与 zh / zh_Hant / ja 三语种及桌面实际显示名一致。
+  ★ 与 0.75.0 那次「中文提示写大荒AI、资源里却是英文名 ⇒ 用户找不到开关」是同一类错，
+  只是方向相反——**引导文案里的应用名必须等于用户屏幕上真实看到的那个**。
+- 键数不变（五语种各 1,837 key），本轮只改值，不增删键。
+
+### Changed
+
+- `landing/build.js`：`llms.txt` 的 `Source:` 行改为真地址
+  `https://github.com/woldworld/fen (MIT)`，同指站内 `/docs/`（ADR-003 硬规则 5）。
+  新增常量 `SOURCE_REPO` —— 它是**唯一**被允许的站外 URL，写成常量是为了让"放行了几个站外链"永远可数。
+- `tool/verify_landing_machinereadable.js`：判据随事实反转，并**重做正控**。
+  ① 站外链从"一律站内"改为"白名单只放行 `SOURCE_URL`"；
+  ② 旧判据「不得出现 `github.com/woldworld`」（防 404 死链）反转为「必须指向已发布的真地址」，
+  同时**保留**退役仓库名 `github.com/woldworld/dahuang` 的禁令（改判据不等于把教训删掉）；
+  ③ ★ 原正控用的是 `github.com/woldworld/fen`，它现在被白名单放行 ⇒ **那条正控再也证明不了判据活着**（R50），
+  改用 `example.com` 做正控，并新增一条「白名单条目必须被放行」的正控。
+- 用户可见的退役品牌 8 处统一为 `Fen`：
+  `pubspec.yaml`（3,480→3,474 B）、`web/manifest.json`（1,009→1,003 B）描述里的 `大荒AI（DahuangAI）`；
+  `lib/core/system_knowledge.dart`（38,147→38,141 B）`system_help` 工具描述的 `(DahuangAI)`；
+  桌面端窗口标题 / 文件属性 —— `linux/runner/my_application.cc` 2 处、`windows/runner/Runner.rc` 2 处、
+  `windows/runner/main.cpp` 1 处，统一 `Fen (大荒AI)`。
+- `tool/verify_opensource_release.js`：**11,680 → 13,031 B** ——
+  ④ 段「导出树 CHANGELOG 与主仓同量级（≥90%）」升级为**逐字节一致（sha256 相等）**，并配负控。
+  ★ 这是本轮**自己踩到**的洞：给 CHANGELOG 补「读数 / 产物」两节后（882,999 → 884,543 B，约 99.8%），
+  导出树没重跑，旧判据照旧放行 —— **公开面的 changelog 说的还是上一版的话，而守卫全绿**。
+  「同量级」这种判据永远看不到"内容换了但大小差不多"，而公开面是永久事实，陈旧一次就是永久说错话。
+  负控：翻转导出树副本末字节，本判据必须报不一致（否则它就是恒真断言，R50）。
+
+### 故意不做（不是漏）
+
+- 公开面仍有 **24 处** `\bDahuangAI\b`，**全部是必须留着的**：
+  `tool/verify_landing_machinereadable.js`(10) 与 `tool/verify_opensource_release.js`(3) 是守卫的**正控毒注**
+  （删掉 = 守卫再也证明不了自己会红）；`CHANGELOG.md`(8) 是历史记录（改历史=伪造）；
+  `ADR/ADR-003`(3) 是对历史事实的陈述（"本轮只清了门面，其余是已披露的遗留"）。
+  ⇒ 判据：**"能删的"和"必须留的"要分开数**，把它们一起"清干净"等于把守卫的眼睛挖掉。
+
+### 读数
+
+- `dart run tool/run_flutter_test.dart`：**509 passed / 0 failed**
+- `dart run tool/run_all_verify.dart`：67 脚本 / **3,198 PASS / 0 FAIL**
+  （较 0.121.0 的 3,197 **+1**：`verify_i18n` 补了一条正控 —— 见下）
+- `flutter analyze`（默认作用域 = **全项目**）：0 error / 0 warning / **2,000** info
+- `node tool/run_all_verify_node.js`：**1,863 PASS / 0 FAIL**（40 脚本，rc=0）
+  （较 0.121.0 的 1,860 **+3**：① `verify_deploy_site_freshness` 28 → 30 —— 重打部署包后
+  「包内 changelog 含全部数字事实」与「包内 APK 双一致」两条转绿；
+  ② `verify_opensource_release` 31 → 32 —— 新增「导出树 CHANGELOG 逐字节一致」+ 它的负控）
+- `apksigner verify`（store / arm64-v8a）：Verifies，只签 **v2**，
+  证书 SHA-256 `28e10ba0…de8de2e`、alias `wold` —— 与 R9 记录逐字符一致。
+
+### 产物（字节事实，与本文件无关，故可复核）
+
+| 项 | 值 |
+|---|---|
+| APK `fen-0.122.0+1-arm64.apk` | **33,497,581 B**（`59e4c11b…41e3`） |
+| APK 内 `lib/arm64-v8a/libapp.so` | **13,173,648 B**（`8a1521f5…4db0`） |
+| `lib/l10n/app_en.arb` | **165,408 B** |
+| `lib/l10n/app_vi.arb` | **161,912 B** |
+
+★ `libapp.so` 与 0.121.0 **字节数一字不差**（都是 13,173,648），内容不同 ——
+字节数相等既不能证明"没变"，也不能证明"变了"（R33 两个方向都成立）。
+★ 部署包字节与 sha 仍**不写本文件**（R53：本文件直读渲染 `site/changelog/`，
+而 `site/` 在部署包内 ⇒ 写进去就是不动点死循环），只落《交付记录》§157。
+
 ## [0.121.0+1] — 2026-10-23
 
 > **本轮是 0.120.0「瘦身轮」的事后审计轮**。审计结论不是"改错了"，而是

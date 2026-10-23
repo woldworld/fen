@@ -2,7 +2,9 @@
 #
 # ★ 状态：**材料已备，尚未提交**。提交前置条件见 fdroid/README.md
 #   （源码仓库公开 + 打 tag + 公开树可构建；规范仓 URL 已定为 github.com/woldworld/fen）。
-#   仓库未公开前，本文件对 F-Droid 不生效——它是一份待提交的草稿，不是已上架的声明。
+#   ★ 2026-10-23 更新：**仓库已公开**（github.com/woldworld/fen，首提交 2026-10-23）。
+#     仍缺「打 tag」这一步（远端目前没有 v* 标签）⇒ 本文件**仍未提交**，仍是草稿。
+#     别因为仓库公开了就把这份 yml 当成已上架声明。
 #
 # ★ 两个必须知道的事实：
 #   ① F-Droid 会用**仓库密钥重新签名**每个应用 ⇒ F-Droid 版与官网版签名不同，
@@ -14,7 +16,7 @@
 #
 # 字段口径（与仓库事实一一对应，改仓库先改这里）：
 #   - applicationId = world.wold.fen（android/app/build.gradle.kts 两个 flavor 共用）
-#   - 版本 = pubspec.yaml 的 version 行（versionName 0.121.0 / versionCode 1）
+#   - 版本 = pubspec.yaml 的 version 行（versionName 0.122.0 / versionCode 1）
 #   - 构建 flavor = store（零受限权限；sideload 带短信/通知监听，永不对外分发）
 #   - 产物 = 未签名 release APK（WOLD_UNSIGNED_RELEASE=1 显式门，F-Droid 自签）
 Categories:
@@ -51,9 +53,9 @@ RepoType: git
 Repo: https://github.com/woldworld/fen
 
 Builds:
-  - versionName: 0.121.0
+  - versionName: 0.122.0
     versionCode: 1
-    commit: v0.121.0
+    commit: v0.122.0
     # 未签名产物：build.gradle.kts 的 WOLD_UNSIGNED_RELEASE=1 显式门放行
     # （无 key.properties 也构建 release，但不回退 debug 签名——纪律见该文件头注释）。
     # F-Droid 构建后用仓库密钥自行签名。
@@ -76,5 +78,5 @@ AntiFeatures:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.121.0
+CurrentVersion: 0.122.0
 CurrentVersionCode: 1

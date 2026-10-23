@@ -134,12 +134,28 @@ const hubJs = [];
 check(hubJs.length === 0, '★ 导出树内无 hub.js（命中=' + (hubJs.join(',') || '无') + '）');
 
 // ---------- 4) CHANGELOG 也得跟着走 ----------
+// ★★ 2026-10-23 升级（本轮实证；R35「扫到的不等于真实」/ R50「恒真断言」同族）：
+//   原判据是「导出树 CHANGELOG ≥ 主仓 90%」。实证：0.122.0 给 CHANGELOG 补了
+//   「读数 / 产物」两节（882,999 → 884,543 B，约 99.8%），导出树**没重跑**，
+//   旧判据照旧放行 —— 公开面 changelog 说的还是上一版的话，守卫却全绿。
+//   公开面是**永久事实**：陈旧一次就是永久说错话，而「同量级」永远看不到它。
+//   ⇒ 改成逐字节（sha256 相等）。量大不是问题，问题是被谁看到。
 const srcChg = path.join(ROOT, 'CHANGELOG.md');
 const relChg = path.join(REL, 'CHANGELOG.md');
 if (exists(srcChg) && exists(relChg)) {
-  const s = fs.statSync(srcChg).size;
-  const r = fs.statSync(relChg).size;
-  check(r >= s * 0.9, '导出树 CHANGELOG 与主仓同量级（主仓 ' + s + ' B / 导出树 ' + r + ' B）');
+  const crypto = require('crypto');
+  const sb = fs.readFileSync(srcChg);
+  const rb = fs.readFileSync(relChg);
+  const sh = crypto.createHash('sha256').update(sb).digest('hex');
+  const rh = crypto.createHash('sha256').update(rb).digest('hex');
+  check(sb.length > 0 && rh === sh, '★★ 导出树 CHANGELOG 与主仓**逐字节**一致（主仓 ' +
+    sb.length + ' B / sha ' + sh.slice(0, 8) + '；导出树 ' + rb.length + ' B / sha ' + rh.slice(0, 8) + '）');
+  // ★ 负控（R50）：把副本末字节翻转，判据必须报不一致 —— 否则它就是恒真断言。
+  const tampered = Buffer.from(rb);
+  if (tampered.length > 0) tampered[tampered.length - 1] ^= 0xff;
+  const th = crypto.createHash('sha256').update(tampered).digest('hex');
+  check(tampered.length > 0 && th !== sh,
+    '负控：翻转导出树 CHANGELOG 末字节后，本判据必须报不一致（证明上一条不是恒真）');
 } else {
   check(false, '导出树 CHANGELOG 在盘');
 }

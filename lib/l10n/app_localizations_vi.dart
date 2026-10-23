@@ -4785,39 +4785,39 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get romStepsXiaomi =>
-      'Trên Xiaomi/Redmi (MIUI/HyperOS): 1) Cài đặt → Ứng dụng → Quản lý ứng dụng → Dahuang AI → bật Tự khởi động; 2) Ứng dụng Bảo mật → Pin → Dahuang AI → Không hạn chế. Không làm những mục này, hệ thống sẽ giết fen trong vài phút sau khi khóa màn hình.';
+      'Trên Xiaomi/Redmi (MIUI/HyperOS): 1) Cài đặt → Ứng dụng → Quản lý ứng dụng → 大荒AI → bật Tự khởi động; 2) Ứng dụng Bảo mật → Pin → 大荒AI → Không hạn chế. Không làm những mục này, hệ thống sẽ giết fen trong vài phút sau khi khóa màn hình.';
 
   @override
   String get romStepsHuawei =>
-      'Trên Huawei (EMUI/HarmonyOS): Cài đặt → Ứng dụng → Quản lý khởi chạy ứng dụng → Dahuang AI → tắt Quản lý tự động, rồi bật cả ba: Tự khởi chạy, Khởi chạy phụ, Chạy nền.';
+      'Trên Huawei (EMUI/HarmonyOS): Cài đặt → Ứng dụng → Quản lý khởi chạy ứng dụng → 大荒AI → tắt Quản lý tự động, rồi bật cả ba: Tự khởi chạy, Khởi chạy phụ, Chạy nền.';
 
   @override
   String get romStepsHonor =>
-      'Trên Honor (MagicOS): Cài đặt → Ứng dụng → Quản lý khởi chạy ứng dụng → Dahuang AI → tắt Quản lý tự động, rồi bật Tự khởi chạy, Khởi chạy phụ và Chạy nền.';
+      'Trên Honor (MagicOS): Cài đặt → Ứng dụng → Quản lý khởi chạy ứng dụng → 大荒AI → tắt Quản lý tự động, rồi bật Tự khởi chạy, Khởi chạy phụ và Chạy nền.';
 
   @override
   String get romStepsOppo =>
-      'Trên OPPO/realme (ColorOS): Cài đặt → Ứng dụng → Quản lý ứng dụng → Dahuang AI → cho phép Tự khởi động; Cài đặt → Pin → Cài đặt khác → cho phép Dahuang AI hoạt động nền đầy đủ.';
+      'Trên OPPO/realme (ColorOS): Cài đặt → Ứng dụng → Quản lý ứng dụng → 大荒AI → cho phép Tự khởi động; Cài đặt → Pin → Cài đặt khác → cho phép 大荒AI hoạt động nền đầy đủ.';
 
   @override
   String get romStepsOneplus =>
-      'Trên OnePlus: Cài đặt → Ứng dụng → Tự khởi chạy → cho phép Dahuang AI; Pin → tối ưu mức dùng pin của Dahuang AI thành Không tối ưu.';
+      'Trên OnePlus: Cài đặt → Ứng dụng → Tự khởi chạy → cho phép 大荒AI; Pin → tối ưu mức dùng pin của 大荒AI thành Không tối ưu.';
 
   @override
   String get romStepsVivo =>
-      'Trên vivo/iQOO (OriginOS): Cài đặt → Ứng dụng → Quản lý quyền → Tự khởi động, cho phép Dahuang AI; Cài đặt → Pin → Tiêu hao pin nền → cho phép Dahuang AI tiêu hao nền cao.';
+      'Trên vivo/iQOO (OriginOS): Cài đặt → Ứng dụng → Quản lý quyền → Tự khởi động, cho phép 大荒AI; Cài đặt → Pin → Tiêu hao pin nền → cho phép 大荒AI tiêu hao nền cao.';
 
   @override
   String get romStepsMeizu =>
-      'Trên Meizu (Flyme): Trình quản lý điện thoại → Quyền ứng dụng → Quản lý nền → cho phép Dahuang AI tiếp tục chạy.';
+      'Trên Meizu (Flyme): Trình quản lý điện thoại → Quyền ứng dụng → Quản lý nền → cho phép 大荒AI tiếp tục chạy.';
 
   @override
   String get romStepsSamsung =>
-      'Trên Samsung (One UI): Cài đặt → Pin → Giới hạn dùng nền → xóa Dahuang AI khỏi danh sách ứng dụng ngủ sâu.';
+      'Trên Samsung (One UI): Cài đặt → Pin → Giới hạn dùng nền → xóa 大荒AI khỏi danh sách ứng dụng ngủ sâu.';
 
   @override
   String get romStepsGeneric =>
-      'Nếu hệ thống của bạn quyết liệt dừng ứng dụng nền, hãy cho phép Dahuang AI tự khởi động và loại nó khỏi tối ưu pin trong cài đặt hệ thống.';
+      'Nếu hệ thống của bạn quyết liệt dừng ứng dụng nền, hãy cho phép 大荒AI tự khởi động và loại nó khỏi tối ưu pin trong cài đặt hệ thống.';
 
   @override
   String get helpDotTooltip => 'Cách hoạt động';

@@ -344,7 +344,7 @@ String formatHelpResult(String query, List<HelpEntry> entries,
 ToolSpec buildSystemHelpTool({List<String> Function()? toolLines}) {
   return ToolSpec(
     name: 'system_help',
-    description: 'Look up how-to documentation for THIS app (DahuangAI): '
+    description: 'Look up how-to documentation for THIS app (Fen): '
         'features, settings, troubleshooting. Call it when the user asks how to '
         'do something in the app, where a setting is, why something behaves a '
         'certain way, or seems lost. IMPORTANT: the query MUST be English '

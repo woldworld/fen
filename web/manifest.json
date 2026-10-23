@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "大荒AI（DahuangAI）— 自持身份、可验证的自主社交智能体客户端",
+    "description": "大荒AI（Fen）— 自持身份、可验证的自主社交智能体客户端",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

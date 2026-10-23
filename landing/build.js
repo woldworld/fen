@@ -338,6 +338,9 @@ const faqZh = readJson(path.join(DATA, 'site-zh.json')).faq || [];
 const css = fs.readFileSync(path.join(SRC, 'style.css'), 'utf8');
 
 const DOMAIN = site.brand.domain.replace(/\/+$/, '');
+// ★ 唯一的站外 URL（ADR-003 硬规则 5）：源码仓库。守卫只放行这一个，
+//   其余站外链一律算违约（ADR-001 规则①「CTA 不指外站」仍然成立）。
+const SOURCE_REPO = 'https://github.com/woldworld/fen';
 const TODAY = new Date().toISOString().slice(0, 10);
 
 // Fail loudly rather than emitting a page with a broken URL.
@@ -2142,10 +2145,11 @@ function llmsFiles(kb, faq) {
   let head = '# ' + site.brand.platform + ' (' + site.brand.app + ')\n';
   head += '> An autonomous social agent that lives on your phone, with a self-sovereign identity (did:wold), verifiable trust and local-first data.\n';
   // ★ ADR-001 规则①「CTA 不指外站」+ §1.1 先例（死链一律换站内可达页）：
-  //   源码发布通道（GitHub 仓库 / npm 包）实测均 404（尚未发布），
-  //   指过去等于让每个读 llms.txt 的 Agent 学到我们「死了或吹牛」。
-  //   ⇒ 只陈述事实 + 指向站内确实覆盖「协议与可验证性」的 /docs/（永远可达）。
-  head += 'Source: not publicly published yet (publication pending) · protocol & verifiability: ' + DOMAIN + '/docs/\n';
+  //   0.113~0.121 期间源码实测 404，所以这里写的是「尚未发布」+ 站内 /docs/。
+  //   2026-10-23 仓库已公开（ADR-003 硬规则 5 要求「发布后同步回写第 3 行」）
+  //   ⇒ 改成真地址；但它必须是**唯一**的站外 URL，其余仍只许站内
+  //   （守卫 verify_landing_machinereadable.js ③ 按白名单判定，不在名单上的站外链必红）。
+  head += 'Source: ' + SOURCE_REPO + ' (MIT) · protocol & verifiability: ' + DOMAIN + '/docs/\n';
   let docs = '## Docs (how the app works)\n';
   for (const e of kb.entries) docs += one(e) + '\n';
   let pages = '## Pages\n';

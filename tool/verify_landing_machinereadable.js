@@ -54,6 +54,11 @@ function check(ok, label) {
 // wrong object" failure this project keeps hitting (see R34 / R35).
 const RETIRED_RE = /\bDahuangAI\b/g;
 
+// ★ ADR-003 硬规则 5（2026-10-23 源码已公开）：唯一被允许的**站外** URL。
+//   ADR-001 规则①「CTA 不指外站」并没有被废掉——它变成「除这一条外一律站内」。
+//   白名单写成常量而不是散落判断，是为了让「只放行几个站外链」永远可数。
+const SOURCE_URL = 'https://github.com/woldworld/fen';
+
 function retiredHits(text) {
   return (String(text).match(RETIRED_RE) || []);
 }
@@ -164,7 +169,7 @@ check(
 
 const allUrls = urlsIn(llms).concat(urlsIn(llmsFull));
 const offSite = allUrls.filter(function (u) {
-  return u.indexOf(DOMAIN) !== 0;
+  return u.indexOf(DOMAIN) !== 0 && u !== SOURCE_URL;
 });
 check(
   offSite.length === 0,
@@ -172,9 +177,15 @@ check(
     (offSite.length ? '：' + offSite.slice(0, 3).join(' , ') : '')
 );
 
+// ★ 判据反过来了：从「不得指向 404」改成「必须指向已发布的真地址」（ADR-003 硬规则 5）。
+//   同时保留对**退役仓库名**的禁令——改判据不等于把历史教训删掉。
 check(
-  llms.indexOf('github.com/woldworld') === -1,
-  'llms.txt 不再指向未发布的 GitHub 仓库（实测 404）'
+  llms.indexOf(SOURCE_URL) !== -1 && llmsFull.indexOf(SOURCE_URL) !== -1,
+  'llms.txt / llms-full.txt 都指向已发布的源码仓库（' + SOURCE_URL + '）'
+);
+check(
+  llms.indexOf('github.com/woldworld/dahuang') === -1,
+  'llms.txt 不指向已退役的 dahuang 仓库名'
 );
 
 const srcLine = (llms.split(/\r?\n/).filter(function (l) {
@@ -191,11 +202,18 @@ console.log('--- 正控（证明判据真的会翻红，不是恒绿） ---');
 check(retiredHits('# DahuangAI (Fen)').length === 1, '★ 正控：注入退役品牌必须被抓到');
 check(retiredHits('The World of Dahuang').length === 0, '★ 正控：世界观名「Dahuang」不得被误杀');
 check(retiredHits('# Wold (Fen)').length === 0, '★ 正控：正确品牌不得误报');
+// ★ 正控必须换成「白名单之外」的站外 URL：白名单条目自己不再能证明判据活着（R50）。
 check(
-  urlsIn('see https://github.com/woldworld/fen for source').filter(function (u) {
-    return u.indexOf(DOMAIN) !== 0;
+  urlsIn('see https://example.com/not-us for source').filter(function (u) {
+    return u.indexOf(DOMAIN) !== 0 && u !== SOURCE_URL;
   }).length === 1,
-  '★ 正控：站外 URL 必须被「全部站内」判据抓到'
+  '★ 正控：白名单之外的站外 URL 必须被「全部站内」判据抓到'
+);
+check(
+  urlsIn('see ' + SOURCE_URL + ' for source').filter(function (u) {
+    return u.indexOf(DOMAIN) !== 0 && u !== SOURCE_URL;
+  }).length === 0,
+  '★ 正控：白名单里的源码 URL 必须被放行（否则白名单等于没生效）'
 );
 check(
   urlsIn('1) Hub address starts with https://; 2) the network works').filter(function (u) {
