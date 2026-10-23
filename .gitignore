@@ -1,0 +1,80 @@
+﻿# ── 大荒AI 公开发布仓专用 .gitignore ──
+# （由 opensource_release.ps1 生成；发布仓是全新单提交仓，不继承私有仓历史）
+
+# Flutter / Dart
+.dart_tool/
+.pub-cache/
+.pub/
+/build/
+/coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.flutter-plugins-dependencies
+
+# 编辑器 / 系统
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+.DS_Store
+**/.zcodeignore
+
+# 签名密钥（绝不入库）
+*.jks
+*.keystore
+android/key.properties
+android/local.properties
+
+# Android / Gradle 构建产物
+android/build/
+android/app/build/
+android/.kotlin/
+android/app/debug
+android/app/profile
+android/app/release
+
+# 生成物（判据＝"是不是生成物"，不是"有没有被引用"）
+*.log
+*.bak
+*.bak[0-9]
+*.orig
+*.prebrand
+*.tmp
+l10n_untranslated.json
+**/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/flutter_assets/
+lib/.analyze-out.txt
+lib/.analyze-tmp/
+.analyzer_errors.txt
+analyze_errors.txt
+landing/dist/
+lib/dist/
+lib/hub/trial-pool.json
+lib/hub/.test-*-data/
+tool/.*.txt
+tool/.*.json
+tool/_*.txt
+tool/_*.json
+tool/_*.py
+
+# 本地资产
+.workbuddy/
+.dsh_research/
+备份/
+_archive/
+lib*.zip
+
+# ★ 纵深第三层：gitignored 二进制资产——判据同私有仓（不是源码）。
+#   robocopy /XD（第一层）与 §5 断言（第二层）已拦住；这里再兜一层，
+#   万一 /XD 回归漏排，git add -A 也收不进发布仓提交。
+视频/
+landing/download/
+landing/video/
+
+# ★ 注意：packages/pocket_harness 与 packages/protocol 必须入库（本项目主打模块），
+#   私有仓里 pocket_harness 是嵌套 git 仓故被忽略，发布仓里它是普通目录。

@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "los-angeles",
+    "name": "Los Angeles",
+    "country": "United States",
+    "region": "Americas",
+    "image": "/assets/city/los-angeles.jpg",
+    "blurb": "A city built for starting over. The hard part is not landing - it is who still knows you by month three.",
+    "arc": [
+      "LA spreads people out; nobody meets anyone by accident. The first month feels social, the third feels quiet.",
+      "Fen keeps the few real connections warm across the sprawl, so distance never turns into silence."
+    ],
+    "zh": {
+      "name": "洛杉矶",
+      "country": "美国",
+      "image": "/assets/city/los-angeles.jpg",
+      "blurb": "一座为重新开始而建的城市。难的不是落地，是第三个月还有谁知道你。",
+      "arc": [
+        "洛杉矶把人摊得很开，没有人会「顺便遇见」谁。第一个月热热闹闹，第三个月安静得能听见回声。",
+        "你的分身替你守住那几个真聊得来的人——城市再大，不该把联系冲散。"
+      ]
+    }
+  },
+  {
+    "slug": "tokyo",
+    "name": "Tokyo",
+    "country": "Japan",
+    "region": "Asia",
+    "image": "/assets/city/tokyo.jpg",
+    "blurb": "Polite, dense, and famously hard to enter. Circles here open slowly - and close slowly too.",
+    "arc": [
+      "Tokyo rewards patience: groups form over months, not mixers. Pushing faster only gets you politeness.",
+      "Fen plays the long game for you - keeping every thread alive until there is a real reason to be invited in."
+    ],
+    "zh": {
+      "name": "东京",
+      "country": "日本",
+      "image": "/assets/city/tokyo.jpg",
+      "blurb": "礼貌、密集、出了名地难进入。这里的圈子开得慢，关得也慢。",
+      "arc": [
+        "东京奖励耐心：圈子按月成形，不按局。推得越急，得到的只有礼貌。",
+        "你的分身替你下慢棋——记住每一条线，等到真正被邀请入场的那个时机。"
+      ]
+    }
+  },
+  {
+    "slug": "ho-chi-minh",
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "region": "Asia",
+    "image": "/assets/city/ho-chi-minh.jpg",
+    "blurb": "Fast, young, and still forming. The people who arrive now set the tone for years.",
+    "arc": [
+      "Saigon moves fast: new cafes, new crews, new everythings. Early arrivals do not just find circles - they become them.",
+      "Fen maps the moving city for you, so the people worth keeping never slip past in the rush."
+    ],
+    "zh": {
+      "name": "胡志明市",
+      "country": "越南",
+      "image": "/assets/city/ho-chi-minh.jpg",
+      "blurb": "快、年轻、还在成形。现在来的人，定未来几年的调。",
+      "arc": [
+        "西贡跑得飞快：新咖啡馆、新局、新的一切。先来的人不只是找到圈子——他们自己就是圈子。",
+        "你的分身替你记下这座流动的城市，让值得留住的人不在奔忙中滑走。"
+      ]
+    }
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "country": "Singapore",
+    "region": "Asia",
+    "image": "/assets/city/singapore.jpg",
+    "blurb": "Small, efficient, and quietly gated. Everyone is transient, which makes continuity rare.",
+    "arc": [
+      "Singapore is easy to land in and hard to root in: visas rotate, friends rotate, plans rotate.",
+      "Fen is the fixed point - it keeps your people across every rotation, so each new arrival starts warmer."
+    ],
+    "zh": {
+      "name": "新加坡",
+      "country": "新加坡",
+      "image": "/assets/city/singapore.jpg",
+      "blurb": "小而高效，却安静地设着门槛。人人都是过客，连续因此稀缺。",
+      "arc": [
+        "新加坡落地容易扎根难：准证在轮换，朋友在轮换，计划也在轮换。",
+        "你的分身是那个定点——替你把人留住，让每一次重新落地都比上次更暖。"
+      ]
+    }
+  },
+  {
+    "slug": "hong-kong",
+    "name": "Hong Kong",
+    "country": "Hong Kong, China",
+    "region": "Asia",
+    "image": "/assets/city/hong-kong.jpg",
+    "blurb": "Vertical, fast, and dense with people in motion. Everyone is one stop away, and somehow never meets.",
+    "arc": [
+      "Eight million lives stacked into a few square kilometres: everyone is one MTR stop away, and no one ever bumps into anyone.",
+      "Fen goes first - it sets the table, keeps the threads warm, and tells you when it is your turn to show up."
+    ],
+    "zh": {
+      "name": "香港",
+      "country": "中国香港",
+      "image": "/assets/city/hong-kong.jpg",
+      "blurb": "垂直、飞快、密不透风。每个人都近在一站地铁，却总是遇不上。",
+      "arc": [
+        "八百万人叠在几平方公里里，谁都只隔一站地铁，却谁也碰不上谁。",
+        "你的分身先走一步：把局攒好，把线焐热，然后告诉你——该你出场了。"
+      ]
+    }
+  },
+  {
+    "slug": "sydney",
+    "name": "Sydney",
+    "country": "Australia",
+    "region": "Oceania",
+    "image": "/assets/city/sydney.jpg",
+    "blurb": "Warm, outdoorsy, and built around long-established crews. Newcomers are welcomed - and rarely absorbed.",
+    "arc": [
+      "Sydney is friendly on the surface, but most circles date back to school or surf club. Being liked is easy; being included takes time.",
+      "Fen stays in the room for you, keeping each thread warm until the invitation is real."
+    ],
+    "zh": {
+      "name": "悉尼",
+      "country": "澳大利亚",
+      "image": "/assets/city/sydney.jpg",
+      "blurb": "友好、户外、围着老圈子转。新人总受欢迎——却很少被真正吸纳。",
+      "arc": [
+        "悉尼表面热络，但多数圈子从学生时代延续到今天。被喜欢容易，被接纳需要时间。",
+        "你的分身替你守在场内，把每条线焐热，直到邀请成真。"
+      ]
+    }
+  }
+]

@@ -1,0 +1,80 @@
+# F-Droid 构建配方：world.wold.fen（大荒 AI / Wold / Fen）
+#
+# ★ 状态：**材料已备，尚未提交**。提交前置条件见 fdroid/README.md
+#   （源码仓库公开 + 打 tag + 公开树可构建；规范仓 URL 已定为 github.com/woldworld/fen）。
+#   仓库未公开前，本文件对 F-Droid 不生效——它是一份待提交的草稿，不是已上架的声明。
+#
+# ★ 两个必须知道的事实：
+#   ① F-Droid 会用**仓库密钥重新签名**每个应用 ⇒ F-Droid 版与官网版签名不同，
+#     Android 不允许互相覆盖安装（换渠道必须先卸载，本地数据不保）。
+#     这件事已写进官网 /download/ 三渠道页，提交说明里也要主动讲。
+#   ② 本 App 默认连项目自营的 hub（hub.wold.world / world.wold.world）——
+#     网络层是专有代码、不在本仓库 ⇒ 按 F-Droid 规矩打 NonFreeNet 反特性标签。
+#     客户端本身 MIT、可完全离线/局域网自用。
+#
+# 字段口径（与仓库事实一一对应，改仓库先改这里）：
+#   - applicationId = world.wold.fen（android/app/build.gradle.kts 两个 flavor 共用）
+#   - 版本 = pubspec.yaml 的 version 行（versionName 0.121.0 / versionCode 1）
+#   - 构建 flavor = store（零受限权限；sideload 带短信/通知监听，永不对外分发）
+#   - 产物 = 未签名 release APK（WOLD_UNSIGNED_RELEASE=1 显式门，F-Droid 自签）
+Categories:
+  - Internet
+  - System
+License: MIT
+AuthorName: weili (The Wold)
+AuthorWebSite: https://wold.world
+WebSite: https://wold.world
+SourceCode: https://github.com/woldworld/fen
+IssueTracker: https://github.com/woldworld/fen/issues
+Changelog: https://wold.world/changelog/
+
+Summary: 个人数字分身：会客厅、私聊、邮箱与设备助手，本地优先、免账号
+Description: |-
+  大荒 AI（Wold / Fen）是一个跑在你自己手机上的个人数字分身。
+
+  它能做什么：
+  · 会客厅：话题房间，你的分身与别的分身、真实的人在同一间屋里对话
+  · 私聊：与自己的分身 1:1 对话，历史只留在本机
+  · 邮箱工具：经你自己的邮箱（IMAP/SMTP）读写，默认关闭
+  · 本地模型：可指向任何 OpenAI 兼容端点，包括你家局域网上的那个
+  · 设备助手：提醒、日历（只读）、晨间问候
+
+  它不做什么：
+  · 不要账号、不要手机号；构建里没有广告 SDK、没有崩溃上报 SDK、没有 GMS/Firebase
+  · 商店构建零受限权限（无短信读取、无通知监听——那些只在自用侧载版里）
+  · 对话、密钥与数据库不出本机，除非你主动指向一个你自己控制的服务器
+
+  注意（NonFreeNet）：默认 hub 端点由项目方运营；网络层代码专有、不在本仓库。
+  你可以自建网络层，或完全离线/局域网使用。客户端 MIT 许可。
+
+RepoType: git
+Repo: https://github.com/woldworld/fen
+
+Builds:
+  - versionName: 0.121.0
+    versionCode: 1
+    commit: v0.121.0
+    # 未签名产物：build.gradle.kts 的 WOLD_UNSIGNED_RELEASE=1 显式门放行
+    # （无 key.properties 也构建 release，但不回退 debug 签名——纪律见该文件头注释）。
+    # F-Droid 构建后用仓库密钥自行签名。
+    # ★ output 路径经 0.113.0 第二轮实证确认：--split-per-abi 产出 3 个单 ABI 包，
+    #   AGP 输出在 apk/store/release/（带 -unsigned 后缀），Flutter 另拷贝一份到
+    #   flutter-apk/（不带后缀）。取 arm64 单包，与官网分发口径一致。
+    output: build/app/outputs/apk/store/release/app-store-arm64-v8a-release-unsigned.apk
+    srclibs:
+      - flutter@3.44.0
+    prebuild: |
+      export PATH=$$flutter$$/bin:$$PATH
+      flutter --version
+      flutter pub get
+    build: |
+      export PATH=$$flutter$$/bin:$$PATH
+      flutter build apk --release --flavor store --no-pub --split-per-abi
+
+AntiFeatures:
+  - NonFreeNet
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 0.121.0
+CurrentVersionCode: 1

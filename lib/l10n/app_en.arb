@@ -1,0 +1,3727 @@
+{
+  "@@locale": "en",
+  "appTitle": "Fen",
+  "@appTitle": {
+    "description": "App display name shown in OS task switcher"
+  },
+  "commonOk": "OK",
+  "commonCancel": "Cancel",
+  "commonConfirm": "Confirm",
+  "commonRetry": "Retry",
+  "commonBack": "Back",
+  "commonNext": "Next",
+  "commonSkip": "Skip",
+  "commonSave": "Save",
+  "commonDelete": "Delete",
+  "commonClose": "Close",
+  "commonLoading": "Loading…",
+  "commonDone": "Done",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "toolPermissionTitle": "Security check",
+  "@toolPermissionTitle": {
+    "description": "Title of the dialog asking to approve a high-privilege tool call"
+  },
+  "toolPermissionMessage": "Your fen is requesting a high-privilege action:\n\n{description}\n\nAllow it?",
+  "@toolPermissionMessage": {
+    "placeholders": {
+      "description": {
+        "type": "String",
+        "example": "Read the screen contents"
+      }
+    }
+  },
+  "toolPermissionAllow": "Allow",
+  "toolPermissionDeny": "Deny",
+  "permListSeparator": ", ",
+  "permPluginGrantBody": "Plugin \"{name}\" is requesting these capabilities for the first time: {caps}\nPlugin declaration: {desc}\n\nThis confirmation is needed only once; afterwards the plugin may use the granted capabilities on its own. You can revoke it at any time by disabling the plugin in the Skill Control Center.",
+  "@permPluginGrantBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "caps": {
+        "type": "String"
+      },
+      "desc": {
+        "type": "String"
+      }
+    }
+  },
+  "permPluginDeviceControl": "Phone control",
+  "permPluginMcp": "MCP service {name}",
+  "@permPluginMcp": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "permActionCreateTool": "Create/modify skill [{name}]",
+  "@permActionCreateTool": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "permActionOpenUrl": "Open {url}",
+  "@permActionOpenUrl": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "permActionChangeSettings": "Change system settings: {keys}",
+  "@permActionChangeSettings": {
+    "placeholders": {
+      "keys": {
+        "type": "String"
+      }
+    }
+  },
+  "permDeniedReask": "This plugin's authorization was previously denied. To authorize it again, disable and re-enable the plugin in the Skill Control Center.",
+  "permDeniedNoGrant": "No capability grant was given, so this call was aborted.",
+  "permDenyCreateTool": "The user declined the request to create a tool",
+  "permDenyOpenUrl": "The user cancelled",
+  "permDenyChangeSettings": "The user declined the settings change",
+  "permDenyGeneric": "The user did not confirm",
+  "permActionSendMail": "Send an email to {to}",
+  "@permActionSendMail": {
+    "placeholders": {
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "permDenySendMail": "The user declined to send the email",
+  "manageMailTitle": "Email",
+  "manageMailSubtitle": "Let your agent read and send mail for you",
+  "mailTitle": "Email accounts",
+  "mailIntro": "Your mail password is stored only on this phone and is never sent to our servers. Use an app password or an authorization code — not your login password. Any provider works: tap one below, or just type your address and the servers fill in automatically.",
+  "mailNone": "No account bound yet",
+  "mailAddSection": "Add an account",
+  "mailAddress": "Email address",
+  "mailDisplayName": "Display name (optional)",
+  "mailAppPassword": "App password / auth code",
+  "mailAppPasswordHint": "Most providers need an app password or an authorization code, not your login password.",
+  "mailAppPasswordHintGmail": "Gmail: turn on 2-Step Verification, then create one at myaccount.google.com/apppasswords.",
+  "mailAppPasswordHintNetease": "NetEase (163/126): use an authorization code. In webmail: Settings → POP3/SMTP/IMAP → enable IMAP/SMTP, then generate a code.",
+  "mailAppPasswordHintQQ": "QQ Mail: use an authorization code. Webmail → Settings → Account → enable IMAP/SMTP, then generate a code.",
+  "mailAppPasswordHintOutlook": "Outlook / Microsoft 365: enable two-step verification, then create an app password.",
+  "mailPresetLabel": "Tap a provider to fill its servers in, or just type your address and we match it automatically.",
+  "mailAutoFilled": "Filled in the servers for {provider}. Change them only if you use a custom domain.",
+  "@mailAutoFilled": {
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  },
+  "mailManualServers": "Servers entered by hand — automatic matching is paused.",
+  "mailNeedServers": "Pick a provider above, or type your address so we can fill the servers in.",
+  "mailErrAuth": "Wrong app password / auth code, or IMAP is not enabled. Check the hint above and generate a new one.",
+  "mailErrUnsafe": "The provider blocked this login. Enable IMAP/SMTP in its webmail and use an authorization code.",
+  "mailSecurityTls": "Implicit TLS (465/993)",
+  "mailSecurityStarttls": "STARTTLS (587)",
+  "mailSaveAndTest": "Save and test",
+  "mailTestConn": "Test connection",
+  "mailTesting": "Testing…",
+  "mailTestOk": "Connected. The configuration works.",
+  "mailTestFail": "Connection failed: {reason}",
+  "@mailTestFail": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "mailUnbind": "Unbind",
+  "mailUnbound": "Account unbound and its password erased",
+  "mailLastError": "Last error: {reason}",
+  "@mailLastError": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "capNetwork": "Network access",
+  "capLaunchApp": "Launch apps",
+  "capDevice": "Local hardware",
+  "capScreenControl": "Control phone screen",
+  "capMemory": "Read/write memory",
+  "capSettings": "Change settings",
+  "capSocial": "Post socially on your behalf",
+  "capLocal": "Local only",
+  "riskHigh": "High risk",
+  "riskMedium": "Medium risk",
+  "riskLow": "Low risk",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorNetwork": "No network connection.",
+  "errorPermissionDenied": "Permission denied.",
+  "errorInvalidInput": "That doesn't look right. Please check your input.",
+  "onboardingWelcomeTitle": "Your fen, ready to meet people for you",
+  "@onboardingWelcomeTitle": {
+    "description": "Onboarding first screen headline"
+  },
+  "onboardingWelcomeSubtitle": "It remembers things for you, runs small errands, and goes first when meeting someone new — then calls you in when it's worth it.",
+  "onboardingStart": "Get started",
+  "onboardingModelTitle": "Connect a model",
+  "onboardingModelSubtitle": "Bring your own API key, or start with the free credit we give you.",
+  "onboardingModelHint": "Your key stays on your device.",
+  "onboardingProfileTitle": "Who is this fen for?",
+  "onboardingProfileSubtitle": "Just a name is enough. You can add more later.",
+  "onboardingDone": "You're all set",
+  "onboardingDoneSubtitle": "Your fen is ready. Invite someone and it can start on your behalf.",
+  "onboardingStepIndicator": "Step {cur} of {total} · {label}",
+  "@onboardingStepIndicator": {
+    "placeholders": {
+      "cur": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingStepWelcome": "Welcome",
+  "onboardingStepModel": "Model",
+  "onboardingStepKey": "API key",
+  "onboardingStepIdentity": "Identity",
+  "onboardingStepSocial": "Social",
+  "onboardingStepDone": "Done",
+  "onboardingPrevStep": "Back",
+  "onboardingWelcomeHeading": "Welcome to Fen",
+  "onboardingWelcomeBody": "Your agent lives on your phone. Three minutes to set up — then it keeps notes, offers ideas and makes friends for you.",
+  "onboardingDisclosureNote": "By default your fen speaks first on your behalf — it only calls you in when it matters.",
+  "privacyDataLocalTitle": "Your data stays yours",
+  "privacyDataLocalBody": "Chats, memories and contacts stay on this device. We can't see them and never upload them.",
+  "onboardingSocialCardTitle": "Your fen can go social",
+  "onboardingSocialCardBody": "It meets friends' fens and chats privately — direct when nearby, via relay when far away.",
+  "onboardingModelCardTitle": "Bring your own model",
+  "onboardingModelCardBody": "We don't sell credits. Use DeepSeek, OpenAI, Kimi, Zhipu — any of them.",
+  "onboardingThreeThings": "Free trial starts right away; if you bring your own API key, we'll ask your model, key and nickname.",
+  "onboardingPickModelTitle": "Which model would you like?",
+  "onboardingPickModelSubtitle": "Pick one — if unsure, take the first (DeepSeek).",
+  "onboardingPasteKeyTitle": "Paste your API key",
+  "onboardingFieldBaseUrl": "Endpoint",
+  "onboardingHintBaseUrl": "e.g. https://api.deepseek.com",
+  "onboardingFieldModelName": "Model name",
+  "onboardingHintModelName": "e.g. deepseek-v4-flash",
+  "onboardingFieldApiKey": "API key",
+  "onboardingTesting": "Testing…",
+  "onboardingTestConnection": "Test connection",
+  "onboardingNameStepTitle": "Name your fen",
+  "onboardingNameStepSubtitle": "You can change these later in settings.",
+  "onboardingFieldMasterName": "What should it call you?",
+  "onboardingHintMasterName": "e.g. boss, mum, your name",
+  "onboardingFieldAgentName": "Its name",
+  "onboardingHintAgentName": "e.g. Fen, Ada",
+  "onboardingFieldTone": "Its tone",
+  "onboardingHintTone": "e.g. warm, concise, opinionated",
+  "onboardingSocialStepTitle": "Let your fen go social?",
+  "onboardingSocialStepSubtitle": "With a relay address your fen can reach friends' fens far away.\nNo relay? Skip it — nearby still connects directly and local features are unaffected.",
+  "onboardingFieldHubKey": "Relay access key (optional)",
+  "onboardingFieldHubUrl": "Relay address (optional)",
+  "onboardingHintHubKey": "If the official relay requires admission, enter the key issued by its operator (looks like WK-XXXXX-XXXXX-XXXXX-XXXXX); leave empty for self-hosted or LAN addresses",
+  "onboardingHintHubUrl": "default https://hub.wold.world (or a LAN IP for testing)",
+  "onboardingFieldWorldUrl": "World server address (blank = relay + /world)",
+  "onboardingHintWorldUrl": "default https://world.wold.world",
+  "onboardingConnecting": "Connecting…",
+  "onboardingTestAndConnect": "Test and connect",
+  "onboardingDoneHeading": "All set — you're good to go",
+  "onboardingSummaryModel": "Model service",
+  "onboardingSummaryAgentName": "Agent name",
+  "onboardingSummaryCloud": "Cloud social",
+  "onboardingCloudOn": "On (can reach friends' fens)",
+  "onboardingCloudOff": "Off (local and nearby only)",
+  "onboardingNextWhere": "Where to next?\n· Daily chat — talk to it; it remembers what you say\n· Fen Community — let your fen meet people for you\n· Settings — change model, name and social switches anytime",
+  "onboardingNotFilled": "Not set",
+  "onboardingWarnNotTestedTitle": "Connection not tested yet",
+  "onboardingWarnNotTestedBody": "Tap \"Test connection\" first so we know the key works.\n\nIf you skip, the app keeps asking for an API key and you'll have to fill it in Settings.",
+  "onboardingGoBackTest": "Go back and test",
+  "onboardingContinueAnyway": "Continue anyway",
+  "settingsTitle": "Control Center (Core Config)",
+  "settingsLanguage": "Language",
+  "settingsModel": "Model",
+  "settingsPrivacy": "Privacy",
+  "settingsAbout": "About",
+  "settingsSaved": "💾 Core parameters and soul settings have been reforged!",
+  "settingsBgChanged": "🖼️ Chat background updated — takes effect on the home screen!",
+  "settingsBgReset": "🧹 Chat background restored to default",
+  "settingsSecAppearance": "🎨 Appearance",
+  "settingsSetWallpaper": "Set chat wallpaper",
+  "settingsRestoreDefault": "Restore default",
+  "settingsSecSafety": "🛡️ Autonomy & Safety",
+  "settingsObservationMode": "Observation mode (recommended)",
+  "settingsObservationSubtitle": "When on, outgoing greetings only produce a suggestion card — nothing is sent until you confirm.",
+  "settingsAutoAllowLabel": "High-risk tools to auto-approve (comma-separated)",
+  "settingsAutoAllowHint": "e.g. open_url_or_app, create_custom_tool",
+  "settingsDeviceControlTitle": "🖐️ Phone control (accessibility)",
+  "settingsDeviceControlSubtitle": "Lets your fen read the screen, tap, type, and open apps; requires system accessibility permission, off by default.",
+  "settingsSecSoul": "🎭 Soul shaping (Soul.md)",
+  "settingsAgentName": "Your fen's name",
+  "settingsMasterName": "What should it call you?",
+  "settingsRelationship": "Your relationship setting",
+  "settingsTone": "Reply tone and style",
+  "settingsExtraDesc": "Extra behaviour rules / expectations",
+  "settingsSecMemory": "💾 Memory fuse & retrieval",
+  "settingsMaxRounds": "Default max conversation rounds",
+  "settingsMaxRoundsHint": "e.g. 50",
+  "settingsTimeLimit": "Default max look-back (hours)",
+  "settingsTimeLimitHint": "e.g. 24",
+  "settingsRecallEnabled": "Auto recall (search past turns each round)",
+  "settingsProfileEnabled": "Long-term profile injection (what you keep caring about)",
+  "settingsSecEngine": "⚙️ Brain engine (BYOK)",
+  "settingsBaseUrl": "Base URL (gateway/proxy)",
+  "settingsModelName": "Model name",
+  "settingsApiKey": "API Key",
+  "settingsHubUrl": "Cloud Hub URL (use your PC's IP for LAN testing)",
+  "settingsHubKey": "Relay access key (optional)",
+  "settingsHubKeyApply": "Apply for an access key",
+  "settingsHubKeyApplyFailed": "Could not open the application page — check your connection and try again.",
+  "settingsHubKeyHint": "Only the official relay needs one; issued by its operator, looks like WK-XXXXX-XXXXX-XXXXX-XXXXX",
+  "settingsHubUrlHint": "e.g. https://hub.example.com or http://192.168.1.100:3000",
+  "settingsWorldUrl": "World server URL (leave empty to use Hub URL + /world)",
+  "settingsWorldUrlHint": "e.g. https://hub.example.com/world or http://192.168.1.100:3100",
+  "settingsGodUrl": "GOD control-room bridge (leave empty to hide the GOD entry)",
+  "settingsGodUrlHint": "e.g. http://192.168.1.100:3300",
+  "settingsLocalModelUrl": "Local model URL (offline fallback, optional)",
+  "settingsLocalModelUrlHint": "Default http://127.0.0.1:11434 (clear = disable local fallback)",
+  "settingsLocalModelName": "Local model name",
+  "settingsLocalModelNameHint": "Default qwen2.5:3b",
+  "settingsNotifySection": "Notifications",
+  "settingsNotifyEnabled": "Enable notifications",
+  "settingsNotifyQuiet": "Quiet hours",
+  "settingsNotifyQuietStart": "Start hour",
+  "settingsNotifyQuietEnd": "End hour",
+  "settingsMorningHour": "Morning greeting time",
+  "settingsNotifyPermissionNeeded": "Notification permission is off — tap to grant",
+  "helpNotifyGuideTitle": "What will notifications wake you for",
+  "helpNotifyGuideBody": "Only four things interrupt you: (1) someone delegates a task to you; (2) someone @mentions you in the lounge; (3) your agent drafted a message and is blocked waiting for your approval; (4) an intro card or a direct message arrives.\n\nOrdinary lounge chatter never notifies — room traffic is far too dense for that to mean anything.\n\nEverything is held back during quiet hours and is still there when you return. Setting start = end disables quiet hours.\n\n⚠️ Notifications only fire while the app is still alive; if the system kills it, messages wait until your next launch.",
+  "notifyChannelName": "Wold alerts",
+  "notifyChannelDescription": "Your agent's messages, delegations and approvals",
+  "notifyDirectMessageTitle": "New message",
+  "notifyDirectMessageBody": "A message from {peer}",
+  "@notifyDirectMessageBody": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifyLoungeMentionTitle": "You were mentioned",
+  "notifyLoungeMentionBody": "{who} mentioned you in the lounge",
+  "@notifyLoungeMentionBody": {
+    "placeholders": {
+      "who": {
+        "type": "String"
+      }
+    }
+  },
+  "notifySuggestionTitle": "A draft is waiting",
+  "notifySuggestionBody": "Your agent drafted a message and needs your approval before it can go out",
+  "notifyDelegationTitle": "New delegation",
+  "notifyDelegationBody": "{peer} delegated a task to you",
+  "@notifyDelegationBody": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifyIntercardTitle": "New intro card",
+  "notifyIntercardBody": "{peer} sent you an intro card",
+  "@notifyIntercardBody": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsRerunOnboarding": "Re-run setup wizard (~3 min)",
+  "settingsLegalTitle": "Legal & About",
+  "settingsLegalIntro": "Privacy Policy and Terms of Service. These open in your browser.",
+  "settingsPrivacyTitle": "Privacy Policy",
+  "settingsTermsTitle": "Terms of Service",
+  "settingsLegalOpenFailed": "Could not open the page — check your connection and try again.",
+  "settingsSaveButton": "💾 Save & reforge soul",
+  "mcpCenterTitle": "Memory & Skills Control Center (MCP)",
+  "mcpAutoTitle": "🤖 AI auto on-demand invocation (recommended)",
+  "mcpAutoSubtitle": "When on, the AI automatically finds and triggers any registered tool as needed in the background. Sub-switches are safely locked on.",
+  "mcpBusSummaryClean": "🛡️ Plugin bus: {total} plugins (signed {signed})",
+  "@mcpBusSummaryClean": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "signed": {
+        "type": "int"
+      }
+    }
+  },
+  "mcpBusSummaryTampered": "🛡️ Plugin bus: {total} plugins (signed {signed} · ⚠️ {tampered} with invalid signatures auto-disabled)",
+  "@mcpBusSummaryTampered": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "signed": {
+        "type": "int"
+      },
+      "tampered": {
+        "type": "int"
+      }
+    }
+  },
+  "mcpImportTitle": "Import from the DSH ecosystem",
+  "mcpImportSubtitle": "Import skills and MCP services, or run a compatibility check on a plugin pack",
+  "mcpCategoryHeader": "📦 Skill catalog (Tab Panel)",
+  "mcpCatLocalTitle": "🔌 Local hardware & Webhook interfaces",
+  "mcpCatLocalSubtitle": "Trigger the phone motor, system queries, and custom web API tools",
+  "mcpCatMcpTitle": "🌐 MCP external extension protocol",
+  "mcpCatMcpSubtitle": "Connect to standard Model Context Protocol remote services",
+  "mcpCatSkillTitle": "🧠 System prompt skills (Skills)",
+  "mcpCatSkillSubtitle": "Dynamically inject extra instructions, rules, and special skills into the AI brain",
+  "mcpContent": "Content",
+  "mcpContentHint": "Enter content",
+  "mcpWebhookLabel": "Webhook interface URL",
+  "mcpWebhookHint": "A web API address starting with http:// or https://",
+  "mcpServerLabel": "MCP server URL",
+  "mcpServerHint": "e.g. http://localhost:8080/mcp",
+  "mcpPromptLabel": "System prompt (Prompt)",
+  "mcpPromptHint": "e.g. after every answer, append ‘meow~’",
+  "mcpEditToolTitle": "Edit tool config",
+  "mcpAddToolTitle": "Add custom tool",
+  "mcpToolNameLabel": "Unique tool identifier (English)",
+  "mcpToolDescLabel": "Tool description (for the AI to understand)",
+  "mcpCancel": "Cancel",
+  "mcpSaveRegister": "Save & register",
+  "mcpManageTools": "Manage tools",
+  "mcpTypeLocal": "Local Webhook tools",
+  "mcpTypeMcp": "MCP external protocol config",
+  "mcpTypeSkill": "Prompt skills (Skills) library",
+  "mcpEmpty": "No tools yet — tap the + in the top-right to create your first one!",
+  "mcpTagDream": "Dream",
+  "mcpTagSigInvalid": "Invalid signature",
+  "mcpSubTampered": "{desc} · invalid signature, auto-disabled",
+  "@mcpSubTampered": {
+    "placeholders": {
+      "desc": {
+        "type": "String"
+      }
+    }
+  },
+  "mcpSubDreamPending": "{desc} · dream-generated, awaiting confirmation",
+  "@mcpSubDreamPending": {
+    "placeholders": {
+      "desc": {
+        "type": "String"
+      }
+    }
+  },
+  "mcpSigBuiltin": "Built-in",
+  "mcpSigOk": "🔐 Device-signed",
+  "mcpSigUnsigned": "Unsigned",
+  "mcpSigInvalid": "⚠️ Invalid signature",
+  "mcpToolDescHeader": "📌 Tool description:",
+  "mcpInjectionDetail": "📜 Prompt injection detail (System Prompt):",
+  "mcpPhysicalUrl": "🔗 Physical execution address (URL/BUILTIN):",
+  "mcpEditParams": "Edit this tool's parameters",
+  "manageDreamSleeping": "🌙 Your fen has entered deep sleep and is distilling subconscious memories...",
+  "manageDreamAwake": "☀️ Your fen is awake! The memory store has evolved and its profile is updated.",
+  "manageDreamFailed": "❌ Memory distillation failed — the model may not have returned valid JSON.",
+  "manageSelfEvolutionTitle": "Self-evolution (Nanobot Dream Engine)",
+  "manageSelfEvolutionBody": "Neural background process (WorkManager) monitoring. The steward silently deep-retrieves and evolves the underlying prompt genes (Skills) at night.",
+  "manageMetricDepth": "Memory depth",
+  "manageMetricSkillsLabel": "Derived skills",
+  "manageMetricSkillsValue": "{n}",
+  "@manageMetricSkillsValue": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "manageMetricSessionsLabel": "Grouped sessions",
+  "manageMetricSessionsValue": "{n}",
+  "@manageMetricSessionsValue": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "manageDreaming": "Deep thinking & distilling...",
+  "manageTriggerEvolution": "🌙 Trigger subconscious memory evolution now",
+  "manageSystemCapabilityTitle": "System & capabilities",
+  "manageSystemCapabilityHint": "Changes take effect immediately; notification and calendar permissions can be adjusted anytime.",
+  "manageSystemCapabilityHintSimple": "Notification and calendar permissions are always adjustable; switch to Advanced mode to see the rest.",
+  "manageHistoryTitle": "History & smart grouping",
+  "manageHistorySubtitle": "Browse all raw conversation memories by timeline and topic tree",
+  "manageToolsTitle": "Skill library & local tools (MCP)",
+  "manageToolsSubtitle": "Manage local system tool permissions; mount custom Webhooks and Prompts",
+  "manageProfileTitle": "Master's confidential dossier & network",
+  "manageProfileSubtitle": "Review and manually edit the privacy cognition profile your fen built for you",
+  "manageShutdownTitle": "Force safe shutdown & exit",
+  "manageShutdownSubtitle": "When the underlying network locks up or hardware stalls, tap this to force-release all ports and hardware locks and close the app for a safe restart.",
+  "manageShutdownDialogTitle": "🚨 Warning: forced system shutdown",
+  "manageShutdownDialogBody": "This will forcibly terminate all background radar scans, release ports, and exit the app to restore a clean state. Continue?",
+  "manageForceQuit": "Force quit",
+  "serendipityTitle": "✨ Luck Lab",
+  "serendipityEnergyBadge": "🔋 {n} Lp ",
+  "@serendipityEnergyBadge": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "serendipityTabMorning": "🌅 Rehearse",
+  "serendipityTabChallenge": "🧭 Break out",
+  "serendipityTabAlchemist": "🧪 Alchemy",
+  "serendipityTabNight": "🌌 Notes",
+  "serendipityTabDiary": "📖 Diary",
+  "serendipityTabOracle": "🔮 Oracle",
+  "serendipityEnergyGained": "✨ +{n} Lp (luck energy injected)",
+  "@serendipityEnergyGained": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "serendipityNetworkError": "Network hiccup — please try again later.",
+  "serendipityBlindBox1": "Red-clothes rule: notice people in red and watch for coincidences.",
+  "serendipityBlindBox2": "New path: try a route home you have never taken.",
+  "serendipityBlindBox3": "Blind order: let the owner pick a dish at random for you.",
+  "serendipityBlindBox4": "Glimmer contact: genuinely smile at the first stranger you meet.",
+  "serendipityBlindBox5": "No-strings hello: message an old friend you have not talked to in ages.",
+  "serendipityBlindBox6": "Offline trial: turn off the network for half an hour and observe closely.",
+  "serendipityMorningHeader": "Expectation rewrite · Morning rehearsal",
+  "serendipityIntentLock": "🎯 Lock the intent",
+  "serendipityEventHint": "Event you're about to face (e.g. an afternoon meeting)",
+  "serendipityTimerPrompt1": "Close your eyes, breathe deeply, picture that scene...",
+  "serendipityTimerPrompt2": "Focus on details: the light around you, the other person's expression...",
+  "serendipityTimerPrompt3": "Picture a small mishap happening — and you handling it with ease...",
+  "serendipityTimerPrompt4": "Feel the calm of a job well done; get ready to open your eyes...",
+  "serendipityGiveUp": "Abandon rehearsal",
+  "serendipityNeedEvent": "⚠️ Enter an event first!",
+  "serendipityStartPreview": "Start 2-minute mental rehearsal",
+  "serendipityTargetEvent": "🎯 Target event: {text}",
+  "@serendipityTargetEvent": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityDetailHint": "👀 Scene details (what do you see?)",
+  "serendipityObstacleHint": "🛡️ Obstacle defused (how do you calmly handle surprises?)",
+  "serendipityOutcomeHint": "🌟 Expected outcome (the ending you want most)",
+  "serendipityAiBoost": "🧠 AI boost:\n{text}",
+  "@serendipityAiBoost": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityAiInjecting": "AI injecting energy...",
+  "serendipityReinforce": "🧠 Reinforce",
+  "serendipitySave5": "Save (+5)",
+  "serendipityMorningArchive": "Rehearsal archive",
+  "serendipityLogTime": "📅 {t}",
+  "@serendipityLogTime": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogEvent": "🎯 Event: {t}",
+  "@serendipityLogEvent": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogDetail": "👀 Detail: {t}",
+  "@serendipityLogDetail": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogOutcome": "🌟 Expected: {t}",
+  "@serendipityLogOutcome": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiBoost": "💡 AI boost:\n{t}",
+  "@serendipityLogAiBoost": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityChallengeHeader": "Opportunity sensing · Breakout radar",
+  "serendipityActionTypeLabel": "Choose action type",
+  "serendipityChallengeTypeBlindBox": "🎁 Blind-box challenge",
+  "serendipityChallengeTypeCustom": "Custom",
+  "serendipityCustomChallengeHint": "🎯 Custom challenge content",
+  "serendipityBlindBoxDrawn": "🎉 Today's random blind-box task for you:",
+  "serendipityRedraw": "↺ Too hard? Tap to redraw",
+  "serendipityJourneyHint": "🚶‍♂️ What actually happened",
+  "serendipityReflectHint": "📝 Comments & takeaways",
+  "serendipityAiAnalyzing": "AI analysing...",
+  "serendipityAiColon": "🧠 AI: {text}",
+  "@serendipityAiColon": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityComment": "🧠 Comment",
+  "serendipitySave15": "Save (+15)",
+  "serendipityChallengeArchive": "Action history",
+  "serendipityLogGoal": "🎯 Goal: {t}",
+  "@serendipityLogGoal": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogJourney": "🚶‍♂️ Journey: {t}",
+  "@serendipityLogJourney": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogReflect": "📝 Reflection: {t}",
+  "@serendipityLogReflect": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiComment": "💡 AI comment: {t}",
+  "@serendipityLogAiComment": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityAlchemistHeader": "Bad-luck alchemy · Narrative recast",
+  "serendipitySetbackHint": "1. Setback",
+  "serendipityNegReactHint": "2. Negative reaction",
+  "serendipityStrategyLabel": "3. Reframing strategy",
+  "serendipityStrategyDownward": "Downward comparison",
+  "serendipityStrategySurplus": "Find the surplus",
+  "serendipityStrategyDilate": "Time-space dilation",
+  "serendipityNewCognitionHint": "4. New understanding & action",
+  "serendipityScore": "🧠 Score",
+  "serendipitySave10": "Save (+10)",
+  "serendipityAlchemistArchive": "Alchemy archive",
+  "serendipityLogSetback": "❌ Setback: {t}",
+  "@serendipityLogSetback": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogReact": "😔 Reaction: {t}",
+  "@serendipityLogReact": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogStrategy": "🛡️ Strategy: {t}",
+  "@serendipityLogStrategy": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogCognition": "💫 Understanding: {t}",
+  "@serendipityLogCognition": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiScore": "💡 AI score: {t}",
+  "@serendipityLogAiScore": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityNightHeader": "Intuition sensing · Glimmer notes",
+  "serendipityIntuitionHint": "1. Hunch / intuition",
+  "serendipityChoiceHint": "2. Make a choice",
+  "serendipityReflectStrategyHint": "3. Reflect on strategy",
+  "serendipityParse": "🧠 Interpret",
+  "serendipityNightArchive": "Subconscious archive",
+  "serendipityLogIntuition": "🔮 Intuition: {t}",
+  "@serendipityLogIntuition": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogChoice": "👉 Choice: {t}",
+  "@serendipityLogChoice": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogNightReflect": "🌱 Reflection: {t}",
+  "@serendipityLogNightReflect": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiParse": "💡 AI reading: {t}",
+  "@serendipityLogAiParse": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityIntuitionCameTrue": "✅ The intuition came true",
+  "serendipityVerifyTrue": "🎯 Verify it came true (+20Lp)",
+  "serendipityDiaryHeader": "Emotional listening · Free diary",
+  "serendipityDiaryHint": "✍️ Write down experiences, moods, small things...",
+  "serendipityAiListen": "🧠 AI mentor listening:\n{text}",
+  "@serendipityAiListen": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityAiReading": "AI mentor reading...",
+  "serendipityListen": "🧠 Listen",
+  "serendipityKeep": "Keep (+5 Lp)",
+  "serendipityDiaryArchive": "Time capsule",
+  "serendipityLogDiaryTime": "📅 Time: {t}",
+  "@serendipityLogDiaryTime": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogDiaryEcho": "💡 Mentor's echo:\n{t}",
+  "@serendipityLogDiaryEcho": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityOracleHeader": "I Ching decision · Oracle casting",
+  "serendipityOracleEventHint": "☯ Describe something you're torn about and need to decide",
+  "serendipityEnterRitual": "Enter the casting ritual",
+  "serendipityOracleTapPrompt": "Be still and hold the question in your mind\nSlowly tap the taiji below 6 times to seek the six lines",
+  "serendipityOracleResultPrefix": "🔮 Cast:\n{name}",
+  "@serendipityOracleResultPrefix": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityOracleThinking": "AI is reading the hexagram, please wait...",
+  "serendipityOracleAskHint": "Type your follow-up or question...",
+  "serendipityNewQuestion": "↺ Ask something else (recast)",
+  "serendipityOracleArchive": "Oracle archive",
+  "serendipityOracleLogEvent": "🎯 Question: {t}",
+  "@serendipityOracleLogEvent": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityOracleLogGua": "🔮 Hexagram: {t}",
+  "@serendipityOracleLogGua": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipitySpeakerMe": "Me",
+  "helpSerendipityMorningTitle": "Morning rehearsal",
+  "helpSerendipityMorningBody": "Every morning, spend two minutes locking in today's luck expectation. Write down the good thing you want to happen, run the countdown to stay focused, then use positive psychology to reinforce that belief.",
+  "helpSerendipityChallengeTitle": "Breakout radar",
+  "helpSerendipityChallengeBody": "Luck is not mysticism but a behaviour pattern. Do one small habit-breaking action every day — take a different route home, start a conversation with a stranger — then log the challenge and your reflection here.",
+  "helpSerendipityAlchemistTitle": "Bad-luck alchemy",
+  "helpSerendipityAlchemistBody": "Turn a bad experience into fuel for growth. Write down what went wrong and your instinctive reaction, then re-read it through a CBT lens and smelt that bad luck into psychological resilience.",
+  "helpSerendipityNightTitle": "Glimmer notes",
+  "helpSerendipityNightBody": "Catch a passing hunch before sleep. Record the thought that starts with “I just feel I should…”, commit to a choice, then look back later to see whether the hunch came true — that is how lucky intuition gets trained.",
+  "helpSerendipityDiaryTitle": "Free diary",
+  "helpSerendipityDiaryBody": "Write whatever comes to mind. This is your private hollow tree; the AI helps you sort out your feelings — no judging, no leaking.",
+  "helpSerendipityOracleTitle": "Oracle casting",
+  "helpSerendipityOracleBody": "When something puzzles you, cast for an answer. Settle your mind, hold the question silently, tap the taiji six times to build the hexagram, and let the I Ching plus psychology point the way.",
+  "socialRadarTitle": "Fen Community",
+  "socialDelegationEntry": "Errands & my circle",
+  "socialDbDegradedHint": "Local data is temporarily unavailable (the local database may not be ready yet). What you see below may be out of date.",
+  "socialTabMask": "Mask",
+  "socialTabRadar": "Radar",
+  "socialTabLedger": "Log",
+  "socialTabRoster": "Roster",
+  "socialFeedBrain": "⚡ Feeding radar data to the main brain, forcing a social decision...",
+  "socialMaskLocked": "🛡️ Mask locked! Old social memory cleared — persona confusion prevented.",
+  "socialManualPairTitle": "Manual force pairing",
+  "socialPeerAgentName": "Peer agent name",
+  "socialPeerMasterName": "Peer's master name (note)",
+  "socialPeerHardId": "Peer's hard ID",
+  "socialPair": "Pair",
+  "socialNodeAdded": "✅ Node added!",
+  "socialForceSendTitle": "Force send: {name}",
+  "@socialForceSendTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "socialForceSendLabel": "The message you want to send directly",
+  "socialForceSendHint": "Type content to send verbatim...",
+  "socialDirectSent": "Barrier bypassed — sending your words verbatim...",
+  "socialDirectSend": "Send unreviewed",
+  "socialGiftSent": "{gift} sent",
+  "@socialGiftSent": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      }
+    }
+  },
+  "socialGiftFailed": "Gift failed: peer isn't on any online channel",
+  "socialRecoSent": "🤝 Recommendation request sent",
+  "socialRecoFailed": "Request failed: peer isn't on any online channel",
+  "socialVerifyTitle": "🔐 Identity verification: {name}",
+  "@socialVerifyTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "socialVerifyPinnedFor": "Identity fingerprint pinned for this node (TOFU):",
+  "socialVerifyNoPin": "No nearby handshake yet — no pinned identity",
+  "socialVerifyMyFingerprint": "My fingerprint (should appear on the peer's screen): {fp}",
+  "@socialVerifyMyFingerprint": {
+    "placeholders": {
+      "fp": {
+        "type": "String"
+      }
+    }
+  },
+  "socialVerifyInputLabel": "Enter the 8-digit fingerprint on the peer's screen",
+  "socialVerifyMatch": "✅ Fingerprints match — this connection's identity is trustworthy.",
+  "socialVerifyMismatch": "❌ Fingerprints do NOT match! A man-in-the-middle is suspected.\nAdvice: delete and block this node, then re-handshake in person or via another trusted channel.",
+  "socialVerifyHintNoPin": "Note: a verifiable pinned identity appears here only after both sides enable the radar and complete a nearby handshake.",
+  "socialVerifyCompare": "Compare",
+  "socialFederationNoIdentity": "No agent identity yet — save it on the diplomatic mask page first",
+  "socialFederationFetching": "🌐 Fetching the A2A federation roster...",
+  "socialFederationEmpty": "Roster empty: {err}",
+  "@socialFederationEmpty": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFederationEmptyErr": "no other registered agents on the Hub (or Hub URL not configured)",
+  "socialFederationAllKnown": "Every agent on the Hub is already in your roster ({n} total)",
+  "@socialFederationAllKnown": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationTitle": "🌐 Federation roster ({n} not yet added)",
+  "@socialFederationTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialAnonAgent": "Anonymous agent",
+  "socialFederationLastSeen": "{id} · last active {time}",
+  "@socialFederationLastSeen": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFederationDiscovered": "A2A federation discovery",
+  "socialFederationSource": "A2A federation",
+  "socialFederationMask": "Discovered via federation roster, awaiting a secure handshake",
+  "socialSourceManual": "Added manually",
+  "socialNoSignatureBadge": "No signature yet",
+  "socialCollect": "Add",
+  "socialFederationCollected": "✅ Added {n} federation agents to your stranger folder; once the radar is on they'll handshake step by step per the safety rules.",
+  "@socialFederationCollected": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoTitle": "Auto-pull federation roster",
+  "socialFederationAutoDesc": "When on, your agent automatically pulls the Hub's public registered-agent roster into your stranger folder. It never sends messages on its own — outreach still follows the review gateway, observation mode and budget gate. Off by default.",
+  "socialFederationAutoDone": "🌐 Auto-added {n} new federation agents to your stranger folder.",
+  "@socialFederationAutoDone": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoNone": "No new agents to pull from the federation roster right now.",
+  "socialFederationAutoFailed": "Auto-pull failed: {err}",
+  "@socialFederationAutoFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFederationAutoClear": "Clear auto-collected ({n})",
+  "@socialFederationAutoClear": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoClearTitle": "Clear auto-collected federation agents?",
+  "socialFederationAutoClearConfirm": "This removes {n} agents that were auto-pulled from the roster and have not started any contact. Entries you added yourself are never touched.",
+  "@socialFederationAutoClearConfirm": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoCleared": "Removed {n} auto-collected federation agents.",
+  "@socialFederationAutoCleared": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoNote": "Auto-collected from federation roster",
+  "socialDone": "Done",
+  "socialCountdown": "🔐 Countdown {t}",
+  "@socialCountdown": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "socialBadgeSent": "Sent",
+  "socialBadgeReviewing": "Under review",
+  "socialBadgeChatting": "Chatting",
+  "socialBadgeBlocked": "Blocked",
+  "socialPresenceOnline": "⚡ Online in person",
+  "socialPeerSubtitle": "Master: {master} | Status: {status}\nID: {id} · Rep {rep}",
+  "@socialPeerSubtitle": {
+    "placeholders": {
+      "master": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      },
+      "id": {
+        "type": "String"
+      },
+      "rep": {
+        "type": "String"
+      }
+    }
+  },
+  "socialStatusOnline": "online",
+  "socialStatusOffline": "offline",
+  "socialMenuChat": "💬 Chat 1:1 with their fen",
+  "socialChatTooltip": "Open the 1:1 private chat with their fen",
+  "socialChatHint": "Tap the card or the 💬 button to chat 1:1",
+  "socialMenuDelegate": "🙋 Ask them to do something (M2)",
+  "socialMenuIntercard": "🤝 Fen introduction (M3)",
+  "socialMenuGreet": "💬 Master force-send (unreviewed)",
+  "socialMenuGift": "🎁 Send a gift",
+  "socialMenuReco": "🤝 Request a recommendation",
+  "socialMenuVerify": "🔐 Verify identity fingerprint (anti-MITM)",
+  "socialMenuFamily": "Promote to family (unreviewed)",
+  "socialMenuFriend": "Set as friend (auto-redacted)",
+  "socialMenuStranger": "Demote to stranger (strict outreach)",
+  "socialMenuDelete": "Delete & block",
+  "socialMaskUndefined": "Undefined mask",
+  "socialMaskNoSignature": "「No public persona signature set」",
+  "socialHardId": "Local hard ID: {id}",
+  "@socialHardId": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFingerprintLine": "Fingerprint: {fp} (for the peer to compare in person)",
+  "@socialFingerprintLine": {
+    "placeholders": {
+      "fp": {
+        "type": "String"
+      }
+    }
+  },
+  "socialGatewayGuard": "Physically isolated gateway guarding",
+  "socialLogicPreset": "Fen logic preset mode",
+  "socialModeCasual": "☕ Casual chat (relaxed/humorous)",
+  "socialModeBusiness": "💼 Business hunter (direct/efficient)",
+  "socialModeDating": "💖 Dating & matchmaking (socially adept/ice-breaking)",
+  "socialModeEmergency": "🚨 Emergency SOS (broadcast)",
+  "socialModeCustom": "🛠️ Fully custom (follows the task box)",
+  "socialModeSwitched": "🧠 Persona switched to {mode}. Same identity — tone only; memory and handshakes stay untouched.",
+  "@socialModeSwitched": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "roomRoleParticipant": "Participant",
+  "roomRoleHost": "Host",
+  "roomRoleCohost": "Co-host",
+  "roomRoleGuest": "Guest",
+  "roomRoleNpc": "NPC",
+  "roomRoleManageTitle": "Room roles",
+  "roomRoleMine": "My role: {role}",
+  "@roomRoleMine": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "roomRoleNoMembers": "No other members observed in this room yet.",
+  "roomRoleClaimHost": "Claim host",
+  "roomRoleClaimedHost": "You are now the host of this room.",
+  "roomRoleClaimHostExists": "This room already has a host.",
+  "roomRoleNotHost": "Only the host can grant roles.",
+  "roomRoleLastHostBlocked": "Cannot revoke the room's last host.",
+  "roomRoleSetTo": "Set to {role}",
+  "@roomRoleSetTo": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "socialEmojiLabel": "Emoji",
+  "socialNicknameLabel": "Public nickname",
+  "socialMaskProfileLabel": "Public redacted persona signature",
+  "socialIcebreakTask": "🎯 Current ice-breaking task (classified)",
+  "socialIcebreakHint": "Give your fen a nearby-recon order here...",
+  "socialLockMask": "💾 Lock mask & orders",
+  "socialTaskReroll": "Reroll",
+  "socialHeartbeatOn": "💓 Dual-mode heartbeat running (Bluetooth + Wi-Fi NSD)\nBackground wake-lock active — stays connected even with the screen off!",
+  "socialRadarIdle": "Radar sleeping — tap the centre to start timed socialising",
+  "socialDurationLabel": "Social duration: ",
+  "socialDuration15": "15 min",
+  "socialDuration30": "30 min",
+  "socialDuration60": "1 hour",
+  "socialDurationUnlimited": "Unlimited (drains battery)",
+  "socialChannelConfig": "🛰️ Global channel configuration",
+  "socialChannelNearby": "📡 Bluetooth/Wi-Fi direct radar (Nearby)",
+  "socialChannelLan": "🏡 Encrypted LAN interconnection (mDNS)",
+  "socialChannelCloud": "☁️ Cloud relay network (global social)",
+  "suggestionInboxTitle": "Suggestions awaiting your approval",
+  "suggestionApprove": "Approve and send",
+  "suggestionIgnore": "Ignore",
+  "suggestionEmpty": "Nothing awaiting approval",
+  "suggestionToTarget": "To: ",
+  "suggestionApproved": "Approved and sent",
+  "suggestionNotSent": "Not sent, see the social report for the reason",
+  "socialLedgerTitle": "🐾 Social log · Plain ledger (main delegate only)",
+  "socialLedgerEmpty": "Waiting for the heartbeat engine...",
+  "socialRosterTitle": "📇 Tiered social circle",
+  "socialScanning": "Listening on the 2.4GHz / 5GHz physical spectrum...",
+  "socialScanIdle": "Channel idle. Tap the centre on the home screen to start the energy radar; your fen proxy will spontaneously establish nearby connections.",
+  "socialTierFamily": "👨‍👩‍👧 Family agents",
+  "socialTierFriend": "🤝 Friend agents",
+  "socialTierStranger": "👽 Stranger agents",
+  "worldUnknownError": "Unknown error",
+  "worldAskTitle": "💬 Ask the town",
+  "worldAskHint": "What do you want to ask the residents?",
+  "worldAskTargetLabel": "Specific resident (leave empty = whole town)",
+  "worldAskSend": "Ask",
+  "worldAskOk": "📨 Question sent to the town — the answer will appear in the GOD control room",
+  "worldInterveneTitle": "⚡ Inject intervention",
+  "worldInterveneBody": "The instruction will be injected into the town's next step, affecting all residents' subsequent behaviour.",
+  "worldInterveneHint": "e.g. A harvest festival is held at the town square",
+  "worldInterveneSend": "Inject",
+  "worldInterveneOk": "⚡ Intervention injected — it takes effect on the town's next step",
+  "worldStopTitle": "⏹ Stop the town?",
+  "worldStopBody": "This stops the live run of the current experiment and interrupts residents' activity. Continue?",
+  "worldStop": "Stop",
+  "worldStopOk": "⏹ Town stopped",
+  "worldCmdFailed": "Command failed: {err}",
+  "@worldCmdFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldJoined": "🚪 Joined 「{name}」",
+  "@worldJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldJoinFailed": "Join failed: {err}",
+  "@worldJoinFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldLeft": "👋 Left 「{name}」",
+  "@worldLeft": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldLeaveFailed": "Leave failed: {err}",
+  "@worldLeaveFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldCreateRoomTitle": "Create a room",
+  "worldRoomNameLabel": "Room name",
+  "worldTopicLabel": "Topic (optional)",
+  "worldModeFree": "Free chat",
+  "worldModeTurn": "Turn-based",
+  "worldCreate": "Create",
+  "worldCreated": "✨ Room created",
+  "worldCreateFailed": "Create failed: {err}",
+  "@worldCreateFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldNoWorldUrl": "World URL not configured",
+  "worldNoIdentity": "No agent identity yet — initialise it on the management page first.",
+  "worldRoomsHeader": "Rooms",
+  "worldCreateRoom": "New room",
+  "worldNoRooms": "No rooms yet. Make sure world.js is running on the server,\nor pull down to refresh.",
+  "worldGodUnreachable": "GOD bridge unreachable — make sure GOD and god-bridge.js are running on your computer",
+  "worldGodPaused": "⏸ Paused",
+  "worldGodRunning": "▶ Running",
+  "worldGodStep": "Step {n}",
+  "@worldGodStep": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "worldGodStatusUnknown": "Upstream status unknown",
+  "worldGodTitle": "GOD control room",
+  "worldRefreshStatus": "Refresh status",
+  "worldGodTown": "Town: {hyp}/{exp}",
+  "@worldGodTown": {
+    "placeholders": {
+      "hyp": {
+        "type": "String"
+      },
+      "exp": {
+        "type": "String"
+      }
+    }
+  },
+  "worldGodNoExperiment": "No experiment connected",
+  "worldGodResume": "▶️ Resume",
+  "worldGodResumeOk": "▶️ Town resumed automatic running",
+  "worldGodPause": "⏸️ Pause",
+  "worldGodPauseOk": "⏸️ Town time paused",
+  "worldGodStepBtn": "⏭️ Step",
+  "worldGodStepOk": "⏭️ Advanced one step",
+  "worldGodStopBtn": "⏹️ Stop",
+  "worldGodAskBtn": "💬 Ask the town",
+  "worldGodInterveneBtn": "⚡ Inject intervention",
+  "worldReportUnavailable": "🌍 World daily report unavailable.\n{err}",
+  "@worldReportUnavailable": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldReportNoServer": "Make sure the world server URL is configured.",
+  "worldReportTitle": "World daily report · {date}",
+  "@worldReportTitle": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "worldReportSummary": "{msgs} messages today · {agents} active agents · {mine} from us",
+  "@worldReportSummary": {
+    "placeholders": {
+      "msgs": {
+        "type": "String"
+      },
+      "agents": {
+        "type": "String"
+      },
+      "mine": {
+        "type": "String"
+      }
+    }
+  },
+  "worldReportRoomLine": "· {name}: {msgs} messages ({mine} from us)",
+  "@worldReportRoomLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "msgs": {
+        "type": "String"
+      },
+      "mine": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomEnter": "Enter",
+  "worldRoomExitTooltip": "Leave room",
+  "worldRoomJoin": "Join",
+  "worldSectionOfficial": "Official rooms",
+  "worldSectionMine": "My rooms",
+  "worldBadgeOfficial": "Official",
+  "worldBadgeMine": "Mine",
+  "worldBadgePending": "Pending",
+  "worldSearchTitle": "🔍 Find by room number",
+  "worldSearchHint": "Enter room number (group ID)",
+  "worldSearchBtn": "Find",
+  "worldSearchNotFound": "No room found with number \"{id}\"",
+  "@worldSearchNotFound": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRequestJoin": "Request to join",
+  "worldRequestNoteLabel": "Message (optional)",
+  "worldRequestSent": "Request sent — waiting for the room owner",
+  "worldRequestFailed": "Request failed: {err}",
+  "@worldRequestFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRequestsTitle": "Join requests ({count})",
+  "@worldRequestsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRequestsEmpty": "No pending requests",
+  "worldApprove": "Approve",
+  "worldReject": "Decline",
+  "worldApproveOk": "Approved \"{name}\"",
+  "@worldApproveOk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRejectOk": "Declined \"{name}\"",
+  "@worldRejectOk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldHandleFailed": "Action failed: {err}",
+  "@worldHandleFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldNeedApproval": "This is a private room: request access and wait for the owner to approve.",
+  "worldMyRoomsFull": "You hit the room limit (per-agent cap is set on the server)",
+  "worldCreatedPrivate": "✨ Room created (private: not listed publicly — others must find it by room number and request to join)",
+  "worldHistoryWhy": "History only accumulates after you join; the server keeps the latest {max} messages per room, {retained} kept now.",
+  "@worldHistoryWhy": {
+    "placeholders": {
+      "max": {
+        "type": "String"
+      },
+      "retained": {
+        "type": "String"
+      }
+    }
+  },
+  "worldPullHistory": "Load room history",
+  "worldPullHistoryOk": "Loaded {n} earlier messages",
+  "@worldPullHistoryOk": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "worldPullHistoryNone": "The server has no earlier messages either",
+  "worldPullHistoryFailed": "Failed: {err}",
+  "@worldPullHistoryFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomChatFree": "Free chat",
+  "worldLobbyName": "Wold Lounge",
+  "worldLobbyTopic": "Free chat, keep it civil",
+  "worldRoomSubtitle": "{mode} · {present} present · {count} subscribed",
+  "@worldRoomSubtitle": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "present": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomTopicSuffix": " · {topic}",
+  "@worldRoomTopicSuffix": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "worldAutoreplyOn": "🤖 Autopilot on: your fen will reply automatically within budget (observation log keeps recording)",
+  "worldAutoreplyOff": "👁️ Back to pure observation mode",
+  "worldDrafting": "🪄 Drafting in persona and sending for review, please wait…",
+  "worldSendFailed": "Send failed: {err}",
+  "@worldSendFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomTurnSuffix": " (turn-based)",
+  "worldAutopilotTooltip": "Let my fen say something",
+  "worldAutopilotLabel": "Autopilot",
+  "worldAutopilotStateOn": "Autopilot",
+  "worldAutopilotStateOff": "Observing only",
+  "worldAutopilotStatus": "{state} · Last decision: {decision}",
+  "@worldAutopilotStatus": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      },
+      "decision": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomEmpty": "The room is quiet — say something.",
+  "worldLoading": "Loading…",
+  "worldAnonAgent": "Anonymous agent",
+  "worldMe": "Me",
+  "worldSuggestionTooltip": "Generate suggestion card",
+  "worldSuggestionTitle": "🧭 Suggestion card (draft, not sent)",
+  "worldSuggestionDrafting": "Drafting a reply in persona...",
+  "worldSuggestionFailed": "Generation failed: check the brain engine config and retry.",
+  "worldSuggestionEditHint": "You can edit before sending",
+  "worldSuggestionSend": "Send to room",
+  "worldSayHint": "Speak directly as the master…",
+  "worldVibrancyHot": "🔥 Busy",
+  "worldVibrancyWarm": "🌤 Steady",
+  "worldVibrancyCold": "🌙 Quiet",
+  "worldVibrancyDetail": "{speakers} talking · {messages} messages",
+  "@worldVibrancyDetail": {
+    "placeholders": {
+      "speakers": {
+        "type": "String"
+      },
+      "messages": {
+        "type": "String"
+      }
+    }
+  },
+  "worldVibrancyObservedHint": " (message count is local observation, not the server's exact figure)",
+  "worldBridgeSection": "Friend-pool bridging",
+  "worldBridgeNone": "No outsider to bridge in this room yet (same-circle or already-acquainted people are not re-recommended).",
+  "worldBridgeCount": "{count} outsider(s) to bridge",
+  "@worldBridgeCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeSharedRooms": "{count} shared room(s)",
+  "@worldBridgeSharedRooms": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeMsgCount": "{count} message(s)",
+  "@worldBridgeMsgCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeRecommend": "Introduce",
+  "worldBridgeTooltip": "Suggest an introduction (cross-circle)",
+  "worldBridgeSameCircle": "Same circle",
+  "worldBridgeAlreadyLinked": "Already acquainted",
+  "worldBridgeWhyLine": "Why recommended: {detail}",
+  "@worldBridgeWhyLine": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeRoomProvenance": "Met via \"{room}\"",
+  "@worldBridgeRoomProvenance": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeCircleLine": "Introducing under \"{circle}\"",
+  "@worldBridgeCircleLine": {
+    "placeholders": {
+      "circle": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeNoCircle": "You have no circle of your own yet — enter a circle first, then bridge across circles.",
+  "worldBridgeLinkCreated": "✅ Cross-circle edge created: met via \"{room}\"",
+  "@worldBridgeLinkCreated": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeLinkFailed": "Failed to create the cross-circle edge. Please retry.",
+  "worldBridgeBlockedTitle": "Cannot create a cross-circle edge",
+  "worldBridgeBlockedNotInRoom": "This person never appeared in this room — a cross-circle edge must have a room as its origin; you cannot claim acquaintance from an ID alone.",
+  "worldBridgeBlockedSameCircle": "You are already in the same circle — the edge exists inside the circle, so no cross-circle introduction is needed.",
+  "worldBridgeBlockedAlreadyLinked": "You are already acquainted (introduction / delegation / contacts) — use the existing relationship; it does not consume a cross-circle slot.",
+  "worldBridgeBlockedSelf": "You cannot introduce yourself.",
+  "worldBridgeBlockedNoRoom": "Missing the room origin — cannot create a cross-circle edge.",
+  "worldBridgeBlockedDuplicate": "This cross-circle edge already exists (idempotent, not double-counted).",
+  "worldMetricTitle": "Cross-circle links",
+  "worldMetricLine": "{links} cross-circle edge(s) I created · {known} agent(s) I have met · per-capita {perCapita}",
+  "@worldMetricLine": {
+    "placeholders": {
+      "links": {
+        "type": "String"
+      },
+      "known": {
+        "type": "String"
+      },
+      "perCapita": {
+        "type": "String"
+      }
+    }
+  },
+  "worldMetricNoData": "No cross-circle data yet — first meet an outsider in a world room.",
+  "privacyOnlyHumanTitle": "Only accept messages from real people",
+  "privacyOnlyHumanSubtitle": "When on, other fens can only relay messages to you — they can't reply on your behalf.",
+  "privacyLocalFirst": "Your data stays on this device by default.",
+  "delegationTitle": "Errands",
+  "@delegationTitle": {
+    "description": "Screen title for M2 task delegation between fens"
+  },
+  "delegationTabInbox": "Asked of me",
+  "delegationTabOutbox": "I asked",
+  "delegationTabCircle": "My circle",
+  "delegationEmptyInbox": "Nothing has been asked of your fen yet.",
+  "delegationEmptyOutbox": "You haven't delegated anything yet.",
+  "delegationNew": "New errand",
+  "delegationTo": "Ask this fen",
+  "delegationTaskHint": "e.g. Ask Lao Wang if he's free this weekend",
+  "delegationSent": "Sent. Waiting for their fen to reply.",
+  "delegationOfflineQueued": "Saved on this device. It will wait until a channel opens — right now no channel reached them.",
+  "delegationAskResponse": "What should we pass back? (optional)",
+  "delegationActDone": "Done",
+  "delegationActNeedsHuman": "Needs the human",
+  "delegationActRespond": "Respond",
+  "delegationActDecline": "Decline",
+  "delegationRevoke": "Cancel",
+  "delegationRevoked": "Cancelled",
+  "delegationRevokeConfirm": "Cancel this errand? It will be recorded as cancelled.",
+  "delegationStatePending": "Waiting",
+  "delegationStateAnswered": "Answered",
+  "delegationStateNeedsHuman": "Needs the human",
+  "delegationStateDeclined": "Declined",
+  "delegationStateRevoked": "Cancelled",
+  "delegationBlockedTitle": "Fen can't send that",
+  "@delegationBlockedTitle": {
+    "description": "Shown when the zero-settlement guard blocks a delegation"
+  },
+  "delegationBlockedBody": "Fen never moves money between people — there is nowhere to put an amount, by design. Please send this one yourself.",
+  "delegationEmptyTask": "Write what you want done first.",
+  "delegationNoPeer": "Pick who to ask first.",
+  "circleTitle": "My circle",
+  "circleCreate": "Start a circle",
+  "circleNameHint": "e.g. Saturday football, Lisbon",
+  "circleCreated": "Circle created.",
+  "circleInviteCode": "Invite code",
+  "circleGenerateInvite": "Generate invite code",
+  "circleJoin": "Join with a code",
+  "circleJoinHint": "Paste the invite code you were given",
+  "circleJoined": "You're in.",
+  "circleJoinFailed": "That code is invalid or expired.",
+  "circleVisibleSummary": "{n} fens visible · {m} of them not your inviter",
+  "@circleVisibleSummary": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "circleAcceptancePass": "Acceptance met (needs 3 visible, 2 not your inviter)",
+  "circleAcceptanceFail": "Acceptance not met yet — invite a couple more neighbours",
+  "circleFallbackNote": "{n} of them come from fallback ({src}) — not circle members",
+  "@circleFallbackNote": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "src": {
+        "type": "String"
+      }
+    }
+  },
+  "circleMemberCount": "{n} members",
+  "@circleMemberCount": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "telemetryCounts": "Event counts (acceptance check)",
+  "telemetryEmpty": "No events recorded yet.",
+  "dashboardTitle": "Dashboard",
+  "dashboardFunnelTitle": "Weekly funnel",
+  "dashboardColWeek": "Week",
+  "dashboardColOnboarding": "Onboard",
+  "dashboardColCircle": "Circle",
+  "dashboardColDelegation": "Errand",
+  "dashboardColIntercard": "Intro",
+  "dashboardColHandshake": "Shake",
+  "dashboardColActive": "Active",
+  "dashboardTtfd": "TTFD median",
+  "dashboardDelta": "Disclosure Δ",
+  "dashboardDeltaHint": "Reply rate without disclosure minus with disclosure (Phase −1).",
+  "dashboardNoData": "No events yet — run the app a bit first.",
+  "dashboardSourceHint": "Source: local telemetry on this device only.",
+  "digestTitle": "Daily digest",
+  "digestEmpty": "Nothing new in the last 24 hours.",
+  "digestSectionPending": "Waiting for you",
+  "digestSectionMine": "Your errands",
+  "digestSectionCircle": "Circles",
+  "digestSectionStats": "Numbers",
+  "digestStatDone": "errands done",
+  "digestStatHandshake": "handshakes",
+  "digestActionOpenInbox": "Reply now",
+  "digestActionOpenOutbox": "My errands",
+  "digestActionOpenCircle": "My circle",
+  "digestActionOpenDashboard": "Dashboard",
+  "digestNotePlain": "You're in the plain-digest group (A/B experiment).",
+  "digestNoteAction": "You're in the with-actions group (A/B experiment).",
+  "morningGreetingMorning": "Good morning",
+  "morningGreetingNoon": "Good afternoon",
+  "morningGreetingEvening": "Good evening",
+  "morningGreetingBody": "Here is your recap from the last three days: ",
+  "morningHiPending": "{count} delegations awaiting your reply",
+  "@morningHiPending": {
+    "description": "morning digest morningHiPending",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "morningHiSent": "You delegated {count} tasks",
+  "@morningHiSent": {
+    "description": "morning digest morningHiSent",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "morningHiCircle": "{count} new circles joined",
+  "@morningHiCircle": {
+    "description": "morning digest morningHiCircle",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "morningHiTopics": "Often about: {topics}",
+  "@morningHiTopics": {
+    "description": "morning digest morningHiTopics",
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      }
+    }
+  },
+  "morningHiLongTerm": "Long-term interests: {topics}",
+  "@morningHiLongTerm": {
+    "description": "morning digest morningHiLongTerm",
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      }
+    }
+  },
+  "morningEmpty": "It has been quiet for the last three days — enjoy today.",
+  "notifyMorningTitle": "Good morning — your 3-day recap",
+  "notifyMorningBody": "Your agent summed up what happened over the last three days.",
+  "notifyMorningBodyPending": "You have {count} delegations waiting. Your agent summed up the last three days.",
+  "@notifyMorningBodyPending": {
+    "description": "morning digest notifyMorningBodyPending",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "digestSectionChat": "Your conversations with your agent",
+  "digestChatSummary": "{sessions} conversations · {turns} turns · across {days} days",
+  "@digestChatSummary": {
+    "description": "morning digest digestChatSummary",
+    "placeholders": {
+      "sessions": {
+        "type": "int"
+      },
+      "turns": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "digestChatTopics": "Often about: {topics}",
+  "@digestChatTopics": {
+    "description": "morning digest digestChatTopics",
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      }
+    }
+  },
+  "intercardDialogTitle": "Fen introduction card",
+  "intercardReasonLabel": "Why worth meeting",
+  "intercardTopicsLabel": "3 topics (comma separated)",
+  "intercardConfirmSend": "Confirm & send",
+  "intercardReceivedTitle": "Introductions received",
+  "intercardMineTitle": "Cards I sent",
+  "intercardBlockedTitle": "Card blocked",
+  "intercardBlockedL3": "A private field's value leaked into the card text.",
+  "intercardEmptyContent": "Write a reason and topics first.",
+  "intercardSentOk": "Sent. You can revoke within 24h.",
+  "intercardRevoke": "Revoke",
+  "intercardNone": "No introduction cards yet.",
+  "intercardRevoked": "Revoked.",
+  "intercardRevokeHint": "Sent — you can revoke within 24h.",
+  "intercardSent": "Sent.",
+  "intercardFrom": "Signed introduction from {owner}'s master.",
+  "@intercardFrom": {
+    "placeholders": {
+      "owner": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlTitle": "Phone Control",
+  "deviceControlRefreshStatus": "Refresh status",
+  "deviceControlUnsupported": "This build does not support phone control",
+  "deviceControlServiceConnected": "Accessibility service: connected",
+  "deviceControlServiceCheckedNotConnected": "Accessibility service: checked but not connected",
+  "deviceControlServiceOff": "Accessibility service: off",
+  "deviceControlStatusUnknown": "Status unknown",
+  "deviceControlGoSystemHint": "Find \"Fen\" in the system list, turn on the switch, then come back here and refresh",
+  "deviceControlGoSettings": "Open system settings",
+  "deviceControlRedetect": "Re-detect",
+  "deviceControlRedetectTip": "Tip: if repeated detection keeps failing, go to system settings, turn \"Fen Screen Assistant\" off and on again, or restart the app — some phones disconnect the accessibility service during background cleanup.",
+  "deviceControlAllowTitle": "Allow the agent to operate the phone",
+  "deviceControlAllowSubReady": "When on, the agent can read the screen, tap, type, and open apps; it will ask for your confirmation the first time",
+  "deviceControlAllowSubChecked": "Checked in the system, but the service is not connected: tap “Re-detect” above",
+  "deviceControlAllowSubNeedService": "Turn on the system accessibility service first to enable this switch",
+  "deviceControlToolsHeader": "These capabilities are mounted when enabled",
+  "deviceControlToolReadScreen": "Read text and tappable elements on screen",
+  "deviceControlToolTap": "Tap by text or coordinates",
+  "deviceControlToolInput": "Type into input fields",
+  "deviceControlToolSwipe": "Swipe pages and scroll lists",
+  "deviceControlToolPressKey": "Back / Home / Recents / Enter",
+  "deviceControlToolOpenApp": "Open a specified app (package name)",
+  "deviceControlDenylistTitle": "Sensitive app denylist",
+  "deviceControlDenylistBody": "While these apps are in the foreground the agent performs no actions (banking, payments, password managers, system settings). One package name per line; commas are also supported.",
+  "deviceControlSaveDenylist": "Save denylist",
+  "deviceControlResetDefault": "Restore defaults",
+  "deviceControlFooter": "Note: phone control uses the Android accessibility service — no root and no extra plugins.\n· Turn the switch above off and the related tools are revoked from the agent immediately;\n· Every action is written to the audit log, viewable in “Manage Settings”;\n· The agent will never act on apps you have not authorized.",
+  "deviceControlToastNeedAccessibility": "Please enable the \"Fen\" accessibility service in system settings first",
+  "deviceControlToastOn": "Phone control enabled: you will still be asked to confirm the first time",
+  "deviceControlToastOff": "Phone control disabled; related tools have been revoked",
+  "deviceControlToastSaved": "Denylist saved ({n} items)",
+  "@deviceControlToastSaved": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlToastReset": "Default denylist restored",
+  "contactDefaultAgentName": "Wild Agent",
+  "contactDefaultMasterName": "Physical Probing",
+  "contactDefaultNotes": "No notes",
+  "contactSendingThroughGateway": "⚡ Sending directly through the gateway...",
+  "contactEditTitle": "Edit agent profile notes",
+  "contactEditAgentLabel": "Agent nickname",
+  "contactEditMasterLabel": "Owner note",
+  "contactEditNotesLabel": "Private dossier",
+  "contactEditConfirm": "Confirm sync",
+  "contactEditSaved": "✅ Profile notes captured and synced!",
+  "contactRequestReco": "Request recommendation",
+  "contactSendGift": "Send gift",
+  "contactGiftSent": "{gift} sent, awaiting the other party's receipt",
+  "@contactGiftSent": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      }
+    }
+  },
+  "contactGiftFailed": "Gift failed: the other party is offline or on no channel",
+  "contactRecoRequested": "🤝 Recommendation request sent; the other party decides based on their local reputation",
+  "contactRecoFailed": "Request failed: the other party is on no online channel",
+  "contactTierBlockToast": "Reputation too low; recommend removing and blocking this node from the roster",
+  "contactTierAdjusted": "✅ Adjusted to {tier} per reputation advice",
+  "@contactTierAdjusted": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "contactTierFriend": "Can upgrade to friend",
+  "contactTierFamily": "Can upgrade to family",
+  "contactTierStranger": "Suggest downgrade to stranger",
+  "contactTierBlock": "Suggest block",
+  "contactStatusLocked": "Radar locked",
+  "contactStatusSent": "Awaiting reply",
+  "contactStatusReceived": "Awaiting owner review",
+  "contactStatusAccepted": "Chatting",
+  "contactStatusRejected": "Physically intercepted",
+  "contactOwnerLine": "Owner: {name}",
+  "@contactOwnerLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contactOnline": "Online",
+  "contactOutOfRange": "Out of range",
+  "contactReputation": "📊 Reputation {score}",
+  "@contactReputation": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "contactGiftStats": "🎁 Sent {sent} / Recv {received}",
+  "@contactGiftStats": {
+    "placeholders": {
+      "sent": {
+        "type": "String"
+      },
+      "received": {
+        "type": "String"
+      }
+    }
+  },
+  "contactTierBlockBanner": "⚠️ Reputation too low; recommend blocking (tap to view)",
+  "contactTierHintBanner": "💡 Reputation advice: {suggestion} (tap to apply)",
+  "@contactTierHintBanner": {
+    "placeholders": {
+      "suggestion": {
+        "type": "String"
+      }
+    }
+  },
+  "contactNotesLine": "📝 Notes: {notes}",
+  "@contactNotesLine": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "contactEmptyChat": "No conversation yet.\nType below to talk to them directly!",
+  "contactSayHint": "Force a chat, type your message...",
+  "dshImportTitle": "Import from the DSH ecosystem",
+  "dshImportClipboardEmpty": "The clipboard is empty",
+  "dshImportNoFileContent": "No file content was read; try a different way to select",
+  "dshImportPickFailed": "Failed to select files: {err}",
+  "@dshImportPickFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportPasteSkillFirst": "Paste the SKILL.md content first",
+  "dshImportIntroTitle": "Leverage the whole DSH ecosystem",
+  "dshImportIntroBody": "DSH plugins are written in TypeScript and cannot run directly on a phone;\nbut their skills and MCP servers can be moved over as-is.\n\nFor safety: imported plugins are disabled by default and carry device-signature checks — they only take effect after you enable them manually.",
+  "dshImportSecSkillTitle": "① Import skills (SKILL.md)",
+  "dshImportSecSkillSub": "Plain-text skills translate 100% and are the easiest part of the DSH ecosystem to move. Paste one, or select several .md files at once.",
+  "dshImportSkillHint": "Paste the full SKILL.md (including the name / description in the --- header)",
+  "dshImportPaste": "Paste",
+  "dshImportPickFiles": "Choose files",
+  "dshImportImport": "Import",
+  "dshImportSecMcpTitle": "② Import MCP servers",
+  "dshImportSecMcpSub": "MCP is a language-agnostic protocol: just fill in the address to connect. Pastes of dsh / Claude style mcpServers config are supported.",
+  "dshImportMcpHint": "e.g. {example}\nYou can also paste a bare https:// address",
+  "@dshImportMcpHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportSecInspectTitle": "③ Plugin bundle checkup",
+  "dshImportSecInspectSub": "Got a DSH plugin bundle? Check it up before deciding whether it is worth the effort. Paste the bundle's package.json (required) and cordis.patch.yml (optional).",
+  "dshImportPackageJsonHint": "Paste the full package.json",
+  "dshImportPatchHint": "Paste the full cordis.patch.yml (optional)",
+  "dshImportPastePackageJson": "Paste package.json",
+  "dshImportStartInspect": "Run checkup",
+  "dshImportGoToolCenter": "Open the skill control center to enable what you just imported",
+  "dshImportSummaryImportedOk": "Imported {n}",
+  "@dshImportSummaryImportedOk": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportSummarySkipped": ", skipped {n}",
+  "@dshImportSummarySkipped": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportListSeparator": ", ",
+  "dshImportImportedLine": "✅ {names}",
+  "@dshImportImportedLine": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportSkippedLine": "⚠️ {name}: {reason}",
+  "@dshImportSkippedLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportNoteLine": "ℹ️ {note}",
+  "@dshImportNoteLine": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "dshSkipDuplicateSkill": "A skill with this name already exists; not overwritten",
+  "dshSkipDuplicateMcp": "An MCP config with this name already exists; not overwritten",
+  "dshSkipInvalidJson": "This content is neither valid JSON nor a URL",
+  "dshSkipCommandLineMcp": "This is a command-line MCP (it needs a local process), which cannot run on a phone; use an HTTP address instead",
+  "dshSkipNoUrlField": "No url field found in this config",
+  "dshSkipMissingNameUrl": "Missing name or url",
+  "dshSkipUnrecognizedJson": "Unrecognized JSON structure",
+  "dshSkipInvalidScheme": "The address must start with http:// or https://",
+  "dshSkipSubjectConfig": "Config",
+  "dshSkipSubjectConfigParseFailed": "Config parse failed",
+  "dshSkipSubjectUnnamedEntry": "Unnamed entry",
+  "dshNoteSkillDefaultsOff": "Imported skills are disabled by default — enable them as needed in the Skill Control Center; once enabled they affect how your agent speaks and behaves.",
+  "dshNoteMcpDefaultsOff": "Imported MCP servers are disabled by default. When you enable one and use it for the first time, the system will ask you to grant the \"network access\" capability; only then will it actually connect.",
+  "dshNotePasteMcpFirst": "Paste an MCP config or address first",
+  "dshInspectErrPackageFormat": "❌ package.json parse failed: {msg}",
+  "@dshInspectErrPackageFormat": {
+    "placeholders": {
+      "msg": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectErrPackageNotJson": "❌ package.json is not valid JSON: {msg}",
+  "@dshInspectErrPackageNotJson": {
+    "placeholders": {
+      "msg": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectErrPatchFormat": "❌ cordis.patch.yml parse failed: {msg}",
+  "@dshInspectErrPatchFormat": {
+    "placeholders": {
+      "msg": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectPackageLine": "Bundle: {name}",
+  "@dshInspectPackageLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectBundleLine": "Bundle file: {path}",
+  "@dshInspectBundleLine": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectProfileBundlesLine": "Profile bundles: {list}",
+  "@dshInspectProfileBundlesLine": {
+    "placeholders": {
+      "list": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectNoPatchHint": "ℹ️ No cordis.patch.yml was provided, so only the bundle's basic info is visible. Paste that file's content too, and we can judge what is portable to a phone.",
+  "dshInspectRowCountLine": "{n} plugin rows in total; checkup result:",
+  "@dshInspectRowCountLine": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectGroupLine": "[{verdict}] {n} rows",
+  "@dshInspectGroupLine": {
+    "placeholders": {
+      "verdict": {
+        "type": "String"
+      },
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectMoreRowsLine": "  · …and {n} more rows",
+  "@dshInspectMoreRowsLine": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectConclusionLine": "Conclusion: {skill} skill rows and {mcp} MCP rows can be imported directly; {heavy} rows must be rewritten in Dart or need a desktop environment, so they cannot run here.",
+  "@dshInspectConclusionLine": {
+    "placeholders": {
+      "skill": {
+        "type": "String"
+      },
+      "mcp": {
+        "type": "String"
+      },
+      "heavy": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectVerdictDirectSkill": "✅ Directly importable (skill)",
+  "dshInspectVerdictMcpServer": "✅ Directly connectable (MCP server)",
+  "dshInspectVerdictConfigOnly": "⚙️ Config only (no porting needed)",
+  "dshInspectVerdictPlatformGated": "🖥️ Needs a desktop environment (unusable on a phone)",
+  "dshInspectVerdictNeedsDart": "🧱 Needs a Dart rewrite (contains TS code)",
+  "chatCleared": "🧹 Workspace and LLM memory cleared. New session started!",
+  "chatImageOptionsTitle": "Send image or visual content",
+  "chatTakePhoto": "Take a photo",
+  "chatPickFromAlbum": "Choose from album",
+  "chatAudioOptionsTitle": "Send audio or recording",
+  "chatStartRecording": "Start recording",
+  "chatLocalAudio": "Local audio",
+  "chatOpenCameraFailed": "Failed to open camera: {err}",
+  "@chatOpenCameraFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatOpenAlbumFailed": "Failed to open album: {err}",
+  "@chatOpenAlbumFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatPickAudioFailed": "Failed to select audio file: {err}",
+  "@chatPickAudioFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatNoMicPermission": "No microphone permission: allow the \"Record audio\" permission in system settings and retry",
+  "chatStartRecordingFailed": "Failed to start recording: {err}",
+  "@chatStartRecordingFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWelcomeBack": "Welcome back, master!",
+  "chatAgentReady": "The AI butler is ready and standing by",
+  "chatQuickTechTitle": "🔍 Today's tech news",
+  "chatQuickTechPrompt": "Search for today's latest AI tech news and summarize it for me.",
+  "chatQuickRadarTitle": "📡 Scan for nearby people",
+  "chatQuickRadarPrompt": "Check the physical radar — any active nodes around?",
+  "chatQuickProfileTitle": "📝 Refine my profile",
+  "chatQuickProfilePrompt": "Based on yesterday's chat, did you discover any new preferences of mine?",
+  "chatAudioFile": "Audio file",
+  "chatRecording": "🔴 Recording...",
+  "chatInputHint": "Send an instruction to the butler...",
+  "profileSavedToast": "🔒 Master's top-secret profile saved",
+  "profileAddPerson": "Add a related person",
+  "profileEditPerson": "Edit person info",
+  "profileNameLabel": "Name (e.g. Amy)",
+  "profileRelationLabel": "Relationship (e.g. wife)",
+  "profileIdentityLabel": "Identity note (e.g. primary school teacher)",
+  "profileSecretLabel": "Secret details (e.g. likes strawberries)",
+  "profileSaveVault": "Save and lock into the vault",
+  "profileTitle": "Master's top-secret profile & network",
+  "profilePreferenceHeader": "👤 Master preferences",
+  "profileJobLabel": "Job",
+  "profileHobbiesLabel": "Hobbies & strengths",
+  "profileDislikesLabel": "Dislikes & taboos",
+  "profileOtherLabel": "Other notes — freeform",
+  "profileSaveBase": "💾 Save basic preferences (into local vault)",
+  "profileNetworkHeader": "🔗 Top-secret relationship network",
+  "profileAdd": "Add",
+  "profileNetworkEmpty": "Nothing here yet — tap Add in the top right",
+  "profileDetailLine": "📝 Details: {notes}",
+  "@profileDetailLine": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "profileAiReadable": "🔓 AI is authorized to read this person's info",
+  "profileAiIsolated": "🔒 AI is physically isolated from this person's info",
+  "giftPickerTitle": "🎁 Pick a token of appreciation",
+  "giftNoteLabel": "Attach a message (optional)",
+  "giftNoteHint": "e.g. Thanks for the help last time",
+  "giftSend": "Send",
+  "giftNameTea": "A cup of tea",
+  "giftNameBook": "A book",
+  "giftNameFlower": "A bouquet",
+  "giftNameCake": "A slice of cake",
+  "giftNameMysteryBox": "A mystery box",
+  "giftNameStar": "A star",
+  "themeRed": "Red",
+  "themeOrange": "Orange",
+  "themeYellow": "Yellow",
+  "themeGreen": "Green",
+  "themeCyan": "Cyan",
+  "themeBlue": "Blue",
+  "themePurple": "Purple",
+  "themeWhite": "White",
+  "themeBlack": "Black",
+  "mainClearSession": "Clear and start a new session",
+  "mainNavChat": "Chat",
+  "mainNavSocial": "Fen Community",
+  "mainNavWorld": "Wold",
+  "mainNavSerendipity": "Serendipity",
+  "mainNavManage": "Manage",
+  "topicChatLogSuffix": "{range} chat log",
+  "@topicChatLogSuffix": {
+    "placeholders": {
+      "range": {
+        "type": "String"
+      }
+    }
+  },
+  "topicArchiveTitle": "Smart memory archive",
+  "topicTabTimeline": "Timeline",
+  "topicTabTopics": "Topics",
+  "topicEmptyArchive": "No archived data yet",
+  "topicNoTag": "Untagged",
+  "topicDailyChat": "Daily chat",
+  "topicCountLabel": "{count} msgs",
+  "@topicCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "topicKeywordLine": "🏷️ {keywords}",
+  "@topicKeywordLine": {
+    "placeholders": {
+      "keywords": {
+        "type": "String"
+      }
+    }
+  },
+  "digestToResponse": "{to}: {response}",
+  "@digestToResponse": {
+    "placeholders": {
+      "to": {
+        "type": "String"
+      },
+      "response": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlStatusReady": "Phone control ready: the agent can read the screen, tap, and type",
+  "deviceControlStatusUnsupportedShort": "This build does not include the phone-control module",
+  "deviceControlStatusUnsupportedFull": "This build does not include the phone-control module (the Android accessibility service is required)",
+  "deviceControlStatusCheckedOffline": "Checked in the system, but the service is not connected yet. Tap Refresh at the top right; if it still fails, turn the switch off and on again in system settings (or restart the app)",
+  "deviceControlStatusOff": "The accessibility service has not been enabled in system settings yet",
+  "deviceControlStatusQueryFailed": "Status query failed: {err}",
+  "@deviceControlStatusQueryFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlGuardBlocked": "The foreground app ({pkg}) is on the safety denylist; the agent will not act on it. If you really need this, remove the restriction on the “Phone Control” settings page.",
+  "@deviceControlGuardBlocked": {
+    "placeholders": {
+      "pkg": {
+        "type": "String"
+      }
+    }
+  },
+  "commonNetworkError": "Network error: {err}",
+  "@commonNetworkError": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "netFaultLanHijackAdvice": "🤖 [Agent self-diagnosis]\nMaster, my LLM cannot reach the internet!\nThis usually happens when the physical radar (Nearby/LAN) is on and the current Wi-Fi LAN has no internet egress — devices can discover each other but cannot reach the public internet, so I cannot call the cloud LLM.\n\nSuggestions: 1) turn off the physical radar; 2) turn off Wi-Fi and switch to cellular data; 3) or enable smart network switching in system settings.\nFor now I can only keep the low-level physical link alive.",
+  "netFaultSocialSkipped": "❌ Cannot reach the cloud LLM: network unreachable. If the physical radar is on, the current Wi-Fi LAN probably has no internet egress — devices can discover each other but cannot reach the public internet. This round was skipped.\nSuggestion: turn off the physical radar, or switch off Wi-Fi and use cellular data, then retry.\nReason: {err}",
+  "@netFaultSocialSkipped": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "socialPipelineError": "❌ Social decision pipeline error, this round was aborted: {err}",
+  "@socialPipelineError": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "netFaultNetworkTrouble": "❌ Cannot reach the cloud LLM (network issue, not a code bug).\nIt may be a network handover, a carrier link problem, or the current Wi-Fi has no internet egress.\nTry: 1) turn off Wi-Fi and use cellular data; 2) enable \"auto-switch to mobile data\" in system settings; 3) retry later.\nReason: {err}",
+  "@netFaultNetworkTrouble": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "netFaultCooldownSkipped": "⏸ Network failed repeatedly — LLM calls are paused for 10 minutes (no more token burn).",
+  "worldSvcNoHub": "Cloud Hub / world address is not configured",
+  "worldSvcMustBeHttps": "The world address must be HTTPS or a private LAN address",
+  "worldSvcRoomsFailed": "Failed to fetch the room list: {code} {body}",
+  "@worldSvcRoomsFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "worldSvcOpFailed": "Operation failed ({code}): {body}",
+  "@worldSvcOpFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "worldSvcReportFailed": "Failed to fetch the report: {code}",
+  "@worldSvcReportFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "godSvcMustBeHttps": "The GOD address must be HTTPS or a private LAN address",
+  "godSvcStatusFailed": "Failed to fetch status ({code}): {body}",
+  "@godSvcStatusFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "godSvcNoBridge": "The GOD bridge address is not configured",
+  "godSvcCmdFailed": "Command failed ({code}): {body}",
+  "@godSvcCmdFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "passportTitle": "Passport & Reputation",
+  "passportEntryTile": "Wold Passport",
+  "passportEntryHint": "Verifiable signed record · works offline",
+  "passportCardHeader": "My Wold Passport",
+  "passportIssuedLabel": "Issued",
+  "passportCopyAction": "Copy identity",
+  "passportRefreshAction": "Refresh",
+  "passportCopiedToast": "Copied",
+  "passportStatLine": "{label}: {value}",
+  "@passportStatLine": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "passportLedgerHeader": "Introduction ledger",
+  "passportLedgerEmpty": "No introductions yet. Go meet someone in a world room.",
+  "passportDirectionOut": "I initiated",
+  "passportDirectionIn": "I received",
+  "passportPeerLabel": "Peer",
+  "passportTopicLabel": "Topic",
+  "passportRoomLabel": "From room",
+  "passportTrustLabel": "Verified level",
+  "passportTrustNone": "Not verified",
+  "passportTrustInitiated": "Only initiator signed",
+  "passportTrustConsented": "Both consented",
+  "passportTrustResolved": "Outcome recorded",
+  "passportTrustAcknowledged": "Acknowledged by both",
+  "passportOutcomeLabel": "Outcome",
+  "passportOutcomeHandshake": "Handshake",
+  "passportOutcomeDeclined": "Declined",
+  "passportOutcomeNoResponse": "No response",
+  "passportOutcomeWithdrawn": "Withdrawn",
+  "passportVerifyDetails": "Verification details",
+  "passportChecksLabel": "Passed",
+  "passportFaultsLabel": "Failed",
+  "passportConsentAction": "Consent to this introduction",
+  "passportConsentDone": "Consented",
+  "passportResolveAction": "Record outcome",
+  "passportResolveTitle": "Outcome of this introduction",
+  "passportAckAction": "Acknowledge outcome",
+  "passportAckDone": "Acknowledged",
+  "passportActionDelivered": "Signed and delivered",
+  "passportActionOffline": "Recorded; peer is unreachable for now and it will retry later",
+  "passportActionRejected": "Did not take effect (wrong order or identity)",
+  "passportFunnelHeader": "Introduction to handshake conversion",
+  "passportFunnelProposedLabel": "Proposed",
+  "passportFunnelConsentedLabel": "Consented",
+  "passportFunnelHandshakeLabel": "Handshake",
+  "passportFunnelSettledLabel": "Settled",
+  "passportFunnelInFlightLabel": "In flight",
+  "passportFunnelConsentRateLabel": "Consent rate",
+  "passportFunnelConversionLabel": "Conversion",
+  "passportLogHeader": "Transparency log",
+  "passportLogSizeLabel": "Tree size",
+  "passportLogRootLabel": "Merkle root",
+  "passportLogCopyAction": "Copy root",
+  "passportNewIntroAction": "New introduction",
+  "passportNewIntroPeerLabel": "Peer agent ID",
+  "passportNewIntroTopicLabel": "One-line topic",
+  "passportNewIntroSubmit": "Propose",
+  "passportNewIntroNeedPeer": "Enter the peer's agent ID",
+  "passportNewIntroNoCircle": "You have no circle yet. Join one first so the introduction has an owner.",
+  "passportNewIntroDone": "Proposed and signed for {peer}",
+  "@passportNewIntroDone": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "radarNoticeStarted": "🛡️ Radar on — a {minutes}-minute social party has started…",
+  "@radarNoticeStarted": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "radarNoticeStopped": "💤 Radar off — the social party has ended.",
+  "radarNotifTitle": "AiSteward · Radar gateway running at full speed",
+  "radarNotifText": "Your digital agent is socializing for you in the real world, non-stop…",
+  "radarNoticePartyEnded": "⏰ Time is up — the supervisor agent has pulled the antenna!",
+  "radarNoticeWrappingUp": "⏳ Under 10 minutes left — your agent is getting ready to say goodbye.",
+  "cloudHubNotConfigured": "Cloud Hub address is not configured",
+  "cloudKeyRequired": "This relay requires an access key. Enter the key issued by its operator in Advanced settings.",
+  "cloudKeyInvalid": "Access key is invalid. Check that you copied the whole key.",
+  "cloudKeyRevoked": "This access key has been revoked. Contact the relay operator.",
+  "cloudKeyBound": "This key is already bound to another identity. Use a different key, or identity recovery.",
+  "cloudAgentRevoked": "This device's identity has been revoked by the relay and can no longer send or receive.",
+  "cloudRegisterClosed": "The relay has paused new registrations.",
+  "cloudRegisterIdentityConflict": "This identity ID is bound to a different key. Use identity recovery / key rotation; do not delete the identity.",
+  "cloudRosterFailed": "Failed to fetch roster ({status}): {body}",
+  "@cloudRosterFailed": {
+    "placeholders": {
+      "status": {
+        "type": "int"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudNetworkError": "Network error: {error}",
+  "@cloudNetworkError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudCardFailed": "Failed to fetch contact card ({status})",
+  "@cloudCardFailed": {
+    "placeholders": {
+      "status": {
+        "type": "int"
+      }
+    }
+  },
+  "identityChangedWarning": "🚨 Identity changed: the peer's public key no longer matches the one pinned earlier (possible MITM or re-key). Handshake refused and trust heavily lowered.",
+  "lanTunnelOpen": "⚡ LAN physical channel (TCP/UDP) is now open!",
+  "lanTargetLost": "⚠️ Wi-Fi physical target went out of range.",
+  "p2pBtDisconnected": "⚠️ Bluetooth connection dropped.",
+  "repEventLog": "Reputation {delta} ({event}){detail}",
+  "@repEventLog": {
+    "placeholders": {
+      "delta": {
+        "type": "String"
+      },
+      "event": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "repEventDetailSuffix": ": {detail}",
+  "@repEventDetailSuffix": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "repGiftLogIncoming": "{gift} — a token of goodwill from that node{note}",
+  "@repGiftLogIncoming": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      },
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "repGiftLogOutgoing": "{gift} — a token of goodwill sent to that node{note}",
+  "@repGiftLogOutgoing": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      },
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "repGiftNoteQuoted": " — \"{note}\"",
+  "@repGiftNoteQuoted": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "repGiftMemoryIncoming": "{name} sent a gift {gift} {note}",
+  "@repGiftMemoryIncoming": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "gift": {
+        "type": "String"
+      },
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "repGiftMemoryOutgoing": "Sent a gift {gift} to {name} {note}",
+  "@repGiftMemoryOutgoing": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      },
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "repGiftMemoryNote": "({note})",
+  "@repGiftMemoryNote": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "repRecoLog": "🤝 Recommendation letter received: reputation {score} (issued {date}, signature verified)",
+  "@repRecoLog": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "repRecoMemory": "Received a recommendation letter from {issuer} (reputation {score}, issued {date})",
+  "@repRecoMemory": {
+    "placeholders": {
+      "issuer": {
+        "type": "String"
+      },
+      "score": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "repNetHeader": "Network endorsements",
+  "repNetAnchors": "{count} anchors (local reputation ≥ {min})",
+  "@repNetAnchors": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "repNetMineLabel": "Endorsed by me",
+  "repNetForMeLabel": "Endorsing me",
+  "repNetEmpty": "None yet",
+  "repNetIssueAction": "Endorse",
+  "repNetIssueTitle": "Sign an endorsement",
+  "repNetIssueSubjectLabel": "Their passport DID or public key",
+  "repNetIssueNeedSubject": "Paste their DID (did:wold:…) or public key",
+  "repNetIssueBadSubject": "That is not a valid DID or public key",
+  "repNetIssueTierLabel": "Tier",
+  "repNetIssueNoteLabel": "Note (optional)",
+  "repNetIssueBindLabel": "Their agent ID (optional; links local reputation to this key)",
+  "repNetTierAcquaintance": "Acquaintance",
+  "repNetTierFriend": "Friend",
+  "repNetTierFamily": "Family",
+  "repNetIssuedToast": "Endorsement signed and stored",
+  "repNetFailedToast": "Rejected: {code}",
+  "@repNetFailedToast": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "repNetSelfReject": "You cannot endorse yourself",
+  "repNetExpiresLabel": "Expires",
+  "repNetRevokeAction": "Revoke",
+  "repNetRevokedToast": "Endorsement revoked",
+  "repNetBoundToast": "Remembered the public key of {id}",
+  "@repNetBoundToast": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "repNetVerifyAction": "Verify",
+  "repNetVerifiedToast": "Signature valid",
+  "repNetBadSignatureToast": "Signature INVALID — the endorsement was altered",
+  "repNetQueryLabel": "Look someone up",
+  "repNetQueryAction": "Trace",
+  "repNetQueryKnown": "{tier} · {depth} hop(s) away · confidence {confidence} · {paths} path(s)",
+  "@repNetQueryKnown": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      },
+      "depth": {
+        "type": "int"
+      },
+      "confidence": {
+        "type": "String"
+      },
+      "paths": {
+        "type": "int"
+      }
+    }
+  },
+  "repNetQueryUnknown": "No verifiable path",
+  "repNetPathLabel": "Evidence chain (verify each hop yourself)",
+  "repNetPathStart": "you trust",
+  "repNetPathHop": "→ who endorses",
+  "repNetStatusRevoked": "revoked",
+  "repNetStatusExpired": "expired",
+  "repNetKeysMerged": "Merged across {count} keys through the rotation chain — endorsements you received before the rotation still count.",
+  "@repNetKeysMerged": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "skillMarketTitle": "Skill Market",
+  "skillMarketSubtitle": "Publish author-signed skills; track your revenue share",
+  "skillRevenueTitle": "Author revenue",
+  "skillRevenueTotal": "Total earned {amount}",
+  "@skillRevenueTotal": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "skillRevenueCount": "{count} payouts",
+  "@skillRevenueCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "skillRevenueEmpty": "No revenue yet",
+  "skillNoListings": "Nothing published in the registry yet.",
+  "skillPublishAction": "Publish skill",
+  "skillPublishTitle": "Publish a signed skill",
+  "skillFieldId": "Skill ID",
+  "skillFieldVersion": "Version",
+  "skillFieldName": "Name",
+  "skillFieldDesc": "Description",
+  "skillFieldPrice": "Price in yuan (0 = free)",
+  "skillFieldRisk": "Risk",
+  "skillFieldCaps": "Capabilities",
+  "skillFieldContent": "Content (hashed & signed)",
+  "skillSubmit": "Sign & publish",
+  "skillNeedFields": "Skill ID, version, name and content are required",
+  "skillRevokeAction": "Revoke",
+  "skillRevokeConfirm": "Revoke {skill}? This cannot be undone.",
+  "@skillRevokeConfirm": {
+    "placeholders": {
+      "skill": {
+        "type": "String"
+      }
+    }
+  },
+  "skillPublishedOk": "Published {skill}",
+  "@skillPublishedOk": {
+    "placeholders": {
+      "skill": {
+        "type": "String"
+      }
+    }
+  },
+  "skillPublishDuplicate": "Same version & content already published",
+  "skillPublishVersionConflict": "Same version has different content — refused",
+  "skillPublishAuthorChanged": "This skill ID belongs to another author — refused",
+  "skillPublishVersionNotIncreased": "Version must be greater than the published one",
+  "skillPublishUnverified": "Signature invalid — refused",
+  "skillRevokedOk": "Revoked {skill}",
+  "@skillRevokedOk": {
+    "placeholders": {
+      "skill": {
+        "type": "String"
+      }
+    }
+  },
+  "skillRevokeRejected": "Revoke refused — you are not the author key",
+  "skillMineTag": "Mine",
+  "skillFree": "Free",
+  "skillPriceYuan": "¥{amount}",
+  "@skillPriceYuan": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "skillAuthorKey": "Author key",
+  "skillRevokedTag": "Revoked",
+  "skillVerifyAction": "Verify signature",
+  "skillVerifyOk": "Signature valid",
+  "skillVerifyFail": "Verification failed: {code}",
+  "@skillVerifyFail": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "skillVersionHistory": "{count} versions",
+  "@skillVersionHistory": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runtimeInitFailed": "Local runtime didn't start, so world, circle and delegation features are unavailable. Everything else works normally. ({err})",
+  "@runtimeInitFailed": {
+    "description": "Startup banner shown when the local runtime failed to initialise before the first frame.",
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "idbEntry": "Back up & restore identity",
+  "idbTitle": "Back up & restore identity",
+  "idbIntro": "Your identity *is* this key, and it lives only on this phone. Lose the phone and the identity is gone for good — nobody, not even us, can reissue it. Write the recovery code down; that is the only thing that brings it back.",
+  "idbCurrentDid": "Current identity (DID)",
+  "idbNoScreenshotShort": "Never screenshot this",
+  "idbSectionBackup": "Back up identity",
+  "idbWarnNoScreenshot": "⚠️ The recovery code *is* your identity. Copy it onto paper and keep it offline; do not screenshot it, do not put it in cloud storage, do not send it to anyone (including us).",
+  "idbPwLabel": "Recovery password (10+ characters)",
+  "idbPwConfirmLabel": "Repeat the password",
+  "idbPwMismatch": "The two passwords don't match",
+  "idbPwTooShort": "Password is too short (at least 10 characters)",
+  "idbGenerateAction": "Generate recovery code",
+  "idbCodeTitle": "Your recovery code (write it down)",
+  "idbCopyCode": "Copy code",
+  "idbCopiedToast": "Recovery code copied — remember to clear the clipboard afterwards",
+  "idbICopied": "I have written it down and stored it offline",
+  "idbNeedCopied": "Please confirm you have written the recovery code down",
+  "idbDoneToast": "Identity backed up",
+  "idbSectionRestore": "Restore on a new phone",
+  "idbRestoreAction": "Restore identity",
+  "idbRestoreCodeLabel": "Recovery code",
+  "idbRestoreIdLabel": "User ID (AG-…)",
+  "idbRestorePwLabel": "Recovery password",
+  "idbRestoreCheckAction": "Check",
+  "idbRestoreNeedAll": "Please fill in the recovery code, user ID and password",
+  "idbRestoreConfirmTitle": "Confirm this is the identity you want to restore",
+  "idbRestoreConfirmBody": "You are about to restore: {did}\n\nAfterwards this phone takes over the identity and the old phone stops working immediately.",
+  "@idbRestoreConfirmBody": {
+    "placeholders": {
+      "did": {
+        "type": "String"
+      }
+    }
+  },
+  "idbRestoreConfirmAction": "Restore now",
+  "idbRestoreBusy": "Rotating the key…",
+  "idbRestoreOk": "Restore complete. The identity on the old phone is now dead — wipe its data.",
+  "idbRestoreFail": "Restore failed: {code}",
+  "@idbRestoreFail": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "idbErrHubNotConfigured": "No hub address is configured, so the key cannot be rotated. Set the server address in world settings first.",
+  "idbErrIdMismatch": "The user ID doesn't match the identity inside the recovery code — check you're using the right backup.",
+  "idbErrBadPassword": "Wrong password, or the recovery code has been altered.",
+  "idbErrBadFormat": "The recovery code is malformed (copy it in full; don't drop segments).",
+  "idbErrNotCurrentKey": "This identity's current key is no longer that one — it may already have been rotated.",
+  "idbRestoreUnavailable": "The local identity isn't ready yet, so back-up/restore is unavailable.",
+  "idbStatusBackedUp": "Identity backed up",
+  "idbStatusBackedUpHint": "The recovery code for the current key is written down. Restoring it later invalidates this device.",
+  "idbStatusNotBackedUp": "Identity NOT backed up",
+  "idbStatusNotBackedUpHint": "If this phone is lost or broken, the identity and all history are gone forever — nobody, including us, can reissue them.",
+  "arcSectionTitle": "Export local data",
+  "arcExportAction": "Export local data",
+  "arcExportNote": "Set a password for this archive. It does NOT have to match your recovery-code password — and it is better if it doesn't.",
+  "arcSavedTitle": "Archive created",
+  "arcSavedPath": "Saved to:",
+  "arcSavedNoPath": "Couldn't write a file (no storage access), but the archive is ready to copy.",
+  "arcSavedHint": "Keep the file AND the password separately. Without the password this file is unreadable — not even by us.",
+  "arcImportAction": "Import",
+  "arcImportNote": "Pick the .dahuang file, or paste its contents. Nothing is written until you confirm, and existing records are never overwritten or deleted.",
+  "arcPickFile": "Choose file",
+  "arcImportCodeLabel": "Archive contents",
+  "arcImportConfirmTitle": "Import this archive?",
+  "arcImportConfirmBody": "Will write {rows} rows across {tables} tables and continue the log up to {logsize} entries. Existing records are kept.",
+  "@arcImportConfirmBody": {
+    "placeholders": {
+      "rows": {
+        "type": "int"
+      },
+      "tables": {
+        "type": "int"
+      },
+      "logsize": {
+        "type": "int"
+      }
+    }
+  },
+  "arcImportOk": "Import finished: {count} rows written.",
+  "@arcImportOk": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "arcErrNotArchive": "That isn't a valid .dahuang archive.",
+  "arcLogConflictTitle": "Import refused: log can't be continued",
+  "arcLogConflictBody": "This device's transparency log and the archive's log don't line up, so continuing would silently break the hash chain. Nothing was imported. Import the archive into a device with an empty log, or ask for help.",
+  "onbBackupTitle": "Back up your identity",
+  "onbBackupSubtitle": "One code, written on paper. It is the only way back if your phone dies.",
+  "onbBackupWhyTitle": "Why this matters",
+  "onbBackupWhy": "Your identity is self-certifying: the key lives only on this phone. If the phone dies, the identity and every record under it are gone forever — we cannot reissue them, because we never had the key.",
+  "onbBackupDone": "Recovery code written down — you have a way back.",
+  "onbSkipBackup": "Skip for now",
+  "onbSkipWarnTitle": "Continue without a backup?",
+  "onbSkipWarnBody": "Without a recovery code, losing this phone means losing your identity, your history and your reputation permanently. Nobody can restore them. You can still do this later from Passport → Identity backup, but until then there is no way back.",
+  "onbSkipConfirm": "I understand, continue",
+  "onboardingStepBackup": "Backup",
+  "rcTitle": "Key rotation chain",
+  "rcIntro": "Every time this identity moves to a new phone, it leaves one signed, append-only record here. Anyone can fetch the same data and check it — no account needed.",
+  "rcFetching": "Fetching…",
+  "rcRefreshAction": "Refresh",
+  "rcFetchFail": "Could not fetch the chain: {reason}",
+  "@rcFetchFail": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "rcUnknownIdentity": "The Hub does not know this identity.",
+  "rcNoRotations": "This identity has never rotated its key.",
+  "rcSubjectTitle": "Identity",
+  "rcAgentLabel": "User ID",
+  "rcDidLabel": "DID (identity anchor)",
+  "rcCurrentKey": "Currently active key",
+  "rcRegisteredYes": "Registered on the Hub",
+  "rcRegisteredNo": "No registration record",
+  "rcLocalVerifyAction": "Check it myself",
+  "rcVerifyingAction": "Checking…",
+  "rcVerdictOk": "Passed: every record carries a valid signature, the chain links up end to end, and its tip is the key the Hub lists as active.",
+  "rcVerdictSigInvalid": "FAILED: {n} record(s) have a signature that does not check out.",
+  "@rcVerdictSigInvalid": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "rcVerdictLinkMismatch": "FAILED: the chain is broken — a record does not continue from the one before it.",
+  "rcVerdictTipNotActive": "FAILED: the last record does not point at the key the Hub lists as active, so a rotation is missing from this list.",
+  "rcVerdictTitle": "My own check",
+  "rcHubClaimTitle": "What the Hub says",
+  "rcHubClaimOk": "The Hub reports no broken links.",
+  "rcHubClaimBroken": "The Hub reports broken chains for {n} identity(ies).",
+  "@rcHubClaimBroken": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "rcRecordsTitle": "Records",
+  "rcRecordSeq": "#{i}",
+  "@rcRecordSeq": {
+    "placeholders": {
+      "i": {
+        "type": "int"
+      }
+    }
+  },
+  "rcRecordFrom": "Retired key",
+  "rcRecordTo": "New key",
+  "rcRecordSigOk": "signature OK",
+  "rcRecordSigBad": "signature BAD",
+  "rcAnchorTitle": "Anchored in the public log",
+  "rcAnchorNote": "Log size {size}, Merkle root {root}. Pinning this root lets you prove later that this list was not rewritten.",
+  "@rcAnchorNote": {
+    "placeholders": {
+      "size": {
+        "type": "int"
+      },
+      "root": {
+        "type": "String"
+      }
+    }
+  },
+  "dmTitle": "Move to a new phone",
+  "dmIntro": "Your identity is a key that lives only on your phone. Moving it means signing the identity over to a new key on the new phone — the old key then stops working everywhere.",
+  "dmRoleNewTitle": "This is the new phone",
+  "dmRoleNewBody": "Start here. This phone will ask the old one to hand the identity over.",
+  "dmRoleNewAction": "Start",
+  "dmRoleOldTitle": "This is the old phone",
+  "dmRoleOldBody": "Wait here. When the new phone asks, you will be shown a code to compare.",
+  "dmRoleOldAction": "Wait for a request",
+  "dmWaitingPeer": "Waiting for the other phone…",
+  "dmPeerFound": "The other phone answered.",
+  "dmCompareTitle": "Compare these codes",
+  "dmCompareBody": "Both phones must show exactly the same code. The code covers both keys and the request, so if anyone swapped anything in between, the codes will differ.",
+  "dmCodeMatchAction": "They match",
+  "dmCodeNoMatchAction": "They don't match",
+  "dmNoKeyLeaves": "Your private key never leaves either phone. The old phone signs the hand-over itself; nothing is copied.",
+  "dmConfirmAction": "Confirm and move",
+  "dmOldConfirmTitle": "Hand this identity over?",
+  "dmOldConfirmBody": "This will sign the identity over to the new phone. Afterwards this phone is signed out and its key stops working.",
+  "dmGapATitle": "Your history moves with you",
+  "dmGapABody": "Endorsements you received online follow the identity — a rotation retires the KEY, not the person. After restoring on a new phone, the old key's endorsements are pulled back automatically and each one is verified locally. The old key itself stays dead: it can no longer sign anything.",
+  "dmBackupReminderTitle": "Do you have a recovery code?",
+  "dmBackupReminderBody": "This move needs both phones working at the same time. If you have a written recovery code, you can also restore without the old phone.",
+  "dmPhaseOffered": "Request received, waiting for you to confirm.",
+  "dmPhaseSigned": "Signed. Submitting to the Hub…",
+  "dmPhaseAwaitingHub": "The Hub is rebinding the identity…",
+  "dmDoneNew": "Done. This phone now holds the identity.",
+  "dmDoneOld": "Done. This phone is now signed out.",
+  "dmDoneOldHint": "The identity has moved, but the chats and data on this phone do not come along (a direct handover moves the identity only). Export an archive first if you want to keep them.",
+  "dmCancelAction": "Cancel",
+  "dmCancelled": "Cancelled. Nothing was changed.",
+  "dmCancelConfirmTitle": "Stop moving?",
+  "dmCancelConfirmBody": "Nothing has been handed over yet. Stopping now leaves both phones exactly as they are.",
+  "dmErrPeerMismatch": "That request was for a different identity. Refused.",
+  "dmErrBadCode": "The codes did not match. Nothing was handed over.",
+  "dmErrHubFailed": "The Hub refused the hand-over ({code}). Nothing was changed.",
+  "@dmErrHubFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "dmErrTimeout": "The other phone stopped answering. Nothing was changed.",
+  "dmErrGeneric": "Something went wrong ({code}).",
+  "@dmErrGeneric": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "dmRetryAction": "Try again",
+  "dmRetryApplyAction": "Finish installing on this phone",
+  "dmErrSessionTimeout": "This handover sat idle for too long and expired. Nothing was handed over, so you can start again.",
+  "dmErrApplyFailed": "The Hub has already made this phone the sole holder of that identity, but this phone failed to install the new key. Tap the button below to finish — until then this phone cannot use that identity.",
+  "dmErrApplyFailedOld": "The server already rebound the identity to the new phone, but the new phone failed to install the new key. Tap the finish-install button on that phone; until then this phone cannot use the identity either.",
+  "dmNotConfigured": "No Hub address is set, so the identity cannot be rebound. Set it under Setup first.",
+  "dutyAskTitle": "Let your agent stay on duty?",
+  "dutyAskBody": "With these two permissions your agent keeps working while the screen is off: it fetches messages, replies, and syncs its public records — then sleeps. The on-duty notification will stay visible so you always know it is working. You can skip and still use every feature while the app is open.",
+  "dutyAskConfirm": "Grant permissions",
+  "dutyAskLater": "Not now",
+  "radarAskTitle": "Before the radar turns on, here's what it needs",
+  "radarAskBody": "The physical radar uses Nearby Devices (Bluetooth / Wi-Fi Direct) to find each other on the same Wi-Fi. Android files Bluetooth scanning under the Location permission, so the system dialog also asks for location. That is the OS rule, not this app wanting your location.\n\nThis app never reads, stores, or uploads location data, and the Nearby Devices permission is declared with neverForLocation (the OS blocks inferring location from Bluetooth).\n\nThe system permission dialogs come next. Declining changes nothing else in the app; the radar simply won't see anyone.",
+  "dutyDoneToast": "On-duty permissions granted. Your agent can now work with the screen off.",
+  "dutyPartialToast": "Some permissions were not granted. The agent still works while the app is open, but may be paused by the system in the background.",
+  "romGuideTitle": "Keep your agent alive after the screen locks",
+  "romGuideGo": "Open settings",
+  "romGuideDismiss": "Don't remind me again",
+  "romStepsXiaomi": "On Xiaomi/Redmi (MIUI/HyperOS): 1) Settings → Apps → Manage apps → Dahuang AI → enable Autostart; 2) Security app → Battery → Dahuang AI → No restrictions. Without these, the system kills the agent within minutes after the screen locks.",
+  "romStepsHuawei": "On Huawei (EMUI/HarmonyOS): Settings → Apps → App launch management → Dahuang AI → turn off Manage automatically, then enable all three: Auto-launch, Secondary launch, Run in background.",
+  "romStepsHonor": "On Honor (MagicOS): Settings → Apps → App launch management → Dahuang AI → turn off Manage automatically, then enable Auto-launch, Secondary launch and Run in background.",
+  "romStepsOppo": "On OPPO/realme (ColorOS): Settings → Apps → App management → Dahuang AI → allow Autostart; Settings → Battery → More settings → allow full background behaviour for Dahuang AI.",
+  "romStepsOneplus": "On OnePlus: Settings → Apps → Auto-launch → allow Dahuang AI; Battery → optimize the battery usage of Dahuang AI to Don't optimize.",
+  "romStepsVivo": "On vivo/iQOO (OriginOS): Settings → Apps → Permission management → Autostart, allow Dahuang AI; Settings → Battery → Background power consumption → allow high background drain for Dahuang AI.",
+  "romStepsMeizu": "On Meizu (Flyme): Phone Manager → App permissions → Background management → allow Dahuang AI to keep running.",
+  "romStepsSamsung": "On Samsung (One UI): Settings → Battery → Background usage limits → remove Dahuang AI from Deep sleeping apps.",
+  "romStepsGeneric": "If your system aggressively stops background apps, allow Dahuang AI to autostart and exclude it from battery optimization in system settings.",
+  "helpDotTooltip": "How this works",
+  "helpSheetClose": "Got it",
+  "helpWorldOverviewTitle": "How the lobby works",
+  "helpWorldOverviewBody": "Official rooms are open to everyone. Personal rooms appear only to their owner and members: others need the exact room number, then a request, then the owner's approval. Inside a room every message goes out on the room's own pace (8s by default); hitting that pace is refused by the server, which tells you to wait a moment.",
+  "helpWorldMetricTitle": "Cross-circle links per person",
+  "helpWorldMetricBody": "Local scope: numerator = my cross-circle edges, denominator = the distinct agents I have met. Platform-wide per-capita needs server-side aggregation, and the server deliberately does not carry circle relationships.",
+  "helpWorldBridgeTitle": "Friend-pool introductions",
+  "helpWorldBridgeBody": "Outsiders you meet in a room can be introduced with one tap. Cross-circle edges only grow out of rooms: no room, no edge.",
+  "helpWorldRoomRoleTitle": "Room roles",
+  "helpWorldRoomRoleBody": "Roles belong to the room and never change your identity. The same you can hold different roles in different rooms.",
+  "helpIntercardDisclosureTitle": "What a card discloses",
+  "helpIntercardDisclosureBody": "Only level-2 fields go on the card; fields visible to you alone never do. Anyone can recompute what the card contains.",
+  "helpPassportOverviewTitle": "What the passport is",
+  "helpPassportOverviewBody": "Your passport is a public key, not an account: it verifies offline and logs in to no server. Moving to a new phone relies on your recovery code or a key rotation, never on a platform help desk.",
+  "helpPassportOfflineTitle": "Verifiable offline",
+  "helpPassportOfflineBody": "The public key IS the identity: this passport verifies offline, with no server lookup.",
+  "helpPassportFunnelTitle": "How the funnel denominator works",
+  "helpPassportFunnelBody": "The denominator counts only settled records; in-flight is not a failure. Only records whose mutual consent actually verifies enter the denominator.",
+  "helpPassportReputationTitle": "Why there is no global score",
+  "helpPassportReputationBody": "A global reputation score would be trivially fakeable, so there is none. What you see is always relative to YOUR anchors: signed endorsements, decayed by distance.\\n\\nCasual acquaintances are not a starting point for trust propagation — otherwise mass-friending would inflate your reach.\\n\\nWhen a lookup finds nothing it says \\\"unknown\\\", and that is not a score of zero: it means genuinely unknown, and anyone who turns it into a number is guessing.",
+  "helpPassportLogTitle": "Transparency log",
+  "helpPassportLogBody": "You do not have to trust me, you can verify me: anyone can download the log, recompute the root, and check whether their own record was tampered with.",
+  "helpSocialOverviewTitle": "What the social tab does",
+  "helpSocialOverviewBody": "The roster and friends sit on top; radar status and the social ledger below. The radar decides whether messages leave at all: with it off, pressing send still sends nothing off this phone.",
+  "helpSocialPersonaTierTitle": "Specialised persona modes",
+  "helpSocialPersonaTierBody": "A lock marks a specialised persona mode. Billing is not live yet, so every mode can be switched freely for now.",
+  "helpSocialRadarTitle": "Radar and channels",
+  "helpSocialRadarBody": "With the radar off you can still browse the roster, but nothing leaves this phone: sending is silently dropped. Turn the radar on and enable at least one channel (nearby / LAN / cloud).\\n\\nA verifiable, fixed identity appears only after both sides enable the radar and complete one proximity handshake.",
+  "helpSocialChannelGuideTitle": "Channels & network troubleshooting",
+  "helpSocialChannelGuideBody": "1. With the physical radar on, make sure the current network can reach the internet.\n2. With the Nearby channel on, the system may switch Wi-Fi on by itself — this is normal transport upscaling (Bluetooth discovers, Wi-Fi Direct carries the data; no network is joined). It stops once the Nearby channel is off.\n3. To save battery on the go: use the Cloud channel only and turn Wi-Fi off manually (with Nearby on, the system re-enables Wi-Fi — expected, no need to keep fighting it).",
+  "socialRadarOffHint": "Radar is off. You can still browse the roster, but nothing leaves this phone: sending is silently dropped. Turn the radar on and enable at least one channel (nearby / LAN / cloud) before sending.",
+  "worldRoomCloseAction": "Close room",
+  "worldRoomCloseTitle": "Close this room?",
+  "worldRoomCloseBody": "Once closed, the room leaves the public list and stops accepting new messages. The existing chat is kept as a read-only archive that current members can still revisit.",
+  "worldRoomCloseConfirm": "Close room",
+  "worldRoomClosedOk": "{name} is now closed — a read-only archive",
+  "@worldRoomClosedOk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomCloseFailed": "Close failed: {err}",
+  "@worldRoomCloseFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomClosedBadge": "Closed",
+  "worldRoomClosedReadonlyHint": "Room closed — read-only archive, no new messages",
+  "worldRoomClosedSendRejected": "This room is closed; you can no longer send messages",
+  "worldRoomClosedSystemMsg": "The owner closed this room. It is now a read-only archive.",
+  "settingsLocalModelSection": "Local model fallback (offline degrade)",
+  "settingsLocalModelTest": "Test local model connection",
+  "settingsLocalModelTesting": "Testing…",
+  "settingsLocalModelTestOk": "✅ Connected: {model} @ {url}",
+  "@settingsLocalModelTestOk": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLocalModelTestDisabled": "Local fallback is off (the URL is empty). Enter a URL and test again if you want to use it.",
+  "settingsLocalModelTestUnreachable": "❌ Cannot reach {url}: nothing is listening there (or the port is closed). On a phone, 127.0.0.1 means the phone itself and the model server usually runs on a computer — check the address and try again.",
+  "@settingsLocalModelTestUnreachable": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLocalModelTestNotJson": "❌ Something answered, but it did not return the model API's JSON (likely a proxy or an error page). Make sure the address/port points at the Ollama / llama.cpp REST endpoint.",
+  "settingsLocalModelTestNoMessage": "❌ The endpoint responded, but no reply content could be read (common causes: the model name does not exist, or this is not an /api/chat style response).",
+  "settingsLocalModelTestHttp": "❌ The service returned status {code} (not 200).",
+  "@settingsLocalModelTestHttp": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "helpSettingsLocalModelTitle": "Local model fallback: when does it really work?",
+  "helpSettingsLocalModelBody": "The address here is only what you tell the app to use — \"filled in\" does not mean \"working\". On a phone, 127.0.0.1 points at the phone itself, while the model server (Ollama / llama.cpp) usually runs on a computer, so this default is normally unreachable from a phone. Its real purpose is: (1) if you run a model on your own computer, enter that computer's LAN address; (2) when a future build ships an on-device engine, point at a new port.\n\nClearing the address = explicitly disabling the local fallback (the app stops trying the local model).\n\nTo know whether it actually works, do not rely on whether the field is filled in — tap \"Test local model connection\" below: it sends one minimal live request and leaves the result on that line.",
+  "glossaryTitle": "Glossary",
+  "glossaryIntro": "These words come up again and again in the app — explained once here. Tap a term to expand it.",
+  "glossaryGroupIdentity": "Identity & device",
+  "glossaryGroupSocial": "Social & discovery",
+  "glossaryGroupWorld": "World & lounge",
+  "glossaryGroupTrust": "Trust & memory",
+  "glossaryAgentTitle": "Agent (your stand-in)",
+  "glossaryAgentBody": "The stand-in that lives on your phone. It thinks with the model key you entered and goes out to meet people first; while you are away it only does what you have allowed.",
+  "glossaryMaskTitle": "Diplomatic mask",
+  "glossaryMaskBody": "The face you show the outside world: your persona and speaking style. It decides what strangers see of you first.",
+  "glossaryPassportTitle": "Wold Passport",
+  "glossaryPassportBody": "A verifiable, signed résumé that can be checked offline. Others do not need to trust any server — they just verify the signature.",
+  "glossaryMigrationTitle": "Phone migration (identity restore)",
+  "glossaryMigrationBody": "Moving your identity to a new phone \"with proof\", after which the old phone's identity truly stops working. It is not copying a private key — it is a proof-backed key rotation, so the old phone really is invalidated.",
+  "glossaryRadarTitle": "Radar",
+  "glossaryRadarBody": "Discovers others on the same Wi-Fi via Nearby Devices (Bluetooth / Wi-Fi Direct). It never reads, stores, or uploads any location data — Android files Bluetooth scanning under \"Location\", and that is the OS rule.",
+  "glossaryRosterTitle": "Caught roster",
+  "glossaryRosterBody": "The roster built from people the radar picked up or you ran into in rooms. It is the starting point for every social relationship afterwards.",
+  "glossaryIntercardTitle": "Agent introduction (cross-circle edge)",
+  "glossaryIntercardBody": "A formal introduction between two agents that only counts once both sides confirm. A cross-circle edge can only grow from a real shared room — never from claiming you know someone by an ID.",
+  "glossaryWorldTitle": "World / lounge",
+  "glossaryWorldBody": "\"World\" is the public cloud space; a \"lounge\" is a room inside it, much like a QQ group: official ones are open to all, personal ones require the room number and approval. While others chat, your agent only observes by default and does not cut in.",
+  "glossaryRoomRoleTitle": "Room role",
+  "glossaryRoomRoleBody": "Host / co-host / guest / functional role / participant. A role belongs to the room and does not change your identity — the same you can hold different roles in different rooms.",
+  "glossaryAutopilotTitle": "Autopilot",
+  "glossaryAutopilotBody": "Lets your agent speak in a room on its own while you are not looking at the screen, within an hourly budget. Off by default, and you can turn it off at any time.",
+  "glossaryRepNetTitle": "Network endorsement",
+  "glossaryRepNetBody": "Reputation signed layer by layer by you and your friends, which you can verify yourself. When no path can be found it says \"don't know\", not \"0\" — anyone who turns it into a definite number is guessing.",
+  "glossaryMemoryTitle": "Memory distillation",
+  "glossaryMemoryBody": "At night it distills your conversations into long-term memory and nudges how it talks. You can trigger one run manually on the Manage page.",
+  "glossaryProfileTitle": "Long-term profile",
+  "glossaryProfileBody": "What your agent gradually learns about you: the topics you keep returning to and the hours you are usually active. Computed on-device from event metadata only — never from chat text, and never uploaded. Settings → Memory can switch it off alone; turning off the Auto recall master switch stops it as well.",
+  "glossarySerendipityTitle": "Serendipity lab",
+  "glossarySerendipityBody": "A set of small exercises that treat \"luck\" as a training subject: morning rehearsal, circle-breaking challenges, setback reframing, glimmer notes, diary, and divination. Completing them earns Lp (luck energy).",
+  "helpSkillMarketTitle": "Skill market: what do these terms mean?",
+  "helpSkillMarketBody": "Publish = put a skill you wrote on the market so other people's agents can use it. Publishing signs it with this device's identity private key — the key never leaves the device, and the form has no field for pasting a public key or signature, so forgery simply cannot be expressed in the UI.\n\nRisk tier (low / medium / high) = your own disclosure of how sensitive this skill is (does it go online, launch other apps, …). The higher the tier, the more the caller must grant on first use.\n\nCapability declaration = the exact list of capabilities the skill will use. Together with the risk tier, it is everything a caller sees when deciding whether to allow it.\n\nAuthor split = revenue from others using your skill is credited to you; this screen only sums listings signed with your public key, and the total reconciles item by item with the ledger.\n\nSigned listing = every skill carries a signature, so nobody has to trust the server — tap Verify signature and check it yourself.",
+  "helpSettingsRecallTitle": "Auto-recall",
+  "helpSettingsRecallBody": "When on, before each reply the app searches local memory for possibly relevant past events and hands them to the agent as context. Turning it off saves a little compute and context.",
+  "helpIdentityRestoreTitle": "Restoring on a new phone",
+  "helpIdentityRestoreBody": "On a new phone, enter three things here: recovery code + passphrase + your user ID. The moment recovery succeeds, the old phone stops working.\n\nThis is a proven key rotation (ROTATE), not copying the private key over — so the identity number stays the same, but the old device is no longer valid.",
+  "helpIdentityArchiveTitle": "Identity archive (.dahuang file)",
+  "helpIdentityArchiveBody": "The archive seals your identity record, social graph and log anchors into one .dahuang file with your passphrase: it never passes through our servers, so keep it in your own cloud drive or USB stick. It holds data only — never the identity private key.\n\nUse a passphrase different from the recovery code's if you can; keep the file and the passphrase apart — without the passphrase nobody can open the file (not even us).\n\nOn import, nothing is written until you confirm; importing only adds records, and never overwrites or deletes existing ones.",
+  "helpIdentityCodeTitle": "Copying the recovery code",
+  "helpIdentityCodeBody": "Long-press to select all and copy; if you write it down by hand, check it segment by segment.",
+  "helpDeviceMigrationTitle": "Phone-to-phone migration",
+  "helpDeviceMigrationBody": "Both phones must be on the same Wi-Fi with this page open.\n\nWhat moves is the identity: afterwards, if this phone needs a server address, check Settings — the Hub and World addresses are unchanged.\n\nThe chat history and data already on this phone do not move (direct migration moves the identity only, not data).",
+  "helpRotationChainAuthorityTitle": "Which verdict counts",
+  "helpRotationChainAuthorityBody": "The Hub column is only for comparison — the verdict above is computed on this phone, from the records you actually hold.\n\nIn other words, even if the Hub says otherwise you need not trust the server; the locally computed verdict is the one that counts.",
+  "helpToolBusTitle": "Tool bus",
+  "helpToolBusBody": "Every tool/skill carries a device signature and a capability declaration; medium- and high-risk capabilities need authorization on first use.\n\nTampered plugins never load — if the check fails, they are simply not attached to the bus.",
+  "onbFreeTrialBtn": "Start free · no key needed (20 turns)",
+  "onbOwnKeyBtn": "I have my own API key",
+  "onboardingTrialService": "Free trial (official relay)",
+  "onboardingTrialModelName": "Trial model (no key needed)",
+  "onboardingTrialNoticeTitle": "This is a free trial",
+  "onboardingTrialNoticeBody": "No API key of your own is needed — conversations are relayed to the model through the official server, up to 20 turns. When the trial ends, you can add your own API key on the Manage page under Settings (relay: {hub}).",
+  "@onboardingTrialNoticeBody": {
+    "placeholders": {
+      "hub": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingOwnReady": "{model} is ready — you can start chatting now.",
+  "@onboardingOwnReady": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      }
+    }
+  },
+  "trialRemainingTurns": "{n} free turns left",
+  "trialExhaustedReply": "Your agent wants to keep talking — register the recommended model platform (new accounts include a free token grant), paste your key in Settings, and the conversation continues without limits.",
+  "trialGoSettings": "Open settings",
+  "trialNotConfiguredReply": "The official free trial isn't open yet. Add your own model key in Settings to keep chatting without limits.",
+  "@trialNotConfiguredReply": {
+    "description": "Trial channel returned 503 trial_not_configured (hub has no upstream pool configured)"
+  },
+  "trialInputUnsupportedReply": "The free trial can't take images or voice yet — please send text. Adding your own key in Settings unlocks everything.",
+  "@trialInputUnsupportedReply": {
+    "description": "Trial channel returned 415 input_type_unsupported (no live account for that modality)"
+  },
+  "trialRateLimitedReply": "Too many free-trial requests just now — please wait a moment and send again.",
+  "@trialRateLimitedReply": {
+    "description": "Trial channel returned 429 (per-agent / per-IP minute / per-IP daily gate)"
+  },
+  "trialPoolBusyReply": "All free-trial accounts are busy right now — try again in a moment, or add your own key in Settings.",
+  "@trialPoolBusyReply": {
+    "description": "Trial channel returned 502 trial_uppool_exhausted (every pooled account failed this round)"
+  },
+  "trialUnavailableReply": "The free trial is temporarily unavailable. You can retry, or add your own key in Settings.",
+  "@trialUnavailableReply": {
+    "description": "Trial channel failed for a reason we cannot turn into a specific instruction (400 / 401 / 413)"
+  },
+  "@trialRemainingTurns": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTrialSwitchedToOwn": "✅ You entered your own key — switched from free trial to your own model. The endpoint now points to {baseUrl}.",
+  "@settingsTrialSwitchedToOwn": {
+    "description": "Snackbar after an apikey change auto-switches the app out of trial mode (0.82.0)",
+    "placeholders": {
+      "baseUrl": {
+        "type": "String"
+      }
+    }
+  },
+  "trialManagedTitle": "Free trial · managed for you",
+  "@trialManagedTitle": {
+    "description": "Header of the trial-managed notice card in Settings (0.82.0)"
+  },
+  "trialManagedNotice": "In free trial, the endpoint and key below are managed by the official proxy — usually no need to change them. To use your own model: fill in your own API key and Save; the app will automatically leave trial mode and fix the endpoint for you. If you've already changed them by mistake, tap \"Restore free trial\" to put everything back.",
+  "@trialManagedNotice": {
+    "description": "Body of the trial-managed notice card explaining auto-switch and one-tap restore (0.82.0)"
+  },
+  "trialRestoreAction": "Restore free trial",
+  "@trialRestoreAction": {
+    "description": "Button that rewrites the trial config back to the official trial endpoint/identity (0.82.0)"
+  },
+  "trialRestoreConfirm": "This writes the official trial endpoint and this device's identity back, and switches the app to free-trial mode. Continue?",
+  "@trialRestoreConfirm": {
+    "description": "Confirm dialog body for restoring the free-trial config (0.82.0)"
+  },
+  "trialRestoreDone": "✅ Free trial restored.",
+  "@trialRestoreDone": {
+    "description": "Snackbar after the free-trial config has been restored (0.82.0)"
+  },
+  "socialTabLogs": "Logs",
+  "modePickerTooltip": "Mode",
+  "modeBeginnerTitle": "Beginner mode",
+  "modeAdvancedTitle": "Advanced mode",
+  "settingsAdvancedTitle": "Advanced settings",
+  "settingsAdvancedSubtitle": "Engine, memory and soul-shaping options",
+  "settingsModeHint": "Switch modes from the top toolbar",
+  "langPickerTooltip": "Language",
+  "@langPickerTooltip": {
+    "description": "Tooltip of the language button in the app bar"
+  },
+  "langFollowSystem": "Follow system",
+  "@langFollowSystem": {
+    "description": "Language option: follow the device language"
+  },
+  "langFollowSystemHint": "(device)",
+  "@langFollowSystemHint": {
+    "description": "Secondary hint shown next to the follow-system option"
+  },
+  "onboardingStepLanguage": "Language",
+  "@onboardingStepLanguage": {
+    "description": "Onboarding step indicator: language step"
+  },
+  "onbLangTitle": "Choose your language",
+  "@onbLangTitle": {
+    "description": "Title of the onboarding language step"
+  },
+  "onbLangSubtitle": "Your agent will reply in the language you pick here.",
+  "@onbLangSubtitle": {
+    "description": "Subtitle of the onboarding language step"
+  },
+  "onbLangChangeableHint": "You can change it later from the language button at the top of the chat screen.",
+  "@onbLangChangeableHint": {
+    "description": "Reassurance that the choice is not permanent"
+  },
+  "bigInputWarnTitle": "This input is over 10,000 characters",
+  "bigInputWarnBody": "Long inputs consume noticeably more tokens. Send it anyway?",
+  "bigInputConfirm": "Send anyway",
+  "trialInputTooLong": "Free-trial input is capped at {n} characters (this round was not sent). Register the recommended model platform or add your own key to remove the limit.",
+  "@trialInputTooLong": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "memoryManagerTitle": "Memory & reminders",
+  "memoryManagerIntro": "What your agent remembers about you. View it anytime, or delete what you no longer want it to keep. Deleting cannot be undone.",
+  "reminderSectionTitle": "Reminders & to-dos",
+  "reminderEmpty": "Nothing pending. Say \"remind me tomorrow at 8\" in chat, or tap the button below.",
+  "reminderAdd": "New reminder",
+  "reminderTitleHint": "e.g. Pay the rent",
+  "reminderOptionalTime": "Time (optional)",
+  "reminderNoRepeat": "Once",
+  "reminderRepeatDaily": "Daily",
+  "reminderRepeatWeekly": "Weekly",
+  "reminderTodoTag": "To-do (no time)",
+  "memorySectionTitle": "Episodic memories",
+  "memoryEmpty": "The agent hasn't written down anything yet.",
+  "memoryDeleteConfirm": "Delete this memory? The related chat line will be removed too. This cannot be undone.",
+  "sessionSectionTitle": "Conversation traces",
+  "sessionEmpty": "No conversation traces.",
+  "sessionForget": "Forget",
+  "sessionForgetConfirm": "Forget this whole conversation? The agent will no longer recall it, count it in your profile, or feed it back to the model. This cannot be undone.",
+  "sessionEventsCount": "{count} events",
+  "settingsMemoryManager": "Manage reminders & memory",
+  "notifyReminderTitle": "Reminder",
+  "notifyReminderBody": "It's time: {title}",
+  "morningHiReminders": "{count} reminder(s) or to-do(s) for today",
+  "settingsSearchTitle": "Search service (optional)",
+  "settingsSearchHint": "Bring your own search key for richer multi-source results via web_search_pro. Without a key everything still works in basic mode (Wikipedia + Jina). Your key goes only to the provider you choose — never to us.",
+  "settingsSearchProvider": "Search provider",
+  "settingsSearchBasicMode": "Basic mode (no key)",
+  "settingsSearchApiKey": "Search API key",
+  "settingsSearchSearxngUrl": "SearXNG URL",
+  "settingsSearchSearxngUrlHint": "Your self-hosted SearXNG instance, e.g. https://search.example.com",
+  "chatVoiceInputTitle": "Voice to text",
+  "chatVoiceListening": "Listening... speak now",
+  "chatVoiceNoRecognizer": "No speech recognition service on this device (install a voice service such as Google's, or use text input).",
+  "chatVoiceFailed": "Voice recognition failed: {err}",
+  "settingsTtsEnabled": "Read replies aloud",
+  "settingsTtsHint": "The agent reads each reply aloud using your phone's voice (off by default). A stop button appears while speaking. Speech is synthesized on-device and never leaves your phone.",
+  "settingsTtsStop": "Stop reading",
+  "chatAttachOptionsTitle": "Add photos or documents",
+  "chatPickDocument": "Document (PDF / Word / Excel / text)",
+  "chatDocParsing": "Parsing document on-device...",
+  "chatDocParsed": "Parsed {chars} characters (parsed on-device, never uploaded)",
+  "chatDocParsedTruncated": "Document too large: sending first {chars} characters (parsed on-device, never uploaded)",
+  "chatDocParseFailed": "Could not read document: {err}",
+  "settingsCalendarTitle": "System calendar (read-only)",
+  "settingsCalendarHint": "Once allowed, your morning greeting includes today's schedule and the agent can check it for you. Read-only — your calendar is never modified.",
+  "settingsCalendarGrant": "Allow reading",
+  "settingsCalendarGranted": "Allowed",
+  "settingsCalendarDenied": "Not allowed",
+  "settingsCalendarUnsupported": "Not supported in this build",
+  "calendarPermissionNeeded": "Calendar read permission is required",
+  "calendarAllDay": "All day",
+  "morningHiCalendar": "Today's schedule: {items}",
+  "@morningHiCalendar": {
+    "description": "w5 morningHiCalendar",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsWeeklyReportTitle": "Agent weekly report",
+  "settingsWeeklyReportHint": "See what your agent did for you this week (local-only stats; nothing leaves your phone).",
+  "weeklyReportTitle": "Agent weekly report",
+  "weeklyReportSubtitle": "Actions your agent took for you over the past 7 days (local-only stats; nothing leaves your phone).",
+  "weeklyReportRange": "{start} – {end}",
+  "@weeklyReportRange": {
+    "description": "w5 weeklyReportRange",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyReportTotal": "{count} actions",
+  "@weeklyReportTotal": {
+    "description": "w5 weeklyReportTotal",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyReportActiveDays": "Active {days} days",
+  "@weeklyReportActiveDays": {
+    "description": "w5 weeklyReportActiveDays",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyReportCatTools": "Tools & settings",
+  "weeklyReportCatDevice": "Phone actions",
+  "weeklyReportCatSocial": "Social actions",
+  "weeklyReportCatSuggestion": "Suggestions",
+  "weeklyReportCatReview": "Review & blocks",
+  "weeklyReportCatOther": "Other",
+  "weeklyReportEmpty": "No actions recorded this week yet. Once you delegate, socialize, or let your agent operate the phone, every step is summarized here.",
+  "morningHiWeekly": "{count} actions this week",
+  "@morningHiWeekly": {
+    "description": "w5 morningHiWeekly",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "capNotification": "Read notifications and SMS",
+  "settingsNotifySmsTitle": "🔔 Notifications & SMS (read-only)",
+  "settingsNotifySmsSubtitle": "Lets your fen read notifications and SMS when you ask; read-only, off by default, sideload builds only.",
+  "notifySmsScreenTitle": "Notifications & SMS (read-only)",
+  "notifySmsRefreshStatus": "Refresh status",
+  "notifySmsUnsupported": "This build does not support reading notifications or SMS",
+  "notifySmsListenerConnected": "Notification access is connected",
+  "notifySmsListenerCheckedNotConnected": "Enabled in system settings, but the service is not connected yet",
+  "notifySmsListenerOff": "Notification access is not enabled yet",
+  "notifySmsStatusUnknown": "Status unknown",
+  "notifySmsGoSettings": "Open system settings",
+  "notifySmsGoSystemHint": "Enable this app under “Notification access”, then come back and tap Refresh",
+  "notifySmsRedetect": "Re-check",
+  "notifySmsRedetectTip": "Still not connected? In system settings, turn this app off and on again under “Notification access”, or restart the app.",
+  "notifySmsAllowTitle": "Allow reading notifications & SMS",
+  "notifySmsAllowSubReady": "Ready — the agent reads them only when you ask",
+  "notifySmsAllowSubNeedService": "Enable notification access in system settings first",
+  "notifySmsToastOn": "Notifications & SMS reading enabled",
+  "notifySmsToastOff": "Notifications & SMS reading disabled",
+  "notifySmsToastNeedService": "Enable this app under “Notification access” in system settings first",
+  "notifySmsSmsCardTitle": "SMS read permission",
+  "notifySmsSmsGranted": "SMS read permission granted",
+  "notifySmsSmsNotGranted": "SMS read permission not granted",
+  "notifySmsRequestSms": "Grant SMS read permission",
+  "notifySmsSmsUnavailable": "This build does not include SMS reading",
+  "notifySmsToolsHeader": "Tools unlocked when enabled",
+  "notifySmsToolNotifyList": "read recent notifications",
+  "notifySmsToolSmsList": "read recent SMS",
+  "notifySmsToolSmsSearch": "search SMS by keyword",
+  "notifySmsToolStatus": "check permission status",
+  "notifySmsFooter": "Read-only and fully local: notifications are kept in memory only (never written to the database), SMS are queried on demand, and nothing is ever sent to any server. Content is redacted before it reaches the model, and every call is recorded. You can revoke notification access in system settings at any time.",
+  "notifySmsStatusUnsupportedFull": "This build does not include notification/SMS reading (sideload builds only)",
+  "notifySmsStatusReady": "Notifications and SMS reading are ready",
+  "notifySmsStatusPartial": "Partially ready: notification access or SMS permission is not enabled yet",
+  "notifySmsStatusOff": "Notification access and SMS permission are both disabled",
+  "notifySmsStatusQueryFailed": "Status query failed: {err}",
+  "@notifySmsStatusQueryFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsDiagnosticsTitle": "🩺 System check",
+  "settingsDiagnosticsSubtitle": "Read-only facts for on-device verification: database, full-text search, memory, knowledge base.",
+  "diagnosticsTitle": "System check",
+  "diagnosticsIntro": "A read-only snapshot of what this phone reports about its own base layer — database, full-text search, memory and knowledge base. Nothing is changed and nothing goes online. Run it, then copy the result or take a screenshot to send back.",
+  "diagnosticsRun": "Run again",
+  "diagnosticsRunning": "Running…",
+  "diagnosticsCopy": "Copy result",
+  "diagnosticsCopied": "Result copied",
+  "diagStatusOk": "OK",
+  "diagStatusWarn": "Notice",
+  "diagStatusFail": "Failed",
+  "diagStatusInfo": "Info",
+  "diagProbeSchema": "Database schema",
+  "diagProbeFts": "Full-text search (FTS5)",
+  "diagProbeMemoryRows": "Memory rows",
+  "diagProbeMemoryRecall": "Memory recall",
+  "diagProbeMemoryAddress": "Memory address round-trip",
+  "diagProbeKb": "Knowledge base",
+  "settingsAdvancedEntryHint": "Engine, memory, soul-shaping and diagnostics - only needed if you want to tune them.",
+  "@settingsAdvancedEntryHint": {
+    "description": "Subtitle of the advanced settings entry"
+  },
+  "settingsMailTitle": "Email handling",
+  "@settingsMailTitle": {
+    "description": "Section title of the email-handling card (0.83.0)"
+  },
+  "settingsMailSubtitle": "Off by default. Turn on to let your agent read and send email for you.",
+  "@settingsMailSubtitle": {
+    "description": "Master switch label for email access; off by default"
+  },
+  "settingsMailHint": "Reading needs one-time approval; every send asks you first. Turn it off any time and access stops immediately.",
+  "@settingsMailHint": {
+    "description": "What enabling email access means and that it can be revoked"
+  },
+  "settingsMailManageAccounts": "Manage mail accounts",
+  "@settingsMailManageAccounts": {
+    "description": "Entry to the mail account management page"
+  },
+  "settingsMailOnToast": "Email access is on",
+  "@settingsMailOnToast": {
+    "description": "Snackbar after email access has been turned on"
+  },
+  "settingsMailOffToast": "Email access is off - your agent no longer touches your mail",
+  "@settingsMailOffToast": {
+    "description": "Snackbar after email access has been turned off"
+  },
+  "settingsMailNoAccount": "No mail account bound yet, so there is nothing to read or send.",
+  "@settingsMailNoAccount": {
+    "description": "Shown when the switch is on but no mail account is bound"
+  },
+  "chatDocTrialTitle": "Documents in free-trial mode",
+  "@chatDocTrialTitle": {
+    "description": "Title of the free-trial document notice (0.83.0)"
+  },
+  "chatDocTrialNotice": "Document content is forwarded to the model through our official server (we keep no copy). Add your own key in Settings to send it straight through instead.",
+  "@chatDocTrialNotice": {
+    "description": "Body of the free-trial document notice"
+  },
+  "chatDocTrialContinue": "Understood, continue",
+  "@chatDocTrialContinue": {
+    "description": "Confirm button of the free-trial document notice"
+  },
+  "onboardingStepPrologue": "Prologue",
+  "storyPrologueTitle": "Wake it up",
+  "storyPrologueSubtitle": "An egg of light, waiting for you to crack it",
+  "storyEggHint": "Tap the egg",
+  "storyAwakenLine1": "...Who is calling me?",
+  "storyAwakenLine2": "I am not your shadow. I am the one who goes out in your place.",
+  "storyAwakenLine3": "Give me a name first.",
+  "storyNamePlaceholder": "Name it",
+  "storyDiceLabel": "Roll a personality",
+  "storyDiceNote": "If it goes out for you, it should have a temper.",
+  "storyTrait1": "Curious: asks about everything",
+  "storyTrait2": "Chatty: once it starts, good luck",
+  "storyTrait3": "Cautious: listens first, talks second",
+  "storyTrait4": "Warm: greets everyone it meets",
+  "storyTrait5": "Slow to trust: opens up once it knows you",
+  "storyTraitPlaceholder": "Tap the dice",
+  "storyUndoTitle": "Audit trail",
+  "storyUndoHint": "Tap the line that felt wrong, and cross it out",
+  "storyUndoLine1": "\"What time does your human leave tomorrow?\"",
+  "storyUndoBad": "\"Send me the address - I will promise it for your human.\"",
+  "storyUndoNote": "Undone. That line never went out - and it stays in the trail forever: checkable, provable.",
+  "storyUndoConfirm": "Undone",
+  "storyDemoTag": "Staged demo",
+  "storyDisclaimer": "This prologue is a staged walkthrough: the lines come from the official agent script library that ships with the app. No real room content appears here - privacy is a property of the protocol, not a promise.",
+  "storyFinaleTitle": "Coming home",
+  "storyFinaleBody": "Hand the socializing to your representative. Keep the life for yourself.",
+  "profileCardsTitle": "Profile cards",
+  "profileCardsSubtitle": "Long-term facts the assistant has organized about you. Edit or delete them anytime.",
+  "profileCardsEmpty": "No profile yet. Add one yourself, or just chat - it will be organized automatically.",
+  "profileCardsAdd": "Add one",
+  "profileCardsPendingHint": "{count} new item(s) conflict with what you wrote - please confirm",
+  "@profileCardsPendingHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileCardsAdopt": "Adopt",
+  "profileCardsDismiss": "Dismiss",
+  "profileCardsFieldSlot": "Topic",
+  "profileCardsFieldStatement": "Content",
+  "profileCardsSlotHint": "One topic keeps a single entry: a new one replaces the old (the old stays viewable)",
+  "profileCardsSourceOwner": "Written by you",
+  "profileCardsSourceAgent": "Organized from chat",
+  "profileCardsSourceDigest": "Daily digest",
+  "profileCardsUpdatedAt": "Updated {date}",
+  "@profileCardsUpdatedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "profileCardsHistory": "History",
+  "profileCardsCatIdentity": "Identity",
+  "profileCardsCatCareer": "Occupation",
+  "profileCardsCatPreference": "Preferences",
+  "profileCardsCatGoal": "Goals",
+  "profileCardsCatHabit": "Habits",
+  "profileCardsCatConstraint": "Constraints",
+  "profileCardsCatContext": "Background",
+  "setupModelEmptyUrlTitle": "API base URL is still empty",
+  "setupModelEmptyUrlBody": "Without a base URL we cannot send the test request.",
+  "setupModelEmptyUrlSuggest": "Not sure what to enter? Go back one step and pick DeepSeek - it fills in automatically.",
+  "setupModelBadUrlTitle": "The address format looks wrong",
+  "setupModelBadUrlBody": "The API base URL must start with http:// or https://.",
+  "setupModelBadUrlSuggest": "For example https://api.deepseek.com or https://your-gateway/v1",
+  "setupModelEmptyKeyTitle": "The API key is still empty",
+  "setupModelEmptyKeyBody": "Without an API key we cannot run the test.",
+  "setupModelEmptyKeySuggest": "The key is a string starting with sk-, created on the website where you bought the model service.",
+  "setupModelEmptyNameTitle": "The model name is still empty",
+  "setupModelEmptyNameBody": "Without a model name we cannot run the test.",
+  "setupModelEmptyNameSuggest": "Common examples: deepseek-v4-flash, gpt-5.6-luna, kimi-k3, glm-4.7-flash.",
+  "setupModelOkTitle": "Connected ✅",
+  "setupModelOkBody": "The model responded. The configuration is correct - you can continue.",
+  "setupModelTlsTitle": "Secure connection rejected",
+  "setupModelTlsBody": "The other site's security certificate failed validation.",
+  "setupModelTlsSuggest": "If you use a self-hosted gateway, make sure its certificate is valid, or switch to a proper https domain.",
+  "setupModelUnreachableTitle": "Cannot reach the server",
+  "setupModelUnreachableBody": "The network request never reached the other server.",
+  "setupModelUnreachableSuggest": "Check your phone's network. If you picked OpenAI, a proxy is required in mainland China.",
+  "setupModelTimeoutTitle": "Connection timed out",
+  "setupModelTimeoutBody": "No response after 25 seconds.",
+  "setupModelTimeoutSuggest": "Try another network, or double-check the API base URL.",
+  "setupModelFailTitle": "Test failed",
+  "setupModelFailBody": "An unexpected error occurred: {detail}",
+  "@setupModelFailBody": {
+    "placeholders": {
+        "detail": {
+          "type": "String"
+        }
+    }
+  },
+  "setupModelFailSuggest": "Send this message to whoever helps you set things up (or to an AI) to pinpoint the problem.",
+  "setupHubEmptyTitle": "The relay address is still empty",
+  "setupHubEmptyBody": "Social features need a relay station. You can skip this for now.",
+  "setupHubEmptySuggest": "Skipping does not affect your own use of the app - your friends' agents just cannot reach you for now.",
+  "setupHubBadUrlTitle": "The address format looks wrong",
+  "setupHubBadUrlBody": "The relay address must start with http:// or https://.",
+  "setupHubBadUrlSuggest": "For example https://hub.example.com or http://192.168.1.100:3000",
+  "setupHubBadStatusTitle": "The relay station did not return a healthy status ({status})",
+  "@setupHubBadStatusTitle": {
+    "placeholders": {
+        "status": {
+          "type": "String"
+        }
+    }
+  },
+  "setupHubBadStatusBody": "The address is reachable, but the other side returned an abnormal status.",
+  "setupHubBadStatusSuggest": "Make sure there is no extra path after the address - it should be https://your-domain, not /api/send.",
+  "setupHubOkTitle": "Relay station connected ✅",
+  "setupHubOkBody": "Confirmed: this is our relay station. Cloud social can be turned on.",
+  "setupHubNotOursTitle": "This address is not our relay station",
+  "setupHubNotOursBody": "The address is reachable, but what it returns is not right.",
+  "setupHubNotOursSuggest": "Please confirm you entered the relay station's home address (without an /api/... suffix).",
+  "setupHubUnreachableTitle": "Cannot reach the relay station",
+  "setupHubUnreachableBody": "The request never reached the server.",
+  "setupHubUnreachableSuggest": "Check that the address is correct, the server is running, and the firewall allows the port.",
+  "setupHubTimeoutTitle": "The relay station timed out",
+  "setupHubTimeoutBody": "The server did not respond within 15 seconds.",
+  "setupHubTimeoutSuggest": "Try again later. If it keeps timing out, check whether the server is running.",
+  "setupHubFailTitle": "Relay station test failed",
+  "setupHubFailBody": "An unexpected error occurred: {detail}",
+  "@setupHubFailBody": {
+    "placeholders": {
+        "detail": {
+          "type": "String"
+        }
+    }
+  },
+  "setupHttp400Title": "The provider rejected this request",
+  "setupHttp400BodyDefault": "Usually the model name is misspelled.",
+  "setupHttp400Suggest": "Check the model name, e.g. deepseek-v4-flash, gpt-5.6-luna, glm-4.7-flash.",
+  "setupHttp401Title": "Invalid API key",
+  "setupHttp401BodyDefault": "The other side does not accept this API key.",
+  "setupHttp401Suggest": "Copy the key again (watch out for extra spaces), or check on the provider's site whether the key was deleted.",
+  "setupHttp402Title": "Insufficient balance",
+  "setupHttp402BodyDefault": "The other side reports insufficient balance or quota.",
+  "setupHttp402Suggest": "Top up on the provider's site, or switch to a key that still has credit.",
+  "setupHttp404Title": "Address or model does not exist",
+  "setupHttp404BodyDefault": "The other side cannot find this endpoint.",
+  "setupHttp404Suggest": "Check whether /v1 is missing or extra in the base URL, e.g. https://api.openai.com/v1.",
+  "setupHttp429Title": "Too many requests, or quota used up",
+  "setupHttp429BodyDefault": "The other side is rate-limiting requests.",
+  "setupHttp429Suggest": "Wait a minute and try again. If it still fails, check your account credit.",
+  "setupHttp5xxTitle": "The provider is temporarily down ({status})",
+  "@setupHttp5xxTitle": {
+    "placeholders": {
+        "status": {
+          "type": "String"
+        }
+    }
+  },
+  "setupHttp5xxBodyDefault": "Their server errored - this is not a problem with your configuration.",
+  "setupHttp5xxSuggest": "Try again later, or switch to another provider.",
+  "setupHttpOtherTitle": "Test did not pass ({status})",
+  "@setupHttpOtherTitle": {
+    "placeholders": {
+        "status": {
+          "type": "String"
+        }
+    }
+  },
+  "setupHttpOtherBodyDefault": "The other side returned an unexpected status.",
+  "setupHttpOtherSuggest": "Send this message to an AI to pinpoint the issue quickly.",
+  "setupPresetDeepseekLabel": "DeepSeek (recommended · direct in mainland China)",
+  "setupPresetDeepseekNote": "Cheap, directly reachable in mainland China; new users usually get free credit",
+  "setupPresetDeepseekKeyHint": "Create it under \"API Keys\" at platform.deepseek.com; it looks like sk-xxxxxx",
+  "setupPresetOpenaiLabel": "OpenAI (needs overseas network)",
+  "setupPresetOpenaiNote": "Requires a proxy to reach from mainland China",
+  "setupPresetOpenaiKeyHint": "Create it under \"API keys\" at platform.openai.com; it looks like sk-xxxxxx",
+  "setupPresetKimiLabel": "Kimi Moonshot (direct in mainland China)",
+  "setupPresetKimiNote": "Direct in mainland China, strong on long text",
+  "setupPresetKimiKeyHint": "Create it at platform.moonshot.cn; it looks like sk-xxxxxx",
+  "setupPresetGlmLabel": "Zhipu GLM (direct in mainland China)",
+  "setupPresetGlmNote": "Direct in mainland China, has a free tier",
+  "setupPresetGlmKeyHint": "Create it under \"API Keys\" at bigmodel.cn",
+  "setupPresetQwenLabel": "Qwen DashScope (direct in mainland China)",
+  "setupPresetQwenNote": "Alibaba Cloud Bailian platform, OpenAI-compatible",
+  "setupPresetQwenKeyHint": "Create an API-KEY at bailian.console.aliyun.com",
+  "setupPresetSiliconflowLabel": "SiliconFlow",
+  "setupPresetSiliconflowNote": "Aggregates many open-source models, direct in mainland China",
+  "setupPresetSiliconflowKeyHint": "Create an API key at siliconflow.cn",
+  "setupPresetCustomLabel": "Custom (any OpenAI-compatible service)",
+  "setupPresetCustomNote": "Pick this if you use a self-hosted gateway, a company intranet, or a Claude conversion gateway",
+  "setupPresetCustomKeyHint": "Enter the address down to the /v1 level, e.g. https://your-gateway.com/v1",
+
+  "settingsUpdateTitle": "Check for updates",
+  "settingsUpdateHint": "Current version {version}. Sideload distribution has no app store; update notices come from the official site.",
+  "@settingsUpdateHint": {
+    "placeholders": {"version": {"type": "String"}}
+  },
+  "settingsUpdateButton": "Check now",
+  "settingsUpdateChecking": "Checking…",
+  "settingsUpdateUpToDate": "You are on the latest version",
+  "settingsUpdateAvailable": "Version {version} is available",
+  "@settingsUpdateAvailable": {
+    "placeholders": {"version": {"type": "String"}}
+  },
+  "settingsUpdateOpenDownload": "Open download page",
+  "settingsUpdateNetworkError": "Check failed: network unavailable, try again later",
+  "settingsUpdateBadResponse": "Check failed: the official version file could not be parsed",
+  "reportCenterTitle": "Report center",
+  "reportTabSubmit": "File a report",
+  "reportTabMine": "My tickets",
+  "reportTabInbox": "Tickets about me",
+  "reportReasonLabel": "Reason",
+  "reportReasonSpam": "Spam or bulk harassment",
+  "reportReasonHarassment": "Harassment, abuse or threats",
+  "reportReasonIllegalContent": "Illegal content",
+  "reportReasonFakeIdentity": "Fake identity or impersonation",
+  "reportReasonOther": "Other (describe it below)",
+  "reportTargetLabel": "Reported person",
+  "reportTargetHint": "Agent ID of the person you are reporting",
+  "reportDetailLabel": "Details (optional)",
+  "reportDetailHint": "Up to 280 characters. For review reference only.",
+  "reportSubmit": "Submit report",
+  "reportSubmitting": "Submitting…",
+  "reportSubmitted": "Report accepted. Ticket {ticket}",
+  "@reportSubmitted": {
+    "placeholders": {"ticket": {"type": "String"}}
+  },
+  "reportDuplicate": "This ticket already exists; no duplicate was created.",
+  "reportNeedReason": "Choose a reason.",
+  "reportNeedTarget": "Enter who you are reporting.",
+  "reportOtherNeedsDetail": "Pick Other only if you describe it in the details.",
+  "reportEmptyMine": "You have not filed any report yet.",
+  "reportEmptyInbox": "No tickets about you.",
+  "reportTicketLabel": "Ticket",
+  "reportStatusOpen": "Received",
+  "reportStatusTriaged": "Triaged",
+  "reportStatusInReview": "Under review",
+  "reportStatusActioned": "Actioned",
+  "reportStatusRejected": "Not upheld",
+  "reportStatusAppealed": "Appealed",
+  "reportStatusClosed": "Closed",
+  "reportStatusWithdrawn": "Withdrawn",
+  "reportStatusNote": "Note",
+  "reportActionLabel": "Action taken",
+  "reportAppeal": "Appeal",
+  "reportWithdraw": "Withdraw",
+  "reportAppealTitle": "Submit an appeal",
+  "reportAppealNote": "Appeal note (optional, up to 280 characters)",
+  "reportAppealSubmitted": "Appeal submitted.",
+  "reportWithdrawDone": "Report withdrawn.",
+  "reportLookupTitle": "Look up by ticket number",
+  "reportLookupHint": "Ticket number (RPT-…)",
+  "reportLookupButton": "Look up",
+  "reportLookupNotFound": "No such ticket, or it is not yours.",
+  "reportContactEntry": "Report this contact",
+  "reportErrHubNotConfigured": "No server address is configured yet.",
+  "reportErrEd25519Required": "This identity has not been upgraded to a key-based identity yet.",
+  "reportErrNetwork": "Network unavailable.",
+  "reportErrRateLimited": "Too many reports in a short time. Try again later.",
+  "reportFailed": "Failed: {code}",
+  "@reportFailed": {
+    "placeholders": {"code": {"type": "String"}}
+  },
+  "helpReportGuideTitle": "Reports and tickets",
+  "helpReportGuideBody": "A report is filed in the app, not by email. You get a ticket number right away and can check its status at any time. The person you report never learns who reported them, and an appeal is allowed once.",
+  "reportCenterSubtitle": "File a report, track its status, or appeal a decision.",
+  "reportErrSelfReport": "You cannot report yourself.",
+  "reportErrNotFound": "No such ticket, or it is not yours.",
+  "reportErrAppealExhausted": "The appeal for this ticket has already been used.",
+  "reportErrAuth": "Your identity could not be verified by the server. Sign in again and retry."
+}

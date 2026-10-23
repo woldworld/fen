@@ -1,0 +1,13 @@
+# 纯 Dart 包：不包含任何 Flutter lint（铁律的静态防线之一）。
+include: package:lints/recommended.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+
+linter:
+  rules:
+    - always_declare_return_types
+    - prefer_final_fields
+    - unawaited_futures

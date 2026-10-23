@@ -1,0 +1,78 @@
+{
+  "eyebrow": "Security",
+  "title": "What protects you, and what does not",
+  "h1": "What protects you, and what does not",
+  "lede": "An agent that acts for you is only acceptable if you can see what it did and stop it. Four mechanisms do that work: an identity you can rotate, an append-only audit log, recall, and permission red lines. Every item below names the file that implements it.",
+  "notice": "This page describes mechanisms that exist in the current build. It is not a third-party audit, and no certification is claimed.",
+  "groups": [
+    {
+      "title": "Identity",
+      "items": [
+        {
+          "title": "Your identity is a keypair, not an account",
+          "body": "There is no central account that support can reset for you. That is the trade: nobody can take your identity away, and nobody can restore it either.",
+          "proof": "lib/hub/hub.js::ROTATE"
+        },
+        {
+          "title": "Moving devices rotates the key, it never copies it",
+          "body": "Recovery is a proven key rotation. Your private key is not duplicated onto a new device, so a copy of an old device is not a copy of you.",
+          "proof": "lib/core/cloud_service.dart::ROTATE"
+        }
+      ]
+    },
+    {
+      "title": "Your data",
+      "items": [
+        {
+          "title": "The record lives on your device",
+          "body": "Conversations, keys and logs are stored in a local database on your phone, and the app is built to keep working when no server is reachable.",
+          "proof": "lib/core/db_helper.dart::identity"
+        },
+        {
+          "title": "Nothing is pulled automatically",
+          "body": "Federation roster auto-pull ships off by default. Entries that arrive without your own pull are marked as auto-pulled, and can be cleared in one action.",
+          "proof": "lib/ui/social_screen.dart::auto_pulled"
+        }
+      ]
+    },
+    {
+      "title": "Audit and undo",
+      "items": [
+        {
+          "title": "Every action is written down",
+          "body": "What your agent did on your behalf is recorded in an append-only log sealed with a Merkle root - later entries cannot silently rewrite earlier ones.",
+          "proof": "lib/core/db_helper.dart::Merkle"
+        },
+        {
+          "title": "A message can be taken back",
+          "body": "Recall withdraws a message after it went out. The log still records that it happened, so taking it back is not the same as erasing it.",
+          "proof": "lib/core/agent_service.dart::recall"
+        },
+        {
+          "title": "Delegations can be revoked",
+          "body": "Delegations and endorsements you issued can be revoked afterwards, and the revocation is itself recorded.",
+          "proof": "lib/core/delegation_service.dart::revoke"
+        }
+      ]
+    },
+    {
+      "title": "Device permissions",
+      "items": [
+        {
+          "title": "Calendar is read-only",
+          "body": "The Android manifest declares READ_CALENDAR only - there is no WRITE_CALENDAR declaration anywhere in the app. Without the grant the feature degrades instead of failing.",
+          "proof": "android/app/src/main/AndroidManifest.xml::android.permission.READ_CALENDAR"
+        }
+      ]
+    }
+  ],
+  "proofNote": "Each item names the file that implements it, and the verifier checks that the keyword is really present in that file.",
+  "boundaryTitle": "What this page is not",
+  "boundary": [
+    "Not a security audit. No third-party firm has reviewed this code, and no penetration test report exists.",
+    "Not a certification. No ISO, SOC 2 or equivalent claim is made anywhere on this site.",
+    "Not finished. Federation roster auto-pull is off by default, and the trial proxy is built but not yet connected to a live model provider."
+  ],
+  "ctaLabel": "Read the full mechanism",
+  "ctaHref": "/docs/"
+}

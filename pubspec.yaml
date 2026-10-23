@@ -1,0 +1,107 @@
+name: dahuang_ai
+description: 大荒AI（DahuangAI）— 自持身份、可验证的自主社交智能体客户端
+version: 0.121.0+1
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🌍 国际化（英文化骨架；PRD §2.6）
+  flutter_localizations:
+    sdk: flutter
+
+  # 🎨 UI、状态管理与富文本渲染
+  provider: ^6.1.2
+  flutter_markdown: ^0.7.7+1
+  flutter_background: ^1.3.0
+
+  # 🔑 本地数据持久化
+  shared_preferences: ^2.2.3
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.3
+
+  # 🧠 核心 AI 智能体框架
+  dartantic_ai: ^3.4.1
+
+  # ⚙️ 万能跳转与底层对称加密
+  url_launcher: ^6.3.0
+  encrypt: ^5.0.3
+  crypto: ^3.0.3
+  cryptography: ^2.9.0
+
+  # 📋 应用版本信息（0.113.0 更新检查：本机版本 vs 官网 version.json）
+  # 此前是传递依赖（flutter_local_notifications 带入），提为直接依赖。
+  package_info_plus: ^9.0.0
+
+  # 🌙 潜意识夜间造梦（后台任务调度）
+  workmanager: 0.9.0
+
+  # 📡 局域网自发现与 mDNS 广播
+  nsd: ^3.0.0
+
+  # 📱 蓝牙物理直连（Google 官方 Nearby Connections）+ 运行时权限
+  nearby_connections: ^4.3.0
+  permission_handler: ^11.3.1
+
+  # 💓 息屏防断连物理休眠锁
+  wakelock_plus: ^1.2.8
+
+  # 🔔 系统通知：委托到达 / 会客厅 @我 / 待我确认（PRD §2 dentry）
+  # 权限复用 BackgroundDuty 的 POST_NOTIFICATIONS（manifest 早已显式声明），
+  # 本插件只负责「把通知画到系统托盘」，不做任何调度（故不需要精确闹钟权限）。
+  flutter_local_notifications: ^22.3.1
+
+  # 🎙️ 多模态：视觉与音频记录
+  image_picker: ^1.1.2
+  file_picker: ^10.3.8
+  record: ^7.0.0
+
+  # 🔊 语音播报（0.72.0 W3）：系统 TTS 引擎，默认关（不打扰原则）
+  flutter_tts: ^4.2.0
+
+  # 📄 文档理解（0.73.0 W4）：本地解析、零上传。
+  #  - pdfrx 钉 1.x：2.x 起要求 Flutter 3.47/Dart 3.13，本机 3.44 装不上；
+  #    1.3.x 的 PdfDocument.openFile + page.loadText() 即够用（只取文本不渲染）。
+  #  - archive/xml 解 docx/xlsx（zip+XML），此前已是传递依赖，提为直接依赖。
+  #  - 出包前跑 dart run pdfrx:remove_wasm_modules 去 WASM 资产（pdfrx 官方指引）。
+  pdfrx: '>=1.3.0 <2.0.0'
+  archive: ^4.2.0
+  xml: ^7.0.1
+
+  # 🧩 pocket_harness：可逆工具注册表（本仓库 packages/ 下）
+  pocket_harness:
+    path: packages/pocket_harness
+
+dependency_overrides:
+  # 大荒补丁：workmanager_android 0.9.3 在 AGP9 + builtInKotlin=false 下不编译
+  # Kotlin 源码（找不到符号 WorkmanagerPlugin）。本地补丁版强制申明 kotlin-android。
+  # 详见 third_party/workmanager_android/android/build.gradle 内注释。
+  workmanager_android:
+    path: third_party/workmanager_android
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+  flutter_launcher_icons: ^0.13.1
+  sqflite_common_ffi: ^2.4.3
+
+# 图标配置（你之前的配置，无前景图）
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/app_icon.png"
+  adaptive_icon_background: "#ffffff"
+
+flutter:
+  uses-material-design: true
+  # 启用 flutter gen-l10n：由 lib/l10n/*.arb 生成 AppLocalizations
+  generate: true
+  assets:
+    - assets/app_icon.png
+    - assets/data/zhouyi.json

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12 (API 31) 起的备份规则。
+
+  为什么需要它：API 31 之后"云备份"与"设备间迁移(D2D)"是**两条独立开关**，
+  `android:allowBackup="false"` 只关前者。不写这个文件的话，用户换机时
+  系统仍会把应用数据整体搬过去 —— 而我们的 `pocket_agent.db` 里有
+  设备身份、社交图、透明日志锚定记录（App 全部"本机独有"的语义），
+  被静默搬运等于身份跟着数据一起漂移。
+
+  这里逐 domain 排除（而不是依赖某个"总开关"）：清单式排除是**结构性**的，
+  将来新增 domain（如 device_*）时漏写会被上架前的备份自检发现，
+  而依赖总开关的话"漏"是无声的。
+
+  注意：本文件在 API < 31 上不被读取，那些版本由 allowBackup="false" 兜住。
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="file" path="." />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="file" path="." />
+        <exclude domain="external" path="." />
+    </device-transfer>
+</data-extraction-rules>

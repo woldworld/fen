@@ -1,0 +1,23 @@
+name: pocket_harness
+description: >-
+  Mobile-first agent harness for Dart: reversible tool registry with skills,
+  permission tiers, append-only sessions, context budgeting, MCP connections,
+  and built-in session/web tools. Zero Flutter dependencies.
+version: 0.2.0
+topics:
+  - agent
+  - llm
+  - tools
+  - mcp
+
+environment:
+  sdk: ^3.10.0
+
+# 铁律：唯一第三方依赖 dartantic_ai（纯 Dart，已核实零 Flutter 依赖）。
+# 禁止新增 flutter / sqflite / shared_preferences / url_launcher 等宿主生态包。
+dependencies:
+  dartantic_ai: ^3.4.2
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.31.0

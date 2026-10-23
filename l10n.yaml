@@ -1,0 +1,29 @@
+# Flutter 本地化配置（PRD §2.6 英文化骨架）
+#
+# 规矩（重要）：**新增面向用户的字符串一律进 ARB，不要再写硬编码**。
+# 存量中文可分批迁移；但新代码必须走 key，否则存量翻译会被反复推翻。
+
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+
+# 英文为模板，其余为对照（0.55.0 起五语种）
+#
+# ⚠️ **文件名规则（Flutter SDK 的硬约束，不是本项目的约定）**：
+#   locale 串按 `_` 切成 `language_script_COUNTRY`，**第 2 段长度 ≥4 才被当作 script**。
+#   ⇒ 繁体中文的文件必须叫 `app_zh_Hant.arb`（下划线），写成 `app_zh-Hant.arb`
+#     会被解析成 `languageCode=zh-Hant` —— 编译期不报错，运行时整个语种失效。
+#   依据：`flutter_tools/lib/src/localizations/localizations_utils.dart`
+#         `LocaleInfo.fromString`（codes[1].length >= 4 ⇒ scriptCode）
+supported-locales:
+  - en
+  - zh
+  - zh_Hant
+  - ja
+  - vi
+
+nullable-getter: false
+
+# 生成的文件统一前缀，避免与其他生成物混淆
+untranslated-messages-file: l10n_untranslated.json

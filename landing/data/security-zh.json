@@ -1,0 +1,78 @@
+{
+  "eyebrow": "安全机制",
+  "title": "什么在保护你，什么没有",
+  "h1": "什么在保护你，什么没有",
+  "lede": "让分身替你行动，前提是你能看见它做了什么、并且能叫停。四件事在做这件事：可轮换的身份、只追加的审计日志、撤回、以及权限红线。下面每一条都点名了实现它的文件。",
+  "notice": "本页描述的是当前版本里已经实现的机制，每一条都附了实现文件。它不是第三方审计，也不宣称任何认证。",
+  "groups": [
+    {
+      "title": "身份",
+      "items": [
+        {
+          "title": "你的身份是一对密钥，不是一个账号",
+          "body": "没有一个可以被「用邮箱找回」的中心账号。这就是取舍：没人能注销你的身份，同样也没人能替你把它找回来。",
+          "proof": "lib/hub/hub.js::ROTATE"
+        },
+        {
+          "title": "换设备是换钥，不是复制钥匙",
+          "body": "恢复走的是带证明的密钥轮换，私钥不会被复制到新设备上——所以一台旧设备的副本，并不等于一份「你」。",
+          "proof": "lib/core/cloud_service.dart::ROTATE"
+        }
+      ]
+    },
+    {
+      "title": "你的数据",
+      "items": [
+        {
+          "title": "记录留在你的设备上",
+          "body": "对话、密钥和日志存在你手机里的本地数据库中；App 在没有服务器可达时也能继续工作。",
+          "proof": "lib/core/db_helper.dart::identity"
+        },
+        {
+          "title": "不会自动往外拉东西",
+          "body": "联邦名册的自动拉取默认关闭；未经你主动拉取而到达的条目会被标为 auto-pulled，并且可以一键清空。",
+          "proof": "lib/ui/social_screen.dart::auto_pulled"
+        }
+      ]
+    },
+    {
+      "title": "审计与撤回",
+      "items": [
+        {
+          "title": "每个动作都有记录",
+        "body": "你的分身代表你做过的一切都写进只追加的日志，并用 Merkle 根封存——后面的记录无法悄悄改写前面的记录。",
+          "proof": "lib/core/db_helper.dart::Merkle"
+        },
+        {
+          "title": "发出去的话可以收回",
+          "body": "撤回可以在消息发出之后把它收回来；日志里仍保留「发生过这件事」，所以收回不等于抹掉。",
+          "proof": "lib/core/agent_service.dart::recall"
+        },
+        {
+          "title": "委派可以吊销",
+          "body": "你已经发出的委派与背书可以事后吊销，而吊销本身同样会被记录。",
+          "proof": "lib/core/delegation_service.dart::revoke"
+        }
+      ]
+    },
+    {
+      "title": "设备权限",
+      "items": [
+        {
+          "title": "日历只读",
+          "body": "Android Manifest 只声明了 READ_CALENDAR——整个 App 没有任何 WRITE_CALENDAR 声明。未授权时功能降级，而不是崩掉。",
+          "proof": "android/app/src/main/AndroidManifest.xml::android.permission.READ_CALENDAR"
+        }
+      ]
+    }
+  ],
+  "proofNote": "上面每一条都点名了实现它的文件，守卫会核对关键词确实存在于该文件中。",
+  "boundaryTitle": "本页不是什么",
+  "boundary": [
+    "不是安全审计。没有第三方机构审过这份代码，也不存在渗透测试报告。",
+    "不是认证。本站不宣称任何 ISO、SOC 2 或同类认证。",
+    "不是完工状态。联邦名册自动拉取默认关；试用代调已建成、尚未接真实模型服务商。"
+  ],
+  "ctaLabel": "读完整机制",
+  "ctaHref": "/zh/docs/"
+}

@@ -1,0 +1,61 @@
+{
+  "LANG": "en",
+  "title": "Download Wold / Fen",
+  "description": "Download the Wold / Fen Android APK straight from this site. SHA-256 and signing fingerprint published alongside, so you can verify what you install.",
+  "h1": "Get the app",
+  "lede": "No store listing yet. Until there is one, this page is the only place we hand out the APK — so it publishes everything you need to check that what you downloaded is what we built.",
+  "btnDownload": "Download APK",
+  "btnDownloadSub": "Android · arm64",
+  "factsTitle": "This file",
+  "facts": {
+    "version": "Version",
+    "size": "Size",
+    "sha256": "SHA-256",
+    "cert": "Signing certificate (SHA-256)",
+    "scheme": "Signature scheme",
+    "arch": "Architecture"
+  },
+  "archValue": "arm64-v8a (most phones since 2018)",
+  "verifyTitle": "Check it yourself",
+  "verifyNote": "**Compare the hash** after downloading — if it differs, do not install it. You can also verify the signature itself: apksigner verify -v (from the Android SDK build-tools).",
+  "verifyCmdLabel": "Compare",
+  "mirrorTitle": "Where else it will show up",
+  "mirrorNote": "A GitHub Release mirror is planned for later. **This page stays authoritative** — if the two ever disagree, trust this hash.",
+  "channelsTitle": "Three ways to install",
+  "channelLive": "Available now",
+  "channelPending": "In preparation",
+  "channels": [
+    {
+      "name": "Official APK (sideload)",
+      "status": "live",
+      "desc": "Grab the APK from this page and install it by hand. Android will ask permission to install from your browser - that prompt is the system being careful, not a warning about this file.",
+      "steps": [
+        "Tap Download APK above and wait for the download to finish.",
+        "When Android asks, allow your browser to install unknown apps.",
+        "Open the downloaded file and install. Future updates arrive the same way: come back to this page."
+      ],
+      "warn": "**Signatures do not mix.** This package carries the official signing key. A build from any other channel carries a different key, and Android refuses to install one over the other. Pick one channel and stay with it - switching means uninstalling first, and local data does not survive that."
+    },
+    {
+      "name": "F-Droid",
+      "status": "pending",
+      "desc": "F-Droid is a catalogue of free software. Every app in it is rebuilt from source and signed with the F-Droid repository key - so an F-Droid build of this app is a different signature from the one on this page, and the two cannot upgrade over each other either.",
+      "steps": [],
+      "warn": "**Not submitted yet.** The listing will appear here once the source repository is public and the F-Droid team has reviewed the build recipe. Nothing on this page pretends the channel exists before it does."
+    },
+    {
+      "name": "Build from source",
+      "status": "live",
+      "desc": "The client is open source (MIT). Build it yourself and you never have to trust a binary from anyone - including us.",
+      "steps": [
+        "Clone the repository and check out the release tag.",
+        "Run flutter pub get, then flutter build apk --release --flavor store.",
+        "Sign the result with your own key, or leave it unsigned for local testing."
+      ],
+      "warn": ""
+    }
+  ],
+  "versionFeedNote": "The app checks **{feedUrl}** for update notices - the same version, hash and size as this page, in machine-readable form.",
+  "notReady": "No APK is packaged for this release yet. Nothing here pretends otherwise — a download button that 404s would be worse than an honest empty page.",
+  "disclaimer": "This is a self-distributed build, not a store release. Android will ask you to allow installs from this source; that warning is the operating system being careful, not evidence of anything wrong."
+}

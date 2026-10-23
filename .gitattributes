@@ -1,0 +1,40 @@
+# ═══════════════════════════════════════════════════════════════
+#  大荒AI（Fen / Wold）· EOL 策略
+# ═══════════════════════════════════════════════════════════════
+#
+#  ★ 本仓存在"字节级签名"产物（协议信封 / 技能注册表 / 贡献记录 /
+#    透明日志锚定文件），以及依赖 UTF-8 BOM 的 PowerShell 脚本。
+#    任何 LF↔CRLF 转换都会导致：
+#      · 本机验签通过、换机/打包后验签失败
+#      · .ps1 的 BOM 被破坏 → PowerShell 5.1 按 GBK 解码 → 语法崩且行号错位
+#
+#  → 因此全仓禁用 EOL 转换：文件在仓库里、在工作区里、在 checkout 后，
+#    三者字节完全一致。**不要改成 text=auto 或 eol=lf。**
+#
+* -text
+
+# 二进制：额外跳过 diff（-text 已禁用转换，这里只减 diff 噪音）
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.ttf  binary
+*.otf  binary
+*.woff binary
+*.woff2 binary
+*.zip  binary
+*.jar  binary
+*.apk  binary
+*.aab  binary
+*.jks  binary
+*.keystore binary
+*.so   binary
+*.dylib binary
+*.dll  binary
+*.exe  binary
+
+# ⚠️ 不要在此文件里写 `*.xxx text` —— `text` 属性会**重新打开 EOL 转换**，
+#    与上面的 `* -text` 冲突。需要文本 diff 的扩展名**无需声明**：
+#    `-text` 只关闭 EOL 转换，不关闭 diff。

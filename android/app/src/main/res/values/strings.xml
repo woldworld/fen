@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 键名保留 dahuang_ 前缀属历史包袱（内部标识，用户不可见）。 -->
+    <!-- 应用对外名：manifest 的 android:label 走这里，别再写死字面量 ——
+         硬编码的 label 既不进本地化链路，也无法按渠道换名。 -->
+    <!-- ★ app_name = 中文「大荒AI」，且**按语言不变**（本文件是默认值，中文环境也落到它）：
+         上架市场名定为「大荒AI」，而国内市场上架要求**桌面名与市场名一致**；
+         若随系统语言漂移，市场页与桌面就会对不上 ⇒ 专名取定值。
+         2026-09-29 由「Fen」改回中文（原为 09-26「海外优先」时的英文名）。 -->
+    <string name="app_name">大荒AI</string>
+    <!-- ★★ 无障碍三件套反过来走**本地化**，与 app_name 策略不同，理由：
+         ① summary/description 是给人读的**句子**，必须用用户的语言；
+         ② label 与它们**成对出现**在同一个设置页，只把 label 定成中文会很割裂 ⇒ 整组一起本地化。
+         中文值在 res/values-zh/strings.xml（本次新增，顺手修掉一处存量不一致：
+         中文提示早就写着「大荒AI 屏幕助手」，资源里却是英文名 ⇒ 用户照着提示找不到开关）。
+         本文件的值是**英文默认**，与 lib/l10n/app_en.arb 的 deviceControl* 提示**字面一致**。 -->
+    <string name="dahuang_accessibility_label">Fen Screen Assistant</string>
+    <string name="dahuang_accessibility_summary">Let your agent read and act on the screen</string>
+    <string name="dahuang_accessibility_description">When enabled, your Fen agent can read the text on screen, tap buttons and type for you. Every action is recorded and reviewable in the app. Banking and payment apps are blocked by default and never touched.</string>
+    <!-- 通知读取服务（0.75.0 W6/G9）：只在 sideload 渠道声明，名字会出现在系统
+         「通知使用权 / Notification access」列表里。与无障碍三件套同策略走本地化
+         ——它是给用户读的**名称**，中文用户在中文系统里必须能对上号。
+         中文值在 res/values-zh/strings.xml。 -->
+    <string name="dahuang_notify_sms_label">Fen Notification Access</string>
+</resources>

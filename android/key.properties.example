@@ -1,0 +1,10 @@
+# ⚠️ 这是模板，不是真文件。使用时：
+#   复制为 android/key.properties，再把下面两处密码换成你自己的。
+#   （key.properties 与 *.jks 已在 android/.gitignore 中排除，绝不入库）
+#
+# storeFile 是相对 android/app/ 的路径；即 wold-release.jks 放在 android/ 目录下。
+
+storePassword=在此填你的密钥库密码
+keyPassword=在此填你的密钥库密码
+keyAlias=wold
+storeFile=../wold-release.jks

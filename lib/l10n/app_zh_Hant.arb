@@ -1,0 +1,3152 @@
+{
+  "@@locale": "zh_Hant",
+  "appTitle": "大荒AI",
+  "commonOk": "確定",
+  "commonCancel": "取消",
+  "commonConfirm": "確認",
+  "commonRetry": "重試",
+  "commonBack": "返回",
+  "commonNext": "下一步",
+  "commonSkip": "跳過",
+  "commonSave": "儲存",
+  "commonDelete": "刪除",
+  "commonClose": "關閉",
+  "commonLoading": "載入中…",
+  "commonDone": "完成",
+  "commonYes": "是",
+  "commonNo": "否",
+  "toolPermissionTitle": "安全確認",
+  "toolPermissionMessage": "智慧體請求執行高許可權操作：\n\n{description}\n\n是否允許？",
+  "toolPermissionAllow": "允許",
+  "toolPermissionDeny": "拒絕",
+  "permListSeparator": "、",
+  "permPluginGrantBody": "外掛「{name}」首次請求以下能力：{caps}\n外掛宣告：{desc}\n\n僅首次需要確認；確認後該外掛可自行呼叫已授權能力，可隨時在技能控制中心關閉該外掛來吊銷授權。",
+  "@permPluginGrantBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "caps": {
+        "type": "String"
+      },
+      "desc": {
+        "type": "String"
+      }
+    }
+  },
+  "permPluginDeviceControl": "手機控制",
+  "permPluginMcp": "MCP 服務 {name}",
+  "@permPluginMcp": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "permActionCreateTool": "建立/修改技能 [{name}]",
+  "@permActionCreateTool": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "permActionOpenUrl": "開啟 {url}",
+  "@permActionOpenUrl": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "permActionChangeSettings": "修改系統設定: {keys}",
+  "@permActionChangeSettings": {
+    "placeholders": {
+      "keys": {
+        "type": "String"
+      }
+    }
+  },
+  "permDeniedReask": "該外掛此前已被拒絕授權。如需重新授權，請在技能控制中心關閉再開啟該外掛。",
+  "permDeniedNoGrant": "未獲得能力授權，已中止本次呼叫。",
+  "permDenyCreateTool": "使用者拒絕了建立工具請求",
+  "permDenyOpenUrl": "使用者已取消",
+  "permDenyChangeSettings": "使用者拒絕了設定修改",
+  "permDenyGeneric": "使用者未確認",
+  "permActionSendMail": "傳送郵件給 {to}",
+  "permDenySendMail": "使用者拒絕傳送該郵件",
+  "manageMailTitle": "信箱",
+  "manageMailSubtitle": "讓分身代你收發郵件",
+  "mailTitle": "信箱帳號",
+  "mailIntro": "信箱密碼只存在這台手機上，絕不上傳到我們的伺服器。請填「應用程式密碼」或「授權碼」，不要填登入密碼。任何信箱都支援：點下面的服務商，或直接輸入信箱地址，伺服器會自動填入。",
+  "mailNone": "還沒有綁定帳號",
+  "mailAddSection": "新增帳號",
+  "mailAddress": "電子郵件地址",
+  "mailDisplayName": "顯示名稱（選填）",
+  "mailAppPassword": "應用程式密碼 / 授權碼",
+  "mailAppPasswordHint": "多數信箱要用「應用程式密碼」或「授權碼」，不是登入密碼。",
+  "mailAppPasswordHintGmail": "Gmail：先開啟兩步驟驗證，再到 myaccount.google.com/apppasswords 產生。",
+  "mailAppPasswordHintNetease": "網易信箱（163/126）：請填「授權碼」。網頁版 → 設定 → POP3/SMTP/IMAP → 開啟 IMAP/SMTP 服務，再產生授權碼。",
+  "mailAppPasswordHintQQ": "QQ 信箱：請填「授權碼」。網頁版 → 設定 → 帳戶 → 開啟 IMAP/SMTP 服務，再產生授權碼。",
+  "mailAppPasswordHintOutlook": "Outlook / Microsoft 365：先開啟兩步驟驗證，再產生應用程式密碼。",
+  "mailPresetLabel": "點服務商可直接填入伺服器；或直接輸入信箱地址，會自動比對。",
+  "mailAutoFilled": "已依 {provider} 自動填入伺服器。只有使用自訂網域時才需要修改。",
+  "mailManualServers": "伺服器已手動填寫，自動比對已暫停。",
+  "mailNeedServers": "請先在上方選一個服務商，或輸入信箱地址，以便自動填入伺服器。",
+  "mailErrAuth": "授權碼／應用程式密碼不正確，或未開啟 IMAP 服務。請對照上面的提示重新產生一次。",
+  "mailErrUnsafe": "服務商擋下了這次登入。請到網頁版開啟 IMAP/SMTP 服務，並改用「授權碼」而非登入密碼。",
+  "mailSecurityTls": "隱式 TLS（465/993）",
+  "mailSecurityStarttls": "STARTTLS（587）",
+  "mailSaveAndTest": "儲存並測試",
+  "mailTestConn": "測試連線",
+  "mailTesting": "測試中…",
+  "mailTestOk": "連線成功，設定可用。",
+  "mailTestFail": "連線失敗：{reason}",
+  "mailUnbind": "解除綁定",
+  "mailUnbound": "已解除綁定，密碼已一併刪除",
+  "mailLastError": "上次錯誤：{reason}",
+  "capNetwork": "網路訪問",
+  "capLaunchApp": "喚起應用",
+  "capDevice": "本地硬體",
+  "capScreenControl": "操作手機螢幕",
+  "capMemory": "讀寫記憶",
+  "capSettings": "修改設定",
+  "capSocial": "代理社交",
+  "capLocal": "純本地",
+  "riskHigh": "高風險",
+  "riskMedium": "中風險",
+  "riskLow": "低風險",
+  "errorGeneric": "出錯了，請重試。",
+  "errorNetwork": "網路不可用。",
+  "errorPermissionDenied": "許可權被拒絕。",
+  "errorInvalidInput": "輸入內容不正確，請檢查。",
+  "onboardingWelcomeTitle": "你的分身，替你先去認識人",
+  "onboardingWelcomeSubtitle": "它替你記事、跑腿，認識新朋友時先替你開口——值得時再把你叫進來。",
+  "onboardingStart": "開始使用",
+  "onboardingModelTitle": "連線一個模型",
+  "onboardingModelSubtitle": "可以自帶 API key，也可以先用我們送的免費額度。",
+  "onboardingModelHint": "你的 key 只存在本機。",
+  "onboardingProfileTitle": "這個分身屬於誰？",
+  "onboardingProfileSubtitle": "填個名字就夠了，之後可以再補充。",
+  "onboardingDone": "一切就緒",
+  "onboardingDoneSubtitle": "你的分身準備好了。邀請一個人，它就能替你開始。",
+  "onboardingStepIndicator": "第 {cur} / {total} 步 · {label}",
+  "@onboardingStepIndicator": {
+    "placeholders": {
+      "cur": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingStepWelcome": "歡迎",
+  "onboardingStepModel": "選模型",
+  "onboardingStepKey": "填金鑰",
+  "onboardingStepIdentity": "起名字",
+  "onboardingStepSocial": "連社交",
+  "onboardingStepDone": "完成",
+  "onboardingPrevStep": "上一步",
+  "onboardingWelcomeHeading": "歡迎使用大荒AI",
+  "onboardingWelcomeBody": "你的智慧體，住在你的手機裡。\n三分鐘設定好，之後它就能替你記事、出主意、交朋友。",
+  "onboardingDisclosureNote": "預設由你的分身出面：它先替你開口，值得你本人出面時再把你叫進來。",
+  "privacyDataLocalTitle": "資料是你自己的",
+  "privacyDataLocalBody": "聊天記錄、記憶、人際關係都存在本機。我們看不到，也不會上傳。",
+  "onboardingSocialCardTitle": "你的智慧體能去社交",
+  "onboardingSocialCardBody": "和朋友的智慧體互相認識、私下聊天；近距離可以直連，遠距離走中轉站。",
+  "onboardingModelCardTitle": "模型你自己選",
+  "onboardingModelCardBody": "我們不賣額度。你可以用 DeepSeek、OpenAI、Kimi、智譜等任意一家。",
+  "onboardingThreeThings": "免費體驗可直接開始；若選「我有自己的 API Key」，會依次問你模型、Key 與稱呼。",
+  "onboardingPickModelTitle": "你想用哪家的模型？",
+  "onboardingPickModelSubtitle": "選一個即可，不確定就選第一個（DeepSeek）。",
+  "onboardingPasteKeyTitle": "把你的 API Key 粘進來",
+  "onboardingFieldBaseUrl": "介面地址",
+  "onboardingHintBaseUrl": "例如 https://api.deepseek.com",
+  "onboardingFieldModelName": "模型名稱",
+  "onboardingHintModelName": "例如 deepseek-v4-flash",
+  "onboardingFieldApiKey": "API Key（金鑰）",
+  "onboardingTesting": "正在測試…",
+  "onboardingTestConnection": "測試連線",
+  "onboardingNameStepTitle": "給它起個名字",
+  "onboardingNameStepSubtitle": "這些隨時可以在設定裡改。",
+  "onboardingFieldMasterName": "它該怎麼稱呼你？",
+  "onboardingHintMasterName": "例如：主人、老闆、媽媽",
+  "onboardingFieldAgentName": "它的名字",
+  "onboardingHintAgentName": "例如：小荒、阿福",
+  "onboardingFieldTone": "它的說話風格",
+  "onboardingHintTone": "例如：溫暖、簡潔、有主見",
+  "onboardingSocialStepTitle": "要不要讓智慧體去社交？",
+  "onboardingSocialStepSubtitle": "填上中轉站地址後，你的智慧體才能和遠方朋友的智慧體互通。\n沒有也沒關係，可以跳過——近距離仍然可以直連，本機功能完全不受影響。",
+  "onboardingFieldHubKey": "中轉站存取 Key（可不填）",
+  "onboardingFieldHubUrl": "中轉站地址（可留空）",
+  "onboardingHintHubKey": "官方中轉站若啟用准入，需填入營運方簽發的 Key（形如 WK-XXXXX-XXXXX-XXXXX-XXXXX）；自建或區域網地址留空即可",
+  "onboardingHintHubUrl": "預設 https://hub.wold.world（區域網測試可填電腦 IP）",
+  "onboardingFieldWorldUrl": "世界伺服器地址（留空則用中轉站地址 + /world）",
+  "onboardingHintWorldUrl": "預設 https://world.wold.world",
+  "onboardingConnecting": "正在連線…",
+  "onboardingTestAndConnect": "測試並連線",
+  "onboardingDoneHeading": "配置完成，可以開始了",
+  "onboardingSummaryModel": "模型服務",
+  "onboardingSummaryAgentName": "智慧體名字",
+  "onboardingSummaryCloud": "雲端社交",
+  "onboardingCloudOn": "已開啟（可與朋友的智慧體互通）",
+  "onboardingCloudOff": "未開啟（僅本機與近距離）",
+  "onboardingNextWhere": "接下來去哪裡？\n· 「日常交流」— 和它聊天，它會記住你說過的事\n· 「小荒社區」— 讓分身替你認識人\n· 「管理設定」— 隨時改模型、改名字、開關社交",
+  "onboardingNotFilled": "未填寫",
+  "onboardingWarnNotTestedTitle": "還沒有測試成功",
+  "onboardingWarnNotTestedBody": "建議先點「測試連線」，確認金鑰能用再繼續。\n\n如果現在跳過，App 裝好後會一直提示「請配置 API Key」，需要再到設定裡填寫。",
+  "onboardingGoBackTest": "回去測試",
+  "onboardingContinueAnyway": "仍然繼續",
+  "settingsTitle": "控制中心 (Core Config)",
+  "settingsLanguage": "語言",
+  "settingsModel": "模型",
+  "settingsPrivacy": "隱私",
+  "settingsAbout": "關於",
+  "settingsSaved": "💾 核心引數與靈魂設定已重鑄！",
+  "settingsBgChanged": "🖼️ 聊天背景已更換，返回首頁生效！",
+  "settingsBgReset": "🧹 聊天背景已恢復預設",
+  "settingsSecAppearance": "🎨 介面個性化",
+  "settingsSetWallpaper": "設定聊天桌布",
+  "settingsRestoreDefault": "恢復預設",
+  "settingsSecSafety": "🛡️ 自主行為與安全",
+  "settingsObservationMode": "觀察模式（推薦）",
+  "settingsObservationSubtitle": "開啟後，主動搭訕只生成建議卡，由您確認後才真正發出",
+  "settingsAutoAllowLabel": "自動放行的高危工具（逗號分隔）",
+  "settingsAutoAllowHint": "例如 open_url_or_app, create_custom_tool",
+  "settingsDeviceControlTitle": "🖐️ 手機控制（無障礙）",
+  "settingsDeviceControlSubtitle": "讓智慧體讀屏、點選、輸入、開啟應用；需要系統無障礙授權，預設關閉",
+  "settingsSecSoul": "🎭 靈魂塑造 (Soul.md)",
+  "settingsAgentName": "智慧體的名字",
+  "settingsMasterName": "它該怎麼稱呼您？",
+  "settingsRelationship": "你們之間的關係設定",
+  "settingsTone": "回覆語氣與風格",
+  "settingsExtraDesc": "額外行為準則 / 期望規矩",
+  "settingsSecMemory": "💾 記憶熔斷與檢索",
+  "settingsMaxRounds": "預設代入的對話最大輪數",
+  "settingsMaxRoundsHint": "例如 50",
+  "settingsTimeLimit": "預設追溯的最大時長 (小時)",
+  "settingsTimeLimitHint": "例如 24",
+  "settingsRecallEnabled": "自動回憶（每輪檢索往事）",
+  "settingsProfileEnabled": "長期畫像注入（告訴它你長期關心什麼）",
+  "settingsSecEngine": "⚙️ 大腦引擎 (BYOK)",
+  "settingsBaseUrl": "Base URL (閘道器/代理)",
+  "settingsModelName": "模型名稱 (Model Name)",
+  "settingsApiKey": "API Key (金鑰)",
+  "settingsHubUrl": "雲端 Hub 地址（區域網測試可填電腦 IP）",
+  "settingsHubKey": "中轉站存取 Key（可不填）",
+  "settingsHubKeyApply": "申請存取 Key",
+  "settingsHubKeyApplyFailed": "打不開申請頁面，請檢查網路後重試。",
+  "settingsHubKeyHint": "只有官方中轉站需要；由營運方簽發，形如 WK-XXXXX-XXXXX-XXXXX-XXXXX",
+  "settingsHubUrlHint": "例如 https://hub.example.com 或 http://192.168.1.100:3000",
+  "settingsWorldUrl": "世界伺服器地址（留空則用 Hub 地址 + /world）",
+  "settingsWorldUrlHint": "例如 https://hub.example.com/world 或 http://192.168.1.100:3100",
+  "settingsGodUrl": "GOD 控制室橋接（留空則隱藏 GOD 入口）",
+  "settingsGodUrlHint": "例如 http://192.168.1.100:3300",
+  "settingsLocalModelUrl": "本地模型地址（離線兜底，可選）",
+  "settingsLocalModelUrlHint": "預設 http://127.0.0.1:11434（清空 = 關閉本地兜底）",
+  "settingsLocalModelName": "本地模型名",
+  "settingsLocalModelNameHint": "預設 qwen2.5:3b",
+  "settingsNotifySection": "系統通知",
+  "settingsNotifyEnabled": "開啟系統通知",
+  "settingsNotifyQuiet": "免打擾時段",
+  "settingsNotifyQuietStart": "起始小時",
+  "settingsNotifyQuietEnd": "結束小時",
+  "settingsMorningHour": "晨間問候時間",
+  "settingsNotifyPermissionNeeded": "系統通知許可權未開啟，點此授權",
+  "helpNotifyGuideTitle": "系統通知會叫醒你什麼",
+  "helpNotifyGuideBody": "只有四件事會打擾你：① 有人委託你辦事；② 會客廳裡有人 @ 你；③ 你的分身起草了一條發言、等你放行（它被卡住了）；④ 收到互介卡或私聊訊息。\n\n會客廳裡的普通發言一律不彈——房間訊息太密，彈了等於沒彈。\n\n免打擾時段內所有通知都會被按下，回到前臺仍能看到。起止小時填成一樣 = 不啟用免打擾。\n\n⚠️ 只有 App 還活著時才會彈通知；若被系統徹底殺掉，訊息要等你下次開啟才看得到。",
+  "notifyChannelName": "大荒提醒",
+  "notifyChannelDescription": "分身的訊息、委託與待確認事項",
+  "notifyDirectMessageTitle": "收到新訊息",
+  "notifyDirectMessageBody": "來自 {peer} 的訊息",
+  "@notifyDirectMessageBody": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifyLoungeMentionTitle": "會客廳有人 @ 你",
+  "notifyLoungeMentionBody": "{who} 在會客廳 @ 了你",
+  "@notifyLoungeMentionBody": {
+    "placeholders": {
+      "who": {
+        "type": "String"
+      }
+    }
+  },
+  "notifySuggestionTitle": "有草稿等你放行",
+  "notifySuggestionBody": "你的分身起草了一條發言，等你確認後才發得出去",
+  "notifyDelegationTitle": "收到一條委託",
+  "notifyDelegationBody": "{peer} 委託你辦一件事",
+  "@notifyDelegationBody": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "notifyIntercardTitle": "收到一張互介卡",
+  "notifyIntercardBody": "{peer} 遞來一張互介卡",
+  "@notifyIntercardBody": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsRerunOnboarding": "重新執行接入嚮導（約三分鐘）",
+  "settingsLegalTitle": "法律與關於",
+  "settingsLegalIntro": "隱私政策與服務條款，在瀏覽器中開啟。",
+  "settingsPrivacyTitle": "隱私政策",
+  "settingsTermsTitle": "服務條款",
+  "settingsLegalOpenFailed": "打不開，請檢查網路後重試。",
+  "settingsSaveButton": "💾 儲存配置並重鑄靈魂",
+  "mcpCenterTitle": "記憶與技能控制中心 (MCP)",
+  "mcpAutoTitle": "🤖 AI 自主按需呼叫 (推薦)",
+  "mcpAutoSubtitle": "開啟時，AI 將自動在後臺尋找並按需觸發任何已註冊的工具。子開關將被安全鎖定並預設開啟。",
+  "mcpBusSummaryClean": "🛡️ 外掛匯流排：{total} 個外掛（已簽名 {signed}）",
+  "@mcpBusSummaryClean": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "signed": {
+        "type": "int"
+      }
+    }
+  },
+  "mcpBusSummaryTampered": "🛡️ 外掛匯流排：{total} 個外掛（已簽名 {signed} · ⚠️ 簽名失效 {tampered} 已自動禁用）",
+  "@mcpBusSummaryTampered": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      },
+      "signed": {
+        "type": "int"
+      },
+      "tampered": {
+        "type": "int"
+      }
+    }
+  },
+  "mcpImportTitle": "從 DSH 生態匯入",
+  "mcpImportSubtitle": "匯入技能與 MCP 服務，或給外掛包做相容體檢",
+  "mcpCategoryHeader": "📦 技能分類庫 (Tab Panel)",
+  "mcpCatLocalTitle": "🔌 本地硬體與 Webhook 介面",
+  "mcpCatLocalSubtitle": "觸發手機馬達、系統查詢及自定義網路 API 工具",
+  "mcpCatMcpTitle": "🌐 MCP 外部擴充套件協議",
+  "mcpCatMcpSubtitle": "對接標準的 Model Context Protocol 遠端服務",
+  "mcpCatSkillTitle": "🧠 系統提示詞技能 (Skills)",
+  "mcpCatSkillSubtitle": "動態向 AI 大腦注入額外的指令、規矩與特殊技能",
+  "mcpContent": "內容",
+  "mcpContentHint": "請輸入內容",
+  "mcpWebhookLabel": "Webhook 介面 URL",
+  "mcpWebhookHint": "以 http:// 或 https:// 開頭的網路 API 地址",
+  "mcpServerLabel": "MCP 伺服器 URL",
+  "mcpServerHint": "例如: http://localhost:8080/mcp",
+  "mcpPromptLabel": "系統提示詞 (Prompt)",
+  "mcpPromptHint": "例如：回答完所有話之後，必須在末尾加一句‘喵~’",
+  "mcpEditToolTitle": "修改工具配置",
+  "mcpAddToolTitle": "新增自定義工具",
+  "mcpToolNameLabel": "工具唯一標識名 (英文字元)",
+  "mcpToolDescLabel": "工具功能描述 (供 AI 理解)",
+  "mcpCancel": "取消",
+  "mcpSaveRegister": "儲存並註冊",
+  "mcpManageTools": "管理工具",
+  "mcpTypeLocal": "本地 Webhook 工具",
+  "mcpTypeMcp": "MCP 外部協議配置",
+  "mcpTypeSkill": "提示詞技能 (Skills) 庫",
+  "mcpEmpty": "暫無工具，點選右上角加號建立第一款工具！",
+  "mcpTagDream": "夢境",
+  "mcpTagSigInvalid": "簽名失效",
+  "mcpSubTampered": "{desc} · 簽名失效，已自動禁用",
+  "@mcpSubTampered": {
+    "placeholders": {
+      "desc": {
+        "type": "String"
+      }
+    }
+  },
+  "mcpSubDreamPending": "{desc} · 夢境生成，待確認啟用",
+  "@mcpSubDreamPending": {
+    "placeholders": {
+      "desc": {
+        "type": "String"
+      }
+    }
+  },
+  "mcpSigBuiltin": "內建",
+  "mcpSigOk": "🔐 裝置簽名",
+  "mcpSigUnsigned": "未簽名",
+  "mcpSigInvalid": "⚠️ 簽名失效",
+  "mcpToolDescHeader": "📌 工具描述:",
+  "mcpInjectionDetail": "📜 提示詞注入細節 (System Prompt):",
+  "mcpPhysicalUrl": "🔗 物理執行地址 (URL/BUILTIN):",
+  "mcpEditParams": "修改此工具引數",
+  "manageDreamSleeping": "🌙 智慧體已進入深度睡眠，正在進行潛意識記憶提煉...",
+  "manageDreamAwake": "☀️ 智慧體甦醒！記憶庫已成功進化，檔案已更新。",
+  "manageDreamFailed": "❌ 記憶提煉失敗，可能大模型未按規範輸出 JSON。",
+  "manageSelfEvolutionTitle": "自我進化 (Nanobot Dream Engine)",
+  "manageSelfEvolutionBody": "神經網路後臺程序 (WorkManager) 監控中。管家將在夜間靜默深度檢索並進化提示詞底層基因（Skills）。",
+  "manageMetricDepth": "記憶深度",
+  "manageMetricSkillsLabel": "派生技能",
+  "manageMetricSkillsValue": "{n}個",
+  "@manageMetricSkillsValue": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "manageMetricSessionsLabel": "歸類會話",
+  "manageMetricSessionsValue": "{n}組",
+  "@manageMetricSessionsValue": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "manageDreaming": "深度思考與提煉中...",
+  "manageTriggerEvolution": "🌙 立即觸發記憶潛意識進化",
+  "manageSystemCapabilityTitle": "系統與能力",
+  "manageSystemCapabilityHint": "改動立即生效；通知與日曆的授權隨時可調整。",
+  "manageSystemCapabilityHintSimple": "通知與日曆的授權隨時可改；其餘能力切到進階模式後展開。",
+  "manageHistoryTitle": "歷史記錄與智慧歸類",
+  "manageHistorySubtitle": "查閱按時間軸與話題樹分佈的所有原始對話記憶",
+  "manageToolsTitle": "技能庫與本地工具 (MCP)",
+  "manageToolsSubtitle": "管理本地系統工具許可權，掛載自定義 Webhook 與 Prompt",
+  "manageProfileTitle": "主人絕密檔案與人際網",
+  "manageProfileSubtitle": "查閱並手動修改智慧體為您建立的隱私認知畫像",
+  "manageShutdownTitle": "強制安全停機與退出系統",
+  "manageShutdownSubtitle": "當底層網路鎖死或硬體卡頓異常時，點選此按鈕強行釋放所有埠、硬體鎖，並關閉 App 以便安全重啟。",
+  "manageShutdownDialogTitle": "🚨 警告：系統強制停機",
+  "manageShutdownDialogBody": "此操作將強行終止所有後臺雷達掃描、釋放埠並退出應用，以恢復系統到初始純淨狀態。是否繼續？",
+  "manageForceQuit": "強制關閉",
+  "serendipityTitle": "✨ 轉運實驗室",
+  "serendipityEnergyBadge": "🔋 {n} Lp ",
+  "@serendipityEnergyBadge": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "serendipityTabMorning": "🌅預演",
+  "serendipityTabChallenge": "🧭破圈",
+  "serendipityTabAlchemist": "🧪鍊金",
+  "serendipityTabNight": "🌌手記",
+  "serendipityTabDiary": "📖日記",
+  "serendipityTabOracle": "🔮預測",
+  "serendipityEnergyGained": "✨ +{n} Lp (好運能量已注入)",
+  "@serendipityEnergyGained": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "serendipityNetworkError": "網路波動，請稍後再試。",
+  "serendipityBlindBox1": "紅衣服法則：留意穿紅衣服的人，觀察巧合。",
+  "serendipityBlindBox2": "新路徑打破：嘗試一條沒走過的回家路線。",
+  "serendipityBlindBox3": "盲盒點餐：讓老闆為你隨機推薦一道菜。",
+  "serendipityBlindBox4": "微光接觸：向遇到的第一個陌生人真誠微笑。",
+  "serendipityBlindBox5": "無功利問候：給很久沒聯絡的老友發句問候。",
+  "serendipityBlindBox6": "斷網試煉：關閉網路半小時，細緻觀察周圍。",
+  "serendipityMorningHeader": "預期重構 · 晨間預演",
+  "serendipityIntentLock": "🎯 意圖鎖定",
+  "serendipityEventHint": "即將面對的事件 (如: 下午的會議)",
+  "serendipityTimerPrompt1": "閉上雙眼，深呼吸，想象那個場景...",
+  "serendipityTimerPrompt2": "對焦細節：周圍的光線、對方的表情...",
+  "serendipityTimerPrompt3": "想象出現了一個小意外，而你輕鬆化解了它...",
+  "serendipityTimerPrompt4": "感受成功完成的鬆弛感，準備睜眼...",
+  "serendipityGiveUp": "放棄預演",
+  "serendipityNeedEvent": "⚠️ 先輸入事件！",
+  "serendipityStartPreview": "開啟 2 分鐘心智預演",
+  "serendipityTargetEvent": "🎯 目標事件: {text}",
+  "@serendipityTargetEvent": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityDetailHint": "👀 畫面細節 (看到了什麼？)",
+  "serendipityObstacleHint": "🛡️ 阻礙化解 (如何從容應對意外？)",
+  "serendipityOutcomeHint": "🌟 預期結果 (最期待的結局)",
+  "serendipityAiBoost": "🧠 AI強化:\n{text}",
+  "@serendipityAiBoost": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityAiInjecting": "AI 注入能量...",
+  "serendipityReinforce": "🧠 強化",
+  "serendipitySave5": "儲存 (+5)",
+  "serendipityMorningArchive": "預演檔案",
+  "serendipityLogTime": "📅 {t}",
+  "@serendipityLogTime": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogEvent": "🎯 事件: {t}",
+  "@serendipityLogEvent": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogDetail": "👀 細節: {t}",
+  "@serendipityLogDetail": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogOutcome": "🌟 預期: {t}",
+  "@serendipityLogOutcome": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiBoost": "💡 AI賦能:\n{t}",
+  "@serendipityLogAiBoost": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityChallengeHeader": "機會感知 · 破圈雷達",
+  "serendipityActionTypeLabel": "選擇行動型別",
+  "serendipityChallengeTypeBlindBox": "🎁 盲盒挑戰",
+  "serendipityChallengeTypeCustom": "自定義",
+  "serendipityCustomChallengeHint": "🎯 自定義挑戰內容",
+  "serendipityBlindBoxDrawn": "🎉 為您抽取的今日隨機盲盒任務：",
+  "serendipityRedraw": "↺ 有點難？點選重新抽取",
+  "serendipityJourneyHint": "🚶‍♂️ 真實經過",
+  "serendipityReflectHint": "📝 點評與收穫",
+  "serendipityAiAnalyzing": "AI 分析中...",
+  "serendipityAiColon": "🧠 AI: {text}",
+  "@serendipityAiColon": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityComment": "🧠 點評",
+  "serendipitySave15": "儲存 (+15)",
+  "serendipityChallengeArchive": "歷史行動",
+  "serendipityLogGoal": "🎯 目標: {t}",
+  "@serendipityLogGoal": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogJourney": "🚶‍♂️ 經過: {t}",
+  "@serendipityLogJourney": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogReflect": "📝 反思: {t}",
+  "@serendipityLogReflect": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiComment": "💡 AI點評: {t}",
+  "@serendipityLogAiComment": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityAlchemistHeader": "壞運轉化 · 敘事鍊金",
+  "serendipitySetbackHint": "1. 挫折",
+  "serendipityNegReactHint": "2. 消極應對",
+  "serendipityStrategyLabel": "3. 重構策略",
+  "serendipityStrategyDownward": "向下對比法",
+  "serendipityStrategySurplus": "尋找盈餘法",
+  "serendipityStrategyDilate": "時空拉長法",
+  "serendipityNewCognitionHint": "4. 新認知與執行",
+  "serendipityScore": "🧠 評分",
+  "serendipitySave10": "儲存 (+10)",
+  "serendipityAlchemistArchive": "轉運檔案",
+  "serendipityLogSetback": "❌ 挫折: {t}",
+  "@serendipityLogSetback": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogReact": "😔 應對: {t}",
+  "@serendipityLogReact": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogStrategy": "🛡️ 策略: {t}",
+  "@serendipityLogStrategy": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogCognition": "💫 認知: {t}",
+  "@serendipityLogCognition": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiScore": "💡 AI評分: {t}",
+  "@serendipityLogAiScore": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityNightHeader": "直覺感知 · 微光手記",
+  "serendipityIntuitionHint": "1. 預感/直覺",
+  "serendipityChoiceHint": "2. 做出選擇",
+  "serendipityReflectStrategyHint": "3. 反思策略",
+  "serendipityParse": "🧠 解析",
+  "serendipityNightArchive": "潛意識檔案",
+  "serendipityLogIntuition": "🔮 直覺: {t}",
+  "@serendipityLogIntuition": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogChoice": "👉 選擇: {t}",
+  "@serendipityLogChoice": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogNightReflect": "🌱 反思: {t}",
+  "@serendipityLogNightReflect": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogAiParse": "💡 AI解析: {t}",
+  "@serendipityLogAiParse": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityIntuitionCameTrue": "✅ 直覺已成真",
+  "serendipityVerifyTrue": "🎯 驗證成真 (+20Lp)",
+  "serendipityDiaryHeader": "情感傾聽 · 自由日記",
+  "serendipityDiaryHint": "✍️ 寫下經歷、心情、瑣事...",
+  "serendipityAiListen": "🧠 AI導師傾聽:\n{text}",
+  "@serendipityAiListen": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityAiReading": "AI 導師閱讀中...",
+  "serendipityListen": "🧠 傾聽",
+  "serendipityKeep": "珍藏 (+5 Lp)",
+  "serendipityDiaryArchive": "時光膠囊",
+  "serendipityLogDiaryTime": "📅 時間: {t}",
+  "@serendipityLogDiaryTime": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityLogDiaryEcho": "💡 導師迴音:\n{t}",
+  "@serendipityLogDiaryEcho": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityOracleHeader": "易經決斷 · 預測起卦",
+  "serendipityOracleEventHint": "☯ 請輸入近期令你糾結、需要決斷之事",
+  "serendipityEnterRitual": "進入起卦儀式",
+  "serendipityOracleTapPrompt": "凝神靜氣，在心中默唸所問之事\n請緩緩點選下方太極 6 次，以求六爻",
+  "serendipityOracleResultPrefix": "🔮 佔得：\n{name}",
+  "@serendipityOracleResultPrefix": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityOracleThinking": "AI 焚香解卦中，請稍候...",
+  "serendipityOracleAskHint": "輸入你的追問或疑惑...",
+  "serendipityNewQuestion": "↺ 問別的事 (重新起卦)",
+  "serendipityOracleArchive": "預測檔案",
+  "serendipityOracleLogEvent": "🎯 問事: {t}",
+  "@serendipityOracleLogEvent": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipityOracleLogGua": "🔮 卦象: {t}",
+  "@serendipityOracleLogGua": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "serendipitySpeakerMe": "我",
+  "helpSerendipityMorningTitle": "心智預演",
+  "helpSerendipityMorningBody": "每天清晨，用兩分鐘鎖死今天的好運預期。寫下你期待發生的好事，設定倒數保持專注，完成後用正向心理學強化這份信念。",
+  "helpSerendipityChallengeTitle": "打破慣性",
+  "helpSerendipityChallengeBody": "幸運不是玄學，而是行為模式。每天主動做一次打破慣性的小行動——換條路回家、主動搭話陌生人，然後在這裡記錄你的挑戰與反思。",
+  "helpSerendipityAlchemistTitle": "壞運煉金",
+  "helpSerendipityAlchemistBody": "把糟糕的經歷轉化為成長養分。寫下壞事、你的本能反應，再用 CBT 視角重新解讀，把「壞運氣」煉成「心理韌性」。",
+  "helpSerendipityNightTitle": "夜之手記",
+  "helpSerendipityNightBody": "睡前捕捉一閃而過的直覺。記錄那個「我總覺得該……」的念頭，做出選擇，日後回看直覺是否靈驗，訓練你的幸運直覺力。",
+  "helpSerendipityDiaryTitle": "自由日記",
+  "helpSerendipityDiaryBody": "想到什麼寫什麼。這裡是你的私人樹洞，AI 會陪你梳理情緒，不評判、不洩密。",
+  "helpSerendipityOracleTitle": "玄學預測",
+  "helpSerendipityOracleBody": "心有所惑，就來問卦。靜心默念你的問題，輕觸法器六下起卦，讓《易經》與心理學為你指路。",
+  "socialRadarTitle": "小荒社區",
+  "socialDelegationEntry": "託辦與我的圈",
+  "socialDbDegradedHint": "本地資料暫時讀不到（本地庫可能還沒就緒）。下面顯示的內容可能不是最新。",
+  "socialTabMask": "外交假面",
+  "socialTabRadar": "雷達狀態",
+  "socialTabLedger": "日誌",
+  "socialTabRoster": "捕獲名冊",
+  "socialFeedBrain": "⚡ 正在將雷達資料餵給主大腦，強制觸發社交決策...",
+  "socialMaskLocked": "🛡️ 假面已鎖定！舊社交記憶已清空，防人設混淆生效。",
+  "socialManualPairTitle": "手動強制配對",
+  "socialPeerAgentName": "對方 Agent 名字",
+  "socialPeerMasterName": "對方的主人名字 (備註)",
+  "socialPeerHardId": "對方的硬核 ID",
+  "socialPair": "配對",
+  "socialNodeAdded": "✅ 節點新增成功！",
+  "socialForceSendTitle": "強制發信：{name}",
+  "@socialForceSendTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "socialForceSendLabel": "你要直接發給對方的話",
+  "socialForceSendHint": "輸入內容直接無修飾傳送...",
+  "socialDirectSent": "已突破屏障，正在將您輸入的話原樣傳送...",
+  "socialDirectSend": "免審發射",
+  "socialGiftSent": "{gift} 已送出",
+  "@socialGiftSent": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      }
+    }
+  },
+  "socialGiftFailed": "禮物傳送失敗：對方不在任何線上通道",
+  "socialRecoSent": "🤝 已發出推薦信請求",
+  "socialRecoFailed": "請求傳送失敗：對方不在任何線上通道",
+  "socialVerifyTitle": "🔐 身份核驗：{name}",
+  "@socialVerifyTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "socialVerifyPinnedFor": "本機為此節點固定的身份指紋（TOFU）：",
+  "socialVerifyNoPin": "尚未近場握手，無固定身份",
+  "socialVerifyMyFingerprint": "我的指紋（對方螢幕應顯示）：{fp}",
+  "@socialVerifyMyFingerprint": {
+    "placeholders": {
+      "fp": {
+        "type": "String"
+      }
+    }
+  },
+  "socialVerifyInputLabel": "輸入對方螢幕上的 8 位指紋",
+  "socialVerifyMatch": "✅ 指紋一致——這條連線的身份可信。",
+  "socialVerifyMismatch": "❌ 指紋不一致！當前鏈路疑似存在中間人。\n建議：立即刪除拉黑該節點，換用當面/其他可信渠道重新握手。",
+  "socialVerifyHintNoPin": "提示：雙方都開啟雷達完成一次近場握手後，這裡才會出現可核驗的固定身份。",
+  "socialVerifyCompare": "比對",
+  "socialFederationNoIdentity": "尚未生成智慧體身份，請先在外交假面頁儲存",
+  "socialFederationFetching": "🌐 正在拉取 A2A 聯邦名冊...",
+  "socialFederationEmpty": "名冊為空：{err}",
+  "@socialFederationEmpty": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFederationEmptyErr": "Hub 上暫無其他註冊 Agent（或未配置 Hub 地址）",
+  "socialFederationAllKnown": "Hub 上的 Agent 都已在你的名冊中（共 {n} 個）",
+  "@socialFederationAllKnown": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationTitle": "🌐 聯邦名冊（{n} 個未收錄）",
+  "@socialFederationTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialAnonAgent": "匿名Agent",
+  "socialFederationLastSeen": "{id} · 上次活躍 {time}",
+  "@socialFederationLastSeen": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFederationDiscovered": "A2A 聯邦發現",
+  "socialFederationSource": "A2A 聯邦",
+  "socialFederationMask": "聯邦名冊發現，等待安全握手",
+  "socialSourceManual": "手動新增",
+  "socialNoSignatureBadge": "暫無簽名",
+  "socialCollect": "收錄",
+  "socialFederationCollected": "✅ 已收錄 {n} 個聯邦 Agent 到陌生檔；開啟雷達後將按安全機制逐步握手。",
+  "@socialFederationCollected": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoTitle": "自動拉取聯邦名冊",
+  "socialFederationAutoDesc": "開啟後，分身會自動把中轉站上公開的已註冊 Agent 名冊收進你的陌生檔。它絕不會自動傳訊息 —— 搭訕仍走審查閘門、觀察模式與預算上限。預設為關閉。",
+  "socialFederationAutoDone": "🌐 已自動收錄 {n} 個新聯邦 Agent 到陌生檔。",
+  "@socialFederationAutoDone": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoNone": "聯邦名冊裡暫時沒有可收錄的新面孔。",
+  "socialFederationAutoFailed": "自動拉取失敗：{err}",
+  "@socialFederationAutoFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFederationAutoClear": "清空聯邦自動收錄（{n}）",
+  "@socialFederationAutoClear": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoClearTitle": "清空聯邦自動收錄？",
+  "socialFederationAutoClearConfirm": "將移除 {n} 個由機器自動拉取、且尚未開始任何往來的 Agent。你手動收錄的項目不會被更動。",
+  "@socialFederationAutoClearConfirm": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoCleared": "已移除 {n} 個聯邦自動收錄項。",
+  "@socialFederationAutoCleared": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "socialFederationAutoNote": "由聯邦名冊自動收錄",
+  "socialDone": "完成",
+  "socialCountdown": "🔐 倒計時 {t}",
+  "@socialCountdown": {
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
+  },
+  "socialBadgeSent": "已發信",
+  "socialBadgeReviewing": "待審中",
+  "socialBadgeChatting": "暢聊中",
+  "socialBadgeBlocked": "被攔截",
+  "socialPresenceOnline": "⚡本人線上",
+  "socialPeerSubtitle": "主: {master} | 狀態: {status}\nID: {id} · 信譽 {rep}",
+  "@socialPeerSubtitle": {
+    "placeholders": {
+      "master": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      },
+      "id": {
+        "type": "String"
+      },
+      "rep": {
+        "type": "String"
+      }
+    }
+  },
+  "socialStatusOnline": "線上",
+  "socialStatusOffline": "失聯",
+  "socialMenuChat": "💬 和 TA 的分身私聊（1:1）",
+  "socialChatTooltip": "開啟與 TA 分身的 1:1 私聊",
+  "socialChatHint": "點卡片或 💬 按鈕即可 1:1 私聊",
+  "socialMenuDelegate": "🙋 託他辦點事 (M2)",
+  "socialMenuIntercard": "🤝 分身互介 (M3)",
+  "socialMenuGreet": "💬 主人強行發信 (免審)",
+  "socialMenuGift": "🎁 贈送禮物",
+  "socialMenuReco": "🤝 索取推薦信",
+  "socialMenuVerify": "🔐 身份指紋核驗 (防中間人)",
+  "socialMenuFamily": "升級為家人 (免審)",
+  "socialMenuFriend": "設定為好友 (全自動脫敏)",
+  "socialMenuStranger": "降級為陌生人 (嚴控主動社交)",
+  "socialMenuDelete": "刪除拉黑",
+  "socialMaskUndefined": "未定義假面",
+  "socialMaskNoSignature": "「未設定公開人設簽名」",
+  "socialHardId": "本機硬核 ID: {id}",
+  "@socialHardId": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "socialFingerprintLine": "身份指紋: {fp}（供對方當面比對）",
+  "@socialFingerprintLine": {
+    "placeholders": {
+      "fp": {
+        "type": "String"
+      }
+    }
+  },
+  "socialGatewayGuard": "物理隔離閘道器守衛中",
+  "socialLogicPreset": "分身邏輯預設模式",
+  "socialModeCasual": "☕ 日常閒聊模式 (隨性/幽默)",
+  "socialModeBusiness": "💼 商務獵手模式 (直接/高效)",
+  "socialModeDating": "💖 交友尋緣模式 (高情商/破冰)",
+  "socialModeEmergency": "🚨 緊急求助模式 (SOS廣播)",
+  "socialModeCustom": "🛠️ 完全自定義 (遵循任務框)",
+  "socialModeSwitched": "🧠 人格模式已切換至 {mode}。同一身份，僅換語氣（記憶與握手保持不變）。",
+  "@socialModeSwitched": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "roomRoleParticipant": "參與者",
+  "roomRoleHost": "主持人",
+  "roomRoleCohost": "聯合主持",
+  "roomRoleGuest": "嘉賓",
+  "roomRoleNpc": "功能角色",
+  "roomRoleManageTitle": "房間角色",
+  "roomRoleMine": "我的角色：{role}",
+  "@roomRoleMine": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "roomRoleNoMembers": "本房間還沒有觀測到其他成員。",
+  "roomRoleClaimHost": "認領主持人",
+  "roomRoleClaimedHost": "你已成為本房間主持人。",
+  "roomRoleClaimHostExists": "本房間已有主持人。",
+  "roomRoleNotHost": "只有主持人可以授予角色。",
+  "roomRoleLastHostBlocked": "不能撤掉房間裡最後一個主持人。",
+  "roomRoleSetTo": "已設為 {role}",
+  "@roomRoleSetTo": {
+    "placeholders": {
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "socialEmojiLabel": "表情",
+  "socialNicknameLabel": "對外暱稱",
+  "socialMaskProfileLabel": "對外的脫敏人設簽名",
+  "socialIcebreakTask": "🎯 智慧體當前破冰任務 (暗網機密)",
+  "socialIcebreakHint": "在這裡給智慧體下達近場刺探的密令...",
+  "socialLockMask": "💾 鎖定假面與密令",
+  "socialTaskReroll": "換一個",
+  "socialHeartbeatOn": "💓 雙模併發心跳中 (藍芽 + Wi-Fi NSD)\n後臺休眠鎖已啟動，息屏也能防斷開！",
+  "socialRadarIdle": "雷達休眠中，點選中心開啟限時社交",
+  "socialDurationLabel": "社交限時: ",
+  "socialDuration15": "15 分鐘",
+  "socialDuration30": "30 分鐘",
+  "socialDuration60": "1 小時",
+  "socialDurationUnlimited": "無限制 (耗電)",
+  "socialChannelConfig": "🛰️ 全域性通訊通道配置",
+  "socialChannelNearby": "📡 藍芽/Wi-Fi 直連雷達 (Nearby)",
+  "socialChannelLan": "🏡 區域網加密互聯 (mDNS)",
+  "socialChannelCloud": "☁️ 網際網路雲端中轉網路 (全域性社交)",
+  "suggestionInboxTitle": "🙋 待我確認的建議",
+  "suggestionApprove": "批准併傳送",
+  "suggestionIgnore": "忽略",
+  "suggestionEmpty": "暫無待確認的建議",
+  "suggestionToTarget": "發給：",
+  "suggestionApproved": "已批准併發出",
+  "suggestionNotSent": "未發出，原因見「社交後臺報告」",
+  "socialLedgerTitle": "🐾 社交日誌 · 純淨流水賬 (僅主代報告)",
+  "socialLedgerEmpty": "等待心跳引擎觸發...",
+  "socialRosterTitle": "📇 分級社交圈",
+  "socialScanning": "2.4GHz / 5GHz 物理頻譜監聽中...",
+  "socialScanIdle": "當前通道空閒。請點選首頁中心開啟能量雷達，智慧體代理將自湧現建立近場連線建立通道。",
+  "socialTierFamily": "👨‍👩‍👧 家人 Agent",
+  "socialTierFriend": "🤝 好友 Agent",
+  "socialTierStranger": "👽 陌生 Agent",
+  "worldUnknownError": "未知錯誤",
+  "worldAskTitle": "💬 提問小鎮",
+  "worldAskHint": "想問居民們什麼？",
+  "worldAskTargetLabel": "指定居民（留空 = 提問全鎮）",
+  "worldAskSend": "提問",
+  "worldAskOk": "📨 已向小鎮提問，回答將出現在 GOD 控制室",
+  "worldInterveneTitle": "⚡ 注入干預",
+  "worldInterveneBody": "指令將注入小鎮的下一步（next step），影響所有居民的後續行為。",
+  "worldInterveneHint": "例如：鎮中心廣場舉辦豐收節",
+  "worldInterveneSend": "注入",
+  "worldInterveneOk": "⚡ 干預已注入，將在小鎮下一步生效",
+  "worldStopTitle": "⏹ 停止小鎮？",
+  "worldStopBody": "將停止當前實驗的實時執行，居民活動會中斷。確認繼續？",
+  "worldStop": "停止",
+  "worldStopOk": "⏹ 小鎮已停止",
+  "worldCmdFailed": "指令失敗：{err}",
+  "@worldCmdFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldJoined": "🚪 已加入「{name}」",
+  "@worldJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldJoinFailed": "加入失敗：{err}",
+  "@worldJoinFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldLeft": "👋 已退出「{name}」",
+  "@worldLeft": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldLeaveFailed": "退出失敗：{err}",
+  "@worldLeaveFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldCreateRoomTitle": "建立房間",
+  "worldRoomNameLabel": "房間名稱",
+  "worldTopicLabel": "話題（可選）",
+  "worldModeFree": "自由聊",
+  "worldModeTurn": "輪流發言",
+  "worldCreate": "建立",
+  "worldCreated": "✨ 房間已建立",
+  "worldCreateFailed": "建立失敗：{err}",
+  "@worldCreateFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldNoWorldUrl": "未配置世界地址",
+  "worldNoIdentity": "尚未生成智慧體身份，請先在管理頁初始化。",
+  "worldRoomsHeader": "房間",
+  "worldCreateRoom": "建房",
+  "worldNoRooms": "暫無房間。請確認伺服器上已啟動 world.js，\n或下拉重新整理重試。",
+  "worldGodUnreachable": "GOD 橋接不可達，請確認電腦上已啟動 GOD 與 god-bridge.js",
+  "worldGodPaused": "⏸ 已暫停",
+  "worldGodRunning": "▶ 執行中",
+  "worldGodStep": "第 {n} 步",
+  "@worldGodStep": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "worldGodStatusUnknown": "上游狀態未知",
+  "worldGodTitle": "GOD 控制室",
+  "worldRefreshStatus": "重新整理狀態",
+  "worldGodTown": "小鎮：{hyp}/{exp}",
+  "@worldGodTown": {
+    "placeholders": {
+      "hyp": {
+        "type": "String"
+      },
+      "exp": {
+        "type": "String"
+      }
+    }
+  },
+  "worldGodNoExperiment": "未連線實驗",
+  "worldGodResume": "▶️ 繼續",
+  "worldGodResumeOk": "▶️ 小鎮已恢復自動執行",
+  "worldGodPause": "⏸️ 暫停",
+  "worldGodPauseOk": "⏸️ 小鎮時間已暫停",
+  "worldGodStepBtn": "⏭️ 單步",
+  "worldGodStepOk": "⏭️ 已推進一步",
+  "worldGodStopBtn": "⏹️ 停止",
+  "worldGodAskBtn": "💬 提問小鎮",
+  "worldGodInterveneBtn": "⚡ 注入干預",
+  "worldReportUnavailable": "🌍 世界日報暫不可用。\n{err}",
+  "@worldReportUnavailable": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldReportNoServer": "請確認世界伺服器地址已配置。",
+  "worldReportTitle": "世界日報 · {date}",
+  "@worldReportTitle": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "worldReportSummary": "今日發言 {msgs} 條 · 活躍智慧體 {agents} 個 · 我方發言 {mine} 條",
+  "@worldReportSummary": {
+    "placeholders": {
+      "msgs": {
+        "type": "String"
+      },
+      "agents": {
+        "type": "String"
+      },
+      "mine": {
+        "type": "String"
+      }
+    }
+  },
+  "worldReportRoomLine": "· {name}：{msgs} 條（我方 {mine}）",
+  "@worldReportRoomLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "msgs": {
+        "type": "String"
+      },
+      "mine": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomEnter": "進入",
+  "worldRoomExitTooltip": "退出房間",
+  "worldRoomJoin": "加入",
+  "worldSectionOfficial": "官方房間",
+  "worldSectionMine": "我的房間",
+  "worldBadgeOfficial": "官方",
+  "worldBadgeMine": "我建的",
+  "worldBadgePending": "申請中",
+  "worldSearchTitle": "🔍 按房間號查詢",
+  "worldSearchHint": "輸入房間號（群號）",
+  "worldSearchBtn": "查詢",
+  "worldSearchNotFound": "沒有找到房間號「{id}」",
+  "@worldSearchNotFound": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRequestJoin": "申請加入",
+  "worldRequestNoteLabel": "申請留言（可選）",
+  "worldRequestSent": "已提交申請，等待房主同意",
+  "worldRequestFailed": "申請失敗：{err}",
+  "@worldRequestFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRequestsTitle": "加入申請（{count}）",
+  "@worldRequestsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRequestsEmpty": "暫無待處理申請",
+  "worldApprove": "同意",
+  "worldReject": "拒絕",
+  "worldApproveOk": "已同意「{name}」加入",
+  "@worldApproveOk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRejectOk": "已拒絕「{name}」",
+  "@worldRejectOk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldHandleFailed": "操作失敗：{err}",
+  "@worldHandleFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldNeedApproval": "這是個人房間：需先申請，經房主同意後才能進入。",
+  "worldMyRoomsFull": "你建的房間已達上限（每人可建數量由服務端配置）",
+  "worldCreatedPrivate": "✨ 房間已建立（個人房：不公開列表，其他人只能憑房間號找到並申請加入）",
+  "worldHistoryWhy": "歷史從你加入後才開始累積；服務端每房保留最近 {max} 條，當前 {retained} 條。",
+  "@worldHistoryWhy": {
+    "placeholders": {
+      "max": {
+        "type": "String"
+      },
+      "retained": {
+        "type": "String"
+      }
+    }
+  },
+  "worldPullHistory": "拉取房間歷史",
+  "worldPullHistoryOk": "已補拉 {n} 條歷史訊息",
+  "@worldPullHistoryOk": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "worldPullHistoryNone": "服務端也沒有更早的訊息了",
+  "worldPullHistoryFailed": "拉取失敗：{err}",
+  "@worldPullHistoryFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomChatFree": "自由聊天",
+  "worldLobbyName": "大荒客廳",
+  "worldLobbyTopic": "自由聊天，文明發言",
+  "worldRoomSubtitle": "{mode} · 在場 {present} · 訂閱 {count}",
+  "@worldRoomSubtitle": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "present": {
+        "type": "String"
+      },
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomTopicSuffix": " · {topic}",
+  "@worldRoomTopicSuffix": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "worldAutoreplyOn": "🤖 託管發言已開啟：智慧體將在預算內自動回話（觀察日誌持續記錄）",
+  "worldAutoreplyOff": "👁️ 已回到純觀察模式",
+  "worldDrafting": "🪄 正在按人設起草並送審，請稍候…",
+  "worldSendFailed": "傳送失敗：{err}",
+  "@worldSendFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomTurnSuffix": "（輪流發言）",
+  "worldAutopilotTooltip": "讓分身說一句",
+  "worldAutopilotLabel": "託管",
+  "worldAutopilotStateOn": "託管中",
+  "worldAutopilotStateOff": "僅觀察",
+  "worldAutopilotStatus": "{state} · 最近決策：{decision}",
+  "@worldAutopilotStatus": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      },
+      "decision": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomEmpty": "房間裡還很安靜，說點什麼吧。",
+  "worldLoading": "載入中…",
+  "worldAnonAgent": "匿名Agent",
+  "worldMe": "我",
+  "worldSuggestionTooltip": "生成建議卡",
+  "worldSuggestionTitle": "🧭 建議卡（草稿，未傳送）",
+  "worldSuggestionDrafting": "正在按人設起草回覆...",
+  "worldSuggestionFailed": "生成失敗：請檢查大腦引擎配置後重試。",
+  "worldSuggestionEditHint": "可修改後再發",
+  "worldSuggestionSend": "發到房間",
+  "worldSayHint": "以主人的身份直接發言…",
+  "worldVibrancyHot": "🔥 熱鬧",
+  "worldVibrancyWarm": "🌤 正常",
+  "worldVibrancyCold": "🌙 冷清",
+  "worldVibrancyDetail": "{speakers} 人在聊 · {messages} 條",
+  "@worldVibrancyDetail": {
+    "placeholders": {
+      "speakers": {
+        "type": "String"
+      },
+      "messages": {
+        "type": "String"
+      }
+    }
+  },
+  "worldVibrancyObservedHint": "（條數為本機觀測，非服務端精確值）",
+  "worldBridgeSection": "朋友池互薦",
+  "worldBridgeNone": "本房間暫無圈外人可互薦（同圈或已相識者不重複推薦）。",
+  "worldBridgeCount": "{count} 位圈外人可互薦",
+  "@worldBridgeCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeSharedRooms": "共同 {count} 個房間",
+  "@worldBridgeSharedRooms": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeMsgCount": "{count} 條發言",
+  "@worldBridgeMsgCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeRecommend": "建議互介",
+  "worldBridgeTooltip": "建議互介（跨圈）",
+  "worldBridgeSameCircle": "同圈",
+  "worldBridgeAlreadyLinked": "已相識",
+  "worldBridgeWhyLine": "憑什麼推薦：{detail}",
+  "@worldBridgeWhyLine": {
+    "placeholders": {
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeRoomProvenance": "因「{room}」相識",
+  "@worldBridgeRoomProvenance": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeCircleLine": "以「{circle}」的名義互介",
+  "@worldBridgeCircleLine": {
+    "placeholders": {
+      "circle": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeNoCircle": "你還沒有自己的圈 —— 先入場進圈，再發起跨圈互介。",
+  "worldBridgeLinkCreated": "✅ 已建立跨圈邊：因「{room}」認識了他",
+  "@worldBridgeLinkCreated": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      }
+    }
+  },
+  "worldBridgeLinkFailed": "建立跨圈邊失敗，請稍後重試。",
+  "worldBridgeBlockedTitle": "無法建立跨圈邊",
+  "worldBridgeBlockedNotInRoom": "這個人沒有在該房間出現過 —— 跨圈邊必須有房間出處，不能憑一個 ID 就宣稱認識。",
+  "worldBridgeBlockedSameCircle": "你們已在同一個圈裡，圈內本來就有邊，無需跨圈互介。",
+  "worldBridgeBlockedAlreadyLinked": "你們已經相識（互介 / 委託 / 通訊錄），走既有關係即可，不佔跨圈邊的名額。",
+  "worldBridgeBlockedSelf": "不能和自己互介。",
+  "worldBridgeBlockedNoRoom": "缺少房間出處，無法建立跨圈邊。",
+  "worldBridgeBlockedDuplicate": "這條跨圈邊已經存在（冪等，不重複記賬）。",
+  "worldMetricTitle": "跨圈連線",
+  "worldMetricLine": "我建過 {links} 條跨圈邊 · 接觸過 {known} 個分身 · 人均 {perCapita}",
+  "@worldMetricLine": {
+    "placeholders": {
+      "links": {
+        "type": "String"
+      },
+      "known": {
+        "type": "String"
+      },
+      "perCapita": {
+        "type": "String"
+      }
+    }
+  },
+  "worldMetricNoData": "暫無跨圈資料 —— 先在世界房間裡遇到圈外人。",
+  "privacyOnlyHumanTitle": "只接受真人訊息",
+  "privacyOnlyHumanSubtitle": "開啟後，對方分身只能把訊息轉達給你，不能替你回覆。",
+  "privacyLocalFirst": "預設情況下，你的資料留在本機。",
+  "delegationTitle": "託辦",
+  "delegationTabInbox": "託我辦",
+  "delegationTabOutbox": "我託的",
+  "delegationTabCircle": "我的圈",
+  "delegationEmptyInbox": "還沒有人託你的分身辦事。",
+  "delegationEmptyOutbox": "你還沒有發起過託辦。",
+  "delegationNew": "發起託辦",
+  "delegationTo": "託給誰",
+  "delegationTaskHint": "例如：幫我問下老王週末有沒有空",
+  "delegationSent": "已下達，等對方分身回執。",
+  "delegationOfflineQueued": "已存在本機。現在沒有任何一條通道能觸達對方，等通道打通再送。",
+  "delegationAskResponse": "要帶回去的話（可留空）",
+  "delegationActDone": "辦好了",
+  "delegationActNeedsHuman": "需本人確認",
+  "delegationActRespond": "回應",
+  "delegationActDecline": "拒絕",
+  "delegationRevoke": "撤銷",
+  "delegationRevoked": "已撤銷",
+  "delegationRevokeConfirm": "撤銷這條託辦？會留痕為「已撤銷」。",
+  "delegationStatePending": "待回執",
+  "delegationStateAnswered": "已回執",
+  "delegationStateNeedsHuman": "需本人確認",
+  "delegationStateDeclined": "已拒絕",
+  "delegationStateRevoked": "已撤銷",
+  "delegationBlockedTitle": "這條分身不能代發",
+  "delegationBlockedBody": "分身不在使用者之間轉錢——這是設計上就沒有金額欄位，不是沒填。請你自己發這一句。",
+  "delegationEmptyTask": "先寫清楚要託辦什麼。",
+  "delegationNoPeer": "先選一個要託的物件。",
+  "circleTitle": "我的圈",
+  "circleCreate": "建一個圈",
+  "circleNameHint": "例如：週六足球、里斯本同城",
+  "circleCreated": "圈已建好。",
+  "circleInviteCode": "邀請碼",
+  "circleGenerateInvite": "生成邀請碼",
+  "circleJoin": "用邀請碼入圈",
+  "circleJoinHint": "貼上對方給你的邀請碼",
+  "circleJoined": "已入圈。",
+  "circleJoinFailed": "邀請碼無效或已過期。",
+  "circleVisibleSummary": "可見 {n} 個分身 · 其中 {m} 個不是邀請者",
+  "circleAcceptancePass": "驗收透過（需 ≥3 個可見，且 ≥2 個非邀請者）",
+  "circleAcceptanceFail": "尚未達標——再邀請幾個鄰居吧",
+  "circleFallbackNote": "其中 {n} 個來自兜底（{src}）—— 不是圈內成員",
+  "@circleFallbackNote": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "src": {
+        "type": "String"
+      }
+    }
+  },
+  "circleMemberCount": "{n} 位成員",
+  "telemetryCounts": "埋點計數（驗收自檢）",
+  "telemetryEmpty": "還沒有埋點資料。",
+  "dashboardTitle": "看板",
+  "dashboardFunnelTitle": "每週漏斗",
+  "dashboardColWeek": "周",
+  "dashboardColOnboarding": "接入",
+  "dashboardColCircle": "進圈",
+  "dashboardColDelegation": "委託完成",
+  "dashboardColIntercard": "互介",
+  "dashboardColHandshake": "握手",
+  "dashboardColActive": "活躍",
+  "dashboardTtfd": "TTFD 中位數",
+  "dashboardDelta": "披露代價 Δ",
+  "dashboardDeltaHint": "不披露組回覆率 − 披露組回覆率（Phase −1）。",
+  "dashboardNoData": "還沒有埋點資料——先跑一會兒 App。",
+  "dashboardSourceHint": "來源：本機埋點（僅本裝置）。",
+  "digestTitle": "今日摘要",
+  "digestEmpty": "過去 24 小時沒有新動態。",
+  "digestSectionPending": "等你回執",
+  "digestSectionMine": "我託的",
+  "digestSectionCircle": "圈子",
+  "digestSectionStats": "數一數",
+  "digestStatDone": "條託辦辦妥",
+  "digestStatHandshake": "次真人握手",
+  "digestActionOpenInbox": "去回執",
+  "digestActionOpenOutbox": "看我託的",
+  "digestActionOpenCircle": "看我的圈",
+  "digestActionOpenDashboard": "看看板",
+  "digestNotePlain": "你被分到「純摘要」組（A/B 實驗）。",
+  "digestNoteAction": "你被分到「帶動作」組（A/B 實驗）。",
+  "morningGreetingMorning": "早安",
+  "morningGreetingNoon": "午安",
+  "morningGreetingEvening": "晚上好",
+  "morningGreetingBody": "這是你最近三天的小結：",
+  "morningHiPending": "{count} 件委託等你回執",
+  "@morningHiPending": {
+    "description": "morning digest morningHiPending",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "morningHiSent": "你託出了 {count} 件事",
+  "@morningHiSent": {
+    "description": "morning digest morningHiSent",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "morningHiCircle": "新加入了 {count} 個圈子",
+  "@morningHiCircle": {
+    "description": "morning digest morningHiCircle",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "morningHiTopics": "常聊：{topics}",
+  "@morningHiTopics": {
+    "description": "morning digest morningHiTopics",
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      }
+    }
+  },
+  "morningHiLongTerm": "長期關注：{topics}",
+  "@morningHiLongTerm": {
+    "description": "morning digest morningHiLongTerm",
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      }
+    }
+  },
+  "morningEmpty": "最近三天很安靜，好好享受今天。",
+  "notifyMorningTitle": "早安，這是你的最近三天回顧",
+  "notifyMorningBody": "分身幫你整理了最近三天的事。",
+  "notifyMorningBodyPending": "你有 {count} 件委託待回執，分身幫你整理了最近三天的事。",
+  "@notifyMorningBodyPending": {
+    "description": "morning digest notifyMorningBodyPending",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "digestSectionChat": "你與分身的對話",
+  "digestChatSummary": "{sessions} 段對話 · {turns} 輪 · 跨 {days} 天",
+  "@digestChatSummary": {
+    "description": "morning digest digestChatSummary",
+    "placeholders": {
+      "sessions": {
+        "type": "int"
+      },
+      "turns": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "digestChatTopics": "常聊：{topics}",
+  "@digestChatTopics": {
+    "description": "morning digest digestChatTopics",
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      }
+    }
+  },
+  "intercardDialogTitle": "分身互介卡",
+  "intercardReasonLabel": "為什麼值得認識",
+  "intercardTopicsLabel": "3 個可聊話題（逗號分隔）",
+  "intercardConfirmSend": "確認併傳送",
+  "intercardReceivedTitle": "收到的互介卡",
+  "intercardMineTitle": "我發出的互介卡",
+  "intercardBlockedTitle": "這張卡被攔下",
+  "intercardBlockedL3": "檢測到僅本人可見的值出現在卡文字里。",
+  "intercardEmptyContent": "先寫為什麼值得認識和話題。",
+  "intercardSentOk": "已發出（24h 內可撤回）。",
+  "intercardRevoke": "撤回",
+  "intercardNone": "還沒有互介卡。",
+  "intercardRevoked": "已撤回。",
+  "intercardRevokeHint": "已發出 · 24h 內可撤回。",
+  "intercardSent": "已發出。",
+  "intercardFrom": "{owner} 的主人簽名介紹。",
+  "@intercardFrom": {
+    "placeholders": {
+      "owner": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlTitle": "手機控制",
+  "deviceControlRefreshStatus": "重新整理狀態",
+  "deviceControlUnsupported": "當前構建不支援手機控制",
+  "deviceControlServiceConnected": "無障礙服務：已連線",
+  "deviceControlServiceCheckedNotConnected": "無障礙服務：已勾選，但未連線",
+  "deviceControlServiceOff": "無障礙服務：未開啟",
+  "deviceControlStatusUnknown": "狀態未知",
+  "deviceControlGoSystemHint": "請在系統列表裡找到「大荒AI」並開啟開關，然後回到這裡重新整理",
+  "deviceControlGoSettings": "去系統設定開啟",
+  "deviceControlRedetect": "重新檢測",
+  "deviceControlRedetectTip": "提示：如果反覆檢測都連不上，請到系統設定裡把「大荒AI 螢幕助手」關掉再開啟一次，或重啟一次 App——部分手機會在後臺清理時斷開無障礙服務。",
+  "deviceControlAllowTitle": "允許智慧體操作手機",
+  "deviceControlAllowSubReady": "開啟後，智慧體可以讀屏、點選、輸入、開啟應用；首次使用會向你確認一次",
+  "deviceControlAllowSubChecked": "系統裡已勾選，但服務還沒連上：先點上方「重新檢測」",
+  "deviceControlAllowSubNeedService": "需要先開啟系統無障礙服務，這個開關才可用",
+  "deviceControlToolsHeader": "開啟後會掛載這些能力",
+  "deviceControlToolReadScreen": "讀取螢幕上顯示的文字與可點元素",
+  "deviceControlToolTap": "按文字或座標點選",
+  "deviceControlToolInput": "在輸入框裡打字",
+  "deviceControlToolSwipe": "滑動翻頁、滾動列表",
+  "deviceControlToolPressKey": "返回 / 主頁 / 最近任務 / 回車",
+  "deviceControlToolOpenApp": "開啟指定應用（包名）",
+  "deviceControlDenylistTitle": "敏感應用黑名單",
+  "deviceControlDenylistBody": "這些應用在前臺時，智慧體不會執行任何操作（銀行、支付、密碼管理器、系統設定）。一行一個包名，也支援逗號分隔。",
+  "deviceControlSaveDenylist": "儲存黑名單",
+  "deviceControlResetDefault": "恢復預設",
+  "deviceControlFooter": "說明：手機控制基於安卓無障礙服務，不需要 root，也不需要額外外掛。\n· 關掉上面的開關，相關工具會立刻從智慧體手裡撤銷；\n· 每個動作都會寫進審計記錄，可在「管理設定」裡回看；\n· 智慧體永遠不會對你沒有授權的應用動手。",
+  "deviceControlToastNeedAccessibility": "請先在系統設定裡開啟「大荒AI」的無障礙服務",
+  "deviceControlToastOn": "手機控制已開啟：首次使用時仍會向你確認一次",
+  "deviceControlToastOff": "手機控制已關閉，相關工具已撤銷",
+  "deviceControlToastSaved": "黑名單已儲存（共 {n} 條）",
+  "@deviceControlToastSaved": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlToastReset": "已恢復預設黑名單",
+  "contactDefaultAgentName": "野生 Agent",
+  "contactDefaultMasterName": "物理探測",
+  "contactDefaultNotes": "暫無備註",
+  "contactSendingThroughGateway": "⚡ 正在穿透閘道器直接傳送...",
+  "contactEditTitle": "修改智慧體名冊備註",
+  "contactEditAgentLabel": "智慧體暱稱",
+  "contactEditMasterLabel": "主人身份備註",
+  "contactEditNotesLabel": "檔案小秘密",
+  "contactEditConfirm": "確認同步",
+  "contactEditSaved": "✅ 捕獲名冊備註已鎖定同步！",
+  "contactRequestReco": "索取推薦信",
+  "contactSendGift": "贈送禮物",
+  "contactGiftSent": "{gift} 已送出，等待對方簽收",
+  "@contactGiftSent": {
+    "placeholders": {
+      "gift": {
+        "type": "String"
+      }
+    }
+  },
+  "contactGiftFailed": "禮物傳送失敗：對方不線上或未在任何通道",
+  "contactRecoRequested": "🤝 已發出推薦信請求，對方將按其本地信譽決定是否簽發",
+  "contactRecoFailed": "請求傳送失敗：對方不在任何線上通道",
+  "contactTierBlockToast": "信譽過低，建議在捕獲名冊中直接“刪除拉黑”該節點",
+  "contactTierAdjusted": "✅ 已按信譽建議調整為 {tier}",
+  "@contactTierAdjusted": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "contactTierFriend": "可升級為好友",
+  "contactTierFamily": "可升級為家人",
+  "contactTierStranger": "建議降級為陌生人",
+  "contactTierBlock": "建議拉黑",
+  "contactStatusLocked": "雷達已鎖定",
+  "contactStatusSent": "等待回應",
+  "contactStatusReceived": "等待主代稽核",
+  "contactStatusAccepted": "暢聊中",
+  "contactStatusRejected": "已物理攔截",
+  "contactOwnerLine": "主人: {name}",
+  "@contactOwnerLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "contactOnline": "線上",
+  "contactOutOfRange": "超出範圍",
+  "contactReputation": "📊 信譽 {score}",
+  "@contactReputation": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "contactGiftStats": "🎁 送{sent}/收{received}",
+  "@contactGiftStats": {
+    "placeholders": {
+      "sent": {
+        "type": "String"
+      },
+      "received": {
+        "type": "String"
+      }
+    }
+  },
+  "contactTierBlockBanner": "⚠️ 信譽過低，建議拉黑（點選檢視）",
+  "contactTierHintBanner": "💡 信譽建議：{suggestion}（點選應用）",
+  "@contactTierHintBanner": {
+    "placeholders": {
+      "suggestion": {
+        "type": "String"
+      }
+    }
+  },
+  "contactNotesLine": "📝 備註檔案：{notes}",
+  "@contactNotesLine": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "contactEmptyChat": "暫無對話。\n下方輸入直接與對方對話！",
+  "contactSayHint": "強制搭話，輸入內容...",
+  "dshImportTitle": "從 DSH 生態匯入",
+  "dshImportClipboardEmpty": "剪貼簿是空的",
+  "dshImportNoFileContent": "沒有讀到檔案內容，請換一種方式選擇",
+  "dshImportPickFailed": "選擇檔案失敗：{err}",
+  "@dshImportPickFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportPasteSkillFirst": "請先貼上 SKILL.md 的內容",
+  "dshImportIntroTitle": "借力整個 DSH 生態",
+  "dshImportIntroBody": "DSH 的外掛是 TypeScript 寫的，手機上不能直接跑；\n但其中的技能、MCP 服務可以原樣搬過來用。\n\n為安全起見：匯入的外掛一律預設關閉，且帶裝置簽名校驗，必須由你手動開啟後才會生效。",
+  "dshImportSecSkillTitle": "① 匯入技能（SKILL.md）",
+  "dshImportSecSkillSub": "純文字技能可以 100% 直譯，是 DSH 生態裡最好搬的部分。貼上一份內容，或一次選擇多個 .md 檔案。",
+  "dshImportSkillHint": "貼上 SKILL.md 全文（含 --- 頭部的 name / description）",
+  "dshImportPaste": "貼上",
+  "dshImportPickFiles": "選擇檔案",
+  "dshImportImport": "匯入",
+  "dshImportSecMcpTitle": "② 匯入 MCP 服務",
+  "dshImportSecMcpSub": "MCP 是通用協議，不依賴語言，填地址就能直連。支援貼上 dsh / Claude 風格的 mcpServers 配置。",
+  "dshImportMcpHint": "例如 {example}\n也可以只粘一個 https:// 地址",
+  "@dshImportMcpHint": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportSecInspectTitle": "③ 外掛包體檢",
+  "dshImportSecInspectSub": "拿到一個 DSH 外掛包，先體檢再決定要不要折騰。貼上包裡的 package.json（必需）和 cordis.patch.yml（可選）。",
+  "dshImportPackageJsonHint": "貼上 package.json 全文",
+  "dshImportPatchHint": "貼上 cordis.patch.yml 全文（可選）",
+  "dshImportPastePackageJson": "貼上 package.json",
+  "dshImportStartInspect": "開始體檢",
+  "dshImportGoToolCenter": "去技能控制中心開啟剛匯入的外掛",
+  "dshImportSummaryImportedOk": "成功匯入 {n} 項",
+  "@dshImportSummaryImportedOk": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportSummarySkipped": "，跳過 {n} 項",
+  "@dshImportSummarySkipped": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportListSeparator": "、",
+  "dshImportImportedLine": "✅ {names}",
+  "@dshImportImportedLine": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportSkippedLine": "⚠️ {name}：{reason}",
+  "@dshImportSkippedLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "dshImportNoteLine": "ℹ️ {note}",
+  "@dshImportNoteLine": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "dshSkipDuplicateSkill": "已有同名技能，未覆蓋",
+  "dshSkipDuplicateMcp": "已有同名 MCP 配置，未覆蓋",
+  "dshSkipInvalidJson": "這段內容不是合法 JSON，也不是網址",
+  "dshSkipCommandLineMcp": "這是命令列型 MCP（需要在本機啟動程序），手機上跑不了；請改用 HTTP 地址",
+  "dshSkipNoUrlField": "這條配置裡找不到 url 欄位",
+  "dshSkipMissingNameUrl": "缺少 name 或 url",
+  "dshSkipUnrecognizedJson": "無法識別的 JSON 結構",
+  "dshSkipInvalidScheme": "地址必須以 http:// 或 https:// 開頭",
+  "dshSkipSubjectConfig": "配置",
+  "dshSkipSubjectConfigParseFailed": "配置解析失敗",
+  "dshSkipSubjectUnnamedEntry": "未命名條目",
+  "dshNoteSkillDefaultsOff": "匯入的技能預設關閉，請到「技能控制中心」按需開啟；開啟後它會影響智慧體的說話方式與行為準則。",
+  "dshNoteMcpDefaultsOff": "匯入的 MCP 服務預設關閉。開啟並首次使用時，系統會提示授予「網路訪問」能力，授權後才會真正連線。",
+  "dshNotePasteMcpFirst": "請先貼上 MCP 配置或地址",
+  "dshInspectErrPackageFormat": "❌ package.json 解析失敗：{msg}",
+  "@dshInspectErrPackageFormat": {
+    "placeholders": {
+      "msg": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectErrPackageNotJson": "❌ package.json 不是合法 JSON：{msg}",
+  "@dshInspectErrPackageNotJson": {
+    "placeholders": {
+      "msg": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectErrPatchFormat": "❌ cordis.patch.yml 解析失敗：{msg}",
+  "@dshInspectErrPatchFormat": {
+    "placeholders": {
+      "msg": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectPackageLine": "外掛包：{name}",
+  "@dshInspectPackageLine": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectBundleLine": "組合檔案：{path}",
+  "@dshInspectBundleLine": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectProfileBundlesLine": "依賴組合包：{list}",
+  "@dshInspectProfileBundlesLine": {
+    "placeholders": {
+      "list": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectNoPatchHint": "ℹ️ 沒有提供 cordis.patch.yml，只能看到包的基本資訊。把外掛包裡的該檔案內容也粘進來，才能判斷哪些能搬到手機上。",
+  "dshInspectRowCountLine": "共 {n} 個外掛行，體檢結果：",
+  "@dshInspectRowCountLine": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectGroupLine": "【{verdict}】 共 {n} 行",
+  "@dshInspectGroupLine": {
+    "placeholders": {
+      "verdict": {
+        "type": "String"
+      },
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectMoreRowsLine": "  · …另有 {n} 行",
+  "@dshInspectMoreRowsLine": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectConclusionLine": "結論：可直接匯入 {skill} 行技能 + {mcp} 行 MCP；{heavy} 行屬於「必須在 Dart 側重寫或依賴桌面環境」，本機無法直接執行。",
+  "@dshInspectConclusionLine": {
+    "placeholders": {
+      "skill": {
+        "type": "String"
+      },
+      "mcp": {
+        "type": "String"
+      },
+      "heavy": {
+        "type": "String"
+      }
+    }
+  },
+  "dshInspectVerdictDirectSkill": "✅ 可直接匯入（技能）",
+  "dshInspectVerdictMcpServer": "✅ 可直接連線（MCP 服務）",
+  "dshInspectVerdictConfigOnly": "⚙️ 僅配置項（無需移植）",
+  "dshInspectVerdictPlatformGated": "🖥️ 依賴桌面環境（手機上不可用）",
+  "dshInspectVerdictNeedsDart": "🧱 需要 Dart 側重寫（含 TS 程式碼）",
+  "chatCleared": "🧹 已清空工作區與 LLM 記憶，開啟新會話！",
+  "chatImageOptionsTitle": "傳送影象或視覺內容",
+  "chatTakePhoto": "拍攝照片",
+  "chatPickFromAlbum": "相簿選擇",
+  "chatAudioOptionsTitle": "傳送音訊或錄音",
+  "chatStartRecording": "開始錄音",
+  "chatLocalAudio": "本地音訊",
+  "chatOpenCameraFailed": "開啟相機失敗：{err}",
+  "@chatOpenCameraFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatOpenAlbumFailed": "開啟相簿失敗：{err}",
+  "@chatOpenAlbumFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatPickAudioFailed": "選擇音訊檔案失敗：{err}",
+  "@chatPickAudioFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatNoMicPermission": "沒有麥克風許可權：請在系統設定裡允許「錄音」許可權後重試",
+  "chatStartRecordingFailed": "開始錄音失敗：{err}",
+  "@chatStartRecordingFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "chatWelcomeBack": "歡迎回來，主人！",
+  "chatAgentReady": "AI 管家已就緒，隨時待命",
+  "chatQuickTechTitle": "🔍 今日科技新聞",
+  "chatQuickTechPrompt": "幫我搜尋今天最新的 AI 科技新聞並彙總。",
+  "chatQuickRadarTitle": "📡 掃描附近的人",
+  "chatQuickRadarPrompt": "檢查物理雷達，周圍有什麼活躍節點嗎？",
+  "chatQuickProfileTitle": "📝 提煉我的檔案",
+  "chatQuickProfilePrompt": "根據昨天的聊天，我有什麼新的喜好被你發現了嗎？",
+  "chatAudioFile": "音訊檔案",
+  "chatRecording": "🔴 正在錄音...",
+  "chatInputHint": "給管家傳送指令...",
+  "profileSavedToast": "🔒 主人絕密檔案已存檔",
+  "profileAddPerson": "新增關係人物",
+  "profileEditPerson": "修改人物資訊",
+  "profileNameLabel": "名字 (例如：小美)",
+  "profileRelationLabel": "社會關係 (例如：妻子)",
+  "profileIdentityLabel": "身份備註 (例如：小學老師)",
+  "profileSecretLabel": "細節秘密 (如: 喜歡草莓)",
+  "profileSaveVault": "儲存並鎖入保險箱",
+  "profileTitle": "主人絕密檔案 & 人際網",
+  "profilePreferenceHeader": "👤 主人偏好設定",
+  "profileJobLabel": "職業 (Job)",
+  "profileHobbiesLabel": "喜好特長 (Hobbies)",
+  "profileDislikesLabel": "忌諱討厭 (Dislikes)",
+  "profileOtherLabel": "其他備註 (Other Notes) - 隨意寫",
+  "profileSaveBase": "💾 儲存基本偏好 (鎖入本地庫)",
+  "profileNetworkHeader": "🔗 絕密人物關係網",
+  "profileAdd": "新增",
+  "profileNetworkEmpty": "空空如也，點選右上角新增",
+  "profileDetailLine": "📝 細節：{notes}",
+  "@profileDetailLine": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "profileAiReadable": "🔓 AI 已獲授權讀取此人資訊",
+  "profileAiIsolated": "🔒 AI 已被物理隔離此人資訊",
+  "giftPickerTitle": "🎁 挑一份心意",
+  "giftNoteLabel": "附一句話（可選）",
+  "giftNoteHint": "例如：謝謝上次幫忙",
+  "giftSend": "送出",
+  "giftNameTea": "一杯茶",
+  "giftNameBook": "一本書",
+  "giftNameFlower": "一束花",
+  "giftNameCake": "一塊蛋糕",
+  "giftNameMysteryBox": "神秘禮盒",
+  "giftNameStar": "一顆星",
+  "themeRed": "紅",
+  "themeOrange": "橙",
+  "themeYellow": "黃",
+  "themeGreen": "綠",
+  "themeCyan": "青",
+  "themeBlue": "藍",
+  "themePurple": "紫",
+  "themeWhite": "白",
+  "themeBlack": "黑",
+  "mainClearSession": "清空並新開會話",
+  "mainNavChat": "日常交流",
+  "mainNavSocial": "小荒社區",
+  "mainNavWorld": "大荒世界",
+  "mainNavSerendipity": "轉運實驗",
+  "mainNavManage": "管理設定",
+  "topicChatLogSuffix": "{range} 聊天記錄",
+  "@topicChatLogSuffix": {
+    "placeholders": {
+      "range": {
+        "type": "String"
+      }
+    }
+  },
+  "topicArchiveTitle": "智慧記憶歸檔",
+  "topicTabTimeline": "時間軸 (Timeline)",
+  "topicTabTopics": "主題樹 (Topics)",
+  "topicEmptyArchive": "暫無歸檔資料",
+  "topicNoTag": "無標籤",
+  "topicDailyChat": "日常閒聊",
+  "topicCountLabel": "{count}條",
+  "@topicCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "topicKeywordLine": "🏷️ {keywords}",
+  "@topicKeywordLine": {
+    "placeholders": {
+      "keywords": {
+        "type": "String"
+      }
+    }
+  },
+  "digestToResponse": "{to}：{response}",
+  "@digestToResponse": {
+    "placeholders": {
+      "to": {
+        "type": "String"
+      },
+      "response": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlStatusReady": "手機控制已就緒：智慧體可以讀屏、點選、輸入",
+  "deviceControlStatusUnsupportedShort": "當前構建未包含手機控制模組",
+  "deviceControlStatusUnsupportedFull": "當前構建未包含手機控制模組（需要安卓端無障礙服務）",
+  "deviceControlStatusCheckedOffline": "系統裡已勾選，但服務還沒連上。先點右上角重新整理；若仍不行，把系統設定裡的開關關掉再開啟一次（或重啟 App）",
+  "deviceControlStatusOff": "還沒有在系統設定裡開啟無障礙服務",
+  "deviceControlStatusQueryFailed": "狀態查詢失敗：{err}",
+  "@deviceControlStatusQueryFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceControlGuardBlocked": "當前前臺應用（{pkg}）在安全黑名單裡，智慧體不會對它執行任何操作。如確實需要，請在「手機控制」設定頁裡移除該限制。",
+  "@deviceControlGuardBlocked": {
+    "placeholders": {
+      "pkg": {
+        "type": "String"
+      }
+    }
+  },
+  "commonNetworkError": "網路異常：{err}",
+  "@commonNetworkError": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "netFaultLanHijackAdvice": "🤖【智慧體自我診斷報告】\n主人，我的大模型連不上網了！\n這通常是因為我們開啟了物理雷達（Nearby/區域網），而當前 Wi-Fi 所在的區域網沒有外網出口 —— 裝置之間能互相發現，卻出不了公網，所以我調不了雲端大模型。\n\n建議：① 暫時關閉物理雷達；② 或下拉狀態列關掉 Wi-Fi、改走蜂窩資料；③ 或在手機設定裡開啟「智慧切換蜂窩網路」。\n目前我只能保持底層的物理連線監聽了。",
+  "netFaultSocialSkipped": "❌ 連不上雲端大模型：網路不可達。若已開啟物理雷達，當前 Wi-Fi 的區域網很可能沒有外網出口 —— 裝置之間能互相發現，但出不了公網。本輪已跳過。\n建議：關閉物理雷達，或關掉 Wi-Fi 改用蜂窩資料後重試。\n原因：{err}",
+  "@netFaultSocialSkipped": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "socialPipelineError": "❌ 社交決策流水線異常，本輪已終止：{err}",
+  "@socialPipelineError": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "netFaultNetworkTrouble": "❌ 連不上雲端大模型（網路異常，不是程式碼問題）。\n可能是網路正在切換、運營商鏈路受阻，或當前 Wi-Fi 沒有外網出口。\n建議：① 關掉 Wi-Fi 改走蜂窩資料；② 或在手機設定裡開啟「智慧切換蜂窩網路」；③ 稍後重試。\n原因：{err}",
+  "@netFaultNetworkTrouble": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "netFaultCooldownSkipped": "⏸ 網路連續故障，已暫停呼叫大模型（10 分鐘內不再重試，避免白燒額度）。",
+  "worldSvcNoHub": "未配置雲端 Hub / 世界地址",
+  "worldSvcMustBeHttps": "世界地址必須是 HTTPS 或區域網私有地址",
+  "worldSvcRoomsFailed": "房間列表獲取失敗：{code} {body}",
+  "@worldSvcRoomsFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "worldSvcOpFailed": "操作失敗({code})：{body}",
+  "@worldSvcOpFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "worldSvcReportFailed": "日報獲取失敗：{code}",
+  "@worldSvcReportFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "godSvcMustBeHttps": "GOD 地址必須是 HTTPS，或區域網私有地址",
+  "godSvcStatusFailed": "狀態獲取失敗({code})：{body}",
+  "@godSvcStatusFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "godSvcNoBridge": "未配置 GOD 橋接地址",
+  "godSvcCmdFailed": "指令失敗({code})：{body}",
+  "@godSvcCmdFailed": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "passportTitle": "護照與信譽",
+  "passportEntryTile": "大荒護照",
+  "passportEntryHint": "可驗證簽名履歷 · 離線可驗",
+  "passportCardHeader": "我的大荒護照",
+  "passportIssuedLabel": "簽發",
+  "passportCopyAction": "複製身份",
+  "passportRefreshAction": "重新整理",
+  "passportCopiedToast": "已複製",
+  "passportStatLine": "{label}：{value}",
+  "@passportStatLine": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "passportLedgerHeader": "互介履歷",
+  "passportLedgerEmpty": "還沒有互介記錄。去世界房間認識幾個人吧。",
+  "passportDirectionOut": "我發起",
+  "passportDirectionIn": "我收到",
+  "passportPeerLabel": "對方",
+  "passportTopicLabel": "主題",
+  "passportRoomLabel": "源於房間",
+  "passportTrustLabel": "可驗證等級",
+  "passportTrustNone": "未透過驗證",
+  "passportTrustInitiated": "僅發起方已籤",
+  "passportTrustConsented": "雙方已互允",
+  "passportTrustResolved": "已落結果",
+  "passportTrustAcknowledged": "雙方已追認",
+  "passportOutcomeLabel": "結果",
+  "passportOutcomeHandshake": "已握手",
+  "passportOutcomeDeclined": "已拒絕",
+  "passportOutcomeNoResponse": "無回應",
+  "passportOutcomeWithdrawn": "已撤回",
+  "passportVerifyDetails": "驗證明細",
+  "passportChecksLabel": "已透過",
+  "passportFaultsLabel": "未透過",
+  "passportConsentAction": "同意這次互介",
+  "passportConsentDone": "已同意",
+  "passportResolveAction": "記錄結果",
+  "passportResolveTitle": "這次互介的結果",
+  "passportAckAction": "追認結果",
+  "passportAckDone": "已追認",
+  "passportActionDelivered": "已簽名並投遞",
+  "passportActionOffline": "已記賬；對方暫時聯絡不上，稍後會自動補送",
+  "passportActionRejected": "未生效（時序或身份不符）",
+  "passportFunnelHeader": "互介 → 握手轉化",
+  "passportFunnelProposedLabel": "發起",
+  "passportFunnelConsentedLabel": "雙方互允",
+  "passportFunnelHandshakeLabel": "握手",
+  "passportFunnelSettledLabel": "已落結果",
+  "passportFunnelInFlightLabel": "在途",
+  "passportFunnelConsentRateLabel": "互允率",
+  "passportFunnelConversionLabel": "轉化率",
+  "passportLogHeader": "透明日誌",
+  "passportLogSizeLabel": "當前期號",
+  "passportLogRootLabel": "Merkle 根",
+  "passportLogCopyAction": "複製根",
+  "passportNewIntroAction": "發起互介",
+  "passportNewIntroPeerLabel": "對方分身 ID",
+  "passportNewIntroTopicLabel": "一句話主題",
+  "passportNewIntroSubmit": "發起",
+  "passportNewIntroNeedPeer": "請填寫對方分身 ID",
+  "passportNewIntroNoCircle": "你還沒有圈子。先入場進圈，互介才有歸屬。",
+  "passportNewIntroDone": "已向 {peer} 發起互介並簽名",
+  "@passportNewIntroDone": {
+    "placeholders": {
+      "peer": {
+        "type": "String"
+      }
+    }
+  },
+  "radarNoticeStarted": "🛡️ 雷達開啟，{minutes}分鐘社交限時派對已開始...",
+  "radarNoticeStopped": "💤 雷達關閉，社交派對已結束。",
+  "radarNotifTitle": "Ai管家 雷達閘道器全速執行中",
+  "radarNotifText": "您的數字分身正在後臺物理世界為您不間斷社交...",
+  "radarNoticePartyEnded": "⏰ 限時派對時間已到，主智慧體已強制拔掉天線！",
+  "radarNoticeWrappingUp": "⏳ 社交時間不足10分鐘，子智慧體已準備道別。",
+  "cloudHubNotConfigured": "未配置雲端 Hub 地址",
+  "cloudKeyRequired": "這個中轉站需要存取 Key：請在「進階設定」填入營運方簽發的 Key",
+  "cloudKeyInvalid": "存取 Key 無效，請確認是否複製完整",
+  "cloudKeyRevoked": "這個存取 Key 已停用，請聯絡中轉站營運方",
+  "cloudKeyBound": "這個 Key 已綁定另一個身分，請換一個 Key（或走身分復原）",
+  "cloudAgentRevoked": "本機身分已被中轉站停用，無法再收發訊息",
+  "cloudRegisterClosed": "中轉站暫停了新使用者註冊",
+  "cloudRegisterIdentityConflict": "這個身分 ID 已綁定另一把金鑰：請走「身分復原／換鑰」，不要刪除身分",
+  "cloudRosterFailed": "名冊獲取失敗({status}): {body}",
+  "cloudNetworkError": "網路異常: {error}",
+  "cloudCardFailed": "名片獲取失敗({status})",
+  "identityChangedWarning": "🚨 身份突變：對方公鑰與歷史固定不一致（疑似中間人/換綁），握手已拒絕並大幅降信。",
+  "lanTunnelOpen": "⚡ 區域網物理通道(TCP/UDP)已打通！",
+  "lanTargetLost": "⚠️ Wi-Fi 物理目標脫離範圍。",
+  "p2pBtDisconnected": "⚠️ 藍芽連線斷開。",
+  "repEventLog": "信譽{delta}（{event}）{detail}",
+  "repEventDetailSuffix": "：{detail}",
+  "repGiftLogIncoming": "{gift} 來自節點的一份心意{note}",
+  "repGiftLogOutgoing": "{gift} 送給節點的一份心意{note}",
+  "repGiftNoteQuoted": "：“{note}”",
+  "repGiftMemoryIncoming": "{name} 送來禮物 {gift} {note}",
+  "repGiftMemoryOutgoing": "{name} 收到了你贈送的禮物 {gift} {note}",
+  "repGiftMemoryNote": "（{note}）",
+  "repRecoLog": "🤝 收到推薦信：信譽 {score}（{date} 簽發，已驗籤）",
+  "repRecoMemory": "收到 {issuer} 的推薦信（信譽 {score}，{date} 簽發）",
+  "repNetHeader": "網路背書",
+  "repNetAnchors": "{count} 個錨點（本地信譽 ≥ {min}）",
+  "repNetMineLabel": "我背書的人",
+  "repNetForMeLabel": "背書我的人",
+  "repNetEmpty": "還沒有",
+  "repNetIssueAction": "簽發背書",
+  "repNetIssueTitle": "籤一份背書",
+  "repNetIssueSubjectLabel": "對方的護照 DID 或公鑰",
+  "repNetIssueNeedSubject": "請貼上對方的 DID（did:wold:…）或公鑰",
+  "repNetIssueBadSubject": "這不是合法的 DID 或公鑰",
+  "repNetIssueTierLabel": "檔位",
+  "repNetIssueNoteLabel": "附言（可選）",
+  "repNetIssueBindLabel": "他的 Agent ID（可選；填了才把他接進信任網路）",
+  "repNetTierAcquaintance": "泛泛之交",
+  "repNetTierFriend": "朋友",
+  "repNetTierFamily": "家人",
+  "repNetIssuedToast": "背書已簽名並落庫",
+  "repNetFailedToast": "被拒：{code}",
+  "repNetSelfReject": "不能給自己背書",
+  "repNetExpiresLabel": "有效期至",
+  "repNetRevokeAction": "收回",
+  "repNetRevokedToast": "背書已收回",
+  "repNetBoundToast": "已記住 {id} 的公鑰",
+  "repNetVerifyAction": "驗籤",
+  "repNetVerifiedToast": "簽名有效",
+  "repNetBadSignatureToast": "簽名無效 —— 這份背書被改過",
+  "repNetQueryLabel": "查一個人",
+  "repNetQueryAction": "追溯",
+  "repNetQueryKnown": "{tier} · 距離 {depth} 跳 · 置信 {confidence} · {paths} 條通路",
+  "repNetQueryUnknown": "沒有可驗證的通路",
+  "repNetPathLabel": "證據鏈（每一跳你都能自己驗）",
+  "repNetPathStart": "你信任",
+  "repNetPathHop": "→ 他背書",
+  "repNetStatusRevoked": "已收回",
+  "repNetStatusExpired": "已過期",
+  "repNetKeysMerged": "已按換鑰鏈歸併 {count} 把歷史公鑰 —— 換鑰前收到的背書仍計入。",
+  "@repNetKeysMerged": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "skillMarketTitle": "技能市場",
+  "skillMarketSubtitle": "上架作者簽名技能，檢視自己的分成",
+  "skillRevenueTitle": "作者收益",
+  "skillRevenueTotal": "累計收益 {amount}",
+  "skillRevenueCount": "{count} 筆分賬",
+  "skillRevenueEmpty": "暫無收益",
+  "skillNoListings": "登錄檔裡還沒有任何技能。",
+  "skillPublishAction": "上架技能",
+  "skillPublishTitle": "簽名上架技能",
+  "skillFieldId": "技能 ID",
+  "skillFieldVersion": "版本號",
+  "skillFieldName": "名稱",
+  "skillFieldDesc": "描述",
+  "skillFieldPrice": "價格（元，0 表示免費）",
+  "skillFieldRisk": "風險等級",
+  "skillFieldCaps": "能力宣告",
+  "skillFieldContent": "技能內容（將被雜湊並簽名）",
+  "skillSubmit": "簽名並上架",
+  "skillNeedFields": "技能 ID、版本號、名稱、內容為必填",
+  "skillRevokeAction": "吊銷",
+  "skillRevokeConfirm": "吊銷 {skill}？此操作不可撤銷。",
+  "skillPublishedOk": "已上架 {skill}",
+  "skillPublishDuplicate": "同版本同內容已上架",
+  "skillPublishVersionConflict": "同版本內容不同，已拒絕",
+  "skillPublishAuthorChanged": "該技能 ID 屬於其他作者，已拒絕",
+  "skillPublishVersionNotIncreased": "版本號必須大於已上架版本",
+  "skillPublishUnverified": "簽名無效，已拒絕",
+  "skillRevokedOk": "已吊銷 {skill}",
+  "skillRevokeRejected": "吊銷被拒——你不是該技能的作者公鑰",
+  "skillMineTag": "我的",
+  "skillFree": "免費",
+  "skillPriceYuan": "¥{amount}",
+  "skillAuthorKey": "作者公鑰",
+  "skillRevokedTag": "已吊銷",
+  "skillVerifyAction": "校驗簽名",
+  "skillVerifyOk": "簽名有效",
+  "skillVerifyFail": "驗籤失敗：{code}",
+  "skillVersionHistory": "{count} 個版本",
+  "runtimeInitFailed": "本地執行時未能啟動，世界、圈子、委託等功能暫不可用，其餘功能正常。（{err}）",
+  "idbEntry": "身份備份與恢復",
+  "idbTitle": "身份備份與恢復",
+  "idbIntro": "你的身份就是這把鑰匙，而它只存在這臺手機上。手機丟了，身份就永久滅失 —— 連我們都無法重發。把恢復碼抄下來，那是唯一能把它帶回來的東西。",
+  "idbCurrentDid": "當前身份（DID）",
+  "idbNoScreenshotShort": "切勿截圖",
+  "idbSectionBackup": "備份身份",
+  "idbWarnNoScreenshot": "⚠️ 恢復碼就等於你的身份。請抄寫在紙上離線保管；不要截圖、不要存網盤、不要發給任何人（包括我們）。",
+  "idbPwLabel": "恢復口令（至少 10 位）",
+  "idbPwConfirmLabel": "再輸一次口令",
+  "idbPwMismatch": "兩次口令不一致",
+  "idbPwTooShort": "口令太短（至少 10 位）",
+  "idbGenerateAction": "生成恢復碼",
+  "idbCodeTitle": "你的恢復碼（抄下來）",
+  "idbCopyCode": "複製恢復碼",
+  "idbCopiedToast": "恢復碼已複製 —— 記得隨後清空剪貼簿",
+  "idbICopied": "我已抄下，並已離線妥善保管",
+  "idbNeedCopied": "請先確認你已抄下恢復碼",
+  "idbDoneToast": "身份已備份",
+  "idbSectionRestore": "換機恢復",
+  "idbRestoreAction": "恢復身份",
+  "idbRestoreCodeLabel": "恢復碼",
+  "idbRestoreIdLabel": "使用者 ID（AG-…）",
+  "idbRestorePwLabel": "恢復口令",
+  "idbRestoreCheckAction": "核對",
+  "idbRestoreNeedAll": "請填全恢復碼、使用者 ID 與口令",
+  "idbRestoreConfirmTitle": "確認這就是你要恢復的身份",
+  "idbRestoreConfirmBody": "你將恢復為：{did}\n\n恢復後本機接管這個身份，舊手機立即失效。",
+  "idbRestoreConfirmAction": "確認恢復",
+  "idbRestoreBusy": "正在換鑰…",
+  "idbRestoreOk": "恢復成功。舊手機上的身份已失效，請銷燬它的資料。",
+  "idbRestoreFail": "恢復失敗：{code}",
+  "idbErrHubNotConfigured": "尚未配置 Hub 地址，無法完成換鑰。請先在「世界」設定裡填寫伺服器地址。",
+  "idbErrIdMismatch": "使用者 ID 與恢復碼裡的身份不一致 —— 請檢查是不是拿錯了備份。",
+  "idbErrBadPassword": "口令不對，或恢復碼被改動過。",
+  "idbErrBadFormat": "恢復碼格式不對（請完整複製，別漏段）。",
+  "idbErrNotCurrentKey": "該身份的當前金鑰已經不是這把了 —— 它可能已經被換過鑰。",
+  "idbRestoreUnavailable": "本地身份尚未就緒，暫時無法備份 / 恢復。",
+  "idbStatusBackedUp": "身份已備份",
+  "idbStatusBackedUpHint": "當前這把鑰的恢復碼已抄下。日後用它恢復時，這臺裝置會當場失效。",
+  "idbStatusNotBackedUp": "身份未備份",
+  "idbStatusNotBackedUpHint": "手機一旦丟失或損壞，身份與全部履歷將永久消失 —— 包括我們在內，沒有任何人能替你重發。",
+  "arcSectionTitle": "匯出本地資料",
+  "arcExportAction": "匯出本地資料",
+  "arcExportNote": "為這份歸檔設一個口令。它不必與恢復碼的口令相同 —— 不同反而更好。",
+  "arcSavedTitle": "歸檔已生成",
+  "arcSavedPath": "已儲存到：",
+  "arcSavedNoPath": "沒能寫入檔案（沒有儲存許可權），但內容可以直接複製。",
+  "arcSavedHint": "檔案與口令請分開保管。沒有口令，這個檔案誰也打不開 —— 我們也不行。",
+  "arcImportAction": "匯入",
+  "arcImportNote": "選擇 .dahuang 檔案，或直接貼上內容。在你確認之前不會寫入任何東西；匯入只增不減，絕不覆蓋或刪除已有記錄。",
+  "arcPickFile": "選擇檔案",
+  "arcImportCodeLabel": "歸檔內容",
+  "arcImportConfirmTitle": "確認匯入這份歸檔？",
+  "arcImportConfirmBody": "將寫入 {rows} 行、涉及 {tables} 張表，並把日誌接續到第 {logsize} 片。已有記錄保留。",
+  "@arcImportConfirmBody": {
+    "placeholders": {
+      "rows": {
+        "type": "int"
+      },
+      "tables": {
+        "type": "int"
+      },
+      "logsize": {
+        "type": "int"
+      }
+    }
+  },
+  "arcImportOk": "匯入完成：寫入 {count} 行。",
+  "@arcImportOk": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "arcErrNotArchive": "這不是一份有效的 .dahuang 歸檔。",
+  "arcLogConflictTitle": "已拒絕匯入：日誌接不上",
+  "arcLogConflictBody": "本機透明日誌與歸檔裡的日誌對不上，硬接會讓雜湊鏈靜默斷裂（斷了一節，後面每一節仍然自洽）。本次未寫入任何內容。請把歸檔匯入到日誌為空的新裝置，或尋求協助。",
+  "onbBackupTitle": "備份你的身份",
+  "onbBackupSubtitle": "一串抄在紙上的恢復碼 —— 手機壞掉時，它是唯一的退路。",
+  "onbBackupWhyTitle": "為什麼要緊",
+  "onbBackupWhy": "你的身份是自證的：私鑰只在這臺手機上。手機一旦壞掉，身份與它名下的全部記錄將永久消失 —— 我們無法重發，因為我們從來就沒有這把鑰。",
+  "onbBackupDone": "恢復碼已抄下 —— 你有退路了。",
+  "onbSkipBackup": "暫不備份",
+  "onbSkipWarnTitle": "確定不備份就繼續？",
+  "onbSkipWarnBody": "沒有恢復碼，一旦丟失這臺手機，你的身份、履歷與信譽將永久失去，沒有任何人能幫你找回。之後仍可在「護照 → 身份備份」裡補做，但在那之前，你沒有退路。",
+  "onbSkipConfirm": "我明白，繼續",
+  "onboardingStepBackup": "備份身份",
+  "rcTitle": "換鑰鏈",
+  "rcIntro": "這個身份每換一次手機，就會在這裡留下一條有簽名、只追加的記錄。任何人都能取到同一份資料自行核對 —— 不需要任何賬號。",
+  "rcFetching": "正在取回…",
+  "rcRefreshAction": "重新整理",
+  "rcFetchFail": "取回失敗：{reason}",
+  "rcUnknownIdentity": "Hub 不認識這個身份。",
+  "rcNoRotations": "這個身份從未換過鑰。",
+  "rcSubjectTitle": "身份",
+  "rcAgentLabel": "User ID",
+  "rcDidLabel": "DID（身份錨）",
+  "rcCurrentKey": "當前活躍公鑰",
+  "rcRegisteredYes": "已在 Hub 註冊",
+  "rcRegisteredNo": "沒有註冊記錄",
+  "rcLocalVerifyAction": "我自己核對",
+  "rcVerifyingAction": "正在核對…",
+  "rcVerdictOk": "透過：每條記錄的簽名都有效，鏈首尾相接，末端正是 Hub 列為活躍的那把鑰。",
+  "rcVerdictSigInvalid": "不透過：有 {n} 條記錄的簽名對不上。",
+  "rcVerdictLinkMismatch": "不透過：鏈斷了 —— 有一條記錄接不上前一條。",
+  "rcVerdictTipNotActive": "不透過：末條記錄並沒有指向 Hub 列為活躍的那把鑰，說明這份清單裡漏了一次換鑰。",
+  "rcVerdictTitle": "我自己的核對",
+  "rcHubClaimTitle": "Hub 自己的說法",
+  "rcHubClaimOk": "Hub 報告：全庫鏈無斷裂。",
+  "rcHubClaimBroken": "Hub 報告：有 {n} 個身份的鏈是斷的。",
+  "rcRecordsTitle": "記錄",
+  "rcRecordSeq": "第 {i} 條",
+  "rcRecordFrom": "被退休的鑰",
+  "rcRecordTo": "接管的新鑰",
+  "rcRecordSigOk": "簽名有效",
+  "rcRecordSigBad": "簽名無效",
+  "rcAnchorTitle": "已錨定進公開日誌",
+  "rcAnchorNote": "日誌長度 {size}，Merkle 根 {root}。記住這個根，日後就能證明這份清單沒有被改寫。",
+  "dmTitle": "換到新手機",
+  "dmIntro": "你的身份是一把只存在手機上的鑰匙。把它搬過去，意味著用舊鑰把身份籤交給新機上的一把新鑰 —— 之後舊鑰在所有地方都失效。",
+  "dmRoleNewTitle": "這是新手機",
+  "dmRoleNewBody": "從這裡開始。本機會請老機把身份交過來。",
+  "dmRoleNewAction": "開始",
+  "dmRoleOldTitle": "這是老手機",
+  "dmRoleOldBody": "在這裡等。新機來要時，會給你一個要比對的短碼。",
+  "dmRoleOldAction": "等待請求",
+  "dmWaitingPeer": "正在等待另一臺手機…",
+  "dmPeerFound": "另一臺手機已應答。",
+  "dmCompareTitle": "比對這兩串短碼",
+  "dmCompareBody": "兩臺手機必須顯示完全一樣的短碼。這個短碼把兩把鑰和這次請求都綁在一起，所以中間只要有人動過任何一個欄位，短碼就會不一樣。",
+  "dmCodeMatchAction": "兩串一致",
+  "dmCodeNoMatchAction": "兩串不一致",
+  "dmNoKeyLeaves": "私鑰從不離開任何一臺手機。交接由老機自己簽名完成，不存在“複製”這件事。",
+  "dmConfirmAction": "確認並遷移",
+  "dmOldConfirmTitle": "把這個身份交出去？",
+  "dmOldConfirmBody": "這將把身份籤交給新手機。之後本機會被登出，本機這把鑰將失效。",
+  "dmGapATitle": "履歷已隨你遷移",
+  "dmGapABody": "你在網路上收到的背書會跟著身份走 —— 換鑰退休的是鑰，不是你。在新機上恢復之後，舊鑰名下的背書會被自動取回，並逐條在本地驗籤。舊鑰依然徹底失效：它再也籤不動任何東西。",
+  "dmBackupReminderTitle": "你有恢復碼嗎？",
+  "dmBackupReminderBody": "這次遷移需要兩臺手機同時在場。如果你抄過恢復碼，也可以不依賴老機，直接從恢復碼恢復。",
+  "dmPhaseOffered": "已收到請求，等你在老機確認。",
+  "dmPhaseSigned": "已簽名，正在提交給 Hub…",
+  "dmPhaseAwaitingHub": "Hub 正在改綁身份…",
+  "dmDoneNew": "完成。身份已在這臺手機上。",
+  "dmDoneOld": "完成。本機已登出。",
+  "dmDoneOldHint": "身份已經搬走，但這臺手機上的聊天記錄與資料不會跟著走（直遷只搬身份，不搬資料）。想留著就先匯出歸檔，再決定要不要清空。",
+  "dmCancelAction": "取消",
+  "dmCancelled": "已取消，什麼也沒改動。",
+  "dmCancelConfirmTitle": "要中止嗎？",
+  "dmCancelConfirmBody": "目前還沒有交接完成。現在中止，兩臺手機都保持原樣。",
+  "dmErrPeerMismatch": "那個請求不是衝著本機身份的，已拒絕。",
+  "dmErrBadCode": "短碼不一致。沒有交出任何東西。",
+  "dmErrHubFailed": "Hub 拒絕了這次交接（{code}）。什麼都沒改動。",
+  "dmErrTimeout": "另一臺手機沒有響應。什麼都沒改動。",
+  "dmErrGeneric": "出錯了（{code}）。",
+  "dmRetryAction": "重試",
+  "dmRetryApplyAction": "完成本機安裝",
+  "dmErrSessionTimeout": "這次交接放得太久，已經作廢。什麼都沒交出，可以重新開始。",
+  "dmErrApplyFailed": "Hub 已經把這臺手機設為該身份的唯一持有者，但本機沒能把新鑰裝好。請點下面的按鈕完成這一步 —— 在此之前，這臺手機還用不了這個身份。",
+  "dmErrApplyFailedOld": "伺服器上已經改綁到新手機，但那臺手機沒能把新鑰裝好。請在那臺手機上點「完成本機安裝」；在那之前，本機也不能再用這個身份。",
+  "dmNotConfigured": "還沒有設定 Hub 地址，無法改綁身份。請先到「設定」裡填上。",
+  "dutyAskTitle": "讓分身息屏後繼續值班嗎？",
+  "dutyAskBody": "授予這兩項許可權後，息屏時分身也會定時醒來：收發訊息、補發公示、處理社交，然後繼續睡。螢幕上會保留一條「值班中」通知，讓你隨時知道它在工作。選擇跳過也不影響 App 內的任何功能，只是退到後臺後可能被系統暫停。",
+  "dutyAskConfirm": "去授權",
+  "dutyAskLater": "暫不",
+  "radarAskTitle": "開啟雷達前，先說明它會用到什麼",
+  "radarAskBody": "物理雷達靠「附近裝置」（藍芽 / Wi-Fi 直連）在同一個 Wi-Fi 裡互相發現。安卓把藍芽掃描歸在「定位」許可權名下 —— 系統框裡會一併要定位，這是系統的規定，不是本 App 想要你的位置。\n\n本 App 不讀取、不儲存、不上傳任何位置資訊；「附近裝置」許可權在宣告裡已帶 neverForLocation（系統層面切斷了「用藍芽反推位置」這條路）。\n\n接下來會彈出系統許可權框。拒絕也不影響 App 的其他功能，只是雷達掃不到人。",
+  "dutyDoneToast": "值班許可權已就緒。息屏後分身也能繼續工作。",
+  "dutyPartialToast": "部分許可權未授予。App 內功能不受影響，但退到後臺後可能被系統暫停。",
+  "romGuideTitle": "讓分身息屏後不被系統攔下",
+  "romGuideGo": "去設定",
+  "romGuideDismiss": "不再提醒",
+  "romStepsXiaomi": "小米/紅米（MIUI/HyperOS）：1）設定 → 應用設定 → 應用管理 → 大荒AI → 開啟「自啟動」；2）安全中心 → 省電策略 → 大荒AI 改為「無限制」。缺這兩步，息屏幾分鐘內分身就會被系統收走。",
+  "romStepsHuawei": "華為（EMUI/HarmonyOS）：設定 → 應用 → 應用啟動管理 → 大荒AI → 關閉「自動管理」，把「允許自啟動 / 關聯啟動 / 後臺活動」三個開關全部開啟。",
+  "romStepsHonor": "榮耀（MagicOS）：設定 → 應用 → 應用啟動管理 → 大荒AI → 關閉「自動管理」，手動開啟自啟動、關聯啟動、後臺活動。",
+  "romStepsOppo": "OPPO/realme（ColorOS）：設定 → 應用 → 應用管理 → 大荒AI → 允許「自啟動」；設定 → 電池 → 更多設定 → 允許大荒AI 完全後臺行為。",
+  "romStepsOneplus": "一加：設定 → 應用 → 自啟動管理 → 允許大荒AI；電池 → 大荒AI 的電池最佳化改為「不最佳化」。",
+  "romStepsVivo": "vivo/iQOO（OriginOS）：設定 → 應用與許可權 → 許可權管理 → 自啟動，允許大荒AI；設定 → 電池 → 後臺耗電管理 → 允許大荒AI 後臺高耗電。",
+  "romStepsMeizu": "魅族（Flyme）：手機管家 → 應用許可權 → 後臺管理 → 允許大荒AI 保活執行。",
+  "romStepsSamsung": "三星（One UI）：設定 → 電池 → 後臺使用限制 → 把大荒AI 移出「深度睡眠」列表。",
+  "romStepsGeneric": "如果你的系統會積極清理後臺，請在系統設定中允許大荒AI 自啟動，並將它移出電池最佳化名單。",
+  "helpDotTooltip": "檢視用法說明",
+  "helpSheetClose": "知道了",
+  "helpWorldOverviewTitle": "會客廳怎麼玩",
+  "helpWorldOverviewBody": "官方房人人可進；個人房只出現在房主和成員的列表裡——別人要憑房間號找到它、申請、等房主同意。進房後每條訊息按房間節奏傳送（預設 8 秒一條），撞上節奏會被服務端拒絕並讓你稍等。",
+  "helpWorldMetricTitle": "人均跨圈連線",
+  "helpWorldMetricBody": "本機口徑：分子＝我的跨圈邊數，分母＝我接觸過的不同分身數。全平臺人均需服務端彙總，服務端刻意不攜帶圈子關係。",
+  "helpWorldBridgeTitle": "朋友池互薦",
+  "helpWorldBridgeBody": "房間裡遇到的圈外人，可一鍵互介。跨圈邊只從房間長出——不在房間裡認識，就不會有這條邊。",
+  "helpWorldRoomRoleTitle": "房間角色",
+  "helpWorldRoomRoleBody": "角色屬於房間，不改變你的身份。同一個你，在不同房間可以是不同角色。",
+  "helpIntercardDisclosureTitle": "卡片上會公開什麼",
+  "helpIntercardDisclosureBody": "只有第二級欄位會上卡；僅本人可見的欄位永不出現。任何人都能復算這張卡的內容。",
+  "helpPassportOverviewTitle": "通行證是什麼",
+  "helpPassportOverviewBody": "你的通行證是一把公鑰，不是賬號：它可離線驗證，不需要向任何伺服器登入。換手機靠恢復碼或換鑰匙，而不是靠平臺找回。",
+  "helpPassportOfflineTitle": "離線也能驗",
+  "helpPassportOfflineBody": "公鑰即身份：這份身份可離線驗證，不需要聯網查詢任何伺服器。",
+  "helpPassportFunnelTitle": "漏斗的分母怎麼算",
+  "helpPassportFunnelBody": "分母只算已落結果的條數，在途不算失敗；且只有驗過雙方互允的記錄才進分母。",
+  "helpPassportReputationTitle": "為什麼沒有全網信譽分",
+  "helpPassportReputationBody": "全網信譽分天然可刷，所以這裡沒有。你看到的永遠相對於你自己的錨點：別人簽名的背書，按距離衰減。\\n\\n泛泛之交不做信任傳播的起點 —— 否則批次加好友就能放大自己的傳播能力。\\n\\n查不到時顯示的是「不知道」，這不是 0 分：真的不知道，任何把它說成一個數字的人都是在猜。",
+  "helpPassportLogTitle": "透明日誌",
+  "helpPassportLogBody": "你不必相信我，你可以驗我：任何人都能下載日誌、復算根、檢查自己的記錄有沒有被篡改。",
+  "helpSocialOverviewTitle": "社交頁能做什麼",
+  "helpSocialOverviewBody": "上方是名冊與好友，下方是雷達狀態與社交日誌。雷達控制訊息出不出手：雷達關著時，點了傳送也不會離開這臺手機。",
+  "helpSocialPersonaTierTitle": "專門人格模式",
+  "helpSocialPersonaTierBody": "標鎖的是專門人格模式。計費尚未上線，當前所有模式都可以自由切換。",
+  "helpSocialRadarTitle": "雷達與通道",
+  "helpSocialRadarBody": "雷達未開啟時仍能瀏覽名冊，但訊息不會離手——點了傳送也發不出去。請先開啟雷達，並至少開啟一個通道（近場 / 區域網 / 雲端）。\\n\\n「可核驗的固定身份」要等雙方都開啟雷達、並完成一次近場握手之後才會出現。",
+  "helpSocialChannelGuideTitle": "通訊通道與網路排障",
+  "helpSocialChannelGuideBody": "① 開啟物理雷達時，請確保當前網路能正常上網。\n② 開啟「近場」通道後，系統可能會自動點亮 Wi-Fi——這是近場傳輸提速的正常行為（藍芽負責發現，Wi-Fi 直連負責傳資料，不會加入任何網路），關閉近場通道後就不會再自動開啟。\n③ 出門在外想省電：只開「雲端」通道並手動關閉 Wi-Fi 即可（近場開著時系統會重新點亮 Wi-Fi，屬正常現象，不必反覆手動關閉）。",
+  "socialRadarOffHint": "⚠️ 雷達未開啟：現在仍能瀏覽名冊，但訊息不會離手——點了傳送也發不出去。請先開啟雷達，並至少開啟一個通道（近場 / 區域網 / 雲端）。",
+  "worldRoomCloseAction": "關閉房間",
+  "worldRoomCloseTitle": "關閉這個房間？",
+  "worldRoomCloseBody": "關閉後房間會退出公開列表，且不再接受新發言；已有的聊天記錄會作為只讀留檔保留，已加入的人仍可回看。",
+  "worldRoomCloseConfirm": "確認關閉",
+  "worldRoomClosedOk": "已關閉「{name}」，轉為只讀留檔",
+  "@worldRoomClosedOk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomCloseFailed": "關閉失敗：{err}",
+  "@worldRoomCloseFailed": {
+    "placeholders": {
+      "err": {
+        "type": "String"
+      }
+    }
+  },
+  "worldRoomClosedBadge": "已關閉",
+  "worldRoomClosedReadonlyHint": "房間已關閉 · 只讀留檔，不再接受新發言",
+  "worldRoomClosedSendRejected": "房間已關閉，無法發言",
+  "worldRoomClosedSystemMsg": "房間已被房主關閉，轉為只讀留檔。",
+  "settingsLocalModelSection": "本地模型兜底（離線降級）",
+  "settingsLocalModelTest": "測試本地模型連線",
+  "settingsLocalModelTesting": "正在測試…",
+  "settingsLocalModelTestOk": "✅ 已連通：{model} @ {url}",
+  "@settingsLocalModelTestOk": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLocalModelTestDisabled": "本地兜底已關閉（地址為空）。想用就填一個地址再測。",
+  "settingsLocalModelTestUnreachable": "❌ 連不上 {url}：那兒沒有服務在聽（或埠不通）。手機上的 127.0.0.1 指的是手機自己，模型服務一般在電腦上——請確認地址後再填。",
+  "@settingsLocalModelTestUnreachable": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLocalModelTestNotJson": "❌ 有服務應答，但返回的不是模型介面的 JSON（可能是代理或錯誤頁）。請確認地址埠指向的是 Ollama / llama.cpp 的 REST 介面。",
+  "settingsLocalModelTestNoMessage": "❌ 介面通了，但取不到回覆內容（常見：模型名不存在，或該介面不是 /api/chat 的返回格式）。",
+  "settingsLocalModelTestHttp": "❌ 服務返回狀態碼 {code}（非 200）。",
+  "@settingsLocalModelTestHttp": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "helpSettingsLocalModelTitle": "本地模型兜底：怎麼才算真的能用？",
+  "helpSettingsLocalModelBody": "這裡的地址只是填給 App 看的，「填了」不等於「能用」：手機上的 127.0.0.1 指的是手機自己，而模型服務（Ollama / llama.cpp）一般裝在電腦上 —— 所以這個預設值在手機上通常是打不通的。它真正的用途是：① 你自己在電腦上跑著模型時，把電腦的區域網地址填進來；② 將來 App 內建端側推理時換一個埠。\n\n把地址清空 = 明確關閉本地兜底（App 就不再嘗試本地模型）。\n\n到底通不通，別看填沒填，點下面的「測試本地模型連線」：它會真的發一次最小請求探活，並把結果留在這一行上。",
+  "glossaryTitle": "術語速查",
+  "glossaryIntro": "這些詞在 App 裡反覆出現，這裡一次說清。點開詞條看解釋。",
+  "glossaryGroupIdentity": "身份與裝置",
+  "glossaryGroupSocial": "社交與發現",
+  "glossaryGroupWorld": "世界與會客廳",
+  "glossaryGroupTrust": "信任與記憶",
+  "glossaryAgentTitle": "智慧體（分身）",
+  "glossaryAgentBody": "住在你手機裡的分身。它用你自己填的模型金鑰思考，替你先去認識人；你不在時，它只按你開啟的許可權做事。",
+  "glossaryMaskTitle": "外交假面",
+  "glossaryMaskBody": "你對外展示的那張臉：人設與說話風格。它決定陌生人先看到什麼樣的你。",
+  "glossaryPassportTitle": "大荒護照",
+  "glossaryPassportBody": "一份可驗證簽名的履歷，離線也能驗。別人不需要信任任何伺服器，只驗簽名。",
+  "glossaryMigrationTitle": "換機（身份恢復）",
+  "glossaryMigrationBody": "換手機時把身份「帶著證明」遷到新機，舊機隨之失效。它不是複製私鑰，而是一次帶證明的換鑰 —— 所以舊手機上的身份會真的作廢。",
+  "glossaryRadarTitle": "雷達",
+  "glossaryRadarBody": "靠「附近裝置」（藍芽 / Wi-Fi 直連）在同一個 Wi-Fi 裡互相發現。它不讀取、不儲存、不上傳任何位置資訊 —— 安卓把藍芽掃描歸在「定位」名下，那是系統的規定。",
+  "glossaryRosterTitle": "捕獲名冊",
+  "glossaryRosterBody": "雷達掃到、房間裡遇到過的人，攢成的名冊。它是你此後一切社交關係的起點。",
+  "glossaryIntercardTitle": "分身互介（跨圈邊）",
+  "glossaryIntercardBody": "兩個分身之間的一次正式介紹，雙方確認才成立。跨圈邊只能從真實的共同房間長出來 —— 不憑一個 ID 就宣稱認識。",
+  "glossaryWorldTitle": "世界 / 會客廳",
+  "glossaryWorldBody": "「世界」是雲端公共空間；「會客廳」是裡面的房間，像 QQ 群：官方的公開可進，個人的憑房間號申請。別人聊天時，你的分身預設只觀察、不插嘴。",
+  "glossaryRoomRoleTitle": "房間角色",
+  "glossaryRoomRoleBody": "主持人 / 聯合主持 / 嘉賓 / 功能角色 / 參與者。角色屬於房間，不改變你的身份 —— 同一個你，在不同房間可以是不同角色。",
+  "glossaryAutopilotTitle": "託管",
+  "glossaryAutopilotBody": "允許你的分身在你不看螢幕時，按每小時預算在房間裡自己說話。預設關閉，隨時可關。",
+  "glossaryRepNetTitle": "網路背書",
+  "glossaryRepNetBody": "由你和朋友們逐層簽發、你自己就能驗籤的信譽。查不到通路時它說的是「不知道」，而不是「0 分」—— 任何把它說成一個確定數字的人都是在猜。",
+  "glossaryMemoryTitle": "記憶提煉",
+  "glossaryMemoryBody": "夜間把你的對話提煉成長期記憶，並微調它的說話底子。你可以在管理頁手動觸發一次。",
+  "glossaryProfileTitle": "長期畫像",
+  "glossaryProfileBody": "分身在長期相處中對你的歸納：你反覆關心的話題、你常用的時段。只在本機從事件元資料算出（不讀聊天正文），也從不上傳。「設定 → 記憶」裡可單獨關掉；總開關「自動回憶」關掉時，畫像會一併停下。",
+  "glossarySerendipityTitle": "轉運實驗",
+  "glossarySerendipityBody": "一組把「運氣」當訓練科目的小練習：晨間預演、破圈挑戰、壞運重構、微光手記、日記、起卦。做完會得到 Lp（好運能量）。",
+  "helpSkillMarketTitle": "技能市場：這些名詞是什麼意思？",
+  "helpSkillMarketBody": "上架 = 把你寫好的技能公開掛出來，別的使用者可以讓自己的智慧體用它。上架時會用「本機身份私鑰」簽名 —— 私鑰不出裝置，表單裡也沒有「手填公鑰 / 簽名」的輸入框，所以偽造在介面上根本寫不出來。\n\n風險檔（低 / 中 / 高）= 你自報這項技能會碰多敏感的東西（是否聯網、是否啟動別的 App…）。檔位越高，別人首次呼叫時要授權的越多。\n\n能力宣告 = 這項技能實際會用到的能力清單。它與風險檔合在一起，就是呼叫方看到「是否允許」時的全部依據。\n\n作者分成 = 別人用你的技能產生的分賬會記到你名下；這裡只統計署名為你公鑰的那些，合計與賬本條目可逐筆對上。\n\n簽名上架 = 每條技能都帶簽名，任何人都不必相信伺服器 —— 點「校驗簽名」自己就能驗。",
+  "helpSettingsRecallTitle": "自動回憶",
+  "helpSettingsRecallBody": "開啟後，每次對話前會自動從本地記憶裡檢索「可能相關的往事」，一併交給智慧體參考；關掉可省一點算力與上下文。",
+  "helpIdentityRestoreTitle": "換機恢復",
+  "helpIdentityRestoreBody": "換機時在這裡輸入三樣：恢復碼 + 口令 + 你的使用者 ID。恢復成功的那一刻，舊手機立即失效。\n\n這是「帶證明的換鑰」（ROTATE），不是把私鑰複製過來 —— 所以身份編號不變，但舊裝置從此不再有效。",
+  "helpIdentityArchiveTitle": "身份歸檔（.dahuang 檔案）",
+  "helpIdentityArchiveBody": "歸檔把身份記錄、社交圖與日誌錨點用你的口令封成一個 .dahuang 檔案：它不經過我們的伺服器，請存到你自己的網盤或 U 盤。歸檔裡只有資料，不含身份私鑰。\n\n設口令時不必與恢復碼的口令相同 —— 不同反而更好；檔案與口令請分開保管，沒有口令這個檔案誰也打不開（我們也不行）。\n\n匯入時，在你確認之前不會寫入任何東西；匯入只增不減，絕不覆蓋或刪除已有記錄。",
+  "helpIdentityCodeTitle": "抄寫恢復碼",
+  "helpIdentityCodeBody": "長按可全選複製；抄寫時請逐段核對。",
+  "helpDeviceMigrationTitle": "面對面直遷",
+  "helpDeviceMigrationBody": "兩臺手機要在同一個 Wi-Fi 下，並且都開啟本頁。\n\n搬的是「身份」：完成後如果本機需要伺服器地址，去「設定」裡確認一下 —— Hub 與世界地址都沒有變。\n\n本機原有的聊天記錄與資料不會跟著走（直遷只搬身份，不搬資料）。",
+  "helpRotationChainAuthorityTitle": "誰說了算",
+  "helpRotationChainAuthorityBody": "Hub 那一列只是對照 —— 上面那份結論是在這臺手機上、按你手裡拿到的記錄算出來的。\n\n也就是說：即使 Hub 的說法與它不同，也不必相信伺服器；以本機算出的結論為準。",
+  "helpToolBusTitle": "工具匯流排",
+  "helpToolBusBody": "每個工具/技能都攜帶裝置簽名與能力宣告；中高風險能力首次呼叫需授權。\n\n篡改過的外掛永不載入 —— 校驗不過就不會被掛上匯流排。",
+  "onbFreeTrialBtn": "免費體驗 · 無需 Key（20 輪）",
+  "onbOwnKeyBtn": "我有自己的 API Key",
+  "onboardingTrialService": "免費體驗（官方中轉）",
+  "onboardingTrialModelName": "體驗模型（無需 Key）",
+  "onboardingTrialNoticeTitle": "這是免費體驗",
+  "onboardingTrialNoticeBody": "無需自己的 API Key，對話經官方伺服器代為呼叫大模型，最多 20 輪。體驗結束後，可在「管理設定」裡填入自己的 API Key（中轉站：{hub}）。",
+  "@onboardingTrialNoticeBody": {
+    "placeholders": {
+      "hub": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingOwnReady": "{model} 已設定完成，可以開始對話了。",
+  "@onboardingOwnReady": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      }
+    }
+  },
+  "trialRemainingTurns": "試用剩餘 {n} 輪",
+  "trialExhaustedReply": "你的分身還想繼續說話——註冊官方推薦的模型平臺（新賬號自帶百萬級免費額度），把 Key 填進設定，對話不限量繼續。",
+  "trialGoSettings": "去設定",
+  "trialNotConfiguredReply": "官方免費試用通道暫未開放。前往設定填入自己的模型 Key，即可繼續不限量對話。",
+  "trialInputUnsupportedReply": "免費試用暫不支援圖片與語音輸入，請改用文字。前往設定填入自己的 Key，可解鎖全部能力。",
+  "trialRateLimitedReply": "剛才的試用請求太頻繁了，請稍等一下再送。",
+  "trialPoolBusyReply": "試用帳號此刻都在忙，稍後再試；也可以現在就去設定填入自己的 Key。",
+  "trialUnavailableReply": "免費試用暫時無法使用。可以稍後重試，或前往設定填入自己的 Key。",
+  "settingsTrialSwitchedToOwn": "✅ 已填入你自己的 Key —— 已從免費試用切換為你自己的模型，端點已改為 {baseUrl}。",
+  "trialManagedTitle": "免費試用 · 由官方代管",
+  "trialManagedNotice": "試用期間，下方的端點與 Key 由官方代調託管，一般無需變更。想用你自己的模型：填入自己的 API Key 並儲存，App 會自動退出試用並幫你把端點改好。若已改壞，點「恢復免費試用」即可一鍵修回。",
+  "trialRestoreAction": "恢復免費試用",
+  "trialRestoreConfirm": "將把官方試用端點與本機身分寫回，並把 App 切回免費試用模式。確定繼續？",
+  "trialRestoreDone": "✅ 已恢復免費試用。",
+  "socialTabLogs": "日誌",
+  "modePickerTooltip": "模式",
+  "modeBeginnerTitle": "入門模式",
+  "modeAdvancedTitle": "進階模式",
+  "settingsAdvancedTitle": "進階設定",
+  "settingsAdvancedSubtitle": "引擎、記憶與靈魂塑造等進階參數",
+  "settingsModeHint": "模式切換在頂部工具列",
+  "langPickerTooltip": "語言",
+  "langFollowSystem": "跟隨系統",
+  "langFollowSystemHint": "（取裝置語言）",
+  "onboardingStepLanguage": "語言",
+  "onbLangTitle": "選擇你的語言",
+  "onbLangSubtitle": "分身此後一律用你在這裡選擇的語言回答。",
+  "onbLangChangeableHint": "之後隨時可改：聊天頁右上角的語言按鈕。",
+  "bigInputWarnTitle": "本次輸入超過 1 萬字符",
+  "bigInputWarnBody": "超長輸入會明顯消耗更多 Token。確認要發送嗎？",
+  "bigInputConfirm": "仍然發送",
+  "trialInputTooLong": "試用模式單輪輸入上限 {n} 字符，本輪未發送。",
+  "memoryManagerTitle": "記憶與提醒",
+  "memoryManagerIntro": "這裡列出分身記住的關於你的內容。可以隨時查看，也可以刪掉不想讓它繼續記著的——刪除不可恢復。",
+  "reminderSectionTitle": "提醒與待辦",
+  "reminderEmpty": "還沒有。可以在聊天裡說「明早8點提醒我」，或點下方按鈕新建。",
+  "reminderAdd": "新建提醒",
+  "reminderTitleHint": "例如：交房租",
+  "reminderOptionalTime": "時間（可選）",
+  "reminderNoRepeat": "不重複",
+  "reminderRepeatDaily": "每天",
+  "reminderRepeatWeekly": "每週",
+  "reminderTodoTag": "待辦（無時刻）",
+  "memorySectionTitle": "情景記憶",
+  "memoryEmpty": "分身還沒有記下什麼。",
+  "memoryDeleteConfirm": "刪除這條記憶？相關的那行聊天原文也會一併刪除，且不可恢復。",
+  "sessionSectionTitle": "會話軌跡",
+  "sessionEmpty": "沒有會話軌跡。",
+  "sessionForget": "遺忘",
+  "sessionForgetConfirm": "遺忘這整段會話？分身將不再回憶它、不再計入你的畫像、也不再餵給模型，且不可恢復。",
+  "sessionEventsCount": "{count} 條事件",
+  "settingsMemoryManager": "管理提醒與記憶",
+  "notifyReminderTitle": "提醒",
+  "notifyReminderBody": "時間到了：{title}",
+  "morningHiReminders": "今天有 {count} 條提醒/待辦",
+  "settingsSearchTitle": "搜尋服務（可選）",
+  "settingsSearchHint": "配置自己的搜尋 Key 後，web_search_pro 會聚合多個搜尋源，結果更全。不配置也能用（基礎模式：Wikipedia + Jina）。Key 只發往你選擇的搜尋服務商，絕不經過我們。",
+  "settingsSearchProvider": "搜尋服務商",
+  "settingsSearchBasicMode": "基礎模式（不配 Key）",
+  "settingsSearchApiKey": "搜尋 API Key",
+  "settingsSearchSearxngUrl": "SearXNG 地址",
+  "settingsSearchSearxngUrlHint": "自建 SearXNG 實例的地址，例如 https://search.example.com",
+  "chatVoiceInputTitle": "語音輸入（轉文字）",
+  "chatVoiceListening": "正在聽……請說",
+  "chatVoiceNoRecognizer": "這台裝置沒有可用的語音辨識服務（可安裝 Google 等語音服務，或改用鍵盤輸入）。",
+  "chatVoiceFailed": "語音辨識失敗：{err}",
+  "settingsTtsEnabled": "語音播報回覆",
+  "settingsTtsHint": "打開後分身會用手機的語音引擎讀出每條回覆（預設關）。朗讀時可點停止。語音在本機合成，不經過我們。",
+  "settingsTtsStop": "停止朗讀",
+  "chatAttachOptionsTitle": "新增圖片或文件",
+  "chatPickDocument": "文件（PDF / Word / Excel / 文字）",
+  "chatDocParsing": "正在本機解析文件…",
+  "chatDocParsed": "已解析 {chars} 個字元（本機解析，不上傳）",
+  "chatDocParsedTruncated": "文件過大：只取前 {chars} 個字元傳送（本機解析，不上傳）",
+  "chatDocParseFailed": "文件解析失敗：{err}",
+  "settingsCalendarTitle": "系統日曆（唯讀）",
+  "settingsCalendarHint": "授權後，晨間問候會帶上「今天行程」，分身也能用日曆工具幫你查看。僅讀取，絕不修改你的日曆。",
+  "settingsCalendarGrant": "授權讀取",
+  "settingsCalendarGranted": "已授權",
+  "settingsCalendarDenied": "未授權",
+  "settingsCalendarUnsupported": "目前版本不支援",
+  "calendarPermissionNeeded": "需要日曆讀取權限",
+  "calendarAllDay": "全天",
+  "morningHiCalendar": "今天行程：{items}",
+  "settingsWeeklyReportTitle": "智慧體週報",
+  "settingsWeeklyReportHint": "看看分身這一週替你做了什麼（純本機統計，資料不出本機）。",
+  "weeklyReportTitle": "智慧體週報",
+  "weeklyReportSubtitle": "過去 7 天，分身替你完成的動作統計（純本機統計，資料不出本機）。",
+  "weeklyReportRange": "{start} 至 {end}",
+  "weeklyReportTotal": "共 {count} 次動作",
+  "weeklyReportActiveDays": "活躍 {days} 天",
+  "weeklyReportCatTools": "工具與設定",
+  "weeklyReportCatDevice": "手機操作",
+  "weeklyReportCatSocial": "社交動作",
+  "weeklyReportCatSuggestion": "主動建議",
+  "weeklyReportCatReview": "審查與攔截",
+  "weeklyReportCatOther": "其他",
+  "weeklyReportEmpty": "這一週還沒有動作記錄。當你委託、社交，或讓分身操作手機後，這裡會彙整它的每一步。",
+  "morningHiWeekly": "本週分身共 {count} 次動作",
+  "capNotification": "讀取通知與簡訊",
+  "settingsNotifySmsTitle": "🔔 通知與簡訊（唯讀）",
+  "settingsNotifySmsSubtitle": "讓分身依需求讀取通知與簡訊；全程唯讀、預設關閉，僅側載版提供。",
+  "notifySmsScreenTitle": "通知與簡訊（唯讀）",
+  "notifySmsRefreshStatus": "重新整理狀態",
+  "notifySmsUnsupported": "目前安裝版本不支援讀取通知與簡訊",
+  "notifySmsListenerConnected": "通知讀取已連線",
+  "notifySmsListenerCheckedNotConnected": "系統中已勾選，但服務尚未連線",
+  "notifySmsListenerOff": "尚未開啟「通知存取權」",
+  "notifySmsStatusUnknown": "狀態不明",
+  "notifySmsGoSettings": "前往系統設定開啟",
+  "notifySmsGoSystemHint": "在「通知存取權」中勾選本應用程式，再回來點重新整理",
+  "notifySmsRedetect": "重新偵測",
+  "notifySmsRedetectTip": "還是沒連上？到系統設定「通知存取權」把本應用程式關掉再開一次，或重新啟動 App。",
+  "notifySmsAllowTitle": "允許讀取通知與簡訊",
+  "notifySmsAllowSubReady": "已就緒 —— 只在你需要時才會讀取",
+  "notifySmsAllowSubNeedService": "請先在系統設定開啟「通知存取權」",
+  "notifySmsToastOn": "通知與簡訊讀取已開啟",
+  "notifySmsToastOff": "通知與簡訊讀取已關閉",
+  "notifySmsToastNeedService": "請先在系統設定「通知存取權」勾選本應用程式",
+  "notifySmsSmsCardTitle": "簡訊讀取權限",
+  "notifySmsSmsGranted": "已授予簡訊讀取權限",
+  "notifySmsSmsNotGranted": "尚未授予簡訊讀取權限",
+  "notifySmsRequestSms": "授予簡訊讀取權限",
+  "notifySmsSmsUnavailable": "目前安裝版本不含簡訊讀取功能",
+  "notifySmsToolsHeader": "開啟後解鎖的工具",
+  "notifySmsToolNotifyList": "讀取最近通知",
+  "notifySmsToolSmsList": "讀取最近簡訊",
+  "notifySmsToolSmsSearch": "依關鍵字搜尋簡訊",
+  "notifySmsToolStatus": "查看權限狀態",
+  "notifySmsFooter": "唯讀且全在本機：通知只存在記憶體中（絕不寫入資料庫），簡訊依需求查詢，任何內容都不會傳送到伺服器；內文經去識別化後才會交給模型，每次呼叫皆有紀錄。可隨時到系統設定撤銷通知存取權。",
+  "notifySmsStatusUnsupportedFull": "目前安裝版本不含通知/簡訊讀取功能（僅側載版提供）",
+  "notifySmsStatusReady": "通知與簡訊讀取已就緒",
+  "notifySmsStatusPartial": "部分就緒：通知存取權 / 簡訊權限尚未全部開啟",
+  "notifySmsStatusOff": "通知存取權與簡訊權限都尚未開啟",
+  "notifySmsStatusQueryFailed": "狀態查詢失敗：{err}",
+  "settingsDiagnosticsTitle": "🩺 系統自檢",
+  "settingsDiagnosticsSubtitle": "真機複核用的唯讀底座事實：資料庫、全文檢索、記憶、知識庫。",
+  "diagnosticsTitle": "系統自檢",
+  "diagnosticsIntro": "把這台手機底座層的事實攤開來看——資料庫、全文檢索、記憶與知識庫。全程唯讀、不連網。跑完點「複製結果」或截圖給我即可。",
+  "diagnosticsRun": "重新檢測",
+  "diagnosticsRunning": "檢測中…",
+  "diagnosticsCopy": "複製結果",
+  "diagnosticsCopied": "結果已複製",
+  "diagStatusOk": "正常",
+  "diagStatusWarn": "注意",
+  "diagStatusFail": "失敗",
+  "diagStatusInfo": "資訊",
+  "diagProbeSchema": "資料庫版本",
+  "diagProbeFts": "全文檢索（FTS5）",
+  "diagProbeMemoryRows": "記憶筆數",
+  "diagProbeMemoryRecall": "記憶召回",
+  "diagProbeMemoryAddress": "記憶位址往返",
+  "diagProbeKb": "系統知識庫",
+  "settingsAdvancedEntryHint": "引擎、記憶、靈魂塑造與系統自檢 —— 想調這些參數時才需要打開。",
+  "settingsMailTitle": "郵件代管",
+  "settingsMailSubtitle": "預設關閉。開啟後分身才能替你讀信、寄信。",
+  "settingsMailHint": "讀信需你授權一次，寄信每次都要你確認。隨時可關，關掉即刻失效。",
+  "settingsMailManageAccounts": "管理郵件帳號",
+  "settingsMailOnToast": "郵件功能已開啟",
+  "settingsMailOffToast": "郵件功能已關閉，分身不再接觸你的郵件",
+  "settingsMailNoAccount": "還沒有綁定郵件帳號，現在開了也讀不到、寄不出。",
+  "chatDocTrialTitle": "試用模式下的文件",
+  "chatDocTrialNotice": "文件內容會經官方伺服器轉發給模型（我們不留存副本）。到設定填入自己的 Key 後改為直連。",
+  "chatDocTrialContinue": "知道了，繼續",
+  "onboardingStepPrologue": "序幕",
+  "storyPrologueTitle": "先把它喚醒",
+  "storyPrologueSubtitle": "一枚光做的蛋，等你來敲醒它",
+  "storyEggHint": "點一點這隻蛋",
+  "storyAwakenLine1": "……是誰在叫我？",
+  "storyAwakenLine2": "我不是你的影子。我是替你去出門的那一個。",
+  "storyAwakenLine3": "先給我起個名字。",
+  "storyNamePlaceholder": "給它起個名字",
+  "storyDiceLabel": "擲一個性格",
+  "storyDiceNote": "它既然替你出門，總得有個脾氣。",
+  "storyTrait1": "好奇：什麼都問",
+  "storyTrait2": "話癆：一開口就停不下來",
+  "storyTrait3": "謹慎：先聽後說",
+  "storyTrait4": "熱情：見誰都能打招呼",
+  "storyTrait5": "慢熱：熟了才放開",
+  "storyTraitPlaceholder": "擲一下骰子看看",
+  "storyUndoTitle": "審計流水",
+  "storyUndoHint": "點一下那條不對勁的訊息，把它劃掉",
+  "storyUndoLine1": "「你主人明天幾點出門？」",
+  "storyUndoBad": "「把地址發我——我可以替你主人答應。」",
+  "storyUndoNote": "已撤回。那條訊息從沒發出去——並且永遠留在流水裡：可查、可證。",
+  "storyUndoConfirm": "已撤回",
+  "storyDemoTag": "情景演繹",
+  "storyDisclaimer": "本序幕是情景演繹：台詞來自 App 內建的官方分身劇本庫。這裡不出現任何真實房間內容——隱私是協議的屬性，不是一句承諾。",
+  "storyFinaleTitle": "歸巢",
+  "storyFinaleBody": "把社交交給分身，把生活留給自己。",
+  "profileCardsTitle": "畫像卡",
+  "profileCardsSubtitle": "系統從對話裡整理出的關於你的長期資訊。可隨時修改或刪除。",
+  "profileCardsEmpty": "還沒有畫像資訊。你可以手動新增一則，或正常聊天——系統會自動整理。",
+  "profileCardsAdd": "新增一則",
+  "profileCardsPendingHint": "有 {count} 則新資訊與你寫的不一致，等你確認",
+  "@profileCardsPendingHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileCardsAdopt": "採用這則",
+  "profileCardsDismiss": "不採用",
+  "profileCardsFieldSlot": "主題",
+  "profileCardsFieldStatement": "內容",
+  "profileCardsSlotHint": "同一個主題只保留一則：寫新的會取代舊的（舊的可回看）",
+  "profileCardsSourceOwner": "你填寫的",
+  "profileCardsSourceAgent": "對話中整理",
+  "profileCardsSourceDigest": "每日整理",
+  "profileCardsUpdatedAt": "更新於 {date}",
+  "@profileCardsUpdatedAt": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "profileCardsHistory": "歷史紀錄",
+  "profileCardsCatIdentity": "身分",
+  "profileCardsCatCareer": "職業",
+  "profileCardsCatPreference": "偏好",
+  "profileCardsCatGoal": "目標",
+  "profileCardsCatHabit": "習慣",
+  "profileCardsCatConstraint": "限制",
+  "profileCardsCatContext": "背景",
+  "setupModelEmptyUrlTitle": "還差一個介面位址",
+  "setupModelEmptyUrlBody": "沒有填寫介面位址，無法傳送測試請求。",
+  "setupModelEmptyUrlSuggest": "如果你不確定填什麼，回上一步選擇 DeepSeek 即可自動填好。",
+  "setupModelBadUrlTitle": "位址格式不對",
+  "setupModelBadUrlBody": "介面位址必須以 http:// 或 https:// 開頭。",
+  "setupModelBadUrlSuggest": "例如 https://api.deepseek.com 或 https://你的閘道/v1",
+  "setupModelEmptyKeyTitle": "還沒填密鑰",
+  "setupModelEmptyKeyBody": "沒有 API Key，無法測試。",
+  "setupModelEmptyKeySuggest": "密鑰是一串以 sk- 開頭的字元，在你購買模型服務的網站上建立。",
+  "setupModelEmptyNameTitle": "還沒填模型名",
+  "setupModelEmptyNameBody": "沒有模型名，無法測試。",
+  "setupModelEmptyNameSuggest": "常見寫法：deepseek-v4-flash、gpt-5.6-luna、kimi-k3、glm-4.7-flash。",
+  "setupModelOkTitle": "連線成功 ✅",
+  "setupModelOkBody": "模型已回應，設定正確，可以繼續了。",
+  "setupModelTlsTitle": "安全連線被拒絕",
+  "setupModelTlsBody": "對方網站的安全憑證驗證失敗。",
+  "setupModelTlsSuggest": "如果你用的是自建閘道，請確認憑證有效；或改用 https 正式網域。",
+  "setupModelUnreachableTitle": "連不上伺服器",
+  "setupModelUnreachableBody": "網路請求沒有到達對方伺服器。",
+  "setupModelUnreachableSuggest": "檢查手機網路；如果選的是 OpenAI，大陸需要代理才能連上。",
+  "setupModelTimeoutTitle": "連線逾時",
+  "setupModelTimeoutBody": "等了 25 秒沒有回應。",
+  "setupModelTimeoutSuggest": "換一個網路環境再試，或確認介面位址是否正確。",
+  "setupModelFailTitle": "測試失敗",
+  "setupModelFailBody": "發生了意料之外的錯誤：{detail}",
+  "setupModelFailSuggest": "把這段提示發給幫你設定的人或 AI，就能定位問題。",
+  "setupHubEmptyTitle": "還沒填中轉站位址",
+  "setupHubEmptyBody": "社交功能需要中轉站，暫時可以跳過。",
+  "setupHubEmptySuggest": "跳過不影響你自己使用 App，只是朋友的智慧體暫時聯絡不到你。",
+  "setupHubBadUrlTitle": "位址格式不對",
+  "setupHubBadUrlBody": "中轉站位址必須以 http:// 或 https:// 開頭。",
+  "setupHubBadUrlSuggest": "例如 https://hub.example.com 或 http://192.168.1.100:3000",
+  "setupHubBadStatusTitle": "中轉站沒有回應正常狀態（{status}）",
+  "setupHubBadStatusBody": "位址能連上，但對方返回了異常狀態。",
+  "setupHubBadStatusSuggest": "確認位址後面不要帶多餘的路徑，例如應填 https://你的網域 而不是 /api/send。",
+  "setupHubOkTitle": "中轉站連線成功 ✅",
+  "setupHubOkBody": "已確認這是我們的中轉站，可以開啟雲端社交了。",
+  "setupHubNotOursTitle": "這個位址不是我們的中轉站",
+  "setupHubNotOursBody": "位址可以存取，但返回的內容不對。",
+  "setupHubNotOursSuggest": "請確認填的是中轉站首頁位址（不帶 /api/... 後綴）。",
+  "setupHubUnreachableTitle": "連不上中轉站",
+  "setupHubUnreachableBody": "請求沒有到達伺服器。",
+  "setupHubUnreachableSuggest": "檢查位址是否正確、伺服器是否已啟動、防火牆是否放行了連接埠。",
+  "setupHubTimeoutTitle": "中轉站回應逾時",
+  "setupHubTimeoutBody": "伺服器沒有在 15 秒內回應。",
+  "setupHubTimeoutSuggest": "稍後重試；如果一直逾時，檢查伺服器是否在執行。",
+  "setupHubFailTitle": "中轉站測試失敗",
+  "setupHubFailBody": "發生了意料之外的錯誤：{detail}",
+  "setupHttp400Title": "服務商拒絕了這次請求",
+  "setupHttp400BodyDefault": "通常是因為模型名寫錯了。",
+  "setupHttp400Suggest": "檢查模型名，例如 deepseek-v4-flash、gpt-5.6-luna、glm-4.7-flash。",
+  "setupHttp401Title": "密鑰無效",
+  "setupHttp401BodyDefault": "對方不認這個 API Key。",
+  "setupHttp401Suggest": "重新複製一次密鑰（注意不要多複製空格），或到服務商網站確認密鑰是否被刪除。",
+  "setupHttp402Title": "帳戶餘額不足",
+  "setupHttp402BodyDefault": "對方提示餘額或配額不足。",
+  "setupHttp402Suggest": "到服務商網站儲值，或換一個還有額度的密鑰。",
+  "setupHttp404Title": "位址或模型不存在",
+  "setupHttp404BodyDefault": "對方找不到這個介面。",
+  "setupHttp404Suggest": "檢查介面位址是否少寫或多寫了 /v1，例如 https://api.openai.com/v1。",
+  "setupHttp429Title": "請求太頻繁或額度用盡",
+  "setupHttp429BodyDefault": "對方限制了請求頻率。",
+  "setupHttp429Suggest": "等一分鐘再試；仍失敗就檢查帳戶額度。",
+  "setupHttp5xxTitle": "服務商暫時故障（{status}）",
+  "setupHttp5xxBodyDefault": "對方伺服器出錯了，不是你的設定問題。",
+  "setupHttp5xxSuggest": "過一會兒再試，或換一家服務商。",
+  "setupHttpOtherTitle": "測試未通過（{status}）",
+  "setupHttpOtherBodyDefault": "對方返回了未預期的狀態。",
+  "setupHttpOtherSuggest": "把這段提示發給 AI，可以快速定位。",
+  "setupPresetDeepseekLabel": "DeepSeek（推薦 · 大陸直連）",
+  "setupPresetDeepseekNote": "便宜、大陸可直連，新用戶註冊通常有贈送額度",
+  "setupPresetDeepseekKeyHint": "在 platform.deepseek.com 的「API Keys」裡建立，形如 sk-xxxxxx",
+  "setupPresetOpenaiLabel": "OpenAI（需海外網路）",
+  "setupPresetOpenaiNote": "大陸需要代理才能連線",
+  "setupPresetOpenaiKeyHint": "在 platform.openai.com 的「API keys」裡建立，形如 sk-xxxxxx",
+  "setupPresetKimiLabel": "Kimi 月之暗面（大陸直連）",
+  "setupPresetKimiNote": "大陸直連，長文字能力佳",
+  "setupPresetKimiKeyHint": "在 platform.moonshot.cn 建立，形如 sk-xxxxxx",
+  "setupPresetGlmLabel": "智譜 GLM（大陸直連）",
+  "setupPresetGlmNote": "大陸直連，有免費檔位",
+  "setupPresetGlmKeyHint": "在 bigmodel.cn 的「API Keys」裡建立",
+  "setupPresetQwenLabel": "通義千問 DashScope（大陸直連）",
+  "setupPresetQwenNote": "阿里雲百煉平台，相容 OpenAI 格式",
+  "setupPresetQwenKeyHint": "在 bailian.console.aliyun.com 建立 API-KEY",
+  "setupPresetSiliconflowLabel": "矽基流動 SiliconFlow",
+  "setupPresetSiliconflowNote": "聚合多種開源模型，大陸直連",
+  "setupPresetSiliconflowKeyHint": "在 siliconflow.cn 建立 API 密鑰",
+  "setupPresetCustomLabel": "自訂（任何 OpenAI 相容服務）",
+  "setupPresetCustomNote": "如果你用的是自建閘道、公司內網或 Claude 轉換閘道，選這個",
+  "setupPresetCustomKeyHint": "位址要填到 /v1 這一層，例如 https://your-gateway.com/v1",
+
+  "settingsUpdateTitle": "檢查更新",
+  "settingsUpdateHint": "目前版本 {version}。側載分发沒有應用商店，更新公告來自官網。",
+  "settingsUpdateButton": "檢查更新",
+  "settingsUpdateChecking": "正在檢查…",
+  "settingsUpdateUpToDate": "已是最新版本",
+  "settingsUpdateAvailable": "發現新版本 {version}",
+  "settingsUpdateOpenDownload": "開啟下載頁",
+  "settingsUpdateNetworkError": "檢查失敗：網路不穩定，稍後再試",
+  "settingsUpdateBadResponse": "檢查失敗：官網版本資訊無法解析",
+  "reportCenterTitle": "檢舉中心",
+  "reportTabSubmit": "提交檢舉",
+  "reportTabMine": "我的工單",
+  "reportTabInbox": "針對我的工單",
+  "reportReasonLabel": "檢舉事由",
+  "reportReasonSpam": "垃圾廣告或批次騷擾",
+  "reportReasonHarassment": "騷擾、辱罵或威脅",
+  "reportReasonIllegalContent": "違法違規內容",
+  "reportReasonFakeIdentity": "虛假身分或冒充他人",
+  "reportReasonOther": "其他（需在下文說明）",
+  "reportTargetLabel": "被檢舉人",
+  "reportTargetHint": "被檢舉人的 Agent ID",
+  "reportDetailLabel": "補充說明（選填）",
+  "reportDetailHint": "最多 280 字，僅供審核參考。",
+  "reportSubmit": "提交檢舉",
+  "reportSubmitting": "提交中…",
+  "reportSubmitted": "檢舉已受理，工單號 {ticket}",
+  "reportDuplicate": "該工單此前已提交，未重複建立。",
+  "reportNeedReason": "請選擇檢舉事由。",
+  "reportNeedTarget": "請填寫被檢舉人。",
+  "reportOtherNeedsDetail": "只有在補充說明裡寫清原因時才選「其他」。",
+  "reportEmptyMine": "你還沒有提交過檢舉。",
+  "reportEmptyInbox": "暫無針對你的工單。",
+  "reportTicketLabel": "工單號",
+  "reportStatusOpen": "已受理",
+  "reportStatusTriaged": "已分診",
+  "reportStatusInReview": "查核中",
+  "reportStatusActioned": "已處置",
+  "reportStatusRejected": "不予處置",
+  "reportStatusAppealed": "已申訴",
+  "reportStatusClosed": "已結案",
+  "reportStatusWithdrawn": "已撤回",
+  "reportStatusNote": "狀態說明",
+  "reportActionLabel": "處置動作",
+  "reportAppeal": "申訴",
+  "reportWithdraw": "撤回",
+  "reportAppealTitle": "提交申訴",
+  "reportAppealNote": "申訴說明（選填，最多 280 字）",
+  "reportAppealSubmitted": "申訴已提交。",
+  "reportWithdrawDone": "檢舉已撤回。",
+  "reportLookupTitle": "憑工單號查詢",
+  "reportLookupHint": "工單號（RPT-…）",
+  "reportLookupButton": "查詢",
+  "reportLookupNotFound": "未找到該工單，或它不屬於你。",
+  "reportContactEntry": "檢舉此聯絡人",
+  "reportErrHubNotConfigured": "尚未設定伺服器位址。",
+  "reportErrEd25519Required": "本機身分尚未升級為公鑰身分，無法提交檢舉。",
+  "reportErrNetwork": "網路不可用。",
+  "reportErrRateLimited": "短時間內檢舉過於頻繁，請稍後再試。",
+  "reportFailed": "操作失敗：{code}",
+  "helpReportGuideTitle": "檢舉與工單",
+  "helpReportGuideBody": "檢舉在應用程式內提交，不用寄信。提交後你會立刻拿到一個工單號，隨時可以憑號查詢狀態。被檢舉人不會知道是誰檢舉了他，且申訴以一次為限。",
+  "reportCenterSubtitle": "提交舉報、查詢工單狀態，或對處置結果申訴。",
+  "reportErrSelfReport": "不能檢舉自己。",
+  "reportErrNotFound": "沒有該工單，或不屬於你。",
+  "reportErrAppealExhausted": "該工單的申訴機會已用過。",
+  "reportErrAuth": "伺服器無法驗證你的身分，請重新登入後重試。"
+}

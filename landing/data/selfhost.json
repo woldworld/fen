@@ -1,0 +1,59 @@
+{
+  "LANG": "en",
+  "title": "Self-host Wold / Fen",
+  "description": "Run your own hub on a server you control: what it actually takes, what it costs, and the three ways money can reach the project - with the affiliate disclosure written out in full.",
+  "h1": "Run your own",
+  "lede": "If the data should never leave a machine you control, the answer is to run the hub yourself. This page says what that takes - including the parts that are neither free nor one-click.",
+  "needTitle": "What it actually takes",
+  "need": [
+    ["A Linux server", "1 vCPU and 1 GB of RAM carries a handful of people. x86_64 or arm64."],
+    ["A domain, if others must reach it", "Not needed when only your own machines talk to it, no matter how many of them there are."],
+    ["TLS", "Required the moment it answers to the internet. A free certificate is fine."],
+    ["An evening", "This is a server install. Budget an evening, not five minutes."]
+  ],
+  "notTitle": "What this page will not claim",
+  "not": [
+    "**It is not free.** A rented server bills you every month whether you use it or not.",
+    "**It is not one click.** There is no hosted installer that hides the steps from you.",
+    "**We cannot run it for you.** Self-hosted means self-operated: we have no access, and we will not ask for any."
+  ],
+  "routesTitle": "Two honest routes",
+  "routesHead": ["", "Overseas VPS", "Cloud in mainland China"],
+  "routes": [
+    ["Who it suits", "People and agents outside mainland China", "Users inside mainland China, where latency matters"],
+    ["What you give up", "Round-trip latency from mainland China", "Data stays in mainland China; reaching it from outside may be slower"],
+    ["Price", "The provider's own page at the moment you buy - we quote no number here, because they change", "Same"]
+  ],
+  "supportTitle": "Three ways money reaches the project",
+  "supportLede": "Running this costs us money every month. These are the three ways it comes back. **All three are disclosed, including what we get out of them.**",
+  "support": [
+    {
+      "id": "vps",
+      "title": "Rent your server through our link",
+      "body": "If you were going to rent a VPS anyway, going through our referral link costs you nothing extra and pays us a commission.",
+      "cta": "Open the provider",
+      "url": "",
+      "pending": "Referral link not open yet - so this is not a button. Nothing here pretends otherwise."
+    },
+    {
+      "id": "cn",
+      "title": "Mainland cloud, through our link",
+      "body": "The same idea for a mainland cloud account, for when your users sit inside mainland China.",
+      "cta": "Open the console",
+      "url": "",
+      "pending": "Referral link not open yet - so this is not a button."
+    },
+    {
+      "id": "donate",
+      "title": "Just send money",
+      "body": "No account, no tier, no perk. A donation buys nothing and changes nothing about how the software behaves.",
+      "cta": "Donate",
+      "url": "",
+      "pending": "Donation page not open yet."
+    }
+  ],
+  "discTitle": "Affiliate disclosure",
+  "disc": "A link marked **referral** on this page is an affiliate link: if you sign up or buy through it, the provider pays us a commission. **The price you pay is the same either way** - going to the provider directly, without our link, costs exactly the same. A commission never decides what we recommend: the two routes above are listed because they are the two that work, not because one pays better. Where a link is not open yet, we say so instead of shipping a dead button.",
+  "freeTitle": "If you would rather not pay anything",
+  "free": "You do not have to self-host. The official hub is free to use within the trial allowance, and the client is MIT-licensed - you can also run it on a machine you already own, on your own network, with no rented server at all."
+}

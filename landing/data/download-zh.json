@@ -1,0 +1,61 @@
+{
+  "LANG": "zh",
+  "title": "下载大荒 AI",
+  "description": "直接从本站获取大荒 AI 的 Android 安装包；SHA-256 与签名指纹同步公布，好让你先核对再安装。",
+  "h1": "拿到这个 App",
+  "lede": "还没上应用商店。在那之前，这一页是我们分发安装包的唯一地方 —— 所以它把核对所需的全部信息都摆在这里，你不必相信我们说的话。",
+  "btnDownload": "下载安装包",
+  "btnDownloadSub": "Android · arm64",
+  "factsTitle": "这个文件",
+  "facts": {
+    "version": "版本",
+    "size": "大小",
+    "sha256": "SHA-256",
+    "cert": "签名证书（SHA-256）",
+    "scheme": "签名方案",
+    "arch": "适用架构"
+  },
+  "archValue": "arm64-v8a（2018 年之后的手机基本都支持）",
+  "verifyTitle": "你也可以自己验",
+  "verifyNote": "**下载后比对哈希** —— 不一致就不要装。也可以直接验签名：apksigner verify -v（Android SDK 的 build-tools 里自带）。",
+  "verifyCmdLabel": "比对",
+  "mirrorTitle": "以后还会有别的地方",
+  "mirrorNote": "GitHub Release 镜像排在后面。**本页始终是权威源** —— 万一哪天两处不一致，以本页的哈希为准。",
+  "channelsTitle": "三种安装方式",
+  "channelLive": "现已可用",
+  "channelPending": "筹备中",
+  "channels": [
+    {
+      "name": "官网安装包（侧载）",
+      "status": "live",
+      "desc": "从本页下载 APK，手动安装。Android 会询问是否允许浏览器安装未知应用 —— 那是系统在替你把关，不代表这个文件有问题。",
+      "steps": [
+        "点上面的「下载安装包」，等文件下载完成。",
+        "Android 询问时，允许你的浏览器安装未知应用。",
+        "打开下载好的文件安装。以后的更新也走同一条路：回到本页。"
+      ],
+      "warn": "**签名不能混装。** 官网包带的是正式签名密钥；其他渠道出的包装的是另一把钥匙，Android 不允许互相覆盖安装。选定一个渠道就一直用它升级 —— 换渠道必须先卸载，本地数据撑不过卸载。"
+    },
+    {
+      "name": "F-Droid",
+      "status": "pending",
+      "desc": "F-Droid 是自由软件目录，里面的每个应用都从源码重新构建、用 F-Droid 仓库密钥签名 —— 所以 F-Droid 版与本页官网包签名不同，同样不能互相覆盖升级。",
+      "steps": [],
+      "warn": "**尚未提交。** 等源码仓库公开、F-Droid 团队审核过构建配方之后，入口才会出现在这里。渠道不存在之前，本页不会装作它存在。"
+    },
+    {
+      "name": "源码构建",
+      "status": "live",
+      "desc": "客户端开源（MIT）。自己构建，就永远不必相信任何人的二进制 —— 包括我们。",
+      "steps": [
+        "克隆仓库，检出发布 tag。",
+        "跑 flutter pub get，再跑 flutter build apk --release --flavor store。",
+        "用自己的密钥签名（本地测试也可以不签）。"
+      ],
+      "warn": ""
+    }
+  ],
+  "versionFeedNote": "App 内的「检查更新」读的是 **{feedUrl}** —— 版本号、哈希、体积与本页同一事实源，机器可读。",
+  "notReady": "这一版还没有打包安装包。这里不会装作有 —— 一个点了是 404 的下载按钮，比诚实留白更糟。",
+  "disclaimer": "这是自行分发的构建包，不是应用商店发行版。安装时 Android 会要求你允许来自此来源的安装 —— 那是系统在替你把关，不代表这个包有问题。"
+}

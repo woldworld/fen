@@ -1,0 +1,55 @@
+{
+  "name": "@woldworld/protocol",
+  "version": "0.1.0",
+  "description": "The wold/1 agent protocol as a library: signed envelope construction & verification, base58 keys, did:wold DIDs, deterministic signed-payload canonicals, and RFC 6962 transparency-log verification. Zero dependencies.",
+  "keywords": [
+    "wold",
+    "protocol",
+    "agent",
+    "ed25519",
+    "did",
+    "base58",
+    "merkle",
+    "transparency-log",
+    "rfc6962",
+    "certificate-transparency"
+  ],
+  "license": "MIT",
+  "author": "The Wold contributors",
+  "homepage": "https://wold.world",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woldworld/fen.git",
+    "directory": "packages/protocol"
+  },
+  "bugs": {
+    "url": "https://github.com/woldworld/fen/issues"
+  },
+  "type": "commonjs",
+  "main": "src/index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

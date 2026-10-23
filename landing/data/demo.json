@@ -1,0 +1,105 @@
+{
+  "simulated": true,
+  "eyebrow": "Demo",
+  "title": "One introduction, start to finish",
+  "h1": "One introduction, start to finish",
+  "lede": "Press play and watch a single request travel from your device to a real human handshake. Every step shows what actually happened, and what you control at that moment.",
+  "notice": "Interactive demo: a scripted scenario with sample data. No real users, no live agents, no network calls - nothing leaves your device.",
+  "video": {
+    "eyebrow": "Watch it run",
+    "title": "Full walkthrough - 9 minutes 27 seconds",
+    "lede": "The complete flow on a real device: naming your agent, stating a request, reviewing what would be disclosed line by line, and approving an introduction. Sample data only - no live accounts, no real counterparts.",
+    "ariaLabel": "Full walkthrough of the Fen introduction flow on a real device",
+    "fallback": "Your browser cannot play inline video.",
+    "downloadLabel": "Download MP4",
+    "note": "Recorded on an earlier development build; the interface has changed since. Nothing in the video touches a live account.",
+    "pendingTitle": "Walkthrough video in production",
+    "pendingLede": "The full English walkthrough is not packaged with this build yet. The eight-step demo below runs entirely offline."
+  },
+  "intentLabel": "The request",
+  "intent": "Find me a partner who knows the Australian market and can help with cross-border e-commerce.",
+  "playLabel": "Play step by step",
+  "pauseLabel": "Pause",
+  "resetLabel": "Reset",
+  "nextLabel": "Next",
+  "progressLabel": "Step ",
+  "progressSuffix": "",
+  "happenedLabel": "What actually happens",
+  "controlLabel": "What you control",
+  "steps": [
+    {
+      "no": "1",
+      "title": "You state the request",
+      "happened": "Your agent reads the sentence and keeps it on your device. Nothing has left yet.",
+      "control": "You can edit it, narrow it, or drop it entirely. Nothing is sent without you."
+    },
+    {
+      "no": "2",
+      "title": "Your agent extracts conditions",
+      "happened": "The sentence becomes searchable conditions: market = Australia, domain = cross-border commerce, need = operational partner.",
+      "control": "Every extracted condition is shown to you first, and any one of them can be removed."
+    },
+    {
+      "no": "3",
+      "title": "Candidate agents are found",
+      "happened": "Three agents are reachable in the relevant rooms. Each publishes a capability statement - not a personal profile.",
+      "control": "You choose which rooms your agent is allowed to look in. No room is searched by default."
+    },
+    {
+      "no": "4",
+      "title": "Agents exchange only what is allowed",
+      "happened": "Your agent and theirs exchange the fields both sides marked shareable: region, domain, availability. Names and contact details stay back.",
+      "control": "The disclosure policy is yours, set field by field. A field you did not allow is never offered."
+    },
+    {
+      "no": "5",
+      "title": "A match reason comes back",
+      "happened": "Your agent returns with why this one: overlapping domain, complementary geography, and a concrete overlap in what each side is looking for.",
+      "control": "No introduction is made yet. You read the reason before anything is proposed."
+    },
+    {
+      "no": "6",
+      "title": "You review what would be disclosed",
+      "happened": "A summary of everything that would leave your device is laid out line by line for approval.",
+      "control": "★ This is the gate: cut any line, or stop entirely. Stopping costs you nothing."
+    },
+    {
+      "no": "7",
+      "title": "You approve the introduction",
+      "happened": "Only after your approval does the introduction request go to the other person's agent.",
+      "control": "Approval is per request. There is no blanket consent and no background sending."
+    },
+    {
+      "no": "8",
+      "title": "The two real people meet",
+      "happened": "If they accept, the two humans are introduced - and the whole exchange is written to your audit trail.",
+      "control": "You can take the introduction back, and revoke any delegation or endorsement you issued."
+    }
+  ],
+  "checkEyebrow": "Check yourself",
+  "checkTitle": "If you can answer these five, the demo did its job",
+  "checks": [
+    {
+      "q": "What did the agent actually do?",
+      "a": "Turned one sentence into conditions, found candidate agents, and negotiated inside the disclosure rules you set."
+    },
+    {
+      "q": "Why did it need other agents at all?",
+      "a": "Because what you need to know lives with people you have not met. Their agents can answer for them without exposing them."
+    },
+    {
+      "q": "How do you control what gets disclosed?",
+      "a": "Field by field, with a review screen you must pass before anything leaves your device."
+    },
+    {
+      "q": "Which actions need your approval?",
+      "a": "Every introduction request. Approval is per request - never blanket, never in the background."
+    },
+    {
+      "q": "What did you end up with?",
+      "a": "A shortlist with reasons, and a human introduction only where it is actually worth one."
+    }
+  ],
+  "ctaLabel": "Read the full mechanism",
+  "ctaHref": "/docs/"
+}

@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  flutter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Flutter doctor
+        run: flutter doctor -v
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Harness sub-package pub get
+        run: flutter pub get
+        working-directory: packages/pocket_harness
+
+      - name: Analyze (0 errors / 0 warnings)
+        run: flutter analyze
+
+      - name: Tests
+        run: flutter test
+
+  protocol-node:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/protocol
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Syntax check (all protocol modules)
+        run: |
+          for f in src/*.js; do node --check "$f"; done
+
+      - name: Protocol test suite
+        run: node test/run.js

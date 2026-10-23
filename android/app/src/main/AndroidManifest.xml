@@ -1,0 +1,154 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- ============================================== -->
+    <!-- 1. 安卓 10 / 11 遗留设备的经典蓝牙权限 (API 30 及以下) -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+
+    <!-- ============================================== -->
+    <!-- 2. 安卓 12+ (API 31+) 的精细化蓝牙与雷达权限 -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    
+    <!-- 安卓 13+ (API 33+) Wi-Fi直连专属权限 -->
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation" />
+
+    <!-- ============================================== -->
+    <!-- 3. 定位权限 (全版本通用，安卓 10 搜蓝牙必须用到它) -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- ============================================== -->
+    <!-- 4. 局域网组播锁 (mDNS) 与 Wi-Fi 通信必须的基建 -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 🚀 这个就是解决同一个Wi-Fi下搜不到的核心组播锁钥匙！ -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <!-- ============================================== -->
+    <!-- 5. 极致保活与息屏不断网权限 -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <!-- ⚠️ FOREGROUND_SERVICE_* 权限必须与 IsolateHolderService 的
+         foregroundServiceType 一一对应（现在 = connectedDevice|dataSync 两类）。
+         Android 14(API 34) 起**每一类都要有对应的 FOREGROUND_SERVICE_* 权限**，
+         缺一类就在 startForeground() 当场抛 SecurityException（不是警告，是崩溃）。
+         注意：FOREGROUND_SERVICE_LOCATION 与 location 类型已一并移除——
+         本 App 只做 BLE 扫描（BLUETOOTH_SCAN neverForLocation）不采 GPS，
+         声明 location 类型会让每次保活启动都撞运行时定位校验而闪退（真机已复现）。
+         只申请 dataSync 时，"极致保活"这条路在新机上等于一启动就炸。 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- ACCESS_BACKGROUND_LOCATION 暂留：nearby_connections 在 API<31 设备上
+         走"定位权限才能扫 BLE"的老路径；API 31+ 由 BLUETOOTH_SCAN
+         (neverForLocation) 接管，后台定位实际无调用方——待真机回归后
+         在下个版本移除（可减一份应用市场敏感权限申报负担）。 -->
+    <!-- 值班通知可见性（Android 13+ 运行时申请）：前台服务通知不显示 ≠ 服务没跑，
+         但用户看不见的"隐形耗电"只会换来手杀——值班形态必须让用户看见。 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- ============================================== -->
+    <!-- 6. 多媒体：录音（record 插件必需；缺了它系统连权限弹窗都不会给） -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- ============================================== -->
+    <!-- 7. 系统日历（0.74.0 W5/S6）：**只读**当天日程，供晨间问候与
+          calendar_today 工具使用。刻意只申请 READ_CALENDAR —— 绝不申请
+          WRITE_CALENDAR，本 App 对日历零写入。未授权时功能安全降级。 -->
+    <!-- ============================================== -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <!-- android:allowBackup="false" 只覆盖 API ≤ 30；Android 12(API 31) 起
+         云备份与"设备间迁移(D2D)"是两条独立开关，必须再给 dataExtractionRules，
+         否则换机时系统仍会把 pocket_agent.db（含身份私钥派生物、社交图、日志）
+         整体搬到新机。规则文件里逐 domain 排除，见 res/xml/data_extraction_rules.xml。 -->
+    <application
+        android:label="@string/app_name"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+        <service
+        android:name="de.julianassmann.flutter_background.IsolateHolderService"
+        android:enabled="true"
+        android:exported="false"
+        android:foregroundServiceType="connectedDevice|dataSync" />
+        <!-- ⚠️ 类型清单里【绝对不能】再加 location：
+             插件以 FOREGROUND_SERVICE_TYPE_MANIFEST 启动（按上面声明的全部类型
+             逐一校验）。Android 14(API 34) 起 location 类型要求"运行时定位权限
+             已授予 + 使用场景合规"，而本 App 只做 BLE 扫描（BLUETOOTH_SCAN 已带
+             neverForLocation，与定位解耦）、不采任何 GPS——声明了它，
+             每次开启保活必抛 SecurityException 闪退（真机已复现）。 -->
+            <!-- 手机控制：无障碍服务（无需 root / Shizuku） -->
+        <service
+            android:name=".DahuangAccessibilityService"
+            android:exported="true"
+            android:label="@string/dahuang_accessibility_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/dahuang_accessibility_service" />
+        </service>
+</application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+            <!-- Android 11+ 包可见性：让 image_picker 能唤起系统相机 -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+</manifest>
+
+
+

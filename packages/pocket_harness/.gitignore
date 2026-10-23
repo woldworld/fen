@@ -1,0 +1,12 @@
+# Dart/VSCode/IDE
+.dart_tool/
+*.iml
+.idea/
+.vscode/
+
+# 包（library）不提交锁文件
+pubspec.lock
+
+# 本地杂项
+*.log
+.DS_Store

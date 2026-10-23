@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 中文无障碍三件套。这**不是**"可有可无的翻译"，它修的是一个真 bug：
+         lib/l10n/app_zh.arb 的 deviceControlRedetectTip 让用户"到系统设置里把
+         「大荒AI 屏幕助手」关掉再打开一次"，而资源里写的是英文 Fen Screen Assistant
+         ⇒ 中文用户照着提示**找不到那个开关**（存量不一致，2026-09-29 修）。
+         ★ 改这里的中文值，必须同步改 lib/l10n/app_zh.arb 的 deviceControlRedetectTip
+           并重新 flutter gen-l10n；反之亦然（两处字面必须一致）。
+         文案取自 rebrand 前的原文：备份/android-改造遗留-20260928/rebrand-backup/strings.xml.prebrand -->
+    <string name="dahuang_accessibility_label">大荒AI 屏幕助手</string>
+    <string name="dahuang_accessibility_summary">让智能体读懂屏幕并代为操作</string>
+    <string name="dahuang_accessibility_description">开启后，大荒AI 的智能体可以读取当前屏幕上的文字、点击按钮、输入文字，帮你完成操作。所有动作都会记录在 App 内可随时查看；银行、支付类应用默认被拦截，不会触碰。</string>
+    <!-- 通知读取服务名（0.75.0 W6/G9）：显示在系统「通知使用权」列表里。
+         ★ 改这里必须同步 app_zh.arb 的 notifySms* 文案（两处语义必须一致，
+           否则 UI 提示用户去开的开关名与系统设置里的对不上）。 -->
+    <string name="dahuang_notify_sms_label">大荒AI 通知读取</string>
+</resources>

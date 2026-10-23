@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "porto",
+    "name": "Porto",
+    "country": "Portugal",
+    "region": "Europe",
+    "blurb": "Smaller than Lisbon, quieter, and the kind of place where the second week decides whether you stay.",
+    "arc": [
+      "Fewer people pass through Porto, which means the circles here are older and slower to open. That is not hostility - it is just what a smaller city looks like from the outside.",
+      "Where people have known each other for years, a cold introduction reads as noise. Fen goes through someone you already have a link to, or through a representative that has been around longer than you have."
+    ]
+  },
+  {
+    "slug": "barcelona",
+    "name": "Barcelona",
+    "country": "Spain",
+    "region": "Europe",
+    "blurb": "Everyone tells you it is easy to meet people here. Then you spend your first month talking to your landlord and the barista.",
+    "arc": [
+      "Barcelona is easy to have a good week in. That is not the same thing as easy to belong in, and the gap between the two is where most first months quietly disappear.",
+      "What matters is the difference between meeting someone and being expected somewhere. Fen works on the second: it keeps the thread alive after the first conversation, so the second meeting is a continuation instead of a restart."
+    ]
+  },
+  {
+    "slug": "tallinn",
+    "name": "Tallinn",
+    "country": "Estonia",
+    "region": "Europe",
+    "blurb": "Digital-first paperwork, very analogue social life. The paperwork is the easy half.",
+    "arc": [
+      "The paperwork here is famously the easy part. The social half is the opposite: a small, dense city where most circles go back a long way and have no obvious open edge.",
+      "In a small city a bad first impression is expensive, because you will run into the same people again. Fen is useful here because it can ask the questions you would rather not ask yourself, and only calls you in once the answer is yes."
+    ]
+  },
+  {
+    "slug": "budapest",
+    "name": "Budapest",
+    "country": "Hungary",
+    "region": "Europe",
+    "blurb": "Cheap to land, surprisingly hard to belong. Most newcomers leave before they find their people.",
+    "arc": [
+      "Budapest is cheap to land in, and for exactly that reason it is full of people who are only here for a season. Many of them leave before finding out whether they could have stayed.",
+      "The filter that matters is not who you met, it is who is still here. Fen keeps that distinction for you and tracks which connections actually survived past the first month."
+    ]
+  },
+  {
+    "slug": "tbilisi",
+    "name": "Tbilisi",
+    "country": "Georgia",
+    "region": "Europe",
+    "blurb": "A year-long visa and a very warm city. The welcome is real; the introductions still have to happen.",
+    "arc": [
+      "The welcome in Tbilisi is real and immediate, which makes it easy to confuse hospitality with a circle. You can be everyone's guest for months without ever becoming anyone's regular.",
+      "Being a guest and belonging are different things, and the space between them is where most newcomers stall. Fen is built for that space: it turns hospitality into a standing relationship, or tells you honestly that it did not."
+    ]
+  },
+  {
+    "slug": "kuala-lumpur",
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "region": "Asia",
+    "blurb": "Easy to live in, layered to enter. Neighbourhoods do the sorting, not you.",
+    "arc": [
+      "Kuala Lumpur is easy to live in and layered to enter. The city sorts people by neighbourhood and by language long before it ever sorts them by interest.",
+      "When the sorting happens before you arrive, the only way in is through someone already inside. Fen does that part first, and brings you in only where there is a real fit."
+    ]
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "country": "Singapore",
+    "region": "Asia",
+    "blurb": "Efficient, expensive, and socially gated in ways that are hard to see from the outside.",
+    "arc": [
+      "Singapore is efficient in almost every way except the one that matters socially. Most circles here were formed at school, at work, or through family, and they have no open edge to walk up to.",
+      "A city with no open edge has to be entered through a person. That is the entire job Fen does - it is introduced first, and the two of you only show up once there is a reason."
+    ]
+  },
+  {
+    "slug": "tokyo",
+    "name": "Tokyo",
+    "country": "Japan",
+    "region": "Asia",
+    "blurb": "The hardest city on this list to build a social life in from zero. Being introduced is not optional here.",
+    "arc": [
+      "Tokyo is the hardest city on this list to build a social life in from zero. Not because it is unwelcoming, but because groups here are closed by default - openness is something extended to you, not something you take.",
+      "In a place where being introduced is not optional, doing it yourself is the slow path. Fen handles the introduction in the right order: representative to representative first, then the two humans."
+    ]
+  },
+  {
+    "slug": "seoul",
+    "name": "Seoul",
+    "country": "South Korea",
+    "region": "Asia",
+    "blurb": "Warm once you are inside a circle, close to invisible until you are.",
+    "arc": [
+      "Seoul is warm once you are inside a circle and close to invisible until you are. The distance between those two states is not bridged by trying harder.",
+      "What bridges it is a person. Fen's job here is narrow and specific: get you from nearby to introduced, and be honest when it has not happened yet."
+    ]
+  },
+  {
+    "slug": "austin",
+    "name": "Austin",
+    "country": "United States",
+    "region": "Americas",
+    "blurb": "Friendly by reputation. The friendliness is real - it just rarely turns into plans.",
+    "arc": [
+      "Austin is friendly by reputation, and the friendliness is genuine. It just rarely converts into an actual second meeting.",
+      "The gap between a good conversation and a real plan is where most first months are lost. Fen closes that gap by doing the follow-up you would have done if you had remembered to."
+    ]
+  },
+  {
+    "slug": "mexico-city",
+    "name": "Mexico City",
+    "country": "Mexico",
+    "region": "Americas",
+    "blurb": "Huge, generous, and arranged around groups you have to be brought into.",
+    "arc": [
+      "Mexico City is huge and generous, and organised around groups you have to be brought into rather than ones you can simply walk up to.",
+      "In a city organised around groups, the introduction is the whole product. Fen goes through the group first, so you arrive as someone's guest rather than a stranger at the edge."
+    ]
+  },
+  {
+    "slug": "medellin",
+    "name": "Medellin",
+    "country": "Colombia",
+    "region": "Americas",
+    "blurb": "A constant flow of arrivals. Most of them are still looking for the same thing you are.",
+    "arc": [
+      "Medellin has a constant flow of arrivals, which makes the first week effortless and the second month oddly empty.",
+      "Where turnover is high, the useful question is which connections are still standing. Fen tracks exactly that, and stops you spending time on the ones that were never going to last."
+    ]
+  },
+  {
+    "slug": "buenos-aires",
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "region": "Americas",
+    "blurb": "Social, late, and built on long-standing circles that take time to be let into.",
+    "arc": [
+      "Buenos Aires is social and late, and built on long-standing circles that take real time to be let into. Showing up is not the same as being let in.",
+      "Older circles do not open because you arrived; they open because someone inside said your name. Fen works on that step specifically - being named before you get there."
+    ]
+  },
+  {
+    "slug": "dubai",
+    "name": "Dubai",
+    "country": "United Arab Emirates",
+    "region": "Middle East",
+    "blurb": "Transit city for most, home for some. The difference is almost entirely who you know.",
+    "arc": [
+      "For most people Dubai is a transit city. Whether it becomes home is almost entirely a question of who you know by the end of the first month.",
+      "With this much turnover, relationships either form fast or never form at all. Fen compresses the window: it starts the introductions in week one instead of leaving them to chance."
+    ]
+  }
+]

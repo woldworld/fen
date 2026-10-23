@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ================================================================
+         侧载渠道专属清单（0.75.0 · W6/G9 通知监听 + 短信）
+
+         ★★ 本文件**只**在 `sideload` flavor 里生效。上架/公开分发用的
+            `store` flavor 不含本文件 ⇒ 打包结果与 0.74.0 的权限面**逐字相同**
+            （零受限权限、零新增服务），上架合规性一字未动。
+
+         为什么这些不能进 main：
+           READ_SMS / RECEIVE_SMS 属 Google Play「SMS 与通话记录」受限权限
+           （政策原文：只有*默认短信应用*等极少数用途可申报，普通 App 申报
+             基本必被拒）。本 App 靠用户侧载自用，不走上架，故把它们收在这个
+             独立渠道里，让"上架构建不受影响"这条验收判据**结构性成立**。
+
+         只读红线（与日历 S6 同款纪律）：
+           · 只声明 READ_SMS（查询已有短信）与 RECEIVE_SMS（新短信到达广播）；
+           · **绝不声明** SEND_SMS / WRITE_SMS / READ_CALL_LOG / WRITE_CALL_LOG
+             —— 本 App 对短信零发送、零写入，对通话记录零接触。
+           守卫脚本 tool/verify_notify_sms.dart 会逐条断言这一点。
+         ================================================================ -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application>
+        <!-- 通知读取服务（android.service.notification.NotificationListenerService）。
+             它不在"危险权限"清单里——授权方式是用户在系统设置「通知使用权」里
+             手动勾选，**App 无法代开**（这也是为什么 UI 只提供"去系统设置"跳转）。
+             · android:exported="true" 必须为 true：系统需要跨进程绑定本服务；
+             · android:permission 钉死 BIND_NOTIFICATION_LISTENER_SERVICE，
+               保证**只有系统**能绑定（第三方 App 无权绑）；
+             · 类本体 DahuangNotificationListener.kt 放在 main 源集（store 渠道
+               会一并编译但**不声明为服务** ⇒ 永远不会被系统唤起、也不出现在
+               通知使用权列表里），这样 MainActivity（main 源集）能直接引用它。 -->
+        <service
+            android:name=".DahuangNotificationListener"
+            android:exported="true"
+            android:label="@string/dahuang_notify_sms_label"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
