@@ -51,16 +51,42 @@
   `ADR/ADR-003`(3) 是对历史事实的陈述（"本轮只清了门面，其余是已披露的遗留"）。
   ⇒ 判据：**"能删的"和"必须留的"要分开数**，把它们一起"清干净"等于把守卫的眼睛挖掉。
 
+### 合规补缺（同版本无版本号轮 · 主人拍板「没有律师，工程侧把能做的做掉」）
+
+- **门禁第 23 条制裁三重封锁**（B 档，未满足 → 已满足）：`服务条款` × 五语种新增 §10
+  「制裁与出口管制」；`lib/hub/hub.js` 新增 `sanctionsDecision` / `countryOf` / `sanctionsSet`，
+  对非 `/health` 请求返回 **HTTP 451 + `region_blocked`**；**判定不出来源地时放行**
+  （误封一个正常用户不可撤销，与 `trialRegionOf` 对 `XX` / `T1` 不硬猜同一条哲学）。
+  守卫 `tool/verify_sanctions_gate.js`：静态探针 + **子进程行为级**取证 + 负控。
+- **门禁第 25 条公开日志保留策略**（B 档，未满足 → 已满足）：`隐私政策` × 五语种 §2
+  补「透明日志的保留期」成表 —— ① 叶子哈希**永久**（只追加、不可删）；
+  ② 公开日志文件**不轮转、不删除**（自建侧由该部署方定）；③ 与代码一致（日志存储无删除路径）。
+- **门禁第 27 条自建 Hub 接入协议**（C 档，未满足 → 已满足）：走判据的
+  「**明文决定不开放**」一途，见 `lib/compliance/自建Hub接入协议.md`（含四条可证伪理由、
+  四条重估触发条件、开放时必须含的四要素）。★ 它是 C 档，**不解除**第 7 / 21 条的收费阻断。
+- ★ **两处纠正**：① 门禁第 7 条（律师裁决项）是 **C 档**收费门禁 ⇒ **`pending-counsel` 不阻断上线**
+  （`landing/build.js:2917` 只 `console.log` 不 `throw`，且 `reviewStatus` 不进页面、只进
+  `build-report.json`）⇒ 真实性质是**披露问题**，此前「等法务定稿才能动官网」是过度阻断；
+  ② `lib/hub/deploy/Caddyfile.example` 实为**单域名单 server 块**（`handle` 路径分流，
+  兜底块即官网）⇒ 此前写的「双 server 块可分开上」**不成立**，要先改配置才能只上 API。
+- **起草待主人发送**：`lib/compliance/加密出口通知-BIS与NSA待发送.md` —— 源码已于 10-23 公开，
+  而 EAR「公开可用」豁免要求**先通知后发布** ⇒ 这封是**补发**；中英 A / B 两版，
+  版本号与算法清单均按磁盘实证填好。**工程侧不代发**（不可逆外部法律行为）。
+
 ### 读数
+
+- `dart run tool/run_flutter_test.dart`：**509 passed / 0 failed**### 读数
 
 - `dart run tool/run_flutter_test.dart`：**509 passed / 0 failed**
 - `dart run tool/run_all_verify.dart`：67 脚本 / **3,198 PASS / 0 FAIL**
   （较 0.121.0 的 3,197 **+1**：`verify_i18n` 补了一条正控 —— 见下）
 - `flutter analyze`（默认作用域 = **全项目**）：0 error / 0 warning / **2,000** info
-- `node tool/run_all_verify_node.js`：**1,863 PASS / 0 FAIL**（40 脚本，rc=0）
-  （较 0.121.0 的 1,860 **+3**：① `verify_deploy_site_freshness` 28 → 30 —— 重打部署包后
+- `node tool/run_all_verify_node.js`：**1,895 PASS / 0 FAIL**（41 脚本，rc=0）
+  （较 0.121.0 的 1,860 **+35**：① `verify_deploy_site_freshness` 28 → 30 —— 重打部署包后
   「包内 changelog 含全部数字事实」与「包内 APK 双一致」两条转绿；
-  ② `verify_opensource_release` 31 → 32 —— 新增「导出树 CHANGELOG 逐字节一致」+ 它的负控）
+  ② `verify_opensource_release` 31 → 32 —— 新增「导出树 CHANGELOG 逐字节一致」+ 它的负控；
+  ③ **新增 `verify_sanctions_gate.js`（32 条）** —— 门禁第 23 条制裁封锁守卫。
+  ★ `run_all_verify_node.js` 是**扫目录自动发现** `verify_*.js` ⇒ 新守卫**不用登记**即进全关）
 - `apksigner verify`（store / arm64-v8a）：Verifies，只签 **v2**，
   证书 SHA-256 `28e10ba0…de8de2e`、alias `wold` —— 与 R9 记录逐字符一致。
 
