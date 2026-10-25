@@ -178,16 +178,21 @@ Hub 中转站与 World 房间服务端是本项目的**专有网络层**，**不
 ## About internal documents / 关于内部文档
 
 `CHANGELOG.md` 与本仓库的少数工程脚本会提到几份**内部文档**（《交付与验收记录》、
-《产品需求说明书与行动计划》）。它们是维护者的内部工作记录，**不随源码发布**，
-所以你在本仓库里点不到 —— 这是刻意为之，**不是死链**。凡涉及行为与契约的结论，
+《产品需求说明书与行动计划》，以及 `lib/compliance/` 下的若干**内部合规台账与条款草案**）。
+它们是维护者的内部工作记录，**不随源码发布**，所以你在本仓库里点不到 ——
+这是刻意为之，**不是死链**。`lib/compliance/` 里随源码发布的是**对外生效的条款正文**
+（隐私政策、服务条款、年龄门槛，各五语种）。凡涉及行为与契约的结论，
 本仓库都有对应实现、测试或守卫脚本可供复核。
 
 `CHANGELOG.md` and a few engineering scripts under `tool/` mention **internal
-documents** (a delivery/acceptance log and a product requirements document).
+documents** (a delivery/acceptance log, a product requirements document, and
+several **internal compliance ledgers and draft terms** under `lib/compliance/`).
 They are maintainer working records and are **not part of this release** — you
 will not find them in this repository. That is intentional, **not a broken
-link**. Anything that constrains behaviour is backed by code, tests or a guard
-script in this repo.
+link**. What *is* shipped under `lib/compliance/` is the **operative text** of
+our public terms (privacy policy, terms of service, age threshold; five
+languages each). Anything that constrains behaviour is backed by code, tests or
+a guard script in this repo.
 
 ---
 
